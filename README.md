@@ -155,17 +155,24 @@ O que foi alterado e qual parte do site foi impactada
 Se existe algo pendente ou ponto de atenção
 
 Crie o Pull Request
+
 ⚠️ Não faça o merge.
 A integração será feita pelo responsável técnico após revisão.
 
 10. O que NÃO fazer
 
 ❌ Trabalhar na branch main
+
 ❌ Alterar código de outro estagiário
+
 ❌ Subir código quebrado sem testar/avisar
+
 ❌ Resolver conflitos sem entender o impacto
+
 ❌ Apagar ou sobrescrever arquivos globais
+
 ❌ Criar uma branch e deixá-la aberta indefinidamente
+
 ❌ Criar branches sem padrão de nome
 
 11. Fluxo resumido
