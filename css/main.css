@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/assets/font-site/Gilroy/Gilroy-Light.otf") format("opentype");
+
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("/assets/font-site/Gilroy/Gilroy-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("/assets/font-site/Gilroy/Gilroy-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("/assets/font-site/Gilroy-Black/gilroy-bold.ttf") format("opentype");
+}
+
+:root {
+  --cor-azul-escuro: #00072D;
+  --cor-azul-claro: #008BD2;
+}
+
+body {
+  margin: 0 auto;
+}
+
+main {
+  margin: 10% 15%;
+  position: relative;
+  top: -63px;
+  text-align: center;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.text-center {
+  text-align: center;
+  padding-bottom: 15%;
+  color: #00072D;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Gilroy-Bold";
+  font-weight: 300;
+}
+
+.card img {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.card div {
+  margin-top: -10%;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 1rem;
+  box-shadow: 10px 5px 35px rgb(173, 173, 173);
+  text-align: left;
+  align-items: center;
+}
+
+.card div ul {
+  padding: 0 20px;
+  line-height: 25px;
+}
+
+.card div h2 {
+  width: 181px;
+  background-color: #00072D;
+  padding: 5px 10px 5px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  color: white;
+}
+
+.card div li {
+  list-style: none;
+}
+
+.card div a {
+  color: #00072D;
+  
+}
+
+
+.icone {
+  padding-top: 45px;
+}
+
+.icone h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+  color: #008BD2;
+}
+
+.icone hr {
+  border: none;
+  width: 31%;
+  height: 3px;
+  background: #1A1919BA;
+}
+
+.icone button {
+  background-color: #00072D;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 33px;
+  width: 109px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.icone p {
+  color: #00072D;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.sistema{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sei {
+  display: flex;
+  width: 280px;
+  height: 257px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url(/assets/sistema-geren/powerbi.png);
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+
+  & div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    
+    & img {background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+  }}
+}
+
+
+.noticias {
+  text-align: center;
+}
+
+.noticias img {
+  padding-top: 15px;
+}
+
+.noticias h3 {
+  position: relative;
+  left: -30px;
+  padding-top: 6px;
+}
+
+.noticias p {
+  text-align: left;
+  position: relative;
+  left: 25px;
+}
+
+.btn-saiba-mais {
+  color: #0047FF;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  left: 94px;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Arial', sans-serif;
+}
+
+.seta {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.btn-saiba-mais:hover .seta {
+  transform: translateX(4px);
+}
