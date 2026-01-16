@@ -1,3 +1,5 @@
+/*--- Fontes ---*/
+
 @font-face {
   font-family: "Gilroy-Light";
   src: url("/assets/font-site/Gilroy/Gilroy-Light.otf") format("opentype");
@@ -18,6 +20,9 @@
   font-family: "Gilroy-Bold";
   src: url("/assets/font-site/Gilroy-Black/gilroy-bold.ttf") format("opentype");
 }
+
+
+/*--- Variáveis---*/
 
 :root {
   --cor-azul-escuro: #00072D;
@@ -161,7 +166,6 @@
     }
 
   }
-
 }
 
 
