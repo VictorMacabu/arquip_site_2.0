@@ -178,7 +178,8 @@
 
             <ol>
                 <li>Acesse o Portal de Processos e faça login.</li>
-                <li>Escolha o requerimento “PROCESSO FÍSICO ARQUIVADO - PESQUISA DE EXISTÊNCIA E DESARQUIVAMENTO (Planta/Alvará)”.</li>
+                <li>Escolha o requerimento “PROCESSO FÍSICO ARQUIVADO - PESQUISA DE EXISTÊNCIA E DESARQUIVAMENTO
+                    (Planta/Alvará)”.</li>
                 <li>Preencha os dados do imóvel e anexe os documentos pessoais.</li>
                 <li>Aguarde o envio dos resultados por e-mail.</li>
             </ol>
@@ -195,44 +196,37 @@
 
             <p>Importante: Esse serviço é gratuito.</p>
 
-            
+            <h4>9. Qual o prazo para atendimento de solicitações?</h4>
+            <p>O prazo para atendimento pode ser de até 60 dias, conforme a Carta de Serviços no SP156.</p>
 
+            <h4>10. Há custos para os serviços do Portal de Processos?</h4>
+            <p>Sim, há cobrança pela autuação do requerimento eletrônico, exceto para pesquisadores acadêmicos, cujo
+                serviço é gratuito.</p>
 
+            <h4>11. Como entrar em contato em caso de dúvidas?</h4>
 
+            <ol>
+                <li>Chat:
+                    <a href="https://arquip.prefeitura.sp.gov.br/chat/">https://arquip.prefeitura.sp.gov.br/chat</a>
+                </li>
+                <li>Pesquisadores Acadêmicos: E-mail para reservatecnica@prefeitura.sp.gov.br.</li>
+            </ol>
 
+            <h4>12. Quais são as principais vantagens do Portal de Processos?</h4>
 
-
-
-
-
-
-
-
-
-
+            <ol>
+                <li>Acessibilidade: Consultas e solicitações 100% digitais.</li>
+                <li>Agilidade: Atendimento remoto e rápido.</li>
+                <li>Preservação: Minimiza o manuseio de documentos físicos, garantindo sua preservação.</li>
+                <li>Segurança: Proteção de dados pessoais e sigilo garantido.</li>
+            </ol>
 
         </div>
+    
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <?php require_once __DIR__ . "/views/footer-pc.php"
+        ?>
 
 </body>
 
