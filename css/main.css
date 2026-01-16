@@ -30,11 +30,20 @@
 }
 
 
+/*  =====  Pc  ===== */
 
-.banner {
+@media(min-width:1280px) {
+
+
+
+  .banner {
+    display: none;
+  }
+
+  .banner {
     padding-top: 334px;
 
-    background-image: url('/assets/banner/banner.arquivo-pc.png');
+    background-image: url('/assets/banner/arquivo-sp.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: left;
@@ -63,13 +72,6 @@
       left: 15px;
     }
   }
-
-
-
-/*--- PC ---*/
-@media(min-width:1280px) {
-
-  
 
 
   .sistema-mobile {
@@ -130,7 +132,7 @@
   }
 
   .primeira-secao,
-  .segunda-2 {
+  .segunda-secao {
     display: flex;
     justify-content: space-evenly;
 
@@ -170,16 +172,21 @@
 
 
 
-/*--- MOBILE ---*/
-
-@media(max-width:800px) {
 
 
+/* ==== Mobile ==== */
+
+@media(max-width:1279px) {
 
 
   nav {
     display: none;
   }
+
+  .secao-noticia {
+    display: none;
+  }
+
 
   .carrossel-card {
     display: none;
