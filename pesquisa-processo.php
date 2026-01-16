@@ -164,7 +164,39 @@
                 possui prazo de validade, por isso fique atento às notificações.
             </p>
 
-            <h4></h4>
+            <h4>6. Quais documentos posso solicitar?</h4>
+            <p>É possível solicitar:</p>
+
+            <ul>
+                <li>Contratos administrativos.</li>
+                <li>Pareceres técnicos.</li>
+                <li>Plantas de imóveis.</li>
+                <li>Documentos históricos ou administrativos sob custódia do ARQUIP.</li>
+            </ul>
+
+            <h4>7. Como solicito a pesquisa de existência de processos ou plantas?</h4>
+
+            <ol>
+                <li>Acesse o Portal de Processos e faça login.</li>
+                <li>Escolha o requerimento “PROCESSO FÍSICO ARQUIVADO - PESQUISA DE EXISTÊNCIA E DESARQUIVAMENTO (Planta/Alvará)”.</li>
+                <li>Preencha os dados do imóvel e anexe os documentos pessoais.</li>
+                <li>Aguarde o envio dos resultados por e-mail.</li>
+            </ol>
+
+            <h4>8. Como os pesquisadores acadêmicos podem acessar o acervo do ARQUIP?</h4>
+            <p>Pesquisadores acadêmicos devem:</p>
+
+            <ol>
+                <li>Acessar o Portal de Processos e fazer login com a SenhaWeb.</li>
+                <li>Selecionar o tipo de requerimento “ATENDIMENTO A ESTUDANTES E PESQUISADORES”.</li>
+                <li>Anexar o ofício da universidade e o atestado de matrícula.</li>
+                <li>Detalhar o objeto da pesquisa para agilidade no atendimento.</li>
+            </ol>
+
+            <p>Importante: Esse serviço é gratuito.</p>
+
+            
+
 
 
 
