@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(/assets/font-site/Gilroy-Black/Gilroy-Medium.ttf);
+}
+
+body{
+    background-color: white;
+    font-family: Gilroy-Medium;
+}
+
+.container-pagina{
+    margin-left: 12%;
+    margin-right: 12%;
+    background-color: white;
+}
+
+.titulo-txt{
+    margin-top: 5%; 
+    font-size: 20px;
+}
+
+.subtitulo-txt{
+    margin-top: 2%;
+    font-size: 17px;
+}
+
+.resumo-txt{
+    margin-top: -18px;
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+
+.card-secao{
+   font-size: 20px;
+    
+}
+
+.lista-txt{
+    font-size: 20px;
+}
+
+.banner-estrutura img{
+    width: 100%;
+    display: block;
+    margin-top: -68px;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 5%;
+}

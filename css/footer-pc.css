@@ -1,0 +1,15 @@
+footer {
+    background-color: #323233;
+    display: flex;
+    align-items: center;
+    color: white;
+    height: 200px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 6%;
+}
+
+.info-footer{
+    line-height: 25px;
+}

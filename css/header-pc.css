@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+
+header{
+background-color: #0881c8;;
+padding: 1%;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+    & img{
+    }
+}
+
+nav {
+    width: 80%;
+    background-color: #00072D;
+    color: white;
+    margin: 0 auto;
+    border-radius: 0 0 8px 8px;
+    position: relative;
+    z-index: 1;
+
+    & ul {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    & li{
+        list-style: none;
+    }
+}
+

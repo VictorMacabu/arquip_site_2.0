@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header-pc.css">
+    <link rel="stylesheet" href="/css/footer-pc.css">
+    <link rel="stylesheet" href="/css/main-pc.css">
+    <title>Sistema de Arquivos Do Município</title>
+</head>
+
+<body>
+
+    <?php require_once __DIR__ . "/views/header-pc.php"
+    ?>
+ 
+    <div class="banner-estrutura">
+        <img src="/assets/sistemas-arquivos/banner-sist-arqv.png" alt="Sistemas Arquivos">
+    </div>
+    
+    <div class="container-pagina">
+
+        <div class="card-secao">
+            <p><b>Sistema de Arquivos do Município de São Paulo - SAMSP</b></p>
+
+            <p>O decreto define a criação do SAMSP, uma rede que integra todos os arquivos e documentos da administração
+                pública municipal. Esse sistema visa garantir a coordenação e padronização das ações de gestão
+                documental, além de assegurar o acesso público a documentos que não sejam sigilosos.</p>
+
+            <p>O Sistema de Arquivos do Município de São Paulo deve incluir um conjunto de normas técnicas e
+                operacionais para a organização, preservação e gestão de documentos nos órgãos municipais. Ele está
+                intimamente ligado ao ARQUIP (Arquivo Público Municipal), que é responsável pela coordenação e
+                implementação dessas políticas como Órgão Central.</p>
+
+            <p>O decreto estabelece a política de gestão de documentos na administração pública municipal, com o intuito
+                de garantir que os documentos sejam produzidos, organizados, acessíveis, preservados e, quando
+                necessário, eliminados de maneira adequada. Ele abrange tanto os documentos físicos quanto os digitais,
+                promovendo a integração entre os diversos órgãos da administração municipal para a gestão eficiente dos
+                arquivos.</p>
+            <br>
+            <p><b>Definição de Gestão Documental</b></p>
+
+            <p>A gestão de documentos, conforme o decreto, envolve o tratamento de documentos públicos em todas as fases
+                do seu ciclo de vida, que inclui:</p>
+
+        </div>
+
+        <div class="lista-txt">
+            <ul>
+                <li><b>Produção:</b> Criação ou recebimento dos documentos.</li>
+                <li><b>Trâmite:</b> Circulação ou movimentação dentro da administração.</li>
+                <li><b>Arquivamento:</b> Armazenamento e organização dos documentos.</li>
+                <li><b>Preservação:</b> Manutenção dos documentos por meio de ações que garantam sua integridade ao
+                    longo do tempo.</li>
+                <li><b>Eliminação ou transferência:</b> Destinação final, que pode ser a eliminação ou a transferência
+                    para arquivos permanentes.</li>
+            </ul>
+
+        </div>   
+    </div>
+
+    <?php require_once __DIR__ . "/views/footer-pc.php"
+    ?>
+
+</body>
+</html>
