@@ -2,12 +2,12 @@
 <header class="capa menu-fixo">
     <div>
         <a href="/" id="link-logo">
-            <img id="logo-arquip" src="/assets/header/Logo-ARQUIP-branco.png" alt="logo-arquip"
+            <img id="logo-arquip" src="/assets/header/logo-arquip-branco.png" alt="logo-arquip"
                 aria-label="acesso a página da secretaria de gestao municipal">
         </a>
 
         <a class="logo2" href="https://www.prefeitura.sp.gov.br/cidade/secretarias/gestao/" id="link-logo-gestao">
-            <img id="logo-gestao" src="/Assets/header/gestao.png"
+            <img id="logo-gestao" src="/assets/header/logo-gestao.png"
                 aria-label="acesso a página da sercretaria de gestão municipal">
         </a>
     </div>
