@@ -4,14 +4,26 @@
 }
 
 body{
-    background-color: white;
     font-family: Gilroy-Medium;
+    margin: 0;
+
+
 }
 
+
+.banner-estrutura img{
+    width: 101%;
+    padding-top: 34px; 
+}
+
+
+
 .container-pagina{
+    padding-top: 92px;
     margin-left: 12%;
     margin-right: 12%;
     background-color: white;
+    font-size: 20px;
 }
 
 .titulo-txt{
@@ -35,15 +47,16 @@ body{
     
 }
 
-.lista-txt{
-    font-size: 20px;
+.lista-txt {
+
+    & li {
+        padding: 10px;
+    }
+
 }
 
-.banner-estrutura img{
-    width: 100%;
-    display: block;
-    margin-top: -68px;
-    position: relative;
-    z-index: -1;
-    margin-bottom: 5%;
+.estrutura-img {
+    padding-top: 97px;
+    padding-bottom: 97px;
+    text-align: center;
 }

@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/header-pc.css">
-    <link rel="stylesheet" href="/CSS/footer-pc.css">
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
     <link rel="stylesheet" href="/CSS/main-pc.css">
     <link rel="stylesheet" href="/CSS/estrutura-organizacional.css">
+    <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Estrutura Organizacional</title>
 </head>
 
 <body>
 
-<?php require_once __DIR__ . "/views/header-pc.php"
-?>
+    <?php
+    require_once __DIR__ . '/views/header.php';
+    ?>
 
     <div class="banner-estrutura">
         <img src="/assets/estrutura-organizacional/estrutura-ogz.png" alt="Estrutura Organizacional">
@@ -107,7 +109,7 @@
 
     </div>
 
-    <?php require_once __DIR__ . "/views/footer-pc.php"
+    <?php require_once __DIR__ . "/views/footer.php"
     ?>
 
 

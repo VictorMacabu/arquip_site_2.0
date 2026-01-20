@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
-    <title>ARQUIP</title>
+    <title>Quem somos</title>
     <?php
     require_once __DIR__ . '/views/header.php';
     ?>

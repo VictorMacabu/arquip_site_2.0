@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "Gilroy-Bold";
-  src: url("/assets/font-site/Gilroy-Black/gilroy-bold.ttf") format("opentype");
+  src: url("/assets/font-site/Gilroy-Black/gilroy-bold.ttf") format("truetype");
 }
 
 
@@ -28,6 +28,7 @@
   --cor-azul-escuro: #00072D;
   --cor-azul-claro: #008BD2;
 }
+
 
 
 /*  =====  Pc  ===== */
@@ -41,8 +42,7 @@
   }
 
   .banner {
-    padding-top: 321px;
-
+    padding-top: 351px;
     background-image: url('/assets/banner/banner.arquivo-pc.png');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -53,24 +53,37 @@
     align-items: center;
 
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     & h1 {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Gilroy-Bold', Arial, sans-serif;
       line-height: 1.2;
       position: relative;
       top: -169px;
-      left: 20px;
-      font-size: 32px;
+      left: 116px;
+      font-size: 43px;
     }
 
     & h2 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 24px;
+      font-family: 'Arial';
+      font-size: 29px;
       position: relative;
-      top: -181px;
-      left: 15px;
+      top: -187px;
+      left: 113px;
     }
+  }
+
+  /* === Before funciona como se fosse um elemento HTML invisível criado dentro do banner. É como se o CSS criasse uma folha transparente em cima do banner ===*/
+  .banner::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 32%;
+    z-index: -1;
   }
 
 
@@ -94,7 +107,7 @@
     }
 
     & .carrossel {
-      height: 50%;
+      height: 56%;
       display: flex;
       justify-content: space-around;
 
@@ -106,7 +119,7 @@
       & #um {
         background-image: url(/assets/sistema-geren/icone-sei.png);
         background-repeat: no-repeat;
-        background-size: 90%;
+        background-size: 80%;
         background-position: center;
       }
     }
@@ -116,6 +129,12 @@
   .segunda-secao {
     display: flex;
     justify-content: space-evenly;
+
+
+    & h2 {
+      color: #008BD2;
+    }
+
 
     & .text-center {
       width: 33%;
@@ -143,9 +162,23 @@
         height: 50%;
       }
 
+      button {
+        background-color: #00072D;
+        color: white;
+        border-radius: 25px;        
+        height: 35px;
+        width: 108px;
+      }
+
 
     }
 
+  }
+
+  .sistemas {
+    & h1 {
+      
+    }
   }
 }
 
@@ -160,7 +193,7 @@
 @media(max-width:800px) {
 
 
- 
+
   .banner {
     padding-top: 195px;
     background-image: url('/assets/banner/banner-arquivo-mobile.png');
@@ -171,7 +204,7 @@
     color: white;
     display: flex;
     align-items: center;
-  
+
 
     position: relative;
     z-index: 1;

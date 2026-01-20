@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
-    <title>ARQUIP</title>
+    <title>Arquip</title>
 </head>
 
 <body>
 
     <!--- CABEÇALHO --->
     <?php
-    require_once __DIR__ . '/views/header-pc.php';
+    require_once __DIR__ . '/views/header.php';
     ?>
 
 
@@ -129,7 +129,7 @@
             </div>
         </section>
 
-        <!--- SISTEMAS --->
+        <!--- SISTEMAS PC--->
         <section class="sistemas">
 
             <div class="carrossel-card">
@@ -144,7 +144,7 @@
                 <img src="./assets/sistema-geren/Group 1844.png" alt="">
             </div>
 
-
+            <!--- SISTEMAS MOBILE --->
             <div class="sistema-mobile">
                 <h2>ACESSE NOSSOS SISTEMAS GERENCIADOS</h2>
                 <div class="sei">
@@ -155,6 +155,10 @@
                 </div>
             </div>
     </main>
+
+<?php
+    require_once __DIR__ . '/views/footer.php';
+    ?>
 
 </body>
 
