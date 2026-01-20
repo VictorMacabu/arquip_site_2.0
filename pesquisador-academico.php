@@ -98,30 +98,117 @@
             <p>De acordo com nossa carta de serviços no SP156, o prazo poderá ser em até 60 dias.</p>
 
             <h4>Dúvidas e contato</h4>
-            <p></p>
-            
+            <p>Em casos de dúvidas sobre requerimentos, acesse o Chat:<a
+                    href=" https://arquip.prefeitura.sp.gov.br/chat/"> https://arquip.prefeitura.sp.gov.br/chat/</a>
+            </p>
+            <p>Para Estudantes e Pesquisadores Acadêmicos, envie um e-mail para
+                reservatecnica@prefeitura.sp.gov.br</p>
 
+            <h4>FAQ - Atendimento ao Cidadão no ARQUIP</h4>
+            <p>Em casos de dúvidas sobre requerimentos, acesse o Chat:<a
+                    href=" https://arquip.prefeitura.sp.gov.br/chat/"> https://arquip.prefeitura.sp.gov.br/chat/</a>
+            </p>
+            <p>Para Estudantes e Pesquisadores Acadêmicos, envie um e-mail para
+                reservatecnica@prefeitura.sp.gov.br</p>
 
+            <h4>1. O que é o Portal de Processos do ARQUIP?</h4>
+            <p>O Portal de Processos do ARQUIP é uma plataforma digital que facilita o acesso aos processos
+                administrativos e documentos sob a guarda do Sistema de Arquivos do Município de São Paulo. Por meio
+                dele, é possível consultar informações, solicitar documentos e acompanhar o andamento de pedidos.
+            </p>
 
+            <h4>2. Como faço para consultar um processo administrativo?</h4>
+            <p>Você pode consultar um processo administrativo acessando o Portal de Processos em <a
+                    href="www.processos.prefeitura.sp.gov.br.">www.processos.prefeitura.sp.gov.br.</a>
+            </p>
 
+            <ul>
+                <li>Consulta por número: Insira o número do protocolo e confirme os caracteres na tela.</li>
+                <li>Consulta por CPF/CNPJ: Informe o CPF ou CNPJ e o ano de autuação do processo para visualizar os
+                    documentos associados.</li>
+            </ul>
 
+            <p>Dica: Não é necessário cadastro para consultas básicas.</p>
 
+            <h4>3. Posso solicitar cópias ou vista de documentos arquivados?</h4>
+            <p>Sim. É possível solicitar cópias digitais ou vistas de documentos diretamente pelo Portal de Processos.
+            </p>
 
+            <ol>
+                <li>Acesse o portal e faça login com sua SenhaWeb.</li>
+                <li>Escolha a opção “Novo Pedido Eletrônico” e selecione o tipo de requerimento correspondente.</li>
+                <li>Insira as informações do processo e anexe os documentos necessários.</li>
+                <li>Aguarde a validação e o processamento do pedido.</li>
+            </ol>
 
+            <h4>4. Como acompanho o andamento de um requerimento?</h4>
+            <p>Após enviar o requerimento:</p>
 
+            <ul>
+                <li>Acompanhe pela área logada no Portal de Processos.</li>
+                <li>Você receberá atualizações pelo e-mail cadastrado na SenhaWeb.</li>
+            </ul>
 
+            <h4>5. Como os documentos solicitados são disponibilizados?</h4>
+            <p>Os documentos são digitalizados e enviados por meio de um link de acesso ao e-mail cadastrado. O link
+                possui prazo de validade, por isso fique atento às notificações.
+            </p>
 
+            <h4>6. Quais documentos posso solicitar?</h4>
+            <p>É possível solicitar:</p>
 
+            <ul>
+                <li>Contratos administrativos.</li>
+                <li>Pareceres técnicos.</li>
+                <li>Plantas de imóveis.</li>
+                <li>Documentos históricos ou administrativos sob custódia do ARQUIP.</li>
+            </ul>
 
+            <h4>7. Como solicito a pesquisa de existência de processos ou plantas?</h4>
 
+            <ol>
+                <li>Acesse o Portal de Processos e faça login.</li>
+                <li>Escolha o requerimento “PROCESSO FÍSICO ARQUIVADO - PESQUISA DE EXISTÊNCIA E DESARQUIVAMENTO
+                    (Planta/Alvará)”.</li>
+                <li>Preencha os dados do imóvel e anexe os documentos pessoais.</li>
+                <li>Aguarde o envio dos resultados por e-mail.</li>
+            </ol>
 
+            <h4>8. Como os pesquisadores acadêmicos podem acessar o acervo do ARQUIP?</h4>
+            <p>Pesquisadores acadêmicos devem:</p>
 
+            <ol>
+                <li>Acessar o Portal de Processos e fazer login com a SenhaWeb.</li>
+                <li>Selecionar o tipo de requerimento “ATENDIMENTO A ESTUDANTES E PESQUISADORES”.</li>
+                <li>Anexar o ofício da universidade e o atestado de matrícula.</li>
+                <li>Detalhar o objeto da pesquisa para agilidade no atendimento.</li>
+            </ol>
 
+            <p>Importante: Esse serviço é gratuito.</p>
 
+            <h4>9. Qual o prazo para atendimento de solicitações?</h4>
+            <p>O prazo para atendimento pode ser de até 60 dias, conforme a Carta de Serviços no SP156.</p>
 
+            <h4>10. Há custos para os serviços do Portal de Processos?</h4>
+            <p>Sim, há cobrança pela autuação do requerimento eletrônico, exceto para pesquisadores acadêmicos, cujo
+                serviço é gratuito.
+            </p>
 
+            <h4>11. Como entrar em contato em caso de dúvidas?</h4>
 
+            <ul>
+                <li>Chat: <a href="https://arquip.prefeitura.sp.gov.br/chat/">https://arquip.prefeitura.sp.gov.br/chat/</a></li>
+                <li>Pesquisadores Acadêmicos: E-mail para reservatecnica@prefeitura.sp.gov.br.</li>
+            </ul>
 
+            <h4>12. Quais são as principais vantagens do Portal de Processos?</h4>
+
+            <ul>
+                <li>Acessibilidade: Consultas e solicitações 100% digitais.</li>
+                <li>Agilidade: Atendimento remoto e rápido.</li>
+                <li>Preservação: Minimiza o manuseio de documentos físicos, garantindo sua preservação.</li>
+                <li>Segurança: Proteção de dados pessoais e sigilo garantido.</li>
+            </ul>
 
 
         </div>
@@ -129,26 +216,11 @@
 
 
 
-
-
-
-
-
-
-
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
+    <?php require_once __DIR__ . "/views/footer-pc.php"
+    ?>
 
 
 </body>
