@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/header-pc.css">
-    <link rel="stylesheet" href="/css/footer-pc.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main-pc.css">
     <link rel="stylesheet" href="/css/pesquisa-processo.css">
     <title>Pesquisa de Existência de Processos/Plantas</title>
@@ -13,7 +13,7 @@
 
 <body>
 
-    <?php require_once __DIR__ . "/views/header-pc.php"
+    <?php require_once __DIR__ . "/views/header.php"
         ?>
 
 
@@ -225,7 +225,7 @@
     
     </div>
 
-        <?php require_once __DIR__ . "/views/footer-pc.php"
+        <?php require_once __DIR__ . "/views/footer.php"
         ?>
 
 </body>
