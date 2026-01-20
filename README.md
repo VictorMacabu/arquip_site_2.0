@@ -196,7 +196,7 @@ Atualizar sua branch com frequência
 Comunicar problemas antes de gerar conflitos
 
 
-12.1 Após o merge:
+12.1 Após o merge: 
 
 A branch da funcionalidade deve ser excluída 
 
