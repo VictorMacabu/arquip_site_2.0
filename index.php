@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página Oficial do Arquip">
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/banner.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
-    <title>ARQUIP</title>
+    <title>Arquip</title>
 </head>
 
 <body>
@@ -42,7 +41,7 @@
             </div>
 
             <!--- CARDS --->
-            <div class="card text-center"><img src="/assets/banner/site 1 1.png" alt="banner de Atendimento ao cidadão">
+            <div class="card text-center"><img src="/assets/banner/card-trabalho.png" alt="banner de Atendimento ao cidadão">
                 <div>
                     <h2>Atendimento ao Cidadão</h2>
                     <ul>
@@ -55,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="card text-center"><img src="/assets/banner/site 2 1.png"
+            <div class="card text-center"><img src="/assets/banner/planilha.png"
                     alt="banner de Atendimento ao servidor">
                 <div>
                     <h2>Atendimento ao Servidor</h2>
@@ -130,7 +129,7 @@
             </div>
         </section>
 
-        <!--- SISTEMAS --->
+        <!--- SISTEMAS PC--->
         <section class="sistemas">
 
             <div class="carrossel-card">
@@ -145,7 +144,7 @@
                 <img src="./assets/sistema-geren/Group 1844.png" alt="">
             </div>
 
-
+            <!--- SISTEMAS MOBILE --->
             <div class="sistema-mobile">
                 <h2>ACESSE NOSSOS SISTEMAS GERENCIADOS</h2>
                 <div class="sei">
@@ -153,52 +152,11 @@
                         SETA
                         <img src="/assets/sistema-geren/icone-sei.png" alt="">SETA
                     </div>
-
                 </div>
             </div>
-        </section>
-
-        <!--- NOTÍCIAS --->
-        <section class="titulo-card">
-            <div class="noticias">
-                <h2>ÚLTIMAS NOTÍCIAS </h2>
-                <div>
-                    <img src="/assets/ultimas-noticias/curiosidade 3.png" alt="ultimas noticias">
-                    <h3>Curiosidades Históricas</h3>
-                    <p>Descubra as principais curiosidades deste mês: de eventos inusitados a fatos surpreendentes que
-                        marcaram as últimas semanas.</p>
-                    <a href="#" class="btn-saiba-mais">
-                        Saiba mais <span class="seta">→</span>
-                    </a>
-                </div>
-            
-
-            
-                <div class="capacitacao">
-                    <img src="/assets/ultimas-noticias/curiosidade 3.png" alt="ultimas noticias">
-                    <h3>Capacitação AGORASEI</h3>
-                    <p>Para aprimorar publicações do Diário Oficial, visando eficiência e qualidade. Profissionais serão treinados nas melhores práticas e ferramentas.</p>
-                    <a href="#" class="btn-saiba-mais">
-                        Saiba mais <span class="seta">→</span>
-                    </a>
-                </div>
-            
-
-            
-            
-                <div class="indicadores">
-                    <img src="/assets/ultimas-noticias/indicadores 1.png" alt="ultimas noticias">
-                    <h3>Indicadores 2023</h3>
-                    <p>Para aprimorar publicações do Diário Oficial, visando eficiência e qualidade. Profissionais serão treinados nas melhores práticas e ferramentas.</p>
-                    <a href="#" class="btn-saiba-mais">
-                        Saiba mais <span class="seta">→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <?php
+<?php
     require_once __DIR__ . '/views/footer.php';
     ?>
 
