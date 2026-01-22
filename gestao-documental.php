@@ -7,16 +7,34 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main-pc.css">
+    <link rel="stylesheet" href="/css/gestao-documental.css">
     <title>Política de Gestão Documental</title>
 </head>
 
 <body>
 
     <?php require_once __DIR__ . "/views/header.php"
-    ?>
+        ?>
 
     <div class="banner-estrutura">
-        <img src="/assets/gestao-documental/banner-gest-doc.png" alt="Banner">
+
+            <div> 
+               <img class="img-esquerda" src="/assets/gestao-documental/mulher-gestao.png" alt="Mulher">
+            </div>
+
+        <div class="texto-banner">
+            <h1>POLÍTICA DE GESTÃO DOCUMENTAL</h1>
+            <p>A Política de Gestão Documental (PGDOC), instituída pela Portaria SGM/SEGES/CGDOC Nº 1 de 24 de maio de
+            2021, define diretrizes para a gestão documental no município de São Paulo, alterando a preservação, o
+            acesso, a eliminação adequada de documentos e o fortalecimento da governança e da transparência
+            administrativa.
+            </p>
+        </div>
+    
+        <div>
+            <img class="img-direita" src="/assets/gestao-documental/icone-gestao.png" alt="Icone">
+        </div>
+
     </div>
 
 
@@ -80,7 +98,7 @@
     </div>
 
     <?php require_once __DIR__ . "/views/footer.php"
-    ?>
+        ?>
 
 
 

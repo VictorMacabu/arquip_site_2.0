@@ -18,7 +18,23 @@
 
 
     <div class="banner-estrutura">
-        <img src="/assets/pesquisa-processo/banner-pesquisa-proc.png" alt="Banner Pesquisa de Existência">
+
+        <div>
+            <img class="img-esquerda" src="/assets/pesquisa-processo/casal-pesquisa-proc.png" alt="Mulher">
+        </div>
+
+        <div class="texto-banner">
+            <h1>PESQUISA DE EXISTÊNCIA DE PROCESSOS/PLANTAS</h1>
+            <p>O ARQUIP oferece o serviço de pesquisa de existência e planta para cidadãos e empresas que necessitam
+                verificar a presença de documentos, como projetos arquitetônicos ou plantas de imóveis, no acervo
+                municipal.
+            </p>
+        </div>
+
+        <div>
+            <img class="img-direita" src="/assets/pesquisa-processo/icone-pesquisa-proc.png" alt="Icone">
+        </div>
+
     </div>
 
     <div class="container-pagina">
@@ -222,10 +238,10 @@
             </ol>
 
         </div>
-    
+
     </div>
 
-        <?php require_once __DIR__ . "/views/footer.php"
+    <?php require_once __DIR__ . "/views/footer.php"
         ?>
 
 </body>

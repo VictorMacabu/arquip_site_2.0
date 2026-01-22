@@ -16,7 +16,23 @@
         ?>
 
     <div class="banner-estrutura">
-        <img src="/assets/pesquisador-academico/banner-academico.png" alt="Banner Pesquisador Acadêmico">
+
+        <div>
+            <img class="img-esquerda" src="/assets/pesquisador-academico/mulher-academico.png" alt="Mulher">
+        </div>
+
+        <div class="texto-banner">
+            <h1>PESQUISADOR ACADÊMICO</h1>
+            <p>O ARQUIP oferece suporte especializado para pesquisadores acadêmicos interessados em acessar e utilizar
+                seu acervo, que é uma fonte valiosa de documentos históricos e administrativos do Município de São
+                Paulo.
+            </p>
+        </div>
+
+        <div>
+            <img class="img-direita" src="/assets/pesquisador-academico/icone-academico.png" alt="Icone">
+        </div>
+
     </div>
 
     <div class="container-pagina">
@@ -197,7 +213,9 @@
             <h4>11. Como entrar em contato em caso de dúvidas?</h4>
 
             <ul>
-                <li>Chat: <a href="https://arquip.prefeitura.sp.gov.br/chat/">https://arquip.prefeitura.sp.gov.br/chat/</a></li>
+                <li>Chat: <a
+                        href="https://arquip.prefeitura.sp.gov.br/chat/">https://arquip.prefeitura.sp.gov.br/chat/</a>
+                </li>
                 <li>Pesquisadores Acadêmicos: E-mail para reservatecnica@prefeitura.sp.gov.br.</li>
             </ul>
 
@@ -220,7 +238,7 @@
 
 
     <?php require_once __DIR__ . "/views/footer.php"
-    ?>
+        ?>
 
 
 </body>

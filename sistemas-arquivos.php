@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main-pc.css">
+    <link rel="stylesheet" href="/css/sistemas-arquivos.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Sistema de Arquivos Do Município</title>
 </head>
@@ -13,12 +15,28 @@
 <body>
 
     <?php require_once __DIR__ . "/views/header.php"
-    ?>
- 
+        ?>
+
     <div class="banner-estrutura">
-        <img src="/assets/sistemas-arquivos/banner-sist-arqv.png" alt="Sistemas Arquivos">
+
+        <div>
+            <img class="img-esquerda" src="/assets/sistemas-arquivos/homem-sistemas.png" alt="Homem">
+        </div>
+
+        <div class="texto-banner">
+            <h1>SISTEMA DE ARQUIVOS DO MUNICÍPIO</h1>
+            <p>O Decreto nº 57.783, de 13 de julho de 2017, regulamenta a gestão e preservação de documentos na
+                administração pública municipal de São Paulo, garantindo o tratamento adequado dos documentos públicos
+                ao longo de seu ciclo de vida.
+            </p>
+        </div>
+
+        <div>
+            <img class="img-direita" src="/assets/sistemas-arquivos/icone-sistema.png" alt="Icone">
+        </div>
+
     </div>
-    
+
     <div class="container-pagina">
 
         <div class="card-secao">
@@ -57,11 +75,12 @@
                     para arquivos permanentes.</li>
             </ul>
 
-        </div>   
+        </div>
     </div>
 
     <?php require_once __DIR__ . "/views/footer.php"
-    ?>
+        ?>
 
 </body>
+
 </html>
