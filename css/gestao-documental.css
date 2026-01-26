@@ -1,16 +1,15 @@
-.card-secao h4{
-    margin-bottom: -1%;
-}
 
 .img-esquerda {
-    width: 440px;
-    margin-bottom: -5px;
-    height: 380px;
+    width: 438px;
+    opacity: 59%;
+    margin-left: -20%;
+    margin-bottom: -4px;
+    height: 349px;
 
 }
 
 .img-direita{ 
-    width: 400px;
+    width: 322px;
     position: relative;
     margin-bottom: -1%;
 

@@ -1,3 +1,32 @@
 .card-secao h4{
     margin-bottom: -1%;
 }
+
+.img-esquerda {
+    width: 383px;
+    margin-bottom: -4px;
+    height: 390px;
+
+}
+
+.img-direita{ 
+    width: 326px;
+    position: relative;
+    margin-bottom: -1%;
+
+}
+
+.texto-banner{
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+
+    & h1{
+        font-size: 36px;
+        margin-top: -18%;
+    }
+
+    & p {
+        font-size: 20px;
+    }
+}

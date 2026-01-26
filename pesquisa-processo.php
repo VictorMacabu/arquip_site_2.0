@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/header-pc.css">
-    <link rel="stylesheet" href="/css/footer-pc.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main-pc.css">
     <link rel="stylesheet" href="/css/pesquisa-processo.css">
     <title>Pesquisa de Existência de Processos/Plantas</title>
@@ -13,12 +13,28 @@
 
 <body>
 
-    <?php require_once __DIR__ . "/views/header-pc.php"
+    <?php require_once __DIR__ . "/views/header.php"
         ?>
 
 
     <div class="banner-estrutura">
-        <img src="/assets/pesquisa-processo/banner-pesquisa-proc.png" alt="Banner Pesquisa de Existência">
+
+        <div>
+            <img class="img-esquerda" src="/assets/pesquisa-processo/casal-pesquisa-proc.png" alt="Mulher">
+        </div>
+
+        <div class="texto-banner">
+            <h1>PESQUISA DE EXISTÊNCIA DE PROCESSOS/PLANTAS</h1>
+            <p>O ARQUIP oferece o serviço de pesquisa de existência e planta para cidadãos e empresas que necessitam
+                verificar a presença de documentos, como projetos arquitetônicos ou plantas de imóveis, no acervo
+                municipal.
+            </p>
+        </div>
+
+        <div>
+            <img class="img-direita" src="/assets/pesquisa-processo/icone-pesquisa-proc.png" alt="Icone">
+        </div>
+
     </div>
 
     <div class="container-pagina">
@@ -222,10 +238,10 @@
             </ol>
 
         </div>
-    
+
     </div>
 
-        <?php require_once __DIR__ . "/views/footer-pc.php"
+    <?php require_once __DIR__ . "/views/footer.php"
         ?>
 
 </body>
