@@ -19,7 +19,7 @@
     ?>
 
     <div class="banner-estrutura">
-        <img src="/assets/estrutura-organizacional/estrutura-ogz.png" alt="Estrutura Organizacional">
+        
     </div>
 
     <div class="container-pagina">
