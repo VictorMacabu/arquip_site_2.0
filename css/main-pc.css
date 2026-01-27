@@ -3,21 +3,36 @@
     src: url(/assets/font-site/Gilroy-Black/Gilroy-Medium.ttf);
 }
 
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-bold.ttf);
+}
+
+
 body{
-    font-family: Gilroy-Medium;
     margin: 0;
 }
+
+h1 {
+    font-family: Gilroy-Bold;
+}
+
+p {
+    font-family: Gilroy-Medium;
+}
+
+ 
+
 
 
 .banner-estrutura {
     display: flex;
     width: 100%;
-    height: 384px;
-    padding-top: 34px;
+    height: 418px;
+    padding-top: 34px; 
     background-repeat: no-repeat;
-    align-items: flex-end;
-    background-image: url(/assets/gestao-documental/banner-gest-doc.png);
     background-size: cover;
+    background-image: url(/assets/gestao-documental/banner-gest-doc.png);
 }
 
 

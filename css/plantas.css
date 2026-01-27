@@ -1,0 +1,33 @@
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+
+    & h1 {
+        padding-top: 100px;
+    }
+
+    & p {
+        font-size: 21px;
+    }
+}
+
+.img-esquerda {
+    width: 454px;
+    height: 378px;
+    margin-bottom: -4px;
+}
+
+.img-direita {
+    width: 400px;
+    height: 276px;
+    margin-bottom: -4px;
+}
+
+.texto-banner {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+    text-align: center;
+    color: #fff;
+}

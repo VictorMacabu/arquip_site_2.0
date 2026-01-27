@@ -1,0 +1,346 @@
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+
+    & h1 {
+        padding-top: 100px;
+    }
+
+    & p {
+        font-size: 21px;
+    }
+}
+
+.img-esquerda {
+    width: 386px;
+    height: 296px;
+    margin-bottom: -4px;
+}
+
+.img-direita {
+    width: 340px;
+    height: 298px;
+    margin-bottom: -4px;
+}
+
+.texto-banner {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     
+    text-align: center;
+    color: #fff;
+}
+
+.container-linha-do-tempo1913-1967 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 92px;
+    font-size: 20px;
+}
+
+
+.texto-principal {
+  width: 420px;                    
+  line-height: 1.4;
+  color: #000;
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+
+
+/*=== 1913 ===*/
+.linha-do-tempo1913 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    & .conector {
+        margin-top: 10px;
+    }
+
+    & h2 {
+        margin-top: -46px;
+    }
+}
+
+
+
+/*=== 1935 ===*/
+.linha-do-tempo1935 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: -47px;
+
+    
+    & h2 {
+        position: relative;
+        bottom: -66px;
+        margin-top: -50px;
+    }
+
+    & img {
+        margin-top: 3px;
+    }
+
+    & .texto-principal {
+        margin-top: 41px;
+    }
+
+ 
+}
+
+
+
+/*=== 1947 ===*/
+
+.linha-do-tempo1947 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -17px;
+    color: white;
+
+
+     & .conector {
+        margin-top: 10px;
+    }
+
+    & h2 {
+        margin-top: -46px;
+    }
+
+}
+
+
+
+/*=== 1967 ===*/
+.linha-do-tempo1967 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -37px;
+    color: white;
+
+      & h2 {
+        position: relative;
+        bottom: -39px;
+        margin-top: -39px;
+    }
+
+    & img {
+        margin-top: -26px;
+    }
+
+    & .texto-principal {
+        margin-top: 38px;
+    }
+}
+
+
+
+.container-linha-do-tempo1977-1997 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 44px;
+    font-size: 20px;
+}
+
+
+ /*=== 1977 ===*/
+.linha-do-tempo1977 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    & .conector {
+        margin-top: 10px;
+    }
+
+    & h2 {
+        margin-top: -46px;
+    }
+}
+
+
+/*=== 1978 ===*/
+.linha-do-tempo1978 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 12px;
+
+    
+    & h2 {
+        position: relative;
+        bottom: -66px;
+        margin-top: -50px;
+    }
+
+    & img {
+        margin-top: 3px;
+    }
+
+    & .texto-principal {
+        margin-top: 41px;
+    }
+}
+
+/*=== 1990 ===*/
+.linha-do-tempo1990 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    & .conector {
+        margin-top: 10px;
+    }
+
+    & h2 {
+        margin-top: -46px;
+    }
+}
+
+/*=== 1997 ===*/
+.linha-do-tempo1997 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 12px;
+
+    
+    & h2 {
+        position: relative;
+        bottom: -66px;
+        margin-top: -50px;
+    }
+
+    & img {
+        margin-top: 3px;
+    }
+
+    & .texto-principal {
+        margin-top: 41px;
+    }
+}
+
+
+.container-linha-do-tempo2001-2004 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 44px;
+    font-size: 20px;
+}
+
+.linha-do-tempo2001 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    & .conector {
+        margin-top: 10px;
+    }
+
+    & h2 {
+        margin-top: -46px;
+    }
+}
+
+.linha-do-tempo2002 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 12px;
+
+    
+    & h2 {
+        position: relative;
+        bottom: -66px;
+        margin-top: -50px;
+    }
+
+    & img {
+        margin-top: 3px;
+    }
+
+    & .texto-principal {
+        margin-top: 41px;
+    }
+}
+
+
+
+.linha-do-tempo2003 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+    & .conector {
+        margin-top: 10px;
+    }
+
+    & h2 {
+        margin-top: -46px;
+    }
+}
+
+
+
+.linha-do-tempo2004 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-top: 12px;
+
+    
+    & h2 {
+        position: relative;
+        bottom: -66px;
+        margin-top: -50px;
+    }
+
+    & img {
+        margin-top: 3px;
+    }
+
+    & .texto-principal {
+        margin-top: 41px;
+    }
+}
+
+hr {
+  border: none;                /* Remove a borda padrão (inset/solid) */
+  border-top: 2px dashed #000; /* Define traço, espessura e cor */
+  color: #fff;                 /* Compatibilidade extra */
+  background-color: #fff;      /* Compatibilidade extra */
+  height: 1px;                 /* Altura da área da linha */
+}

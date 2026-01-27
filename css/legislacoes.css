@@ -1,0 +1,78 @@
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+
+    & h1 {
+        padding-top: 100px;
+    }
+
+    & p {
+        font-size: 21px;
+        
+    }
+
+}
+
+.img-esquerda {
+    width: 309px;
+    height: 316px;
+    margin-bottom: -4px;
+}
+
+.img-direita {
+    width: 344px;
+    height: 298px;
+    margin-bottom: -4px;
+}
+
+.texto-banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.list-texto {
+    
+
+    & ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-top: 55px;
+        
+    }
+
+    & li {
+        margin-bottom: 20px;
+    }
+
+}
+
+.leis-federais,
+.portarias,
+.leis,
+.decretos {
+    padding-top: 17px;
+     
+    & h2 {
+        padding-top: 20px;
+    }
+
+    & ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    & {
+        li {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+a {
+    color: #233abe;
+}
