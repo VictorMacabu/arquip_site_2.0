@@ -1,6 +1,7 @@
 <!-- Carregar header -->
 <header class="capa menu-fixo">
     <div>
+
         <a href="/" id="link-logo">
             <img id="logo-arquip" src="/assets/header/logo-arquip-branco.png" alt="logo-arquip"
                 aria-label="acesso a página da secretaria de gestao municipal">

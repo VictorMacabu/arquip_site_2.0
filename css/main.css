@@ -1,29 +1,3 @@
-/*--- Fontes ---*/
-
-@font-face {
-  font-family: "Gilroy-Light";
-  src: url("/assets/font-site/Gilroy/Gilroy-Light.otf") format("opentype");
-
-}
-
-@font-face {
-  font-family: "Gilroy-Medium";
-  src: url("/assets/font-site/Gilroy/Gilroy-Medium.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Gilroy-ExtraBold";
-  src: url("/assets/font-site/Gilroy/Gilroy-ExtraBold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Gilroy-Bold";
-  src: url("/assets/font-site/Gilroy-Black/gilroy-bold.ttf") format("truetype");
-}
-
-
-/*--- Variáveis---*/
-
 :root {
   --cor-azul-escuro: #00072D;
   --cor-azul-claro: #008BD2;
@@ -43,7 +17,7 @@
 
   .banner {
     padding-top: 351px;
-    background-image: url('/assets/banner/banner.arquivo-pc.png');
+    background-image: url('/assets/banner/index/banner.arquivo-pc.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: left;
@@ -51,12 +25,11 @@
     color: white;
     display: flex;
     align-items: center;
-
     position: relative;
     z-index: 2;
 
     & h1 {
-      font-family: 'Gilroy-Bold', Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.2;
       position: relative;
       top: -169px;
@@ -165,22 +138,55 @@
       button {
         background-color: #00072D;
         color: white;
-        border-radius: 25px;        
+        border-radius: 25px;
         height: 35px;
         width: 108px;
       }
-
-
     }
-
   }
 
-  .sistemas {
-    & h1 {
-      
-    }
+
+  .card-noticias {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 235px;
+  gap: 32px;
+
+  & div {
+    position: relative;
+  }
+
+  img {
+    width: 384px;
+    height: 283px;
+    display: block;
+  }
+
+  h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;  /*--- Isso serve para não ter quebra de linha, permitindo assim o h2 ficar somente em uma linha ---*/
+    position: absolute;
+    top: -21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #00072D;
+    text-align: center;
+    z-index: 2;
+  }
+
+  a {
+    color: #0047FF;
+    text-decoration: none;
+    display: block; /*--- Agora o elemento vai ser comportar como um bloco, sendo movido para o lado que eu quiser ---*/
+    text-align: right; /*--- Isso vai jogar a seta totalmente para a direita ---*/
+    font-size: 19px;
   }
 }
+
+
+}
+
 
 
 
@@ -191,6 +197,12 @@
 /* ==== Mobile ==== */
 
 @media(max-width:800px) {
+
+
+  .card-noticias {
+    display: none;
+  }
+
 
 
 
@@ -380,8 +392,7 @@ p {
   font-weight: 400;
 }
 
-h1,
-h2,
+
 h3 {
   font-family: "Gilroy-Bold";
   font-weight: 300;
