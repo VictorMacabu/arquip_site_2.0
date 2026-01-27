@@ -37,7 +37,7 @@
     <div class="container-pagina">
 
         <div class="card-secao">
-            <p><b>Sistema de Arquivos do Município de São Paulo - SAMSP</b></p>
+            <h3>Sistema de Arquivos do Município de São Paulo - SAMSP</h3>
 
             <p>O decreto define a criação do SAMSP, uma rede que integra todos os arquivos e documentos da administração
                 pública municipal. Esse sistema visa garantir a coordenação e padronização das ações de gestão
@@ -54,7 +54,7 @@
                 promovendo a integração entre os diversos órgãos da administração municipal para a gestão eficiente dos
                 arquivos.</p>
             <br>
-            <p><b>Definição de Gestão Documental</b></p>
+            <h3>Definição de Gestão Documental</h3>
 
             <p>A gestão de documentos, conforme o decreto, envolve o tratamento de documentos públicos em todas as fases
                 do seu ciclo de vida, que inclui:</p>
@@ -76,7 +76,7 @@
     </div>
 
     <?php require_once __DIR__ . "/views/footer.php"
-    ?>
+        ?>
 
 </body>
 
