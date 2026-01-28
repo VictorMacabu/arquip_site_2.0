@@ -1,0 +1,350 @@
+.banner-estrutura{
+    & .img-esquerda{
+        width: 430px;
+        height: 350px;
+    }
+}
+
+.texto-banner{
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+    
+    & h1{
+        font-size: 36px;
+        margin-top: -20%;
+        text-align: center;
+    }
+
+    & p{
+        font-size: 20px;
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+.logo-diario{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -8%;
+}
+
+.img-um{
+    height: 200px;
+    & .pessoas-diario{
+        position: relative;
+        margin-left: 3%;
+        margin-top: -17%;
+        z-index: 1;
+    }
+
+    & .box-um{
+        position: relative;
+        z-index: 0;
+        top: -560px;
+        left: -190px;
+    }
+
+    & .box-dois{
+        position: relative;
+        z-index: 0;
+        top: -550px;
+        right: -875px;
+    }
+
+    & .box-tres{
+        position: relative;
+        z-index: 0;
+        top: -440px;
+        right: -550px;
+    }
+
+    & .txt-um{
+        position: relative;
+        z-index: 1;
+        top: -774px;
+        left: 984px;
+        font-size: 42px;
+        width: 100px;
+    }
+
+    & .txt-dois{
+        position: relative;
+        z-index: 1;
+        top: -764px;
+        left: 984px;
+        font-size: 42px;
+        width: 100px;
+    }
+
+    & .txt-tres{
+        position: relative;
+        z-index: 1;
+        top: -747px;
+        left: 984px;
+        font-size: 42px;
+        width: 580px;
+    }
+}
+
+.sobre-diario{
+    & img{
+        float: right;
+        position: relative;
+        top: 400px;
+    }
+    
+    & h2{
+       position: relative;
+       top: 418px;
+       left: 71px;
+    }
+
+    & p{
+        position: relative;
+        top: 418px;
+        width: 41%;
+        left: 71px;
+        font-size: 20px;
+    }
+}
+
+.card-diario{
+    height: 4100px;
+    & h1{
+        position: relative;
+        top: 740px;
+        left: 499px;
+        width: 36%;
+    }
+}
+
+.card-um{
+    & .base-card{
+        position: relative;
+        top: 810px;
+        left: 5%;
+        z-index: 0;
+    }
+
+    & .sombra-card{
+        position: relative;
+        top: 510px;
+        left: 7%;
+        z-index: 1;
+    }
+
+    & .img-um{
+        position: relative;
+        top: 521px;
+        left: -10.5%;
+        z-index: 2;
+        width: 240px;
+        height: 268px;
+    }
+
+    & .icone-um{
+        position: relative;
+        top: 523px;
+        left: 7%;
+        z-index: 2;
+    }
+
+    & h3{
+        position: relative;
+        top: 271px;
+        left: 27%;
+        z-index: 2;
+        width: 19%;
+    }
+
+    & p{
+        position: relative;
+        top: 275px;
+        left: 27%;
+        z-index: 2;
+        width: 16%;
+        font-size: 20px;
+        opacity: 0.4;
+    }
+}
+
+.card-dois{
+    & .base-card{
+        position: relative;
+        top: 44px;
+        left: 52%;
+        z-index: 0;
+    }
+
+    & .sombra-card{
+        position: relative;
+        top: 20px;
+        left: 10%;
+        z-index: 1;
+    }
+
+    & .img-dois{
+        position: relative;
+        top: 37px;
+        left: -11%;
+        z-index: 2;
+    }
+
+    & .icone-dois{
+        position: relative;
+        top: 26px;
+        left: 2.5%;
+        z-index: 2;
+    }
+
+    & h3{
+        position: relative;
+        top: -220px;
+        left: 74%;
+        width: 1%;
+    }
+
+    & p{
+        position: relative;
+        top: -217px;
+        left: 74%;
+        width: 17%;
+        opacity: 0.4;
+    }
+}
+
+.card-tres{
+    & .base-card{
+        position: relative;
+        top: -132px;
+        left: 5%;
+        z-index: 0;
+    }
+
+    & .sombra-card{
+        position: relative;
+        top: -158px;
+        left: -37.3%;
+        z-index: 1;
+    }
+
+    & .img-tres{
+        position: relative;
+        top: -175px;
+        left: -55%;
+        z-index: 2;
+        width: 242px;
+        height: 216px;
+    }
+
+    & .icone-tres{
+        position: relative;
+        top: -141px;
+        left: -37%;
+        z-index: 2;
+    }
+
+    & p{
+        position: relative;
+        opacity: 0.4;
+        top: -399px;
+        left: 27%;
+        width: 15%;
+    }
+
+    & h3{
+        position: relative;
+        top: -399px;
+        left: 27%;
+    }
+}
+
+.card-quatro{
+    & .base-card{
+        position: relative;
+        top: -622px;
+        left: 52%;
+        z-index: 0;
+    }
+
+    & .sombra-card{
+        position: relative;
+        top: -648px;
+        left: 10.1%;
+        z-index: 1;
+    }
+
+    & .img-quatro{
+        position: relative;
+        top: -622px;
+        left: -8%;
+        z-index: 2;
+    }
+
+    & .icone-quatro{
+        position: relative;
+        top: -647px;
+        left: 9%;
+        z-index: 2;
+    }
+
+    & p{
+        position: relative;
+        top: -888px;
+        left: 74%;
+        width: 16%;
+        opacity: 0.4;
+    }
+
+    & h3{
+        position: relative;
+        top: -888px;
+        left: 74%;
+    }
+}
+
+.conteudo-meio{
+    & .conteudo-diario{
+        position: relative;
+        top: -720px;
+        left: -16%;
+        width: 132%;
+    }
+}
+
+.box-meio{
+    & .box-azul{
+        position: relative;
+        top: -500px;
+        left: 5%;
+    }
+
+    & .box-branco{
+        position: relative;
+        top: -600px;
+        left: 12%;
+    }
+
+    & .txt-preto{
+        position: relative;
+        font-size: 24px;
+        top: -683px;
+        left: 20%;
+    }
+
+    & .txt-branco{
+        position: relative;
+        font-size: 24px;
+        top: -736px;
+        left: 62%;
+        color: white;
+    }
+}
+
+.img-fim{
+    position: relative;
+    top: -649px;
+    left: -16%;
+    width: 132%;
+}
