@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/main-pc.css">
+    <link rel="stylesheet" href="/css/portal-processo.css">
+    <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
+    <title>Portal de Processos</title>
+</head>
+
+<body>
+
+    <?php require_once __DIR__ . "/views/header.php"
+        ?>
+
+    <div class="banner-estrutura">
+
+        <div>
+            <img class="img-esquerda" src="/assets/portal-processo/mulher-portal-processo.png" alt="Mulher">
+        </div>
+
+        <div class="texto-banner">
+            <h1>PORTAL DE PROCESSOS</h1>
+            <p>O Portal de Processos do ARQUIP é uma plataforma desenvolvida para facilitar o acesso aos processos
+                administrativos e à documentação arquivística gerida pelo Sistema de Arquivos do Município de São Paulo.
+            </p>
+        </div>
+
+        <div>
+            <img class="img-direita" src="/assets/portal-processo/icone-portal-processo.png" alt="Icone">
+        </div>
+
+    </div>
+
+
+
+    <div class="container-pagina">
+        <div class="card-secao">
+            <div class="img-portal">
+
+                <img src="/assets/portal-processo/pessoas-portal.png" class="pessoas" alt="Pessoas">
+
+
+                <img src="/assets/portal-processo/triangulo-portal.png" class="triangulo" alt="Triangulo">
+
+                <img src="/assets/portal-processo/ratangulo-portal.png" class="retangulo" alt="Retangulo">
+
+            </div>
+
+
+            <div class="texto-azul">
+                <h3>Esse portal visa garantir:</h3>
+
+                <ul>
+                    <li>Transparência</li>
+                    <li>Acessibilidade </li>
+                    <li>Eficiência no atendimento <br> ao cidadão</li>
+                </ul>
+
+                <p>Permitindo consultas online e <br> fornecimento de informações <br> sobre documentos e processos
+                    <br> sob
+                    a custódia do ARQUIP.
+                </p>
+            </div>
+
+
+
+            <div class="card-portal">
+                <div class="card-um">
+                    <img src="/assets/portal-processo/circulo-preto.png" class="circulo-preto" alt="Ciruclo Preto">
+                    <img src="/assets/portal-processo/icone-um.png" class="icone-um" alt="Primeiro Icone">
+                    <img src="/assets/portal-processo/circulo-menor.png" class="circulo-menor" alt="Circulo Menor">
+                    <img src="/assets/portal-processo/circulo-contorno.png" class="contorno" alt="Contorno">
+                    <span class="numero-card">01</span>
+                </div>
+
+                <h3 class="titulo-um">Consultar Processos Administrativos</h3>
+
+                <p class="txt-um">Com ferramentas de busca, é possível acessar informações sobre processos
+                    administrativos, pesquisando
+                    por número, ano ou assunto, incluindo detalhes e, às vezes, andamento ou documentos.
+                </p>
+
+                <div class="card-dois">
+                    <img src="/assets/portal-processo/circulo-azul.png" class="circulo-azul" alt="Circulo Azul">
+                    <img src="/assets/portal-processo/icone-dois.png" class="icone-dois" alt="Segundo Icone">
+                    <img src="/assets/portal-processo/circulo-menor.png" class="circulo-menor" alt="Circulo Menor">
+                    <img src="/assets/portal-processo/circulo-contorno.png" class="contorno" alt="Contorno">
+                    <span class="numero-card">02</span>
+                </div>
+
+                <h3 class="titulo-dois">Solicitar vista de processos e seus documentos</h3>
+
+                <p class="txt-dois">O portal permite solicitar certificações e cópias digitais de documentos
+                    arquivísticos, como contratos, pareceres, plantas e outros do acervo do ARQUIP, tudo de forma
+                    digital.
+                </p>
+
+                <div class="card-tres">
+                    <img src="/assets/portal-processo/circulo-azul.png" class="circulo-azul" alt="Circulo Azul">
+                    <img src="/assets/portal-processo/icone-tres.png" class="icone-tres" alt="Terceiro Icone">
+                    <img src="/assets/portal-processo/circulo-menor.png" class="circulo-menor" alt="Circulo Menor">
+                    <img src="/assets/portal-processo/circulo-contorno.png" class="contorno" alt="Contorno">
+                    <span class="numero-card">03</span>
+                </div>
+
+                <h3 class="titulo-tres">Acompanhamento de Pedidos</h3>
+
+                <p class="txt-tres">Após solicitar vistas a algum processo, o cidadão pode acompanhar o andamento do
+                    pedido pelo portal, obtendo informações sobre o status do atendimento e prazos previstos para
+                    conclusão.
+                </p>
+
+                <div class="card-quatro">
+                    <img src="/assets/portal-processo/circulo-azul.png" class="circulo-azul" alt="Circulo Azul">
+                    <img src="/assets/portal-processo/icone-quatro.png" class="icone-quatro" alt="Quarto Icone">
+                    <img src="/assets/portal-processo/circulo-menor.png" class="circulo-menor" alt="Circulo Menor">
+                    <img src="/assets/portal-processo/circulo-contorno.png" class="contorno" alt="Contorno">
+                    <span class="numero-card">04</span>
+                </div>
+
+                <h3 class="titulo-quatro">Atendimento ao Pesquisador</h3>
+
+                <p class="txt-quatro">No portal, o pesquisador acadêmico pode solicitar consultas a processos ou
+                    documentos do acervo
+                    ARQUIP, realizados de forma digital ou presencial.
+                </p>
+
+
+
+            </div>
+
+            <div class="conteudo-portal">
+                <h2>A PLATAFORMA FOI DESENVOLVIDA PARA MODERNIZAR A GESTÃO DOCUMENTAL</h2>
+
+                <p class="subtitulo-portal">Para garantir uma comunicação mais ágil entre o ARQUIP e os cidadãos, além de promover a
+                    transparência
+                    dos atos administrativos. Entre os principais benefícios do portal, destacam-se:
+                </p>
+
+                <ul>
+                    <li><b>Acessibilidade:</b> O cidadão pode consultar informações e solicitar documentos sem precisar
+                        se deslocar até a sede do ARQUIP, acessando o portal de qualquer lugar com acesso à internet.
+                    </li>
+                    <li><b>Transparência:</b> Ao centralizar informações sobre processos administrativos e documentos
+                        públicos, o portal contribui para uma administração pública mais transparente, permitindo o
+                        acompanhamento das atividades documentais do município.
+                    </li>
+                    <li><b>Eficiência no Atendimento:</b> Com funcionalidades que automatizam parte do processo de
+                        atendimento, o portal permite respostas mais rápidas aos pedidos de informação e facilita o
+                        trabalho da equipe do ARQUIP.
+                    </li>
+                </ul>
+
+                <h4>Quem Pode Utilizar o Portal?</h4>
+
+                <p>O Portal de Processos do ARQUIP é aberto a todos os cidadãos, empresas, e instituições interessadas
+                    em acessar informações públicas do acervo do município de São Paulo. O portal também é uma
+                    ferramenta importante para pesquisadores, historiadores e demais profissionais que necessitam de
+                    documentos públicos para seus estudos e atividades.
+                </p>
+
+                <h4>Como Acessar?</h4>
+
+                <p>Para acessar o Portal de Processos do ARQUIP, basta visitar o site oficial do ARQUIP e seguir as
+                    orientações para cadastro e consulta de processos. O portal é intuitivo e oferece suporte ao usuário
+                    para garantir que todos os cidadãos consigam utilizar suas funcionalidades com facilidade. Além disso,
+                    poderá realizar o acesso através do endereço eletrônico: 
+                    <a href="www.processos.prefeitura.sp.gov.br.">www.processos.prefeitura.sp.gov.br.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <?php require_once __DIR__ . "/views/footer.php"
+    ?>
+</body>
+
+</html>
