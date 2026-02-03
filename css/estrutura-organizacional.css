@@ -3,14 +3,9 @@
     align-items: flex-end;
 }
 
-
 .img-esquerda {
-    width: 454px;
-    height: 401px;
-    margin-bottom: -4px;
-}
-
-.img-direita{ 
+    width: 512px;
+    height: 415px;
     margin-bottom: -4px;
 }
 
@@ -19,15 +14,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #ffff;
+    color: #fff;
     text-align: center;
-}
-
-
-h2 {
-    color: #00072D;
-}
-
-a {
-    color: blue;
 }

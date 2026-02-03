@@ -7,7 +7,7 @@
     <meta name="description" content="Página Oficial do Arquip">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/footer-index.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Arquip</title>
 </head>
@@ -24,7 +24,7 @@
     <section class="banner">
         <div class="banner-texto">
             <h1>ARQUIVO PÚBLICO MUNICIPAL</h1>
-            <h2>Jornalista Paulo Roberto Dutra</h2>
+            <h2 >Jornalista Paulo Roberto Dutra</h2>
         </div>
     </section>
 
@@ -163,23 +163,26 @@
                 <div>
                     <img src="/assets/ultimas-noticias/curiosidade 3.png" alt="Curiosidades Históricas">
                     <h3>Curiosidades Históricas</h3>
-                    <p>Descubra as principais curiosidades deste mês...</p>
-                    <a href="/">Saiba mais  →</a>
+                    <p>Descubra as principais curiosidades deste mês: de eventos inusitados a fatos surpreendentes que marcaram as últimas semanas.
+                    </p>
+                    <a href="/">Saiba mais →</a>
                 </div>
 
                 <div class="card-destaque">
                     <h2>ÚLTIMAS NOTÍCIAS</h2>
                     <img src="/assets/ultimas-noticias/curiosidade 3.png" alt="Capacitação AGORASEI">
                     <h3>Capacitação AGORASEI</h3>
-                    <p>Para aprimorar publicações do Diário Oficial...</p>
-                    <a href="/">Saiba mais  →</a>
+                    <p>Para aprimorar publicações do Diário Oficial, visando eficiência e qualidade. Profissionais serão treinados nas melhores práticas e ferramentas.
+                    </p>
+                    <a href="/">Saiba mais →</a>
                 </div>
 
                 <div>
                     <img src="/assets/ultimas-noticias/indicadores 1.png" alt="Indicadores 2023">
                     <h3>Indicadores 2023</h3>
-                    <p>Servidor, confira os principais dados...</p>
-                    <a href="/">Saiba mais  →</a>
+                    <p>Servidor, confira os principais dados dos núcleos do ARQUIP em 2023. A sua visualização é importante para atingir as metas desse ano.
+                    </p>
+                    <a href="/">Saiba mais →</a>
                 </div>
 
             </div>
@@ -189,7 +192,7 @@
     </main>
 
     <?php
-    require_once __DIR__ . '/views/footer.php';
+    require_once __DIR__ . '/views/footer-index.php';
     ?>
 
 </body>
