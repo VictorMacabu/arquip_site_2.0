@@ -1,34 +1,77 @@
+@media (max-width: 1250px) {
+     nav{
+        display: none;
+    }
+
+    .img-esquerda{
+        display: none;
+    }
+
+    .img-direita{
+        display: none;
+    }
+   
+    .banner-estrutura{
+        visibility: hidden;
+    }
+
+    .texto-banner{
+        visibility: visible;
+        
+        & h1{
+            color: black;
+            position: relative;
+            top: 75px;
+
+        }
+
+        & p{
+            color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            top: 71px;
+       }
+    }
+
+    .img-portal{
+        .pessoas{
+            
+        }
+    }
+}
+
 .card-secao {
 
 }
 
 .img-esquerda {
-    width: 360px;
+    width: auto;
     margin-bottom: -4px;
-    height: 310px;
+    height: auto;
 
 }
 
 .img-direita{ 
-    width: 323px;
+    width: auto;
+    height: auto;
     position: relative;
     margin-bottom: -1%;
 
 }
 
 .texto-banner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
     text-align: center;
-    line-height: 1.5;
-    color: white;
+}
 
-    & h1{
-        font-size: 36px;
-        margin-top: -18%;
-    }
-
-    & p {
-        font-size: 20px;
-    }
+.banner-estrutura{
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .img-portal {

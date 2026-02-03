@@ -1,26 +1,25 @@
 .banner-estrutura{
+    justify-content: space-between;
+    align-items: flex-end;
+    
     & .img-esquerda{
-        width: 430px;
-        height: 350px;
+        width: auto;
+        height: auto;
+    }
+
+    & .img-direita{
+        width: auto;
+        height: auto;
     }
 }
 
 .texto-banner{
-    color: white;
-    line-height: 1.5;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
     text-align: center;
-    
-    & h1{
-        font-size: 36px;
-        margin-top: -20%;
-        text-align: center;
-    }
-
-    & p{
-        font-size: 20px;
-        width: 60%;
-        margin-left: 20%;
-    }
 }
 
 .logo-diario{
@@ -62,7 +61,7 @@
     & .txt-um{
         position: relative;
         z-index: 1;
-        top: -774px;
+        top: -779px;
         left: 984px;
         font-size: 42px;
         width: 100px;
@@ -71,7 +70,7 @@
     & .txt-dois{
         position: relative;
         z-index: 1;
-        top: -764px;
+        top: -781px;
         left: 984px;
         font-size: 42px;
         width: 100px;
@@ -80,8 +79,8 @@
     & .txt-tres{
         position: relative;
         z-index: 1;
-        top: -747px;
-        left: 984px;
+        top: -776px;
+        left: 982px;
         font-size: 42px;
         width: 580px;
     }
@@ -338,6 +337,7 @@
         font-size: 24px;
         top: -736px;
         left: 62%;
+        width: 25%;
         color: white;
     }
 }

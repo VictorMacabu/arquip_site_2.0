@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/main-pc.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/pesquisador-academico.css">
+    <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Pesquisador Acadêmico</title>
 </head>
 

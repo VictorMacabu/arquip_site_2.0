@@ -1,0 +1,31 @@
+footer{
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    font-size: 11px;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    & .arquip{
+        width: 113px;
+        height: 39px;
+    }
+
+    & .nome-arquip{
+        position: relative;
+        top: -8px;
+    }
+}
+
+.prefeitura{
+    width: 175px;
+    height: 175px;
+    float: right;
+    display: flex;
+}
+
+.info-footer{
+    font-family: Gilroy-Medium;
+}

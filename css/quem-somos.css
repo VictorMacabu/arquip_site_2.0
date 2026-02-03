@@ -1,15 +1,60 @@
+@media (max-width: 1250px) {
+    nav{
+        display: none;
+    }
+    
+    .imagem-right{
+        float: none;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        & img{
+            max-width: 100%;
+            display: block;
+        }
+    }
+
+    .imagem-left{
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        & img{
+            max-width: 100%;
+            display: block;
+            margin-top: -12%;
+            margin-bottom: 7%;
+        }
+
+        & h2{
+            font-size: 16px;
+        }
+    }
+
+}
+
 .imagem-right{
     float: right;
 }
 
 .imagem-left{
+    & img{
     float: left;
-    margin-top: -2%;
+    margin-top: -7%;
     margin-right: 2%;
-    
+    }
+
+    & h2{
+        margin-top: 4%;
+    }
 }
 
 .last-txt{
     font-size: 20px; 
+    margin-top: -6%;
+
 }
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main-pc.css">
     <link rel="stylesheet" href="/css/gestao-documental.css">
+    <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Política de Gestão Documental</title>
 </head>
 

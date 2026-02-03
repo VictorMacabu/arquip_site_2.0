@@ -19,22 +19,19 @@
     ?>
 
     <div class="banner-estrutura">
-
         <div>
-            <img class="img-esquerda" src="/assets/banner/estrutura-organizacional/img-amigos.png" alt="Amigos conversando sobre trabalho">
+            <img class="img-esquerda" src="/assets/estrutura-organizacional/pessoas-estrutura.png" alt="Pessoas">
         </div>
-
         <div class="texto-banner">
             <h1>ESTRUTURA ORGANIZACIONAL</h1>
-            <p>
-                O Decreto nº 62.208, de 28 de fevereiro de 2023, define as atribuições do Arquivo Público do Município de São Paulo (ARQUIP), reforçando seu papel estratégico na gestão, preservação e acesso aos documentos públicos municipais.
+            <p>O Decreto nº 62.208, de 28 de fevereiro de 2023, define as atribuições do Arquivo Público do Município de
+                São Paulo (ARQUIP), reforçando seu papel estratégico na gestão, preservação e acesso aos documentos
+                públicos municipais.
             </p>
         </div>
-
         <div>
-            <img class="img-direita" src="" alt="Icone de estrutura">
+            <img class="img-direita" src="/assets/estrutura-organizacional/icone-estrutura.png" alt="Icone">
         </div>
-
     </div>
 
     <div class="container-pagina">
@@ -125,7 +122,7 @@
     </div>
 
     <?php require_once __DIR__ . "/views/footer.php"
-    ?>
+        ?>
 
 
 

@@ -1,18 +1,24 @@
 .texto-banner{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
     text-align: center;
-    line-height: 1.5;
-    color: white;
-    & h1{
-        font-size: 36px;
-        margin-top: -23%;
-        text-align: center;
-        margin-left: -33%;
+}
+
+.banner-estrutura{
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    & .img-esquerda{
+        width: auto;
+        height: auto;
     }
 
-    & p {
-        font-size: 20px;
-        margin-left: -15%;
-        width: 99%;
+    & .img-direita{
+        width: auto;
+        height: auto;
     }
 }
 
