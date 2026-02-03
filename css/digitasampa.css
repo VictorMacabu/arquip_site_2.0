@@ -1,0 +1,148 @@
+/*====== PC ======*/
+
+
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+}
+
+
+.img-esquerda {
+    width: auto;
+    height: auto;
+    margin-bottom: -4px;
+}
+
+.img-direita {
+    width: auto;
+    height: auto;
+    float: right;
+    margin-bottom: 0;
+}
+
+.centralizar {
+    width: 27.375rem;
+}
+
+.container-pagina {
+    padding-top: 92px;
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: #ffffff;
+    font-size: 20px;
+
+}
+
+.texto-banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.conteudo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.conteudo h2 {
+    position: absolute;
+    top: 15%;
+    right: 47%;
+    font-size: 2.125rem;
+    color: #fff;
+    line-height: 1.5;
+
+    & span {
+        background-color: #008BD2;
+    }
+}
+
+
+.conteudo p {
+    position: absolute;
+    top: 55%;
+    right: 46%;
+    font-size: 1.5625rem;
+    color: #fff;
+}
+
+
+.conteudo img {
+    width: 100%;
+}
+
+.container-reducao {
+    display: flex;
+    margin-top: 4%;
+}
+
+.img-reducao {
+    margin-left: 4%;
+}
+
+.text-center {
+    margin: 0.125rem;
+}
+
+.final {
+    text-align: center;
+    margin-top: 9%;
+
+    & h1 {
+        color: #008BD2;
+    }
+}
+
+
+
+
+/*====== MOBILE ======*/
+
+
+
+@media (max-width: 800px) {
+
+    .conteudo {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .conteudo h2 {
+        position: absolute;
+        top: 15%;
+        right: 43%;
+        font-size: 2.125rem;
+        color: #fff;
+        line-height: 1.5;
+
+        & span {
+            background-color: #008BD2;
+        }
+    }
+
+
+    .conteudo p {
+        position: absolute;
+        top: 55%;
+        right: 43%;
+        font-size: 1.5625rem;
+        color: #fff;
+    }
+
+
+    .conteudo img {
+        width: 100%;
+    }
+
+
+
+}

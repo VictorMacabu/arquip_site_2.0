@@ -1,102 +1,90 @@
-:root {
-  --cor-azul-escuro: #00072D;
-  --cor-azul-claro: #008BD2;
+/* ====== FONTES ======*/
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(/assets/font-site/Gilroy-Black/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-Bold;
+  src: url(/assets/font-site/Gilroy-Black/gilroy-bold.ttf);
 }
 
 
 
-/*  =====  Pc  ===== */
-
-@media(min-width:1280px) {
 
 
+/* ====== ESTILO GERAL ======*/
 
-  .banner {
-    display: none;
-  }
+body {
+  margin: 0;
+}
 
-  .banner {
-    padding-top: 351px;
-    background-image: url('/assets/banner/index/banner.arquivo-pc.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: left;
-    width: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 2;
 
-    & h1 {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.2;
-      position: relative;
-      top: -169px;
-      left: 116px;
-      font-size: 43px;
-    }
+h1,
+h2,
+h3,
+h4 {
+  font-family: Gilroy-Bold;
+}
 
-    & h2 {
-      font-family: 'Arial';
-      font-size: 29px;
-      position: relative;
-      top: -187px;
-      left: 113px;
-    }
-  }
+p,
+ol,
+ul,
+li {
+  font-family: Gilroy-Medium;
+}
 
-  /* === Before funciona como se fosse um elemento HTML invisível criado dentro do banner. É como se o CSS criasse uma folha transparente em cima do banner ===*/
-  .banner::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: 32%;
-    z-index: -1;
-  }
+
+
+
+/*  =====  PC  ===== */
+
+@media(min-width:800px) {
+
 
 
   .sistema-mobile {
     display: none;
   }
 
-
-
-  * .carrossel-card {
+  .banner {
+    margin-top: -42px;
+    background-image: url('/assets/banner/index/banner-arquivo-pc.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
     width: 100%;
+    height: 465px;
+    color: white;
     display: flex;
+    align-items: center;
 
-    & .carrossel-sistema {
-      width: 70%;
+  }
 
-      & h2 {
-        height: 30%;
-      }
+  .banner-texto {
+    display: flex;
+    height: calc(100% - 80px);
+    width: 100%;
+    flex-direction: column;
 
+    & h1 {
+      line-height: 1.2;
+      margin-top: 5.25rem;
+      font-size: 3.312rem;
+      margin-left: 11rem;
+      margin-bottom: 0.9375rem;
+      max-width: 46.5625rem;
     }
 
-    & .carrossel {
-      height: 56%;
-      display: flex;
-      justify-content: space-around;
-
-      & div {
-        margin-top: 0;
-        width: 28%;
-      }
-
-      & #um {
-        background-image: url(/assets/sistema-geren/icone-sei.png);
-        background-repeat: no-repeat;
-        background-size: 80%;
-        background-position: center;
-      }
+    & h2 {
+      font-size: 1.8125rem;
+      margin-left: 11rem;
+      max-width: 46.5625rem;
     }
   }
+
+
 
   .primeira-secao,
   .segunda-secao {
@@ -146,43 +134,79 @@
   }
 
 
+  * .carrossel-card {
+    width: 100%;
+    display: flex;
+
+    & .carrossel-sistema {
+      width: 70%;
+
+      & h2 {
+        height: 30%;
+      }
+
+    }
+
+    & .carrossel {
+      height: 56%;
+      display: flex;
+      justify-content: space-around;
+
+      & div {
+        margin-top: 0;
+        width: 28%;
+      }
+
+      & #um {
+        background-image: url(/assets/sistema-geren/icone-sei.png);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: center;
+      }
+    }
+  }
+
+
+
   .card-noticias {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 235px;
-  gap: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 235px;
+    gap: 32px;
 
-  & div {
-    position: relative;
+    & div {
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+      height: 65%;
+      display: block;
+    }
+
+    h2 {
+      white-space: nowrap;
+      /*--- Isso serve para não ter quebra de linha, permitindo assim o h2 ficar somente em uma linha ---*/
+      position: absolute;
+      top: -21%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      color: #00072D;
+      text-align: center;
+      z-index: 2;
+    }
+
+    a {
+      color: #0047FF;
+      text-decoration: none;
+      display: block;
+      /*--- Agora o elemento vai ser comportar como um bloco, sendo movido para o lado que eu quiser ---*/
+      text-align: right;
+      /*--- Isso vai jogar a seta totalmente para a direita ---*/
+      font-size: 19px;
+    }
   }
-
-  img {
-    width: 384px;
-    height: 283px;
-    display: block;
-  }
-
-  h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    white-space: nowrap;  /*--- Isso serve para não ter quebra de linha, permitindo assim o h2 ficar somente em uma linha ---*/
-    position: absolute;
-    top: -21%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    color: #00072D;
-    text-align: center;
-    z-index: 2;
-  }
-
-  a {
-    color: #0047FF;
-    text-decoration: none;
-    display: block; /*--- Agora o elemento vai ser comportar como um bloco, sendo movido para o lado que eu quiser ---*/
-    text-align: right; /*--- Isso vai jogar a seta totalmente para a direita ---*/
-    font-size: 19px;
-  }
-}
 
 
 }
@@ -199,47 +223,10 @@
 @media(max-width:800px) {
 
 
+
+
+
   .card-noticias {
-    display: none;
-  }
-
-
-
-
-  .banner {
-    padding-top: 195px;
-    background-image: url('/assets/banner/banner-arquivo-mobile.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: left;
-    width: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-
-
-    position: relative;
-    z-index: 1;
-
-    & h1 {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      line-height: 1.2;
-      position: relative;
-      top: -103px;
-      left: 20px;
-      font-size: 32px;
-    }
-
-    & h2 {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 24px;
-      position: relative;
-      top: -118px;
-      left: 15px;
-    }
-  }
-
-  nav {
     display: none;
   }
 
@@ -253,6 +240,41 @@
   }
 
   .texto-mobile {
+    display: none;
+  }
+
+  .banner {
+    padding-top: 195px;
+    background-image: url('/assets/banner/index/banner-arquivo-mobile.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+
+
+    position: relative;
+    z-index: 1;
+
+    & h1 {
+      line-height: 1.2;
+      position: relative;
+      top: -103px;
+      left: 20px;
+      font-size: 32px;
+    }
+
+    & h2 {
+      font-size: 24px;
+      position: relative;
+      top: -118px;
+      left: 15px;
+    }
+  }
+
+  nav {
     display: none;
   }
 
@@ -387,14 +409,8 @@ main {
   }
 }
 
-p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
-}
-
 
 h3 {
-  font-family: "Gilroy-Bold";
   font-weight: 300;
 }
 

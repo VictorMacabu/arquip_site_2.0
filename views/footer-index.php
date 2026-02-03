@@ -1,16 +1,10 @@
 <footer>
     <address class="info-footer">
-<<<<<<< HEAD
-        Secretaria Municipal de Gestão <br>
-       <b>ARQUIVO PÚBLICO MUNICIPAL</b> <br>
-        Jornalista Paulo Roberto Dutra <br>
-=======
         <div class="rodape">
             Secretaria Municipal de Gestão <br>
             <span>ARQUIVO PÚBLICO MUNICIPAL</span> <br>
             Jornalista Paulo Roberto Dutra <br>
         </div>
->>>>>>> d134a74018b960f71a49f4d3e24b0e77bb4b6c05
         R. Léo Ribeiro de Morães, 66 - Freguesia do Ó <br>
         São Paulo/SP- Brasil <br>
 
@@ -22,5 +16,15 @@
 
     <address class="arquip">
         <img src="/assets/footer/logo-arquip.png" alt="Logo Arquip">
+    </address>
+
+    <address>
+        <div class="footer-esquerda">
+            <p><a href="https://arquip.prefeitura.sp.gov.br/app/mapa-do-site/" target="_blank" style="color: #fff;">Mapa do Site</a></p>
+            <p>Desenvolvido por Arquip ©</p>
+            <p>Atualizado em 08/01/2025</p>
+            <p>Contato:<a href="arquip@prefeitura.sp.gov.br" target="_blank" style="color: #fff;"> arquip@prefeitura.sp.gov.br</a></p>
+            <p>Atendimento Virtual</p>
+        </div>
     </address>
 </footer>

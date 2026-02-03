@@ -19,13 +19,13 @@
 
     <div class="banner-estrutura">
 
-        <div>
+        <div class="centralizar">
             <img class="img-esquerda" src="/assets/banner/sistema-de-arquivos/jovem-trabalhando.png" alt="Jovem trabalhando">
         </div>
 
         <div class="texto-banner">
             <h1>SISTEMA DE ARQUIVOS DO MUNICÍPIO</h1>
-            <p>O Decreto nº 57.783, de 13 de julho de 2017, regulamenta a gestão e preservação de<br> documentos na administração pública municipal de São Paulo, garantindo o tratamento<br> adequado dos documentos públicos ao longo de seu ciclo de vida.</p>
+            <p>O Decreto nº 57.783, de 13 de julho de 2017, regulamenta a gestão e preservação de <br> documentos na administração pública municipal de São Paulo, garantindo o tratamento adequado dos documentos públicos ao longo de seu ciclo de vida.</p>
         </div>
 
         <div>
@@ -37,7 +37,7 @@
     <div class="container-pagina">
 
         <div class="card-secao">
-            <h3>Sistema de Arquivos do Município de São Paulo - SAMSP</h3>
+            <h2>Sistema de Arquivos do Município de São Paulo - SAMSP</h2>
 
             <p>O decreto define a criação do SAMSP, uma rede que integra todos os arquivos e documentos da administração
                 pública municipal. Esse sistema visa garantir a coordenação e padronização das ações de gestão
@@ -54,7 +54,7 @@
                 promovendo a integração entre os diversos órgãos da administração municipal para a gestão eficiente dos
                 arquivos.</p>
             <br>
-            <h3>Definição de Gestão Documental</h3>
+            <h2>Definição de Gestão Documental</h2>
 
             <p>A gestão de documentos, conforme o decreto, envolve o tratamento de documentos públicos em todas as fases
                 do seu ciclo de vida, que inclui:</p>

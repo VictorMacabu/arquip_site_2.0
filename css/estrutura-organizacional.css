@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width: 1250px) {
      nav{
         display: none;
@@ -72,4 +73,24 @@
     & p{
         font-size: 20px;
     }
+=======
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.img-esquerda {
+    width: 512px;
+    height: 415px;
+    margin-bottom: -4px;
+}
+
+.texto-banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+>>>>>>> d134a74018b960f71a49f4d3e24b0e77bb4b6c05
 }

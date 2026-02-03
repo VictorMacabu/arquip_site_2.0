@@ -5,23 +5,14 @@
 
 
 .img-esquerda {
-    width: 476px;
-    height: 326px;
+    width: 420px;
+    height: 322px;
     margin-bottom: -4px;
 }
 
-.centralizar {
-    width: 373px;
+.img-direita{
+    margin-bottom: -4px;
 }
-
-
-.img-direita {
-    width: 373px;
-    height: 295px;
-    float: right;
-    margin-bottom: 0px;
-}
-
 
 
 .texto-banner {
@@ -29,8 +20,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #fff;
+    color: #ffff;
     text-align: center;
 }
-
-

@@ -1,0 +1,54 @@
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.img-esquerda {
+    width: 407px;
+    height: 432px;
+    margin-bottom: -4px;
+}
+
+.img-direita {
+    width: 379px;
+    height: 303px;
+
+    margin-bottom: 0px;
+}
+
+.texto-banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+
+.pagina {
+    padding-top: 92px;
+    margin-left: 12%;  
+    margin-right: 12%; 
+    background-color: white;
+    font-size: 20px;
+    display: flex;      
+    align-items: center; 
+    gap: 50px;          
+}
+
+
+
+.texto h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+    font-size: 29px;
+}
+
+
+.foto {
+    display: flex;
+    justify-content: center;
+}
+

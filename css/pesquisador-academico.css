@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width: 1250px) {
      nav{
         display: none;
@@ -43,33 +44,40 @@
 
 .card-secao h4{
     margin-bottom: -1%;
+=======
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+>>>>>>> d134a74018b960f71a49f4d3e24b0e77bb4b6c05
 }
+
 
 .img-esquerda {
     width: 383px;
+    height: 406px;
     margin-bottom: -4px;
-    height: 390px;
-
 }
 
-.img-direita{ 
+.img-direita {
     width: 326px;
-    position: relative;
-    margin-bottom: -1%;
-
+    height: 281px;
+    float: right;
+    margin-bottom: 0px;
 }
 
-.texto-banner{
+.centralizar {
+    width: 383px;
+}
+
+.texto-banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
     text-align: center;
-    line-height: 1.5;
-    color: white;
+}
 
-    & h1{
-        font-size: 36px;
-        margin-top: -18%;
-    }
-
-    & p {
-        font-size: 20px;
-    }
+a {
+    color: blue;
 }
