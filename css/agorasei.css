@@ -1,25 +1,25 @@
 .banner-estrutura{
+    justify-content: space-between;
+    align-items: flex-end;
+
     & .img-esquerda{
-        width: 480px;
-        height: 350px;
+        width: auto;
+        height: auto;
+    }
+
+    & .img-direita{
+        width: auto;
+        height: auto;
     }
 
     & .texto-banner{
-        text-align: center;
-        line-height: 1.5;
-        color: white;
-
-        & h1{
-            font-size: 36px;
-            margin-top: -21%;
-            margin-left: -2%;
-        }
-
-        & p{
-            font-size: 20px;
-            margin-left: -2%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
     }
-}
 }
 
 .primeira-img{
