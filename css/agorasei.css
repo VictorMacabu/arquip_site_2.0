@@ -1,0 +1,161 @@
+.banner-estrutura{
+    & .img-esquerda{
+        width: 480px;
+        height: 350px;
+    }
+
+    & .texto-banner{
+        text-align: center;
+        line-height: 1.5;
+        color: white;
+
+        & h1{
+            font-size: 36px;
+            margin-top: -21%;
+            margin-left: -2%;
+        }
+
+        & p{
+            font-size: 20px;
+            margin-left: -2%;
+    }
+}
+}
+
+.primeira-img{
+    & .site-agorasei{
+        position: relative;
+        z-index: 1;
+        left: -2%;
+        top: -60px;
+    }
+}
+
+.logo-sei{
+    & img{
+    position: relative;
+    left: 36%;
+    top: -717px;
+    }
+}
+
+.txt-um{
+    & p{
+        position: relative;
+        font-size: 26px;
+        left: 47%;
+        top: -705px;
+        width: 64%;
+        text-align: center;
+    }
+
+    & .contorno{
+        position: relative;
+        left: 37%;
+        top: -970px;
+    }
+
+    & .botao-um{
+        position: relative;
+        top: -1214px;
+        left: 45%;
+    }
+
+    & .botao-dois{
+        position: relative;
+        top: -1214px;
+        left: 45%;
+    }
+
+    & .botao-tres{
+        position: relative;
+        top: -1214px;
+        left: 44%;
+        width: 964px;
+    }
+}
+
+.acesso-rapido{
+    & h1{
+        position: relative;
+        top: -1018px;
+        left: 41%;
+        width: 26%;
+    }
+
+    & .icone-acesso{
+        position: relative;
+        top: -970px;
+        left: 0%;
+    }
+
+    & .txt-acesso{
+        position: relative;
+        top: -1023px;
+        left: -17.5%;
+    }
+
+    & .branco-dois{
+        position: relative;
+        top: -970px;
+        left: -7%;
+    }
+
+    & .icone-numeros{
+        position: relative;
+        top: -1023px;
+        left: -25.4%;
+    }
+
+    & .branco-tres{
+        position: relative;
+        top: -970px;
+        left: -16%;
+    }
+
+    & .icone-consulta{
+        position:relative;
+        top: -1302px;
+        left: 56.3%;
+    }
+
+    & .branco-quatro{
+        position: relative;
+        top: -1253px;
+        left: 66%;
+    }
+
+    & .icone-portal{
+        position: relative;
+        top: -1291px;
+        left: 46.6%;
+    }
+}
+
+.treinamento{
+    & h1{
+        position: relative;
+        top: -1101px;
+        left: 30%;
+        width: 43%;
+    }
+
+    & .adm-treinamento{
+        margin-top: -500px;
+    }
+}
+
+.img-treinamento{
+    margin-top: -71%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.beneficio{
+    h1{
+        position: relative;
+        left: 38.8%;
+        top: 23px;
+    }
+}

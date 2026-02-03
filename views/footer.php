@@ -1,7 +1,7 @@
 <footer>
     <address class="info-footer">
         Secretaria Municipal de Gestão <br>
-        ARQUIVO PÚBLICO MUNICIPAL <br>
+       <b>ARQUIVO PÚBLICO MUNICIPAL</b> <br>
         Jornalista Paulo Roberto Dutra <br>
         R. Léo Ribeiro de Morães, 66 - Freguesia do Ó <br>
         São Paulo/SP- Brasil <br>

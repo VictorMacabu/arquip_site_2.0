@@ -1,3 +1,68 @@
+@media (max-width: 540px) {
+     nav{
+        display: none;
+    }
+
+    .img-esquerda{
+        display: none;
+    }
+
+    .img-direita{
+        display: none;
+    }
+   
+    .banner-estrutura{
+        visibility: hidden;
+    }
+
+    .texto-banner{
+        & h1{
+            margin-bottom: 1%;
+        }
+
+        & p{
+            margin-bottom: -60%;
+        }
+    }
+
+    .card-secao{
+        margin-top: 66%;
+    }
+}
+
+@media (max-width: 1250px) {
+     nav{
+        display: none;
+    }
+
+    .img-esquerda{
+        display: none;
+    }
+
+    .img-direita{
+        display: none;
+    }
+   
+    .banner-estrutura{
+        visibility: hidden;
+    }
+
+    .texto-banner{
+        visibility: visible;
+        
+        & h1{
+            color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        & p{
+            color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+}
 
 .img-esquerda {
     width: 438px;

@@ -1,3 +1,46 @@
+@media (max-width: 1250px) {
+     nav{
+        display: none;
+    }
+
+    .img-esquerda{
+        display: none;
+    }
+
+    .img-direita{
+        display: none;
+    }
+   
+    .banner-estrutura{
+        visibility: hidden;
+    }
+
+    .texto-banner{
+        visibility: visible;
+        
+        & h1{
+            color: black;
+            position: relative;
+            top: 75px;
+
+        }
+
+        & p{
+            color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            top: 71px;
+       }
+    }
+
+    .img-portal{
+        .pessoas{
+            
+        }
+    }
+}
+
 .card-secao {
 
 }

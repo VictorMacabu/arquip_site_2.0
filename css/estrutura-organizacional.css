@@ -21,55 +21,55 @@
         & h1{
             color: black;
             position: relative;
-            top: 75px;
-
+            top: 48px;
         }
 
         & p{
             color: black;
+            position: relative;
             margin-left: 10%;
             margin-right: 10%;
-            position: relative;
-            top: 71px;
-       }
+            top: 66px;
+        }
     }
-}
 
-    a {
-    word-break: break-all;
-}
+    .estrutura-img{
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+
+            & img{
+                max-width: 100%;
+                display: block;
+                margin-top: -12%;
+                margin-bottom: 7%;
+            }
+        }
+    }
 
 
-
-.card-secao h4{
+.img-esquerda{
     margin-bottom: -1%;
+    width: 448px;
+    height: 366px;
 }
 
-.img-esquerda {
-    width: 383px;
-    margin-bottom: -4px;
-    height: 390px;
-
-}
-
-.img-direita{ 
-    width: 326px;
-    position: relative;
+.img-direita{
     margin-bottom: -1%;
-
 }
 
 .texto-banner{
-    text-align: center;
-    line-height: 1.5;
     color: white;
+    line-height: 1.5;
+    text-align: center;
 
     & h1{
         font-size: 36px;
         margin-top: -18%;
     }
 
-    & p {
+    & p{
         font-size: 20px;
     }
 }
