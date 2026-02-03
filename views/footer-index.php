@@ -17,4 +17,14 @@
     <address class="arquip">
         <img src="/assets/footer/logo-arquip.png" alt="Logo Arquip">
     </address>
+
+    <address>
+        <div class="footer-esquerda">
+            <p><a href="https://arquip.prefeitura.sp.gov.br/app/mapa-do-site/" target="_blank" style="color: #fff;">Mapa do Site</a></p>
+            <p>Desenvolvido por Arquip ©</p>
+            <p>Atualizado em 08/01/2025</p>
+            <p>Contato:<a href="arquip@prefeitura.sp.gov.br" target="_blank" style="color: #fff;"> arquip@prefeitura.sp.gov.br</a></p>
+            <p>Atendimento Virtual</p>
+        </div>
+    </address>
 </footer>

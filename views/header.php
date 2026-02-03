@@ -11,14 +11,15 @@
             <img id="logo-gestao" src="/assets/header/logo-gestao.png"
                 aria-label="acesso a página da sercretaria de gestão municipal">
         </a>
+
     </div>
     <nav>
         <ul class="menu">
             <li>Institucional</li>
             <li>Atendimento ao Cidadão</li>
-            <li>Administração Pública</li>
+            <li>Administração ao Servidor</li>
             <li>Sistemas</li>
-            <li><input type="text" placeholder="Pesquisar"></li>
+            <li><input type="text" placeholder="Pesquisar "></li>
         </ul>
     </nav>
 </header>

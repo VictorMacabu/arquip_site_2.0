@@ -1,6 +1,5 @@
 header {
-    position: absolute;
-    z-index: 999;
+    
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -15,7 +14,7 @@ header {
 
         & img {
             width: 154px;
-            padding: 5px 25px;
+            padding: 5px 52px;
         }
     }
 
@@ -25,23 +24,29 @@ header {
 }
 
 nav {
-    width: 90%;
+    width: 84%;
     background-color: #00072D;
     margin: 0 auto;
+    border-radius: 4px;
 
     & ul {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         display: flex;
         flex-direction: row;
-        padding: 5px;
+        padding: 4px;
         justify-content: space-evenly;
         margin: 0;
 
         & li {
+            font-size: 17px;
+            line-height: 2.0;
             list-style: none;
             color: white;
         }
+
+        & input {
+            border-radius: 3px;
+            width: 245px;
+        }
     }
+
 }
-
-

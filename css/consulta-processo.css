@@ -5,14 +5,15 @@
 
 
 .img-esquerda {
-    width: 454px;
-    height: 401px;
+    width: 420px;
+    height: 322px;
     margin-bottom: -4px;
 }
 
-.img-direita{ 
+.img-direita{
     margin-bottom: -4px;
 }
+
 
 .texto-banner {
     height: 100%;
@@ -21,13 +22,4 @@
     flex-direction: column;
     color: #ffff;
     text-align: center;
-}
-
-
-h2 {
-    color: #00072D;
-}
-
-a {
-    color: blue;
 }

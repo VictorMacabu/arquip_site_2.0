@@ -26,3 +26,7 @@ span {
 .arquip {
     width: 327px;
 }
+
+.footer-esquerda p {
+    margin: 2px;
+}

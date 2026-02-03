@@ -1,15 +1,6 @@
 .banner-estrutura {
     justify-content: space-between;
     align-items: flex-end;
-
-    & h1 {
-        padding-top: 100px;
-    }
-
-    & p {
-        font-size: 21px;
-    }
-
 }
 
 
@@ -19,12 +10,19 @@
     margin-bottom: -4px;
 }
 
+.centralizar {
+    width: 373px;
+}
+
 
 .img-direita {
     width: 373px;
     height: 295px;
-    margin-bottom: -4px;
+    float: right;
+    margin-bottom: 0px;
 }
+
+
 
 .texto-banner {
     height: 100%;
