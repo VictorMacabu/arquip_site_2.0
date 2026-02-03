@@ -49,6 +49,8 @@
 
     .texto-banner{
         visibility: visible;
+        position: relative;
+        top: 213px;
         
         & h1{
             color: black;

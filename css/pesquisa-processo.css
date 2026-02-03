@@ -1,3 +1,43 @@
+@media (max-width: 1250px) {
+     nav{
+        display: none;
+    }
+
+    .img-esquerda{
+        display: none;
+    }
+
+    .img-direita{
+        display: none;
+    }
+   
+    .banner-estrutura{
+        visibility: hidden;
+    }
+
+    .texto-banner{
+        visibility: visible;
+        
+        & h1{
+            color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            top: -1px;
+        }
+
+        & p{
+            color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+
+    a{
+        overflow-wrap: break-word;
+    }
+}
+
 .card-secao h4{
     margin-bottom: -1%;
 }

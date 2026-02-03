@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main-pc.css">
-    <link rel="stylesheet" href="/css/sistema-arquivos.css">
+    <link rel="stylesheet" href="/css/sistemas-arquivos.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Sistema de Arquivos Do Município</title>
 </head>

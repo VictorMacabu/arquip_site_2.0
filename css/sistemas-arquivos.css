@@ -66,31 +66,39 @@
 }
 
 
-.img-esquerda {
-    width: 476px;
-    margin-bottom: -4px;
-    height: 326px;
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
 
-}
-
-.img-direita{ 
-    width: 373px;
-    position: relative;
-    margin-bottom: -1%;
-
-}
-
-.texto-banner{
-    text-align: center;
-    line-height: 1.5;
-    color: white;
-
-    & h1{
-        font-size: 36px;
-        margin-top: -18%;
+    & h1 {
+        padding-top: 100px;
     }
 
     & p {
-        font-size: 20px;
+        font-size: 21px;
     }
+
+}
+
+
+.img-esquerda {
+    width: 476px;
+    height: 326px;
+    margin-bottom: -4px;
+}
+
+
+.img-direita {
+    width: 373px;
+    height: 295px;
+    margin-bottom: -4px;
+}
+
+.texto-banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
 }

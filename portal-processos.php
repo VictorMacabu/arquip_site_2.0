@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main-pc.css">
-    <link rel="stylesheet" href="/css/portal-processo.css">
+    <link rel="stylesheet" href="/css/portal-processos.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Portal de Processos</title>
 </head>
