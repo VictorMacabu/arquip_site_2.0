@@ -213,9 +213,10 @@
             <h4>11. Como entrar em contato em caso de dúvidas?</h4>
 
             <ul>
-                <li>Chat: <a
-                        href="https://arquip.prefeitura.sp.gov.br/chat/">https://arquip.prefeitura.sp.gov.br/chat/</a>
-                </li>
+
+
+                <li>Chat: <a href="https://arquip.prefeitura.sp.gov.br/chat/">https://arquip.prefeitura.sp.gov.br/chat/</a></li>
+
                 <li>Pesquisadores Acadêmicos: E-mail para reservatecnica@prefeitura.sp.gov.br.</li>
             </ul>
 
@@ -235,7 +236,6 @@
 
 
     </div>
-
 
     <?php require_once __DIR__ . "/views/footer.php"
         ?>

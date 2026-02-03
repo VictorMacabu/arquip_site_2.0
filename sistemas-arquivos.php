@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main-pc.css">
-    <link rel="stylesheet" href="/css/sistemas-arquivos.css">
+    <link rel="stylesheet" href="/css/sistema-arquivos.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Sistema de Arquivos Do Município</title>
 </head>
@@ -15,24 +15,21 @@
 <body>
 
     <?php require_once __DIR__ . "/views/header.php"
-        ?>
+    ?>
 
     <div class="banner-estrutura">
 
         <div>
-            <img class="img-esquerda" src="/assets/sistemas-arquivos/homem-sistemas.png" alt="Homem">
+            <img class="img-esquerda" src="/assets/banner/sistema-de-arquivos/jovem-trabalhando.png" alt="Jovem trabalhando">
         </div>
 
         <div class="texto-banner">
             <h1>SISTEMA DE ARQUIVOS DO MUNICÍPIO</h1>
-            <p>O Decreto nº 57.783, de 13 de julho de 2017, regulamenta a gestão e preservação de documentos na
-                administração pública municipal de São Paulo, garantindo o tratamento adequado dos documentos públicos
-                ao longo de seu ciclo de vida.
-            </p>
+            <p>O Decreto nº 57.783, de 13 de julho de 2017, regulamenta a gestão e preservação de<br> documentos na administração pública municipal de São Paulo, garantindo o tratamento<br> adequado dos documentos públicos ao longo de seu ciclo de vida.</p>
         </div>
 
         <div>
-            <img class="img-direita" src="/assets/sistemas-arquivos/icone-sistema.png" alt="Icone">
+            <img class="img-direita" src="/assets/banner/sistema-de-arquivos/icone-documentos.png" alt="Icone de documento">
         </div>
 
     </div>

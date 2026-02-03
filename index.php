@@ -41,7 +41,7 @@
             </div>
 
             <!--- CARDS --->
-            <div class="card text-center"><img src="/assets/banner/card-trabalho.png" alt="banner de Atendimento ao cidadão">
+            <div class="card text-center"><img src="/assets/banner/index/card-trabalho.png" alt="banner de Atendimento ao cidadão">
                 <div>
                     <h2>Atendimento ao Cidadão</h2>
                     <ul>
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="card text-center"><img src="/assets/banner/planilha.png"
+            <div class="card text-center"><img src="/assets/banner/index/planilha.png"
                     alt="banner de Atendimento ao servidor">
                 <div>
                     <h2>Atendimento ao Servidor</h2>
@@ -136,9 +136,9 @@
                 <div class="carrossel-sistema ">
                     <h2>ACESSE NOSSOS <br>SISTEMAS GERENCIADOS</h2>
                     <div class="carrossel card">
-                        <div id="um"></div>
-                        <div id="2"></div>
-                        <div id="3"></div>
+                        <div id=""></div>
+                        <div id=""></div>
+                        <div id=""></div>
                     </div>
                 </div>
                 <img src="./assets/sistema-geren/Group 1844.png" alt="">
@@ -154,9 +154,41 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!--- ÚLTIMAS NOTÍCIAS --->
+
+        <section class="ultima-secao">
+            <div class="card-noticias">
+
+                <div>
+                    <img src="/assets/ultimas-noticias/curiosidade 3.png" alt="Curiosidades Históricas">
+                    <h3>Curiosidades Históricas</h3>
+                    <p>Descubra as principais curiosidades deste mês...</p>
+                    <a href="/">Saiba mais  →</a>
+                </div>
+
+                <div class="card-destaque">
+                    <h2>ÚLTIMAS NOTÍCIAS</h2>
+                    <img src="/assets/ultimas-noticias/curiosidade 3.png" alt="Capacitação AGORASEI">
+                    <h3>Capacitação AGORASEI</h3>
+                    <p>Para aprimorar publicações do Diário Oficial...</p>
+                    <a href="/">Saiba mais  →</a>
+                </div>
+
+                <div>
+                    <img src="/assets/ultimas-noticias/indicadores 1.png" alt="Indicadores 2023">
+                    <h3>Indicadores 2023</h3>
+                    <p>Servidor, confira os principais dados...</p>
+                    <a href="/">Saiba mais  →</a>
+                </div>
+
+            </div>
+        </section>
+
+
     </main>
 
-<?php
+    <?php
     require_once __DIR__ . '/views/footer.php';
     ?>
 
