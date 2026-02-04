@@ -9,8 +9,10 @@ footer{
     padding-bottom: 3%;
     padding-left: 5%;
     & .arquip{
+        & img{
         width: 113px;
         height: 39px;
+        }
     }
 
     & .nome-arquip{
