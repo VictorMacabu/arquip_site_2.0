@@ -1,3 +1,42 @@
+@media (max-width: 1250px){
+    footer{
+    font-size: 11px;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+
+        & .arquip{
+            & img{
+                width: 113px;
+                height: 39px;
+                position: relative;
+                top: 44px;
+                left: -31%;
+            }
+        }
+
+        & .prefeitura{
+            & img{
+                width: 135px;
+                height: 135px;
+                position: relative;
+                top: -44px;
+                left: 53%;
+            }
+        }
+
+        & .nome-arquip{
+            position: relative;
+            top: -8px;
+        }
+
+        & p{
+            width: 135%;
+        }
+        
+    }
+}
+
 footer {
     background-color: #000000;
     display: flex;

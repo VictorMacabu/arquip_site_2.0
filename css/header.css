@@ -1,3 +1,13 @@
+@media (max-width: 1250px) {
+    .img-header{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+
 header {
     
     display: flex;
@@ -11,7 +21,7 @@ header {
         justify-content: space-between;
         background-color: #0881c8;
         align-items: center;
-
+        
         & img {
             width: 154px;
             padding: 5px 52px;
