@@ -1,17 +1,15 @@
 <!-- Carregar header -->
 <header class="capa menu-fixo">
-    <div>
-
-        <a href="/" id="link-logo">
-            <img id="logo-arquip" src="/assets/header/logo-arquip-branco.png" alt="logo-arquip"
+    <div class="img-header">
+            <a href="/" id="link-logo">
+                <img id="logo-arquip" src="/assets/header/logo-arquip-branco.png" alt="logo-arquip"
                 aria-label="acesso a página da secretaria de gestao municipal">
-        </a>
+            </a>
 
-        <a class="logo2" href="https://www.prefeitura.sp.gov.br/cidade/secretarias/gestao/" id="link-logo-gestao">
-            <img id="logo-gestao" src="/assets/header/logo-gestao.png"
+            <a class="logo2" href="https://www.prefeitura.sp.gov.br/cidade/secretarias/gestao/" id="link-logo-gestao">
+                <img id="logo-gestao" src="/assets/header/logo-gestao.png"
                 aria-label="acesso a página da sercretaria de gestão municipal">
-        </a>
-
+            </a>
     </div>
     <nav>
         <ul class="menu">

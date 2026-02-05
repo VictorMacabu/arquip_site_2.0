@@ -47,28 +47,9 @@
 
                 <img src="/assets/portal-processo/triangulo-portal.png" class="triangulo" alt="Triangulo">
 
-                <img src="/assets/portal-processo/ratangulo-portal.png" class="retangulo" alt="Retangulo">
+                <img src="/assets/portal-processo/retangulo-portal.png" class="retangulo" alt="Retangulo">
 
             </div>
-
-
-            <div class="texto-azul">
-                <h3>Esse portal visa garantir:</h3>
-
-                <ul>
-                    <li>Transparência</li>
-                    <li>Acessibilidade </li>
-                    <li>Eficiência no atendimento <br> ao cidadão</li>
-                </ul>
-
-                <p>Permitindo consultas online e <br> fornecimento de informações <br> sobre documentos e processos
-                    <br> sob
-                    a custódia do ARQUIP.
-                </p>
-            </div>
-
-
-
             <div class="card-portal">
                 <div class="card-um">
                     <img src="/assets/portal-processo/circulo-preto.png" class="circulo-preto" alt="Ciruclo Preto">
