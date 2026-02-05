@@ -1,45 +1,4 @@
-@media (max-width: 1250px) {
-     nav{
-        display: none;
-    }
 
-    .img-esquerda{
-        display: none;
-    }
-
-    .img-direita{
-        display: none;
-    }
-   
-    .banner-estrutura{
-        visibility: hidden;
-    }
-
-    .texto-banner{
-        visibility: visible;
-        
-        & h1{
-            color: black;
-            position: relative;
-            top: 75px;
-
-        }
-
-        & p{
-            color: black;
-            margin-left: 10%;
-            margin-right: 10%;
-            position: relative;
-            top: 71px;
-       }
-    }
-
-    .img-portal{
-        .pessoas{
-        
-        }
-    }
-}
 
 .card-secao {
 
@@ -212,6 +171,7 @@
 .card-portal{
     position: relative;
     height: 400px;
+    top: 429px;
     & .titulo-um{
         position: absolute;
         font-size: 20px;
@@ -429,6 +389,7 @@
 }
 
 .conteudo-portal{
+    margin-top: 29%;
     & .subtitulo-portal {
         font-size: 24px;
     }
@@ -441,4 +402,309 @@
     & h4{
         margin-top: 3%;
     }
+}
+
+@media (max-width: 1250px) {
+     nav{
+        display: none;
+    }
+
+    .img-esquerda{
+        display: none;
+    }
+
+    .img-direita{
+        display: none;
+    }
+   
+    .banner-estrutura{
+        visibility: hidden;
+    }
+
+    .texto-banner{
+        visibility: visible;
+        
+        & h1{
+            color: black;
+            position: relative;
+            top: 75px;
+
+        }
+
+        & p{
+            color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            top: 71px;
+       }
+    }
+
+    .img-portal{
+        margin-top: 17%;
+        .pessoas{
+            max-width: 100%;
+            display: block;
+            width: 70%;
+            left: -11%;
+        }
+
+        .retangulo{
+            max-width: 100%;
+            width: 70%;
+            left: -33%;
+            display: block;
+        }
+
+        .triangulo{
+            display: none;
+        }
+    }
+
+    .conteudo-portal{
+        padding-top: 1100px;
+    }
+
+    .card-um{
+        & .circulo-preto{
+            max-width: 100%;
+            display: block;
+            width: 70%;
+            height: 70%;
+        }
+
+        & .contorno{
+            max-width: 100%;
+            display: block;
+            width: 27%;
+            height: 24%;
+            left: 68.9%;
+        }
+
+        & .circulo-menor{
+            max-width: 100%;
+            display: block;
+            width: 21%;
+            height: 21%;
+            left: 71%;
+            top: -281px;
+        }
+
+        & .icone-um{
+            max-width: 100%;
+            display: block;
+            width: 23%;
+            height: 23%;
+            left: 50%;
+            top: -240px;
+        }
+
+        & .numero-card{
+            max-width: 100%;
+            display: block;
+            font-size: 23px;
+            left: 76%;
+            top: -275px;
+        }
+    }
+
+
+    .card-dois{
+        & .circulo-azul{
+            max-width: 100%;
+            display: block;
+            width: 70%;
+            height: 70%;
+            left: 27%;
+            top: -123px;
+        }
+
+        & .contorno{
+            max-width: 100%;
+            display: block;
+            width: 27%;
+            height: 24%;
+            left: 68%;
+            top: -117px;
+        }
+
+        & .circulo-menor{
+            max-width: 100%;
+            display: block;
+            width: 21%;
+            height: 21%;
+            left: 70%;
+            top: -113px;
+        }
+
+        & .icone-dois{
+            max-width: 100%;
+            display: block;
+            width: 23%;
+            height: 23%;
+            left: 50%;
+            top: -74px;            
+        }
+
+        & .numero-card{
+            max-width: 100%;
+            display: block;
+            font-size: 23px;
+            left: 74%;
+            top: -108px;
+        }
+
+    }
+
+    .card-tres{
+        & .circulo-azul{
+            max-width: 100%;
+            display: block;
+            width: 70%;
+            height: 70%;
+            left: 27%;
+            top: 11px;          
+        }
+
+        & .contorno{
+            max-width: 100%;
+            display: block;
+            width: 27%;
+            height: 24%;
+            left: 67%;
+            top: 18px;            
+        }
+
+        .circulo-menor{
+            max-width: 100%;
+            display: block;
+            width: 21%;
+            height: 21%;
+            left: 69%;
+            top: 23px;              
+        }
+
+        .icone-tres{
+            max-width: 100%;
+            display: block;
+            width: 23%;
+            height: 23%;
+            left: 50%;
+            top: 60px;                    
+        }
+
+        .numero-card{
+            max-width: 100%;
+            display: block;
+            font-size: 23px;
+            left: 74%;
+            top: 29px; 
+        }
+    }
+
+
+    .card-quatro{
+        & .circulo-azul{
+            max-width: 100%;
+            display: block;
+            width: 70%;
+            height: 70%;
+            left: 28%;
+            top: 150px;
+        }
+
+        & .contorno{
+            max-width: 100%;
+            display: block;
+            width: 27%;
+            height: 24%;
+            left: 68%;
+            top: 155px;           
+        }
+
+        & .circulo-menor{
+            max-width: 100%;
+            display: block;
+            width: 21%;
+            height: 21%;
+            left: 70%;
+            top: 160px;
+        }
+
+        & .icone-quatro{
+            max-width: 100%;
+            display: block;
+            width: 23%;
+            height: 23%;
+            left: 51%;
+            top: 197px;
+        }
+
+        & .numero-card{
+            max-width: 100%;
+            display: block;
+            font-size: 23px;
+            left: 74%;
+            top: 166px;
+        }
+
+    }
+
+
+
+
+    .card-portal{
+        margin-top: 1%;
+        .titulo-um{
+            width: 100%;
+            left: -2%;
+            top: -140px;
+        }
+
+        .txt-um{
+            max-width: 100%;
+            top: -95px;
+            left: -4%;
+            width: 100%;
+        }
+
+        .titulo-dois{
+            left: -6%;
+            top: 236px;
+            width: 100%;
+        }
+
+        .txt-dois{
+            max-width: 100%;
+            left: -3%;
+            top: 295px;
+            width: 100%
+        }
+        
+        .titulo-tres{
+            width: 100%;
+            left: 6%;
+            top: 588px; 
+        }
+
+        .txt-tres{
+            width: 100%;
+            left: -3%;
+            top: 632px;
+        }
+
+        .titulo-quatro{
+            width: 100%;
+            left: -4%;
+            top: 952px;
+        }
+
+        .txt-quatro{
+            width: 100%;
+            left: -2%;
+            top: 993px;     
+        }
+    }
+
+    
 }
