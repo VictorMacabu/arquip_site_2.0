@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/CSS/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
     <link rel="stylesheet" href="/CSS/main-pc.css">
-    <link rel="stylesheet" href="/css/acesso-acervo.css">
+    <link rel="stylesheet" href="/css/new-acesso.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Acesso Ao Acervo</title>
 </head>
@@ -19,7 +19,7 @@
 
     <div class="banner-estrutura">
 
-        <div>
+        <div class="esquerda">
             <img class="img-esquerda" src="/assets/acesso-acervo/img-acervo.png" alt="Acervo">
         </div>
 
@@ -30,7 +30,7 @@
             </p>
         </div>
 
-        <div>
+        <div class="direita">
             <img class="img-direita" src="/assets/acesso-acervo/icone-acervo.png" alt="Icone">
         </div>
     </div>
@@ -38,12 +38,7 @@
     <div class="container-pagina">
         <div class="card-secao">
             <div class="img-acervo">
-                <img class="img-frente" src="/assets/acesso-acervo/img-frente.png" alt="Imagem Frente">
-                <img class="img-fundo" src="/assets/acesso-acervo/img-fundo.png" alt="Imagem Fundo">
-                <img class="caixa-fundo" src="/assets/acesso-acervo/caixa-fundo.png" alt="Caixa Fundo">
-                <img class="caixa-frente" src="/assets/acesso-acervo/caixa-frente.png" alt="Caixa Frente">
-                <img class="txt-foto" src="/assets/acesso-acervo/txt-foto.png" alt="Texto">
-            </div>
+                <img src="/assets/acesso-acervo/img-um.png" alt="">
             <div class="txt-direita">
                 <h2 class="titulo-um">ACESSO AO ACERVO DO ARQUIP</h2>
                 <p class="txt-um">Através de um requerimento eletrônico no Portal de Processos, é possível solicitar a
@@ -63,7 +58,6 @@
                     <li>Fotografias e mapas antigos que revelam como a cidade evoluiu ao longo dos anos.</li>
                 </ul>
             </div>
-            <hr>
             <div class="retangulo-azul">
                 <img class="retangulo-acervo" src="/assets/acesso-acervo/retangulo-acervo.png" alt="Retangulo Fundo">
                 <img class="quadrado-acervo" src="/assets/acesso-acervo/quadrado-acervo.png" alt="Quadrado">
@@ -143,10 +137,9 @@
         </div>
     </div>
 
-    <?php require_once __DIR__ . "/views/footer.php"
-    ?>
-
-
+ <?php require_once __DIR__ . "/views/footer.php"
+ ?>
+    
 </body>
 
 </html>

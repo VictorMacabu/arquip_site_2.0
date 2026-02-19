@@ -1,0 +1,116 @@
+/*Mobile*/
+nav{
+    display: none;
+}
+
+.img-esquerda{
+    display: none;
+}
+
+.img-direita{
+    display: none;
+}
+   
+.banner-estrutura{
+    visibility: hidden;
+}
+
+.texto-banner{
+    visibility: visible;
+        
+    & h1{
+        color: black;
+        position: relative;
+        text-align: center;
+    }
+
+    & p{
+        color: black;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: relative;
+        text-align: center;
+    }
+}
+
+.img-acervo{
+    img{
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.retangulo-azul{
+    display: none;
+}
+
+/*Desktop*/
+@media (min-width: 1025px) {
+
+    nav{
+        display: flex;
+    }
+   
+    .banner-estrutura{
+        visibility: visible;
+    }
+
+    .img-acervo{
+        img{
+            display: flex;
+            width: 60%;
+            height: auto;
+            float: left;
+            margin-right: 2%;
+        }
+    }
+
+    .txt-esquerda{
+        margin-top: 25%;
+        .img-direita{
+            float: right;
+        }
+    }
+
+    .img-esquerda{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .img-direita{
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .texto-banner{
+        h1{
+            color: #fff;
+            min-width: 0;
+            overflow-wrap: break-word;
+        }
+
+        p {
+            color: #fff;
+            min-width: 0;
+            overflow-wrap: break-word;
+        }
+
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-estrutura{
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .direita{
+        margin-left: 12%;
+    }
+}

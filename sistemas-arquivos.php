@@ -37,7 +37,7 @@
     <div class="container-pagina">
 
         <div class="card-secao">
-            <h2>Sistema de Arquivos do Município de São Paulo - SAMSP</h2>
+            <h2 class="titulo">Sistema de Arquivos do Município de São Paulo - SAMSP</h2>
 
             <p>O decreto define a criação do SAMSP, uma rede que integra todos os arquivos e documentos da administração
                 pública municipal. Esse sistema visa garantir a coordenação e padronização das ações de gestão

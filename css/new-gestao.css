@@ -1,0 +1,104 @@
+/*Mobile*/
+nav{
+    display: none;
+}
+
+.img-esquerda{
+    display: none;
+}
+
+.img-direita{
+    display: none;
+}
+   
+.banner-estrutura{
+    visibility: hidden;
+    position: relative;
+    height: auto;
+
+}
+
+.texto-banner{
+    visibility: visible;
+    position: relative;
+        
+    & h1{
+        color: black;
+        position: relative;
+        text-align: center;
+    }
+
+    & p{
+        color: black;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: relative;
+        text-align: center;
+    }
+}
+
+.card-secao{
+    position: relative;
+}
+
+/*Desktop*/
+@media (min-width: 1025px) {
+
+nav{
+        display: flex;
+    }
+
+    .img-esquerda{
+        display: block;
+    }
+
+    .img-direita{
+        display: block;
+    }
+   
+    .banner-estrutura{
+        visibility: visible;
+    }
+
+    .img-esquerda{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .img-direita{
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .texto-banner{
+        h1{
+            color: #fff;
+            min-width: 0;
+            overflow-wrap: break-word;
+        }
+
+        p {
+            color: #fff;
+            min-width: 0;
+            overflow-wrap: break-word;
+        }
+
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-estrutura{
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .direita{
+        margin-left: 12%;
+    }
+}
+
