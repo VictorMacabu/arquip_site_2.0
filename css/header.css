@@ -1,52 +1,94 @@
-header {
-    
-    display: flex;
+.cabecalho-logos {
     width: 100%;
-    flex-direction: column;
-
-    & div {
-        width: 100%;
-        height: 91px;
-        display: flex;
-        justify-content: space-between;
-        background-color: #0881c8;
-        align-items: center;
-
-        & img {
-            width: 154px;
-            padding: 5px 52px;
-        }
-    }
-
+    height: 91px;
+    display: flex;
     justify-content: space-between;
+    background-color: #0881c8;
     align-items: center;
-
 }
+
+.cabecalho-logo_arquip {
+    width: 185px;
+    height: 45px;
+    margin-left: 45px;
+}
+
+
+.cabecalho-logo_gestao {
+    width: 214px;
+    height: 73px;
+    margin-right: 45px;
+}
+
+
+.container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input-wrapper {
+    padding: 2px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.input-wrapper i {
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.input-wrapper i:active {
+    transform: scale(0.9);
+}
+
+.input-wrapper input {
+    margin-right: 55px;
+    background-color: transparent;
+    border: none;
+}
+
+.input-wrapper input:focus-visible {
+    outline: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
 
 nav {
-    width: 84%;
+    width: 87%;
     background-color: #00072D;
-    margin: 0 auto;
     border-radius: 4px;
-
-    & ul {
-        display: flex;
-        flex-direction: row;
-        padding: 4px;
-        justify-content: space-evenly;
-        margin: 0;
-
-        & li {
-            font-size: 17px;
-            line-height: 2.0;
-            list-style: none;
-            color: white;
-        }
-
-        & input {
-            border-radius: 3px;
-            width: 245px;
-        }
-    }
-
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+nav ul li {
+    font-size: 17px;
+    line-height: 2.0;
+    list-style: none;
+    color: white;
+}
+
