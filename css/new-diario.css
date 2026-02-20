@@ -32,18 +32,47 @@ nav{
     }
 }
 
-.banner-estrutura{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    h1{
+.logo-diario{
+     display: none;
+}
+
+.texto-banner{
+    & h1{
         text-align: center;
-        overflow: hidden;
     }
 
-    p{
+    & p{
         text-align: center;
-        overflow: hidden;
+
     }
+}
+
+.pessoas{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+
+    .pessoas-diario{
+        width: 100%;
+        height: auto;
+    }
+
+    .box-um{
+       
+    }
+
+    .box-dois{
+        
+    }
+
+    .box-tres{
+      
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 651px) {
+    
 }
 
