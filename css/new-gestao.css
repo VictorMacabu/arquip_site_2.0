@@ -1,3 +1,4 @@
+/*Mobile*/
 nav{
     display: none;
 }
@@ -12,16 +13,19 @@ nav{
    
 .banner-estrutura{
     visibility: hidden;
+    position: relative;
+    height: auto;
+
 }
 
 .texto-banner{
     visibility: visible;
     position: relative;
-    text-align: center;
+        
     & h1{
         color: black;
         position: relative;
-
+        text-align: center;
     }
 
     & p{
@@ -29,7 +33,7 @@ nav{
         margin-left: 10%;
         margin-right: 10%;
         position: relative;
-
+        text-align: center;
     }
 }
 
@@ -37,13 +41,10 @@ nav{
     position: relative;
 }
 
-body{
-    display: grid;
-}
-
 /*Desktop*/
-@media (min-width: 1127px) {
-    nav{
+@media (min-width: 1025px) {
+
+nav{
         display: flex;
     }
 
@@ -75,14 +76,13 @@ body{
         h1{
             color: #fff;
             min-width: 0;
-            font-size: clamp(16px, 4vw, 32px);
-
+            overflow-wrap: break-word;
         }
 
         p {
             color: #fff;
             min-width: 0;
-            font-size: clamp(12px, 2vw, 16px);
+            overflow-wrap: break-word;
         }
 
         height: 100%;
@@ -96,4 +96,9 @@ body{
         justify-content: space-between;
         align-items: flex-end;
     }
+
+    .direita{
+        margin-left: 12%;
+    }
 }
+

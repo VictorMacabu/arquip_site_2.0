@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/main-pc.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/pesquisa-processo.css">
+    <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Pesquisa de Existência de Processos/Plantas</title>
 </head>
 

@@ -1,3 +1,4 @@
+/*Mobile*/
 nav{
     display: none;
 }
@@ -16,12 +17,11 @@ nav{
 
 .texto-banner{
     visibility: visible;
-    position: relative;
-    text-align: center;
+        
     & h1{
         color: black;
         position: relative;
-
+        text-align: center;
     }
 
     & p{
@@ -29,34 +29,48 @@ nav{
         margin-left: 10%;
         margin-right: 10%;
         position: relative;
-
+        text-align: center;
     }
 }
 
-.card-secao{
-    position: relative;
+.img-acervo{
+    img{
+        display: none;
+        width: 100%;
+        height: auto;
+    }
 }
 
-body{
-    display: grid;
+.retangulo-azul{
+    display: none;
 }
 
 /*Desktop*/
-@media (min-width: 1127px) {
+@media (min-width: 1025px) {
+
     nav{
         display: flex;
-    }
-
-    .img-esquerda{
-        display: block;
-    }
-
-    .img-direita{
-        display: block;
     }
    
     .banner-estrutura{
         visibility: visible;
+    }
+
+    .img-acervo{
+        img{
+            display: flex;
+            width: 60%;
+            height: auto;
+            float: left;
+            margin-right: 2%;
+        }
+    }
+
+    .txt-esquerda{
+        margin-top: 25%;
+        .img-direita{
+            float: right;
+        }
     }
 
     .img-esquerda{
@@ -75,14 +89,13 @@ body{
         h1{
             color: #fff;
             min-width: 0;
-            font-size: clamp(16px, 4vw, 32px);
-
+            overflow-wrap: break-word;
         }
 
         p {
             color: #fff;
             min-width: 0;
-            font-size: clamp(12px, 2vw, 16px);
+            overflow-wrap: break-word;
         }
 
         height: 100%;
@@ -95,5 +108,9 @@ body{
     .banner-estrutura{
         justify-content: space-between;
         align-items: flex-end;
+    }
+
+    .direita{
+        margin-left: 12%;
     }
 }

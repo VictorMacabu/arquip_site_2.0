@@ -1,6 +1,49 @@
-.banner-estrutura {
-    justify-content: space-between;
-    align-items: flex-end;
+@media (max-width: 1250px) {
+     nav{
+        display: none;
+    }
+
+    .img-esquerda{
+        display: none;
+    }
+
+    .img-direita{
+        display: none;
+    }
+   
+    .banner-estrutura{
+        visibility: hidden;
+    }
+
+    .texto-banner{
+        visibility: visible;
+        
+        & h1{
+            color: black;
+            position: relative;
+            top: 67px;
+            left: 24%;
+        }
+
+        & p{
+            color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            top: 58px;
+            width: 127%;
+       }
+    }
+}
+
+    a {
+    word-break: break-all;
+}
+
+
+
+.card-secao h4{
+    margin-bottom: -1%;
 }
 
 
