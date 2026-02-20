@@ -16,7 +16,8 @@ nav{
 
 .texto-banner{
     visibility: visible;
-        
+    position: relative;
+    text-align: center;
     & h1{
         color: black;
         position: relative;
@@ -32,18 +33,67 @@ nav{
     }
 }
 
-.banner-estrutura{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    h1{
-        text-align: center;
-        overflow: hidden;
-    }
-
-    p{
-        text-align: center;
-        overflow: hidden;
-    }
+.card-secao{
+    position: relative;
 }
 
+body{
+    display: grid;
+}
+
+/*Desktop*/
+@media (min-width: 1127px) {
+    nav{
+        display: flex;
+    }
+
+    .img-esquerda{
+        display: block;
+    }
+
+    .img-direita{
+        display: block;
+    }
+   
+    .banner-estrutura{
+        visibility: visible;
+    }
+
+    .img-esquerda{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
+    .img-direita{
+        display: block;
+        height: auto;
+        width: auto;
+    }
+
+    .texto-banner{
+        h1{
+            color: #fff;
+            min-width: 0;
+            font-size: clamp(16px, 4vw, 32px);
+
+        }
+
+        p {
+            color: #fff;
+            min-width: 0;
+            font-size: clamp(12px, 2vw, 16px);
+        }
+
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-estrutura{
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
