@@ -14,11 +14,13 @@
 </head>
 
 <body>
+
+    <!-- CABEÇALHO -->
     <?php require_once __DIR__ . "/views/header.php"
     ?>
 
+    <!-- BANNER -->
     <div class="banner-estrutura">
-
         <div>
             <img class="img-esquerda" src="/assets/pesquisador-academico/mulher-academico.png" alt="Mulher">
         </div>
@@ -34,11 +36,10 @@
         <div class="centralizar">
             <img class="img-direita" src="/assets/pesquisador-academico/icone-academico.png" alt="Icone">
         </div>
-
     </div>
 
+    <!-- INICIO PÁGINA -->
     <div class="container-pagina">
-
         <div class="card-secao">
             <main>
                 <p>Mediante solicitação por meio do Portal de Processos, é realizada a busca nos registros disponíveis, e,
@@ -217,10 +218,7 @@
                 <h2>11. Como entrar em contato em caso de dúvidas?</h2>
 
                 <ul>
-
-
                     <li>Chat: <a href="https://arquip.prefeitura.sp.gov.br/chat/" target="_blank">https://arquip.prefeitura.sp.gov.br/chat/</a></li>
-
                     <li>Pesquisadores Acadêmicos: E-mail para reservatecnica@prefeitura.sp.gov.br.</li>
                 </ul>
 
@@ -232,15 +230,11 @@
                     <li>Preservação: Minimiza o manuseio de documentos físicos, garantindo sua preservação.</li>
                     <li>Segurança: Proteção de dados pessoais e sigilo garantido.</li>
                 </ul>
-
             </main>
         </div>
-
-
-
-
     </div>
 
+    <!-- RODAPÉ -->
     <?php require_once __DIR__ . "/views/footer.php"
     ?>
 

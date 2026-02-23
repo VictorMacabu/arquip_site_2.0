@@ -15,13 +15,12 @@
 
 <body>
     
-
+    <!-- CABEÇALHO -->
     <?php require_once __DIR__ . "/views/header.php"
-
     ?>
 
+    <!-- INICIO PÁGINA -->
     <div class='container-pagina'>
-
         <div class='titulo-txt'>
             <h1>Quem Somos?</h1>
         </div>
@@ -143,10 +142,9 @@
                 manuseio e controle de processos.
             </p>
         </div>
-
-
     </div>  
 
+    <!-- RODAPÉ -->
     <?php require_once __DIR__ . "/views/footer.php"
     ?>
     
