@@ -15,12 +15,12 @@
 
 <body>
 
+    <!-- CABEÇALHO -->
     <?php require_once __DIR__ . "/views/header.php"
     ?>
 
-
+    <!--BANNER -->
     <div class="banner-estrutura">
-
         <div>
             <img class="img-esquerda" src="/assets/pesquisa-processo/casal-pesquisa-proc.png" alt="Mulher">
         </div>
@@ -36,11 +36,10 @@
         <div>
             <img class="img-direita" src="/assets/pesquisa-processo/icone-pesquisa-proc.png" alt="Icone">
         </div>
-
     </div>
 
+    <!-- INCIO PÁGINA -->
     <div class="container-pagina">
-
         <main>
             <p>
                 Mediante solicitação por meio do Portal de Processos, é realizada a busca nos registros disponíveis, e,
@@ -250,6 +249,7 @@
 
     </div>
 
+    <!--RODAPÉ -->
     <?php require_once __DIR__ . "/views/footer.php"
     ?>
 

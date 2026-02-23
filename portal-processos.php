@@ -14,11 +14,12 @@
 
 <body>
 
+    <!-- CABEÇALHO -->
     <?php require_once __DIR__ . "/views/header.php"
         ?>
 
+    <!-- BANNER -->
     <div class="banner-estrutura">
-
         <div>
             <img class="img-esquerda" src="/assets/portal-processo/mulher-portal-processo.png" alt="Mulher">
         </div>
@@ -33,11 +34,10 @@
         <div>
             <img class="img-direita" src="/assets/portal-processo/icone-portal-processo.png" alt="Icone">
         </div>
-
     </div>
 
 
-
+    <!-- INICIO PÁGINA -->
     <div class="container-pagina">
         <div class="card-secao">
             <div class="img-portal">
@@ -122,6 +122,7 @@
         </div>
     </div>
 
+    <!-- RODAPÉ -->
     <?php require_once __DIR__ . "/views/footer.php"
         ?>
 </body>

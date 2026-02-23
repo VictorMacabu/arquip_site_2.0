@@ -14,10 +14,12 @@
 
 <body>
 
+    <!-- CABEÇALHO -->
     <?php
     require_once __DIR__ . '/views/header.php';
     ?>
 
+    <!-- BANNER -->
     <div class="banner-estrutura">
         <div>
             <img class="img-esquerda" src="/assets/estrutura-organizacional/pessoas-estrutura.png" alt="Pessoas">
@@ -34,6 +36,7 @@
         </div>
     </div>
 
+    <!-- INCIO PÁGINA -->
     <div class="container-pagina">
         <div class="card-secao">
             <p>
@@ -117,10 +120,9 @@
             <h4>NÚCLEO DE PUBLICAÇÃO OFICIAL E COMUNICAÇÃO (NUPUBLI)</h4>
             <p><b>Chefe do núcleo:</b> Lucas André Carvalho</p>
         </div>
-
-
     </div>
 
+    <!-- RODAPÉ -->
     <?php require_once __DIR__ . "/views/footer.php"
         ?>
 

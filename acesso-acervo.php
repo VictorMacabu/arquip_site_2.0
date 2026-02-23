@@ -13,10 +13,11 @@
 </head>
 
 <body>
-
+    <!-- CABEÇALHO -->
     <?php require_once __DIR__ . "/views/header.php"
         ?>
 
+    <!-- BANNER -->
     <div class="banner-estrutura">
 
         <div class="esquerda">
@@ -35,6 +36,7 @@
         </div>
     </div>
 
+    <!-- INICIO PÁGINA -->
     <div class="container-pagina">
         <div class="card-secao">
             <div class="img-acervo">
@@ -137,8 +139,9 @@
         </div>
     </div>
 
- <?php require_once __DIR__ . "/views/footer.php"
- ?>
+    <!-- RODAPÉ -->
+    <?php require_once __DIR__ . "/views/footer.php"
+    ?>
     
 </body>
 

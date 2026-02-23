@@ -13,12 +13,12 @@
 </head>
 
 <body>
-
+    <!-- CABEÇALHO -->
     <?php require_once __DIR__ . "/views/header.php"
     ?>
 
+    <!-- BANNER -->
     <div class="banner-estrutura">
-
         <div class="centralizar">
             <img class="img-esquerda" src="/assets/banner/sistema-de-arquivos/jovem-trabalhando.png" alt="Jovem trabalhando">
         </div>
@@ -31,11 +31,10 @@
         <div>
             <img class="img-direita" src="/assets/banner/sistema-de-arquivos/icone-documentos.png" alt="Icone de documento">
         </div>
-
     </div>
 
+    <!-- INICIO PÁGINA -->
     <div class="container-pagina">
-
         <div class="card-secao">
             <h2 class="titulo">Sistema de Arquivos do Município de São Paulo - SAMSP</h2>
 
@@ -71,12 +70,12 @@
                 <li><b>Eliminação ou transferência:</b> Destinação final, que pode ser a eliminação ou a transferência
                     para arquivos permanentes.</li>
             </ul>
-
         </div>
     </div>
 
+    <!-- RODAPÉ -->
     <?php require_once __DIR__ . "/views/footer.php"
-        ?>
+    ?>
 
 </body>
 
