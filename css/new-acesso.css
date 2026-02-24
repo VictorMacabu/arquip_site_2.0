@@ -50,6 +50,12 @@ nav{
 
     nav{
         display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            gap: 130px;
+        }
     }
    
     .banner-estrutura{
