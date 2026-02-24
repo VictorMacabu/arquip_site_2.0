@@ -73,23 +73,22 @@ nav{
     }
 
     .texto-banner{
+        margin-bottom: auto;
         h1{
             color: #fff;
-            min-width: 0;
-            overflow-wrap: break-word;
+            max-width: 60ch;
+            margin: 0 auto;
+            font-size: clamp(1.2rem, 4vw, 3rem);
         }
 
         p {
             color: #fff;
-            min-width: 0;
-            overflow-wrap: break-word;
+            max-width: 60ch;
+            margin: 0 auto;
+            font-size: clamp(0.9rem, 2.5vw, 1.2rem);
         }
 
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
+       
     }
 
     .banner-estrutura{
