@@ -219,7 +219,7 @@
 
                 <ul>
                     <li>Chat: <a href="https://arquip.prefeitura.sp.gov.br/chat/" target="_blank">https://arquip.prefeitura.sp.gov.br/chat/</a></li>
-                    <li>Pesquisadores Acadêmicos: E-mail para reservatecnica@prefeitura.sp.gov.br.</li>
+                    <li>Pesquisadores Acadêmicos: E-mail para reservatecnica<br>@prefeitura.sp.gov.br.</li>
                 </ul>
 
                 <h2>12. Quais são as principais vantagens do Portal de Processos?</h2>

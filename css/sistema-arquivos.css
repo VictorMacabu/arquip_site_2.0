@@ -45,6 +45,12 @@ body{
 @media (min-width: 1127px) {
     nav{
         display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            gap: 130px;
+        }
     }
 
     .img-esquerda{
