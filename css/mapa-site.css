@@ -1,0 +1,36 @@
+/*Mobile*/
+nav{
+    display: none;
+}
+
+ .sitemap{
+    width: 700px;
+    max-width: 100%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+ }
+
+ h1{
+    text-align: center;
+    text-decoration: underline;
+ }
+
+h3{
+    border-bottom: 2px solid #0881C8;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #0881C8;
+}
