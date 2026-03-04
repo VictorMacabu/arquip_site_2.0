@@ -1,0 +1,78 @@
+nav{
+    display: none;
+}
+
+.img-esquerda{
+    display: none;
+}
+
+.img-direita{
+    display: none;
+}
+   
+.banner-estrutura{
+    visibility: hidden;
+}
+
+.texto-banner{
+    visibility: visible;
+        
+    & h1{
+        color: black;
+        position: relative;
+
+    }
+
+    & p{
+        color: black;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: relative;
+
+    }
+}
+
+.logo-diario{
+     display: none;
+}
+
+.texto-banner{
+    & h1{
+        text-align: center;
+    }
+
+    & p{
+        text-align: center;
+
+    }
+}
+
+.pessoas{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+
+    .pessoas-diario{
+        width: 100%;
+        height: auto;
+    }
+
+    .box-um{
+       
+    }
+
+    .box-dois{
+        
+    }
+
+    .box-tres{
+      
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 651px) {
+    
+}
+

@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/main-pc.css">
-    <link rel="stylesheet" href="/css/gestao-documental.css">
+    <link rel="stylesheet" href="/css/new-gestao.css">
+    <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <title>Política de Gestão Documental</title>
 </head>
 
 <body>
-
+    <!-- CABEÇALHO -->
     <?php require_once __DIR__ . "/views/header.php"
         ?>
 
+    <!-- BANNER -->
     <div class="banner-estrutura">
 
             <div> 
@@ -37,7 +39,7 @@
 
     </div>
 
-
+    <!-- INICIO PÁGINA -->
     <div class="container-pagina">
 
         <div class="card-secao">
@@ -88,17 +90,12 @@
             <p>A eficácia da política de gestão documental deve ser revisada periodicamente, com avaliações constantes
                 sobre sua implementação e eficácia, permitindo ajustes conforme as necessidades e desafios que surgem
             </p>
-
-
-
         </div>
-
-
-
     </div>
 
+    <!-- RODAPÉ -->
     <?php require_once __DIR__ . "/views/footer.php"
-        ?>
+    ?>
 
 
 
