@@ -144,7 +144,9 @@
         </div>
     </div>  
 
-    <!-- RODAPÉ -->
+
+
+    <script src="js/script.js"></script>
     <?php require_once __DIR__ . "/views/footer.php"
     ?>
     

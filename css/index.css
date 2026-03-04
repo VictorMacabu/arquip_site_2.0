@@ -47,11 +47,23 @@ ul,
 li,
 a {
   font-family: Gilroy-Medium;
+  font-size: 0.9rem;
 }
 
 b {
   font-family: Gilroy-Black;
 }
+
+
+/*=== CSS/CONTEÚDO ===*/
+
+main {
+  margin: 7% 15% 10% 15%;
+}
+
+
+/*===  CSS/ESTILOS QUE NÃO VÃO MUDAR ===*/
+
 
 
 /*  =====  PC  ===== */
@@ -69,13 +81,6 @@ b {
     display: none;
   }
 
-  /*=== CSS/CONTEÚDO ===*/
-
-  main {
-    margin: 10% 15% 10% 15%;
-  }
-
-
   /* === CSS/BANNER ===*/
 
   .banner {
@@ -84,25 +89,24 @@ b {
     background-repeat: no-repeat;
     background-position: center top;
     width: 100%;
-    height: clamp(22rem, 35vw, 33rem);
+    height: clamp(18rem, 63vh, 33rem);
     color: white;
     display: flex;
     align-items: center;
   }
 
   .banner-texto {
-    margin-left: 180px;
+    margin-left: clamp(20px, 8vw, 180px);
   }
 
   .banner-texto h1 {
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 4vw, 4rem);
     max-width: 560px;
     margin-bottom: 15px;
   }
 
   .banner-texto h2 {
-    font-size: 2rem;
-    margin-top: 0;
+    font-size: clamp(1rem, 2vw, 2rem);
   }
 
 
@@ -133,7 +137,7 @@ b {
     font-size: 1.40rem;
   }
 
-  .quem-somos_titulo h1 {
+  .quem-somos_titulo h2 {
     text-align: left;
     margin: 1% 1% 1% 1%;
     padding-bottom: 0.93rem;
@@ -145,6 +149,7 @@ b {
     margin: 0 2%;
     text-align: left;
     min-height: 8.37rem;
+    margin-bottom: 1rem;
   }
 
   .atendimento-card {
@@ -156,8 +161,6 @@ b {
   .atendimento-card:hover {
     transform: translateY(-8px);
   }
-
-
 
   .atendimento-card img {
     position: relative;
@@ -237,6 +240,11 @@ b {
     border-radius: 0.62rem;
     height: 1.93rem;
     width: 7.56rem;
+    transition: transform 0.4s ease;
+  }
+
+  .servico-card_botao:active {
+    transform: scale(0.9);
   }
 
   /* === CSS/SISTEMAS ===*/
@@ -246,13 +254,11 @@ b {
     width: 100%;
   }
 
-
-
   .sistemas-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 10rem;
+    margin-bottom: 13rem;
   }
 
 
@@ -263,6 +269,8 @@ b {
     line-height: 1.2;
     font-size: 2rem;
     margin-bottom: 2rem;
+    max-width: 400px;
+    width: 100%;
   }
 
   .sistemas-titulo_destaque {
@@ -278,20 +286,59 @@ b {
     width: 100%;
   }
 
-
-  .sistemas-carrossel {
-    height: 56%;
+  .carrossel-container {
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    width: 88%;
+    max-width: 618px;
   }
 
-  .sistemas-item {
-    width: 31%;
-    min-height: 15rem;
-    background-color: #ffff;
+  .carrossel {
+    overflow: hidden;
+    width: 100%;
+    max-width: 548px;
+    padding: 13px 10px;
+    box-sizing: border-box;
+  }
+
+  .track {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 18px;
+    flex-wrap: nowrap;
+  }
+
+  .card {
+    flex: 0 0 160px;
+    height: 215px;
+    background-color: #fff;
     border: 1px solid rgb(255, 255, 255);
-    box-shadow: 10px 5px 35px rgb(173, 173, 173);
-    border-radius: 11px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+  }
+
+  .seta {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #aaa;
+    padding: 10px;
+    transition: 0.3;
+  }
+
+  .seta:hover {
+    color: #555;
   }
 
 
@@ -345,6 +392,7 @@ b {
 
 
 
+
 /*  =====  Notebook  ===== */
 
 
@@ -359,31 +407,15 @@ b {
     display: none;
   }
 
-  .menu-toggle {
+  .quem-somos_texto_mobile {
     display: none;
   }
 
-
   main {
-    margin: 10% 5% 10% 5%;
+    margin: 9% 5% 10% 5%;
   }
-
 
   /* === CSS/BANNER ===*/
-
-
-  #logo-arquip {
-    width: 185px;
-    height: 46px;
-    padding: 5px 52px;
-  }
-
-  #logo-gestao {
-    width: 208px;
-    height: 71px;
-    padding: 5px 60px;
-  }
-
 
   .banner {
     background-image: url('/assets/banner/index/banner-arquivo-pc.png');
@@ -395,25 +427,20 @@ b {
     color: white;
     display: flex;
     align-items: center;
-
   }
 
   .banner-texto {
-    margin-bottom: 3rem;
+    margin-left: clamp(20px, 8vw, 180px);
   }
 
   .banner-texto h1 {
-    line-height: 1.2;
-    font-size: clamp(2.2rem, 4vw, 4rem);
-    margin-left: 25%;
-    margin-bottom: 0;
-    max-width: 44rem;
+    font-size: clamp(1.8rem, 4vw, 4rem);
+    max-width: 560px;
+    margin-bottom: 15px;
   }
 
   .banner-texto h2 {
-    font-size: clamp(1.2rem, 2vw, 1.8125rem);
-    margin-left: 25%;
-    max-width: 41.56rem;
+    font-size: clamp(1rem, 2vw, 2rem);
   }
 
 
@@ -430,7 +457,7 @@ b {
     width: 33%;
     margin: 0 1%;
     text-align: left;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
   }
 
   .quem-somos_titulo {
@@ -647,10 +674,21 @@ b {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /*  ===== Tablets   ===== */
 
 
-@media (min-width: 800px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
 
 
   /*=== CSS/SISTEMA QUE ESTÃO DESATIVADOS ===*/
@@ -663,22 +701,29 @@ b {
     display: none;
   }
 
+  .quem-somos_texto_mobile {
+    display: none;
+  }
+
   .menu-toggle {
     display: none;
   }
 
-  /*=== CSS/CONTEUDO ===*/
+  .navegacao {
+    display: none;
+  }
+
+  /*=== CSS/MAIN ===*/
 
   main {
-    margin: 10% 3% 10% 3%;
+    margin: 7% 2% 10% 2%;
   }
+
+  /*=== CSS/NAVEGAÇÃO ===*/
 
   nav {
     width: 100%;
   }
-
-
-  /*=== CSS/NAVEGAÇÃO ===*/
 
   nav ul li {
     font-size: 12px;
@@ -704,24 +749,20 @@ b {
 
   }
 
+
   .banner-texto {
-    margin-bottom: 3rem;
+    margin-left: clamp(20px, 8vw, 180px);
   }
 
   .banner-texto h1 {
-    line-height: 1.2;
-    font-size: clamp(2.2rem, 4vw, 4rem);
-    margin-left: 25%;
-    margin-bottom: 0;
-    max-width: 30.56rem;
+    font-size: clamp(1.8rem, 5vw, 5rem);
+    max-width: 450px;
+    margin-bottom: 15px;
   }
 
   .banner-texto h2 {
-    font-size: clamp(1.2rem, 2vw, 1.8125rem);
-    margin-left: 25%;
-    max-width: 41.56rem;
+    font-size: clamp(1rem, 2.5vw, 2rem);
   }
-
 
 
 
@@ -865,7 +906,7 @@ b {
 
   .sistemas-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-bottom: 10rem;
   }
@@ -957,9 +998,20 @@ b {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* ==== Mobile ==== */
 
-@media (max-width: 799px) {
+@media (max-width: 767px) {
 
 
   /*=== CSS/SISTEMAS QUE ESTÃO DESATIVADOS ===*/
@@ -983,32 +1035,6 @@ b {
   }
 
 
-  /*=== CSS/ICONES E LOGOS NO HEADER ===*/
-
-  .cabecalho-logos {
-    width: 100%;
-    height: 91px;
-    display: flex;
-    justify-content: space-around;
-    background-color: #0881c8;
-    align-items: center;
-  }
-
-
-  .cabecalho-logo_arquip {
-    width: 132px;
-    height: 35px;
-    margin-left: 0px;
-  }
-
-
-  .cabecalho-logo_gestao {
-    width: 143px;
-    height: 46px;
-    margin-right: 0px;
-  }
-
-
   /*=== CSS/BANNER ===*/
 
   .banner {
@@ -1023,6 +1049,13 @@ b {
     padding-top: 54px;
     position: relative;
     z-index: 1;
+  }
+
+  .banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
   }
 
   .banner-texto h1 {
@@ -1058,8 +1091,9 @@ b {
   }
 
   .atendimento-card {
-    width: 77%;
+    width: 78%;
     margin: 0 auto;
+    margin-bottom: 78px;
   }
 
   .atendimento-card img {
