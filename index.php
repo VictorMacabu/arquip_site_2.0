@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página Oficial do Arquip">
-    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/footer-index.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Arquip</title>
@@ -62,13 +62,16 @@
                             <a href="#">Consulta de processos administrativos</a>
                         </li>
                         <li>
-                            <a href="#">Acesso ao acervo - Requerimento eletrônico</a>
+                            <a href="#">Acesso ao acervo</a>
                         </li>
                         <li>
-                            <a href="#">Pesquisa de existência de processos/plantas</a>
+                            <a href="#">Pesquisa de processos/plantas</a>
                         </li>
                         <li>
                             <a href="#">Pesquisador Acadêmico</a>
+                        </li>
+                        <li>
+                            <a href="#">Central de Atendimento</a>
                         </li>
                     </ul>
                 </div>
@@ -170,12 +173,34 @@
                             SISTEMAS GERENCIADOS
                         </span>
                     </h2>
-                    <div class="sistemas-carrossel">
-                        <div class="sistemas-item"></div>
-                        <div class="sistemas-item"></div>
-                        <div class="sistemas-item"></div>
-                    </div>
+                    <div class="carrossel-container">
+                        <button class="seta esquerda">&#10094;</button>
 
+                        <div class="carrossel">
+                            <div class="track">
+                                <div class="card">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="seta direita">&#10095;</button>
+                    </div>
                 </div>
                 <div class="sistemas-imagem">
                     <img src="./assets/sistema-geren/Group 1844.png" alt="Imagem de uma planilha em Power BI">
@@ -194,7 +219,6 @@
                 </div>
             </div>
         </div>
-
 
         <!--- ÚLTIMAS NOTÍCIAS --->
         <section class="noticias">
@@ -255,9 +279,12 @@
         </section>
     </main>
 
+
+    <script src="js/script.js"></script>
+    <script src="js/cards.js"></script>
+
     <?php
-    require_once __DIR__ . '/views/footer-index.php';
+    require_once __DIR__ . '/views/footer.php';
     ?>
 </body>
-
 </html>

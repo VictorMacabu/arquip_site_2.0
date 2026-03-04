@@ -10,24 +10,80 @@
         </a>
     </div>
 
-
-
-    <nav>
-        <ul class="menu">
-            <li>Institucional</li>
-            <li>Atendimento ao Cidadão</li>
-            <li>Administração ao Servidor</li>
-            <li>Sistemas</li>
-            <li>
-                <div class="container-wrapper">
-                    <div class="container">
-                        <div class="input-wrapper">
-                            <input type="text" placeholder="Pesquisar...">
-                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    <nav class="navegacao">
+        <ul class="navegacao-lista">
+            <li class="navegacao-item">
+                <button class="navegacao-botao">Institucional</button>
+                <div class="navegacao-mega_menu">
+                    <div class="navegacao-mega_container">
+                        <div class="navegacao-coluna">
+                            <a href="#">Quem somos?</a>
+                            <a href="#">Estrutura Organizacional</a>
+                            <a href="#">Sistema de Arquivos</a>
+                            <a href="#">Política de Gestão</a>
+                            <a href="#">Legislações</a>
+                            <a href="#">Histórico</a>
                         </div>
                     </div>
                 </div>
             </li>
+
+            <li class="navegacao-item">
+                <button class="navegacao-botao">Atendimento ao Cidadão</button>
+                <div class="navegacao-mega_menu">
+                    <div class="navegacao-mega_container">
+                        <div class="navegacao-coluna">
+                            <a href="#">Portal de processos</a>
+                            <a href="#">Consulta de processos</a>
+                            <a href="#">Pesquisa acadêmica</a>
+                            <a href="#">Acesso ao acervo</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="navegacao-item">
+                <button class="navegacao-botao">Administração Pública</button>
+                <div class="navegacao-mega_menu">
+                    <div class="navegacao-mega_container">
+                        <div class="navegacao-coluna">
+                            <a href="#">Gestão Documental</a>
+                            <a href="#">Orientação às Edocs</a>
+                            <a href="#">AgoraSEI!</a>
+                            <a href="#">DigitaSampao</a>
+                            <a href="#">Diário Oficial Cidade de São Paulo</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li class="navegacao-item">
+                <button class="navegacao-botao">Sistemas</button>
+                <div class="navegacao-mega_menu">
+                    <div class="navegacao-mega_container">
+                        <div class="navegacao-coluna">
+                            <a href="#">Diário Oficial</a>
+                            <a href="#">Portal de Processos</a>
+                            <a href="#">Sistema Eletrônico de Informações -SEI!</a>
+                            <a href="#">SEI Treinamento</a>
+                            <a href="#">Sistema de Processos - SIMPROC</a>
+                            <a href="#">CAC</a>
+                            <a href="#">SIP</a>
+                            <a href="#">GLPI</a>
+                            <a href="#">TID</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <div class="container-wrapper">
+                <div class="container">
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Pesquisar...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
         </ul>
     </nav>
 </header>

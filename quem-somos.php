@@ -17,7 +17,6 @@
     
 
     <?php require_once __DIR__ . "/views/header.php"
-
     ?>
 
     <div class='container-pagina'>
@@ -147,6 +146,9 @@
 
     </div>  
 
+
+
+    <script src="js/script.js"></script>
     <?php require_once __DIR__ . "/views/footer.php"
     ?>
     
