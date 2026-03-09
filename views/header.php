@@ -20,7 +20,7 @@
                             <a href="quem-somos.php">Quem somos?</a>
                             <a href="estrutura-organizacional.php">Estrutura Organizacional</a>
                             <a href="sistemas-arquivos.php">Sistema de Arquivos</a>
-                            <a href="#">Política de Gestão</a>
+                            <a href="gestao-documental.php">Política de Gestão</a>
                             <a href="legislacoes.php">Legislações</a>
                             <a href="historico.php">Histórico</a>
                         </div>

@@ -149,3 +149,7 @@ button {
 .navegacao-coluna a:hover {
     transform: translate(8px);
 }
+
+a {
+    text-decoration: none;
+}
