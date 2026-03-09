@@ -62,15 +62,15 @@
                 <div class="navegacao-mega_menu">
                     <div class="navegacao-mega_container">
                         <div class="navegacao-coluna">
-                            <a href="https://diariooficial.prefeitura.sp.gov.br/md_epubli_controlador.php?acao=inicio">Diário Oficial</a>
-                            <a href="https://processos.prefeitura.sp.gov.br/Forms/Principal.aspx">Portal de Processos</a>
-                            <a href="https://sip.prefeitura.sp.gov.br/sip/modulos/pmsp/login/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SEI">Sistema Eletrônico de Informações -SEI!</a>
-                            <a href="https://treinamentosip4.prefeitura.sp.gov.br/sip/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SEI&infra_url=L3NlaS8=">SEI Treinamento</a>
-                            <a href="https://simprocantigo.prefeitura.sp.gov.br/SJ0934/servlet/LOGIN">Sistema de Processos - SIMPROC</a>
-                            <a href="https://admin.cacplus.prefeitura.sp.gov.br/Autenticacao?ReturnUrl=%2fHome%2fIndex">CAC</a>
-                            <a href="https://sip.prefeitura.sp.gov.br/sip/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SIP&infra_url=L3NpcC8=">SIP</a>
+                            <a href="https://diariooficial.prefeitura.sp.gov.br/md_epubli_controlador.php?acao=inicio" target="_blank">Diário Oficial</a>
+                            <a href="https://processos.prefeitura.sp.gov.br/Forms/Principal.aspx" target="_blank">Portal de Processos</a>
+                            <a href="https://sip.prefeitura.sp.gov.br/sip/modulos/pmsp/login/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SEI" target="_blank">Sistema Eletrônico de Informações -SEI!</a>
+                            <a href="https://treinamentosip4.prefeitura.sp.gov.br/sip/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SEI&infra_url=L3NlaS8=" target="_blank">SEI Treinamento</a>
+                            <a href="https://simprocantigo.prefeitura.sp.gov.br/SJ0934/servlet/LOGIN" target="_blank">Sistema de Processos - SIMPROC</a>
+                            <a href="https://admin.cacplus.prefeitura.sp.gov.br/Autenticacao?ReturnUrl=%2fHome%2fIndex" target="_blank">CAC</a>
+                            <a href="https://sip.prefeitura.sp.gov.br/sip/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SIP&infra_url=L3NpcC8=" target="_blank">SIP</a>
                             <a href="https://smgsuporte.prefeitura.sp.gov.br/index.php">GLPI</a>
-                            <a href="http://tid.prodam.sp.gov.br/">TID</a>
+                            <a href="http://tid.prodam.sp.gov.br/" target="_blank">TID</a>
                         </div>
                     </div>
                 </div>
