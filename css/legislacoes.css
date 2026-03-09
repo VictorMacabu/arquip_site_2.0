@@ -1,44 +1,44 @@
 @media (max-width: 1250px) {
-     nav{
+    nav {
         display: none;
     }
 
-    .img-esquerda{
+    .img-esquerda {
         display: none;
     }
 
-    .img-direita{
+    .img-direita {
         display: none;
     }
-   
-    .banner-estrutura{
+
+    .banner-estrutura {
         visibility: hidden;
     }
 
-    .texto-banner{
+    .texto-banner {
         visibility: visible;
-        
-        & h1{
+
+        & h1 {
             color: black;
             position: relative;
             top: 75px;
 
         }
 
-        & p{
+        & p {
             color: black;
             margin-left: 10%;
             margin-right: 10%;
             position: relative;
             top: 71px;
-       }
+        }
     }
 
-    .card-secao{
+    .card-secao {
         margin-top: 37%;
     }
-    
-} 
+
+}
 
 .banner-estrutura {
     justify-content: space-between;
@@ -69,14 +69,13 @@
 }
 
 .list-texto {
-    
 
     & ul {
         margin: 0;
         padding: 0;
         list-style: none;
         padding-top: 55px;
-        
+
     }
 
     & li {
@@ -90,7 +89,7 @@
 .leis,
 .decretos {
     padding-top: 17px;
-     
+
     & h2 {
         padding-top: 20px;
     }
@@ -109,4 +108,25 @@
 
 a {
     color: #233abe;
+}
+
+
+.texto-banner {
+    h1 {
+        color: #fff;
+        margin-top: 75px;
+        font-size: clamp(16px, 4vw, 47px);
+
+    }
+
+    p {
+        color: #fff;
+        font-size: clamp(12px, 2vw, 26px);
+    }
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }

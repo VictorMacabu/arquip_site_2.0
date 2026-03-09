@@ -13,6 +13,7 @@
     <title>Arquip</title>
 
 </head>
+
 <body>
 
 
@@ -118,7 +119,9 @@
                 <h2 class="servico-card_titulo">
                     GESTÃO DOCUMENTAL
                 </h2>
-                <hr class="servico-card_linha">
+                <div class="linha">
+                    <hr class="servico-card_linha">
+                </div>
                 <p class="servico-texto">
                     A PGDOC é um conjunto de diretrizes que tem por objetivo organizar a produção, uso e destinação
                     dos documentos da Administração de São Paulo, de forma a tornar a informação acessível a sua
@@ -135,7 +138,9 @@
                 <h2 class="servico-card_titulo">
                     E-DOCS
                 </h2>
-                <hr class="servico-card_linha">
+                <div class="linha">
+                    <hr class="servico-card_linha">
+                </div>
                 <p class="servico-texto">
                     A Equipe de Gestão Documental – EDOC, reunida pela portaria 01/CGDOC/2021, é uma
                     rede de
@@ -153,7 +158,9 @@
                 <h2 class="servico-card_titulo">
                     DIFUSÃO
                 </h2>
-                <hr class="servico-card_linha">
+                <div class="linha">
+                    <hr class="servico-card_linha">
+                </div>
                 <p class="servico-texto">
                     A Equipe de Gestão Documental (EDOC), criada pela portaria 01/CGDOC/2021, reúne gestores de
                     diferentes aspectos da gestão documental, como administradores do SEI e pontos focais da Tabela
@@ -179,21 +186,27 @@
                         <div class="carrossel">
                             <div class="track">
                                 <div class="card">
+                                    Teste
                                     <img src="" alt="">
                                 </div>
                                 <div class="card">
+                                    Teste
                                     <img src="" alt="">
                                 </div>
                                 <div class="card">
+                                    Teste
                                     <img src="" alt="">
                                 </div>
                                 <div class="card">
+                                    Teste
                                     <img src="" alt="">
                                 </div>
                                 <div class="card">
+                                    Teste
                                     <img src="" alt="">
                                 </div>
                                 <div class="card">
+                                    Teste
                                     <img src="" alt="">
                                 </div>
                             </div>
@@ -287,4 +300,5 @@
     require_once __DIR__ . '/views/footer.php';
     ?>
 </body>
+
 </html>
