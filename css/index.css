@@ -192,6 +192,10 @@ main {
   color: #00072D;
 }
 
+.atendimento-card_lista a:hover {
+  color: blue;
+}
+
 /* === CSS/SERVIÇOS ===*/
 
 .servicos {

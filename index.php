@@ -186,27 +186,21 @@
                         <div class="carrossel">
                             <div class="track">
                                 <div class="card">
-                                    Teste
                                     <img src="" alt="">
                                 </div>
                                 <div class="card">
-                                    Teste
                                     <img src="" alt="">
                                 </div>
                                 <div class="card">
-                                    Teste
                                     <img src="" alt="">
                                 </div>
                                 <div class="card">
-                                    Teste
                                     <img src="" alt="">
                                 </div>
                                 <div class="card">
-                                    Teste
                                     <img src="" alt="">
                                 </div>
                                 <div class="card">
-                                    Teste
                                     <img src="" alt="">
                                 </div>
                             </div>
@@ -293,7 +287,7 @@
     </main>
 
 
-    <script src="js/script.js"></script>
+
     <script src="js/cards.js"></script>
 
     <?php

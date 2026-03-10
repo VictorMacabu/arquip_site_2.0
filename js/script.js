@@ -1,3 +1,7 @@
+/*
+
+
+
 const menuItems = document.querySelectorAll('.navegacao-item');
 
 menuItems.forEach(item => {
@@ -24,3 +28,4 @@ document.addEventListener('click', () => {
         item.classList.remove('active');
     });
 });
+*/
