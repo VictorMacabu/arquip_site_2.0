@@ -124,7 +124,7 @@
                     dos documentos da Administração de São Paulo, de forma a tornar a informação acessível a sua
                     guarda sustentável.
                 </p>
-                <button class="servico-card_botao">SAIBA MAIS</button>
+                <button class="servico-card_botao"> <a href="gestao-documental.php">SAIBA MAIS</a></button>
             </div>
 
             <!--- CARD E-DOCS --->
@@ -142,7 +142,7 @@
                     parceiros e colaboradores que já atuavam de forma isolada como gestores de aspectos específicos
                     da gestão documental, bem como administradores locais do SEI, pontos focais da Tabela de
                     Temporalidade entre outros.</p>
-                <button class="servico-card_botao"> SAIBA MAIS</button>
+                <button class="servico-card_botao"> <a href="orientacao.php">SAIBA MAIS</a></button>
             </div>
 
             <!--- CARD DIFUSÃO --->
