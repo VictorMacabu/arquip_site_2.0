@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Arquip</title>
+    <title>ARQUIP</title>
 
 </head>
 <body>

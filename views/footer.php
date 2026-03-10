@@ -18,7 +18,7 @@
 
     <address class="contatos">
         <div class="footer-direita">
-            <p><a href="https://arquip.prefeitura.sp.gov.br/app/mapa-do-site/" target="_blank" style="color: #fff;">Mapa do Site</a></p>
+            <p><a href="mapa-site.php" target="_blank" style="color: #fff;">Mapa do Site</a></p>
             <p>Desenvolvido por Arquip ©</p>
             <p>Atualizado em 08/01/2025</p>
             <p>Contato:<a href="arquip@prefeitura.sp.gov.br" target="_blank" style="color: #fff;"> arquip@prefeitura.sp.gov.br</a></p>

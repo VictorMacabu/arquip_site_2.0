@@ -1,4 +1,5 @@
-/*Mobile*/
+/*Mobile e Tablet*/
+@media (max-width: 1281px){
 nav{
     display: none;
 }
@@ -41,10 +42,12 @@ nav{
     position: relative;
 }
 
-/*Desktop*/
-@media (min-width: 1025px) {
+}
 
-nav{
+/*Desktop*/
+@media (min-width: 1282px) {
+
+    nav{
         display: flex;
         justify-content: center;
         z-index: 2;
@@ -53,6 +56,10 @@ nav{
             display: flex;
             gap: 130px;
         }
+    }
+
+    .navegacao-coluna{
+        display: flex;
     }
 
     .img-esquerda{
@@ -84,8 +91,8 @@ nav{
         h1{
             color: #fff;
             max-width: 60ch;
-            margin: 0 auto;
             font-size: clamp(1.2rem, 4vw, 3rem);
+            text-align: center;
         }
 
         p {
@@ -93,9 +100,8 @@ nav{
             max-width: 60ch;
             margin: 0 auto;
             font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+            text-align: center;
         }
-
-       
     }
 
     .banner-estrutura{

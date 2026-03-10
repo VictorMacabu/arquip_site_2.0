@@ -1,16 +1,20 @@
+* {
+  box-sizing: border-box;
+}
 /*Mobile*/
 nav{
     display: none;
 }
 
  .sitemap{
-    width: 700px;
+    width: 400px;
     max-width: 100%;
     margin: 50px auto;
     background: #fff;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-top: 8%;
  }
 
  h1{
@@ -33,4 +37,18 @@ ul{
 a{
     text-decoration: none;
     color: #0881C8;
+}
+
+/*Desktop*/
+@media (min-width: 1281px) {
+
+    nav{
+        display: flex;
+        justify-content: center;
+
+        ul {
+            display: flex;
+            gap: 130px;
+        }
+    }
 }
