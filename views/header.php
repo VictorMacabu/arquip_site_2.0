@@ -69,7 +69,7 @@
                             <a href="https://simprocantigo.prefeitura.sp.gov.br/SJ0934/servlet/LOGIN" target="_blank">Sistema de Processos - SIMPROC</a>
                             <a href="https://admin.cacplus.prefeitura.sp.gov.br/Autenticacao?ReturnUrl=%2fHome%2fIndex" target="_blank">CAC</a>
                             <a href="https://sip.prefeitura.sp.gov.br/sip/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SIP&infra_url=L3NpcC8=" target="_blank">SIP</a>
-                            <a href="https://smgsuporte.prefeitura.sp.gov.br/index.php">GLPI</a>
+                            <a href="https://smgsuporte.prefeitura.sp.gov.br/index.php" target="_blank">GLPI</a>
                             <a href="http://tid.prodam.sp.gov.br/" target="_blank">TID</a>
                         </div>
                     </div>

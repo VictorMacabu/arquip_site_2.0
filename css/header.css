@@ -142,7 +142,7 @@ button {
 
 .navegacao-coluna a {
     color: #fff;
-    margin-bottom: 18px;
+    margin-bottom: 0px;
     transition: transform 0.5s ease
 }
 
@@ -152,4 +152,15 @@ button {
 
 a {
     text-decoration: none;
+}
+
+.navegacao a{
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 8px 0;
+}
+
+.navegacao a:last-child{
+  border-bottom: none;
 }
