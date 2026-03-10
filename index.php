@@ -59,16 +59,16 @@
 
                     <ul class="atendimento-card_lista">
                         <li>
-                            <a href="#">Consulta de processos administrativos</a>
+                            <a href="consulta-processo.php">Consulta de processos administrativos</a>
                         </li>
                         <li>
-                            <a href="#">Acesso ao acervo</a>
+                            <a href="acesso-acervo.php">Acesso ao acervo</a>
                         </li>
                         <li>
-                            <a href="#">Pesquisa de processos/plantas</a>
+                            <a href="pesquisa-processo.php">Pesquisa de processos/plantas</a>
                         </li>
                         <li>
-                            <a href="#">Pesquisador Acadêmico</a>
+                            <a href="pesquisador-academico.php">Pesquisador Acadêmico</a>
                         </li>
                         <li>
                             <a href="#">Central de Atendimento</a>
@@ -87,19 +87,19 @@
 
                     <ul class="atendimento-card_lista">
                         <li>
-                            <a href="#">Gestão Documental</a>
+                            <a href="gestao-documental.php">Gestão Documental</a>
                         </li>
                         <li>
-                            <a href="#">Orientação às EDOCS</a>
+                            <a href="orientacao.php">Orientação às EDOCS</a>
                         </li>
                         <li>
-                            <a href="#">AgoraSEI!</a>
+                            <a href="agorasei.php">AgoraSEI!</a>
                         </li>
                         <li>
-                            <a href="#">DigitaSampa</a>
+                            <a href="digitasampa.php">DigitaSampa</a>
                         </li>
                         <li>
-                            <a href="#">Diário Oficial Cidade de São Paulo</a>
+                            <a href="diario-oficial.php">Diário Oficial Cidade de São Paulo</a>
                         </li>
                     </ul>
                 </div>
