@@ -17,11 +17,11 @@
                 <div class="navegacao-mega_menu">
                     <div class="navegacao-mega_container">
                         <div class="navegacao-coluna">
-                            <a href="http://10.69.32.97:8080/quem-somos.php" target="_blank">Quem somos?</a>
+                            <a href="/quem-somos.php" target="_blank">Quem somos?</a>
                             <a href="#">Estrutura Organizacional</a>
-                            <a href="http://10.69.32.97:8080/sistemas-arquivos.php" target="_blank">Sistema de Arquivos</a>
+                            <a href="/sistemas-arquivos.php" target="_blank">Sistema de Arquivos</a>
                             <a href="#">Política de Gestão</a>
-                            <a href="http://10.69.32.97:8080/legislacoes.php" target="_blank">Legislações</a>
+                            <a href="/legislacoes.php" target="_blank">Legislações</a>
                             <a href="#">Histórico</a>
                         </div>
                     </div>
