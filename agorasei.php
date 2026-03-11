@@ -21,6 +21,7 @@
         <div>
             <img class="img-esquerda" src="/assets/agorasei/computador-sei.png" alt="Computador">
         </div>
+        
         <div class="texto-banner">
             <h1>AGORASEI!</h1>
             <p>O Sistema Eletrônico de Informações (SEI!) foi desenvolvido pelo Tribunal Regional Federal da 4º região
@@ -33,6 +34,7 @@
             <img class="img-direita" src="/assets/agorasei/icone-sei.png" alt="Icone">
         </div>
     </div>
+    
     <div class="container-pagina">
         <div class="card-secao">
             <div class="primeira-img">

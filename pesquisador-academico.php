@@ -137,10 +137,9 @@
                 </p>
                 
 
-                <!--- Link do site não está funcionado, corrigir! --->
                 <h2>2. Como faço para consultar um processo administrativo?</h2>
                 <p>Você pode consultar um processo administrativo acessando o Portal de Processos em <a
-                        href="/" target="_blank">www.processos.prefeitura.sp.gov.br</a>
+                        href="https://processos.prefeitura.sp.gov.br/forms/consultarprocessos.aspx" target="_blank">www.processos.prefeitura.sp.gov.br</a>
                 </p>
 
                 <ul>

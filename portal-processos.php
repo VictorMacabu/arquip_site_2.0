@@ -43,6 +43,7 @@
             <div class="img-portal">
                 <img src="/assets/portal-processo/pessoas-portal.png" class="pessoas" alt="Pessoas">
             </div>
+            
             <div class="card-portal">
                 <div class="card-um">
                     <img src="/assets/portal-processo/card-um.png" alt="Card Um">
@@ -75,7 +76,6 @@
                         ARQUIP, realizados de forma digital ou presencial.
                     </p>
                 </div>
-
             </div>
 
             <div class="conteudo-portal">
