@@ -68,6 +68,12 @@ nav{
     }
 }
 
+.conteudo-portal{
+    h2{
+        font-family: 'Gilroy-Bold';
+    }
+}
+
 /*Tablet*/
 @media (min-width: 768px) {
     .card-portal{

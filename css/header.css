@@ -1,8 +1,10 @@
 /* === CABEÇALHO === */
 
+/*
 p {
     font-size: clamp(0.9rem, 1.2vw, 1.0rem);
 }
+*/
 
 .cabecalho-logos {
     background-image: url(/assets/header/cabecalho-2.png);
