@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Arquip</title>
+    <title>ARQUIP</title>
 
 </head>
 
@@ -60,16 +60,16 @@
 
                     <ul class="atendimento-card_lista">
                         <li>
-                            <a href="#">Consulta de processos administrativos</a>
+                            <a href="consulta-processo.php">Consulta de processos administrativos</a>
                         </li>
                         <li>
-                            <a href="#">Acesso ao acervo</a>
+                            <a href="acesso-acervo.php">Acesso ao acervo</a>
                         </li>
                         <li>
-                            <a href="#">Pesquisa de processos/plantas</a>
+                            <a href="pesquisa-processo.php">Pesquisa de processos/plantas</a>
                         </li>
                         <li>
-                            <a href="#">Pesquisador Acadêmico</a>
+                            <a href="pesquisador-academico.php">Pesquisador Acadêmico</a>
                         </li>
                         <li>
                             <a href="#">Central de Atendimento</a>
@@ -88,19 +88,19 @@
 
                     <ul class="atendimento-card_lista">
                         <li>
-                            <a href="#">Gestão Documental</a>
+                            <a href="gestao-documental.php">Gestão Documental</a>
                         </li>
                         <li>
-                            <a href="#">Orientação às EDOCS</a>
+                            <a href="orientacao.php">Orientação às EDOCS</a>
                         </li>
                         <li>
-                            <a href="#">AgoraSEI!</a>
+                            <a href="agorasei.php">AgoraSEI!</a>
                         </li>
                         <li>
-                            <a href="#">DigitaSampa</a>
+                            <a href="digitasampa.php">DigitaSampa</a>
                         </li>
                         <li>
-                            <a href="#">Diário Oficial Cidade de São Paulo</a>
+                            <a href="diario-oficial.php">Diário Oficial Cidade de São Paulo</a>
                         </li>
                     </ul>
                 </div>
@@ -127,7 +127,7 @@
                     dos documentos da Administração de São Paulo, de forma a tornar a informação acessível a sua
                     guarda sustentável.
                 </p>
-                <button class="servico-card_botao">SAIBA MAIS</button>
+                <button class="servico-card_botao"> <a href="gestao-documental.php">SAIBA MAIS</a></button>
             </div>
 
             <!--- CARD E-DOCS --->
@@ -147,7 +147,7 @@
                     parceiros e colaboradores que já atuavam de forma isolada como gestores de aspectos específicos
                     da gestão documental, bem como administradores locais do SEI, pontos focais da Tabela de
                     Temporalidade entre outros.</p>
-                <button class="servico-card_botao"> SAIBA MAIS</button>
+                <button class="servico-card_botao"> <a href="orientacao.php">SAIBA MAIS</a></button>
             </div>
 
             <!--- CARD DIFUSÃO --->

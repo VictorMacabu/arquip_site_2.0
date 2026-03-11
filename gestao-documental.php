@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/main-pc.css">
     <link rel="stylesheet" href="/css/new-gestao.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Política de Gestão Documental</title>
 </head>
 
