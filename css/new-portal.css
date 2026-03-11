@@ -39,12 +39,9 @@ nav{
 }
 
 .img-portal{
-    display: none;
+    display: none; 
     & img{
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin-top: 5%;
+        display: none; 
     }
 }
 
@@ -68,6 +65,12 @@ nav{
     & p{
         text-align: center;
         margin-top: 0px;
+    }
+}
+
+.conteudo-portal{
+    h2{
+        font-family: 'Gilroy-Bold';
     }
 }
 
@@ -156,7 +159,7 @@ nav{
     .direita{
         margin-left: 12%;
     }
-}
+
     
     .img-portal{
         display: block;
@@ -168,5 +171,4 @@ nav{
         }
     }
 
-
-
+}

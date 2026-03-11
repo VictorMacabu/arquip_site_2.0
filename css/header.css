@@ -1,7 +1,15 @@
 /* === CABEÇALHO === */
+<<<<<<< atualizacao-dropdowns
 button {
     font-family: Gilroy-Medium;
+=======
+
+/*
+p {
+    font-size: clamp(0.9rem, 1.2vw, 1.0rem);
+>>>>>>> main
 }
+*/
 
 
 .cabecalho-logos {
@@ -19,20 +27,16 @@ button {
 
 
 .cabecalho-logo_arquip {
-    max-width: clamp(120px, 15vw, 185px);
-    margin-left: clamp(10px, 4vw, 31px);
-    height: auto;
-    position: relative;
-    z-index: 2;
+    width: 100px;
+    height: 29px;
+    margin-left: 45px;
 }
 
 
 .cabecalho-logo_gestao {
-    max-width: clamp(120px, 15vw, 210px);
-    margin-right: clamp(10px, 4vw, 31px);
-    height: auto;
-    position: relative;
-    z-index: 2;
+    width: 106px;
+    height: 41px;
+    margin-right: 45px;
 }
 
 
@@ -151,10 +155,34 @@ button {
 
 .navegacao-coluna a {
     color: #fff;
+<<<<<<< atualizacao-dropdowns
     padding: 10px;
     text-decoration: none;
 }
 
 .navegacao-coluna a:hover {
     background: #4cb0e2;
+=======
+    margin-bottom: 0px;
+    transition: transform 0.5s ease
+}
+
+.navegacao-coluna a:hover {
+    transform: translate(8px);
+}
+
+a {
+    text-decoration: none;
+}
+
+.navegacao a{
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding: 8px 0;
+}
+
+.navegacao a:last-child{
+  border-bottom: none;
+>>>>>>> main
 }
