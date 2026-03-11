@@ -1,105 +1,64 @@
-nav{
-    display: none;
+main {
+    padding-top: 92px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 9%;
+    background-color: white;
+    font-size: 20px;
 }
 
-.img-esquerda{
-    display: none;
+
+/* ======  SISTEMAS-ARQUIVOS  ====== */
+
+
+.sistema-arquivo_conteudo {
+    margin-bottom: 65px;
 }
 
-.img-direita{
-    display: none;
-}
-   
-.banner-estrutura{
-    visibility: hidden;
+
+/* ======  DEFINIÇÃO DOCUMENTAL  ======*/
+
+.definicao-documental_lista li {
+    padding: 5px;
 }
 
-.texto-banner{
-    visibility: visible;
-    position: relative;
+
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.centralizar {
+    width: 372px;
+}
+
+.img-esquerda {
+    display: block;
+}
+
+.img-direita {
+    display: block;
+    height: auto;
+    width: auto;
+}
+
+.texto-banner {
+    h1 {
+        color: #fff;
+        margin-top: 75px;
+        font-size: clamp(16px, 4vw, 47px);
+
+    }
+
+    p {
+        color: #fff;
+        font-size: clamp(12px, 2vw, 28px);
+    }
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    & h1{
-        color: black;
-        position: relative;
-
-    }
-
-    & p{
-        color: black;
-        margin-left: 10%;
-        margin-right: 10%;
-        position: relative;
-
-    }
 }
 
-.card-secao{
-    position: relative;
-}
-
-body{
-    display: grid;
-}
-
-/*Desktop*/
-@media (min-width: 1127px) {
-    nav{
-        display: flex;
-        justify-content: center;
-
-        ul {
-            display: flex;
-            gap: 130px;
-        }
-    }
-
-    .img-esquerda{
-        display: block;
-    }
-
-    .img-direita{
-        display: block;
-    }
-   
-    .banner-estrutura{
-        visibility: visible;
-    }
-
-    .img-esquerda{
-        display: block;
-        width: auto;
-        height: auto;
-    }
-
-    .img-direita{
-        display: block;
-        height: auto;
-        width: auto;
-    }
-
-    .texto-banner{
-        h1{
-            color: #fff;
-            min-width: 0;
-            font-size: clamp(16px, 4vw, 32px);
-
-        }
-
-        p {
-            color: #fff;
-            min-width: 0;
-            font-size: clamp(12px, 2vw, 16px);
-        }
-
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .banner-estrutura{
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-}

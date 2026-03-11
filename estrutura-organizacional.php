@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/CSS/main-pc.css">
     <link rel="stylesheet" href="/CSS/estrutura-organizacional.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Estrutura Organizacional</title>
 </head>
 
@@ -122,11 +123,9 @@
         </div>
     </div>
 
-    <!-- RODAPÉ -->
+    <script src="js/script.js"></script>
     <?php require_once __DIR__ . "/views/footer.php"
         ?>
-
-
 
 
 </body>
