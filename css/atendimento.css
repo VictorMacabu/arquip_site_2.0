@@ -1,0 +1,65 @@
+/* Header */
+
+.header-form{
+    align-items:center;
+    border-bottom:1px solid #ddd;
+}
+
+.logo img{
+    height:33px;
+}
+
+/*Corpo do Código */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.box-atendimento{
+    width: 600px;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input, textarea, select{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 80px;
+}
+
+button{
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #0b5ed7;
+}

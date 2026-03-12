@@ -72,7 +72,7 @@
                             <a href="pesquisador-academico.php">Pesquisador Acadêmico</a>
                         </li>
                         <li>
-                            <a href="#">Central de Atendimento</a>
+                            <a href="atendimento.php">Central de Atendimento</a>
                         </li>
                     </ul>
                 </div>

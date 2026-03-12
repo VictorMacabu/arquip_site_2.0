@@ -67,10 +67,6 @@ main {
 
 /*  =====  PC  ===== */
 
-<<<<<<< atualizacao-dropdowns
-.sistema-mobile {
-  display: none;
-=======
 @media(min-width:1440px) {
 
 
@@ -384,7 +380,6 @@ main {
     font-size: 1.18rem;
     padding-top: 4.37rem;
   }
->>>>>>> main
 }
 
 .noticia-mobile {
