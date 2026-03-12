@@ -25,6 +25,7 @@
         <div>
             <img class="img-esquerda" src="/assets/estrutura-organizacional/pessoas-estrutura.png" alt="Pessoas">
         </div>
+        
         <div class="texto-banner">
             <h1>ESTRUTURA ORGANIZACIONAL</h1>
             <p>O Decreto nº 62.208, de 28 de fevereiro de 2023, define as atribuições do Arquivo Público do Município de
@@ -32,6 +33,7 @@
                 públicos municipais.
             </p>
         </div>
+        
         <div>
             <img class="img-direita" src="/assets/estrutura-organizacional/icone-estrutura.png" alt="Icone">
         </div>

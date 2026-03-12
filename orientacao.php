@@ -14,9 +14,11 @@
 
 <body>
 
+    <!-- CABEÇALHO -->
     <?php require_once __DIR__ . "/views/header.php"
     ?>
 
+     <!-- BANNER -->
     <div class="banner-estrutura">
 
         <div class="centralizar">
@@ -36,6 +38,7 @@
 
     </div>
 
+    <!-- INICIO PÁGINA -->
     <main>
         <div class="pagina">
             <div class="conteudo">
@@ -51,6 +54,7 @@
                     </p>
                 </div>
             </div>
+            
             <div class="foto">
                 <img src="/assets/orientacao-edocs/img-mulher-conversando.png" alt="Imagem de mulher conversando">
             </div>
@@ -59,6 +63,7 @@
         </div>
     </main>
 
+    <!-- RODAPÉ -->
     <?php require_once __DIR__ . "/views/footer.php"
     ?>
 </body>

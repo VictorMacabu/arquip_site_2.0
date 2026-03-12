@@ -41,6 +41,8 @@
         <div class="card-secao">
             <div class="img-acervo">
                 <img src="/assets/acesso-acervo/img-um.png" alt="">
+            </div>
+            
             <div class="txt-direita">
                 <h2 class="titulo-um">ACESSO AO ACERVO DO ARQUIP</h2>
                 <p class="txt-um">Através de um requerimento eletrônico no Portal de Processos, é possível solicitar a
@@ -144,5 +146,4 @@
     ?>
     
 </body>
-
-</html>
+</html>   
