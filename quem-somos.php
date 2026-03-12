@@ -153,8 +153,6 @@
 
 
 
-    <script src="js/script.js"></script>
-    
     <!-- RODAPÉ -->
     <?php require_once __DIR__ . "/views/footer.php"
     ?>
