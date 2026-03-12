@@ -49,6 +49,49 @@
 
 }
 
+
+
+
+/* ======  QUEM SOMOS/ARQUIVO ====== */
+.quem-somos {
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.quem-somos_subtitulo {
+    margin-top: 2%;
+    font-size: 17px;
+}
+
+.quem-somos_resumo {
+    margin-top: -18px;
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+
+.quem-somos_texto {
+    margin-bottom: 74px;
+}
+
+
+
+
+/* ====== QUEM SOMOS/SERVIÇOS ======*/
+
+
+.servicos-subtitulo {
+    margin-top: 2%;
+    font-size: 17px;
+}
+
+.servicos-lista {
+    margin-bottom: 74px;
+}
+
+.servicos-lista li {
+    font-family: Gilroy-Medium;
+}
+
 .imagem-right{
     float: right;
 }
@@ -66,8 +109,33 @@
     }
 }
 
+
+/* ====== DEVER E RESPONSABILIDADE ======*/
+
+
+.dever-responsabilidade_subtitulo {
+    margin-top: 2%;
+    font-size: 17px;
+}
+
+.dever-responsabilidade_texto {
+    margin-bottom: 74px
+}
+
+
+/* ======  UMA HOMENAGEM  ======*/
+
 .last-txt{
     font-size: 20px; 
-    margin-top: -5%;
-
+<<<<<<< atualizacao-dropdowns
+    margin-top: -6%;
 }
+=======
+    margin-top: -5%;
+>>>>>>> main
+
+.card-secao {
+    margin-bottom: 74px;
+}
+
+

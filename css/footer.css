@@ -1,3 +1,5 @@
+<<<<<<< atualizacao-dropdowns
+=======
 @media (max-width: 1250px){
     footer{
     font-size: 11px;
@@ -37,6 +39,7 @@
     }
 }
 
+>>>>>>> main
 footer {
     background-color: #000000;
     display: flex;
