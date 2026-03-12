@@ -1,13 +1,8 @@
 /* === CABEÇALHO === */
-<<<<<<< atualizacao-dropdowns
-button {
-    font-family: Gilroy-Medium;
-=======
 
 /*
 p {
     font-size: clamp(0.9rem, 1.2vw, 1.0rem);
->>>>>>> main
 }
 */
 
@@ -155,14 +150,6 @@ button {
 
 .navegacao-coluna a {
     color: #fff;
-<<<<<<< atualizacao-dropdowns
-    padding: 10px;
-    text-decoration: none;
-}
-
-.navegacao-coluna a:hover {
-    background: #4cb0e2;
-=======
     margin-bottom: 0px;
     transition: transform 0.5s ease
 }
@@ -184,5 +171,4 @@ a {
 
 .navegacao a:last-child{
   border-bottom: none;
->>>>>>> main
 }

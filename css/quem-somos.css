@@ -127,15 +127,10 @@
 
 .last-txt{
     font-size: 20px; 
-<<<<<<< atualizacao-dropdowns
-    margin-top: -6%;
-}
-=======
     margin-top: -5%;
->>>>>>> main
 
-.card-secao {
-    margin-bottom: 74px;
+    .card-secao {
+        margin-bottom: 74px;
+    }
+
 }
-
-
