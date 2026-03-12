@@ -1,0 +1,84 @@
+/* ====== FONTE ====== */
+
+@font-face {
+  font-family: Gilroy-ExtraBold;
+  src: url(/assets/font-site/Gilroy-Black/Gilroy-ExtraBold.otf)
+}
+
+
+
+/* ====== BANNER ====== */
+
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.img-esquerda {
+    width: 345px;
+    height: 386px;
+    margin-bottom: -4px;
+}
+
+.img-direita {
+    width: 345px;
+    height: 331px;
+    margin-bottom: -4px;
+}
+
+.texto-banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.texto-banner h1 {
+    color: #fff;
+    margin-top: 75px;
+    font-size: clamp(16px, 4vw, 47px);
+}
+
+.texto-banner p {
+    color: #fff;
+    font-size: clamp(12px, 2vw, 26px);
+}
+
+/* ====== PORTAL / IMAGEM ====== */
+
+.portal-processos_img {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+/* ====== CARDS ====== */
+
+.portal-processos_cards {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 200px;
+}
+
+.card,
+.altura1 {
+    text-align: center;
+}
+
+.altura1 {
+    position: relative;
+    bottom: 69px;
+}
+
+.portal-processos_conteudo h2 {
+    font-family: Gilroy-ExtraBold;
+    font-size: 2rem;
+}
+
+.portal-processos_conteudo ul {
+    padding: 20px;
+}
+
+.portal-processos_conteudo li {
+    margin-bottom: 12px;
+}

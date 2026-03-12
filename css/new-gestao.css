@@ -1,53 +1,53 @@
 /*Mobile e Tablet*/
-@media (max-width: 1281px){
-nav{
-    display: none;
-}
-
-.img-esquerda{
-    display: none;
-}
-
-.img-direita{
-    display: none;
-}
-   
-.banner-estrutura{
-    visibility: hidden;
-    position: relative;
-    height: auto;
-
-}
-
-.texto-banner{
-    visibility: visible;
-    position: relative;
-        
-    & h1{
-        color: black;
-        position: relative;
-        text-align: center;
+@media (max-width: 1281px) {
+    nav {
+        display: none;
     }
 
-    & p{
-        color: black;
-        margin-left: 10%;
-        margin-right: 10%;
-        position: relative;
-        text-align: center;
+    .img-esquerda {
+        display: none;
     }
-}
 
-.card-secao{
-    position: relative;
-}
+    .img-direita {
+        display: none;
+    }
+
+    .banner-estrutura {
+        visibility: hidden;
+        position: relative;
+        height: auto;
+
+    }
+
+    .texto-banner {
+        visibility: visible;
+        position: relative;
+
+        & h1 {
+            color: black;
+            position: relative;
+            text-align: center;
+        }
+
+        & p {
+            color: black;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            text-align: center;
+        }
+    }
+
+    .card-secao {
+        position: relative;
+    }
 
 }
 
 /*Desktop*/
 @media (min-width: 1282px) {
 
-    nav{
+    nav {
         display: flex;
         justify-content: center;
         z-index: 2;
@@ -58,37 +58,37 @@ nav{
         }
     }
 
-    .navegacao-coluna{
+    .navegacao-coluna {
         display: flex;
     }
 
-    .img-esquerda{
+    .img-esquerda {
         display: block;
     }
 
-    .img-direita{
+    .img-direita {
         display: block;
     }
-   
-    .banner-estrutura{
+
+    .banner-estrutura {
         visibility: visible;
     }
 
-    .img-esquerda{
-        display: block;
-        width: auto;
-        height: auto;
+    .img-esquerda {
+        width: 381px;
+        height: 450px;
     }
 
-    .img-direita{
+    .img-direita {
         display: block;
         height: auto;
         width: auto;
     }
 
-    .texto-banner{
+    .texto-banner {
         margin-bottom: auto;
-        h1{
+
+        h1 {
             color: #fff;
             max-width: 60ch;
             font-size: clamp(1.2rem, 4vw, 3rem);
@@ -104,13 +104,12 @@ nav{
         }
     }
 
-    .banner-estrutura{
+    .banner-estrutura {
         justify-content: space-between;
         align-items: flex-end;
     }
 
-    .direita{
+    .direita {
         margin-left: 12%;
     }
 }
-
