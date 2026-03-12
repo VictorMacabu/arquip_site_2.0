@@ -37,7 +37,7 @@ li {
 .banner-estrutura {
     display: flex;
     width: 100%;
-    height: 27vw;
+    height: 450px;
     margin-top: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,9 +48,7 @@ li {
 .container-pagina {
     padding-top: 92px;
     padding-bottom: 92px;
-    margin-left: 12%;
-    margin-right: 12%;
-    margin-bottom: 12%;
+    margin: 3% 12% 12% 12%;
     background-color: white;
     font-size: 20px;
 }

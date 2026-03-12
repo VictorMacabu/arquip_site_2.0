@@ -752,6 +752,10 @@ main {
     display: block;
   }
 
+  .sistema-mobile_titulo {
+    display: block;
+  }
+
 
   nav {
     display: none;
