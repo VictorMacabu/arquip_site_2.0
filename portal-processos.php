@@ -16,7 +16,7 @@
 
     <!-- CABEÇALHO -->
     <?php require_once __DIR__ . "/views/header.php"
-        ?>
+    ?>
 
     <!-- BANNER -->
     <div class="banner-estrutura">
@@ -116,7 +116,7 @@
                     para garantir que todos os cidadãos consigam utilizar suas funcionalidades com facilidade. Além
                     disso,
                     poderá realizar o acesso através do endereço eletrônico:
-                    <a href="www.processos.prefeitura.sp.gov.br.">www.processos.prefeitura.sp.gov.br.</a>
+                    <a href="https://processos.prefeitura.sp.gov.br/Forms/Principal.aspx">www.processos.prefeitura.sp.gov.br.</a>
                 </p>
             </div>
         </div>

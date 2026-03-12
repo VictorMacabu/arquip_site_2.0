@@ -142,9 +142,8 @@
     </div>
 
     <!-- RODAPÉ -->
-    
-        <?php require_once __DIR__ . "/views/footer.php"
-        ?>
+    <?php require_once __DIR__ . "/views/footer.php"
+    ?>
     
 </body>
 </html>   
