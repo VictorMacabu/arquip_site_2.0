@@ -1,9 +1,9 @@
 <footer>
     <address class="info-footer">
-        <p>Secretaria Municipal de Gestão</p>
+        <p><a href="https://prefeitura.sp.gov.br/web/gestao" target="_blank" style="color: #fff">Secretaria Municipal de Gestão</a></p>
         <p><b>ARQUIVO PÚBLICO MUNICIPAL</b></p> 
         <p class="nome-arquip">Jornalista Paulo Roberto Dutra</p> 
-        <p>R. Léo Ribeiro de Morães, 66 - Freguesia do Ó <br> São Paulo/SP- Brasil </p>
+        <p> <a href="https://maps.app.goo.gl/zMx25UhoKkd3BmAR7" target="_blank" style="color: #fff">R. Léo Ribeiro de Morães, 66 - Freguesia do Ó <br> São Paulo/SP- Brasil</a></p>
     </address>
 
     
@@ -22,7 +22,7 @@
             <p>Desenvolvido por Arquip ©</p>
             <p>Atualizado em 08/01/2025</p>
             <p>Contato:<a href="arquip@prefeitura.sp.gov.br" target="_blank" style="color: #fff;"> arquip@prefeitura.sp.gov.br</a></p>
-            <p>Atendimento Virtual</p>
+            <p><a href="atendimento.php" target="_blank" style="color: #fff">Atendimento Virtual</a></p>
         </div>
     </address>
 </footer>
