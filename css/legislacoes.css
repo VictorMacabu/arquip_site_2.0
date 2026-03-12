@@ -1,44 +1,56 @@
+@font-face {
+    font-family: Gilroy-semibold;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-semibold.ttf);
+}
+
+
+
+
+/* ====== MOBILE ====== */
 @media (max-width: 1250px) {
-     nav{
+    nav {
         display: none;
     }
 
-    .img-esquerda{
+    .img-esquerda {
         display: none;
     }
 
-    .img-direita{
+    .img-direita {
         display: none;
     }
-   
-    .banner-estrutura{
+
+    .banner-estrutura {
         visibility: hidden;
     }
 
-    .texto-banner{
+    .texto-banner {
         visibility: visible;
-        
-        & h1{
+
+        & h1 {
             color: black;
             position: relative;
             top: 75px;
 
         }
 
-        & p{
+        & p {
             color: black;
             margin-left: 10%;
             margin-right: 10%;
             position: relative;
             top: 71px;
-       }
+        }
     }
 
-    .card-secao{
+    .card-secao {
         margin-top: 37%;
     }
-    
-} 
+}
+
+
+
+/* ====== BANNER ======*/
 
 .banner-estrutura {
     justify-content: space-between;
@@ -46,6 +58,16 @@
 
 
 }
+
+.texto-banner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
 
 .img-esquerda {
     width: 309px;
@@ -59,30 +81,45 @@
     margin-bottom: -4px;
 }
 
-.texto-banner {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
-    text-align: center;
+/* ====== LEGISLAÇÃO-CONTAINER ====== */
+
+.legislacao-container {
+    margin-top: 92px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 12%;
+    background-color: white;
+    font-size: 20px;
 }
 
-.list-texto {
-    
 
-    & ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        padding-top: 55px;
-        
-    }
 
-    & li {
-        margin-bottom: 20px;
-    }
+/* ====== LEGISLAÇÃO-TEXT_INICIAL ====== */
 
+.legislacao-text_inicial p {
+    margin-bottom: 91px;
+}
+
+
+
+/* ====== LEGISLAÇÃO-LISTA ====== */
+
+.legislacao-lista {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.legislacao-lista ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 55px;
+}
+
+
+.legislacao-lista li {
+    margin-top: 20px;
 }
 
 .leis-federais,
@@ -90,7 +127,7 @@
 .leis,
 .decretos {
     padding-top: 17px;
-     
+
     & h2 {
         padding-top: 20px;
     }
@@ -108,5 +145,52 @@
 }
 
 a {
-    color: #233abe;
+    color: #00072D;
+}
+
+.lista-legislacao a:hover {
+    color: blue;
+}
+
+
+
+
+.texto-banner {
+    h1 {
+        color: #fff;
+        margin-top: 75px;
+        font-size: clamp(16px, 4vw, 47px);
+
+    }
+
+    p {
+        color: #fff;
+        font-size: clamp(12px, 2vw, 26px);
+    }
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 28px;
+    display: inline-block;
+    font-family: Gilroy-semibold;
+}
+
+details {
+    display: inline-block;
+}
+
+
+
+.seta-leis {
+    margin-left: 5px;
 }

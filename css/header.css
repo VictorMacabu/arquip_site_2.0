@@ -1,10 +1,16 @@
 /* === CABEÇALHO === */
+<<<<<<< atualizacao-dropdowns
+button {
+    font-family: Gilroy-Medium;
+=======
 
 /*
 p {
     font-size: clamp(0.9rem, 1.2vw, 1.0rem);
+>>>>>>> main
 }
 */
+
 
 .cabecalho-logos {
     background-image: url(/assets/header/cabecalho-2.png);
@@ -59,7 +65,8 @@ p {
     transition: transform 0.1s ease;
 }
 
-.input-wrapper i:active {  /*Isso serve  para aplicar um estilo no momento em que o elemento está sendo clicado!*/
+.input-wrapper i:active {
+    /*Isso serve  para aplicar um estilo no momento em que o elemento está sendo clicado!*/
     transform: scale(0.9);
 }
 
@@ -80,9 +87,9 @@ button {
 
 
 .navegacao {
-    width: 80%;
+    width: 88%;
     background-color: #00072D;
-    border-radius: 4px;
+    border-radius: 0px 0px 13px 13px;
     margin: 0 auto;
     position: absolute;
     left: 50%;
@@ -108,26 +115,28 @@ button {
     background: none;
     border: none;
     color: white;
-    padding: 0px 13px;
+    display: flex;
+    padding: 12px 13px;
     cursor: pointer;
     font-size: clamp(0.9rem, 1.2vw, 1.2rem);
 }
 
+.seta-menu {
+    margin-left: 8px;
+}
+
 .navegacao-botao:hover {
-    background-color: #10294f;
+    background-color: #4cb0e2;
 }
 
 .navegacao-mega_menu {
     position: absolute;
-    min-width: 175px;
-    background-color: #00072D;
+    min-width: 350px;
     display: none;
-    padding: 19px;
-    border-radius: 2px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 7%);
 }
 
-.navegacao-item.active .navegacao-mega_menu {
+.navegacao-item:hover .navegacao-mega_menu {
     display: block;
 }
 
@@ -140,10 +149,20 @@ button {
 .navegacao-coluna {
     display: flex;
     flex-direction: column;
+    background-color: #00072D;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .navegacao-coluna a {
     color: #fff;
+<<<<<<< atualizacao-dropdowns
+    padding: 10px;
+    text-decoration: none;
+}
+
+.navegacao-coluna a:hover {
+    background: #4cb0e2;
+=======
     margin-bottom: 0px;
     transition: transform 0.5s ease
 }
@@ -165,4 +184,5 @@ a {
 
 .navegacao a:last-child{
   border-bottom: none;
+>>>>>>> main
 }

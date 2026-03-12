@@ -13,10 +13,17 @@
     <nav class="navegacao">
         <ul class="navegacao-lista">
             <li class="navegacao-item">
-                <button class="navegacao-botao">Institucional</button>
+                <button class="navegacao-botao">Institucional<div class="seta-menu"><img src="/assets/header/seta-para-baixo.png" alt="Seta para acessar a Institucional"></div></button>
                 <div class="navegacao-mega_menu">
                     <div class="navegacao-mega_container">
                         <div class="navegacao-coluna">
+
+                            <a href="/quem-somos.php" target="_blank">Quem somos?</a>
+                            <a href="#">Estrutura Organizacional</a>
+                            <a href="/sistemas-arquivos.php" target="_blank">Sistema de Arquivos</a>
+                            <a href="#">Política de Gestão</a>
+                            <a href="/legislacoes.php" target="_blank">Legislações</a>
+                            <a href="#">Histórico</a>
                             <a href="quem-somos.php">Quem somos?</a>
                             <a href="estrutura-organizacional.php">Estrutura Organizacional</a>
                             <a href="sistemas-arquivos.php">Sistema de Arquivos</a>
@@ -29,7 +36,7 @@
             </li>
 
             <li class="navegacao-item">
-                <button class="navegacao-botao">Atendimento ao Cidadão</button>
+                <button class="navegacao-botao">Atendimento ao Cidadão<div class="seta-menu"><img src="/assets/header/seta-para-baixo.png" alt="Seta para acessar o Atendimento ao Cidadão"></div></button>
                 <div class="navegacao-mega_menu">
                     <div class="navegacao-mega_container">
                         <div class="navegacao-coluna">
@@ -43,7 +50,7 @@
             </li>
 
             <li class="navegacao-item">
-                <button class="navegacao-botao">Administração Pública</button>
+                <button class="navegacao-botao">Administração ao Servidor<div class="seta-menu"><img src="/assets/header/seta-para-baixo.png" alt="Seta para acessar a Administração ao Servidor"></div></button>
                 <div class="navegacao-mega_menu">
                     <div class="navegacao-mega_container">
                         <div class="navegacao-coluna">
@@ -58,7 +65,7 @@
             </li>
 
             <li class="navegacao-item">
-                <button class="navegacao-botao">Sistemas</button>
+                <button class="navegacao-botao">Sistemas<div class="seta-menu"><img src="/assets/header/seta-para-baixo.png" alt="Seta para acessar o Sistemas"></div></button>
                 <div class="navegacao-mega_menu">
                     <div class="navegacao-mega_container">
                         <div class="navegacao-coluna">
