@@ -63,16 +63,13 @@
                             <a href="consulta-processo.php">Consulta de processos administrativos</a>
                         </li>
                         <li>
-                            <a href="acesso-acervo.php">Acesso ao acervo</a>
+                            <a href="acesso-acervo.php">Acesso ao acervo - Requerimento eletrônico</a>
                         </li>
                         <li>
-                            <a href="pesquisa-processo.php">Pesquisa de processos/plantas</a>
+                            <a href="pesquisa-processo.php">Pesquisa de existência de processos/plantas</a>
                         </li>
                         <li>
                             <a href="pesquisador-academico.php">Pesquisador Acadêmico</a>
-                        </li>
-                        <li>
-                            <a href="atendimento.php">Central de Atendimento</a>
                         </li>
                     </ul>
                 </div>

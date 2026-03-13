@@ -1,0 +1,50 @@
+/* ====== BANNER ====== */
+
+.ajuste-img_esquerda {
+    width: 322px;
+}
+
+.img-esquerda {
+    max-width: 380px;
+    height: 450px;
+    display: block;
+}
+
+.img-direita {
+    width: 330px;
+    height: 310px;
+    display: block;
+}
+
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.texto-banner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-banner a {
+    color: #fff;
+}
+
+.texto-banner h1 {
+    color: #fff;
+    max-width: 60ch;
+    font-size: clamp(1.2rem, 4vw, 3rem);
+    text-align: center;
+}
+
+.texto-banner p {
+    color: #fff;
+    max-width: 73ch;
+    margin: 0 auto;
+    font-size: clamp(0.9rem, 2.5vw, 1.6rem);
+    text-align: center;
+}
