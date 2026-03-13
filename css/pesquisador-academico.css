@@ -1,67 +1,29 @@
-@media (max-width: 1250px) {
-     nav{
-        display: none;
-    }
+/* ====== FONTE ====== */
 
-    .img-esquerda{
-        display: none;
-    }
-
-    .img-direita{
-        display: none;
-    }
-   
-    .banner-estrutura{
-        visibility: hidden;
-    }
-
-    .texto-banner{
-        visibility: visible;
-        
-        & h1{
-            color: black;
-            position: relative;
-            top: 67px;
-            left: 24%;
-        }
-
-        & p{
-            color: black;
-            margin-left: 10%;
-            margin-right: 10%;
-            position: relative;
-            top: 58px;
-            width: 127%;
-       }
-    }
-}
-
-    a {
-    word-break: break-all;
+@font-face {
+  font-family: Gilroy-ExtraBold;
+  src: url(/assets/font-site/Gilroy-Black/Gilroy-ExtraBold.otf)
 }
 
 
 
-.card-secao h4{
-    margin-bottom: -1%;
-}
+/* ====== BANNER ====== */
 
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+}
 
 .img-esquerda {
-    width: 383px;
-    height: 406px;
+    width: 345px;
+    height: 386px;
     margin-bottom: -4px;
 }
 
 .img-direita {
-    width: 326px;
-    height: 281px;
-    float: right;
-    margin-bottom: 0px;
-}
-
-.centralizar {
-    width: 383px;
+    width: 345px;
+    height: 331px;
+    margin-bottom: -4px;
 }
 
 .texto-banner {
@@ -69,15 +31,16 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #fff;
     text-align: center;
 }
 
-a {
-    color: blue;
+.texto-banner h1 {
+    color: #fff;
+    margin-top: 75px;
+    font-size: clamp(16px, 4vw, 47px);
 }
 
-.banner-estrutura{
-    justify-content: space-between;
-    align-items: flex-end;
+.texto-banner p {
+    color: #fff;
+    font-size: clamp(12px, 2vw, 26px);
 }
