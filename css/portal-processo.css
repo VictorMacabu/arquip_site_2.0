@@ -82,3 +82,7 @@
 .portal-processos_conteudo li {
     margin-bottom: 12px;
 }
+
+.portal-processos_conteudo a {
+    color: blue;
+}

@@ -123,7 +123,7 @@
                             para garantir que todos os cidadãos consigam utilizar suas funcionalidades com facilidade. Além
                             disso,
                             poderá realizar o acesso através do endereço eletrônico:
-                            <a href="https://processos.prefeitura.sp.gov.br/Forms/Principal.aspx">www.processos.prefeitura.sp.gov.br.</a>
+                            <a href="https://processos.prefeitura.sp.gov.br/Forms/Principal.aspx" target="blanck">www.processos.prefeitura.sp.gov.br.</a>
                         </p>
                     </div>
                 </div>
