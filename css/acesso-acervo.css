@@ -1,0 +1,218 @@
+/* ====== FONTES ====== */
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-bold.ttf);
+}
+
+
+@font-face {
+    font-family: Gilroy-Black;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-black.ttf);
+}
+
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(/assets/font-site/Gilroy-Black/Gilroy-Medium.ttf);
+}
+
+/* ====== CONTEÚDO ======*/
+main {
+    margin: 8% 8% 13% 8%;
+    font-size: 20px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* ====== BANNER ====== */
+
+.img-esquerda {
+    width: 269px;
+    height: 450px;
+    display: block;
+}
+
+.img-direita {
+    width: 342px;
+    height: 305px;
+    display: block;
+}
+
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.texto-banner {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto-banner h1 {
+    color: #fff;
+    margin-top: 75px;
+    font-size: clamp(16px, 4vw, 47px);
+}
+
+.texto-banner p {
+    color: #fff;
+    max-width: 67ch;
+    margin-top: 0;
+    font-size: clamp(12px, 2vw, 28px);
+}
+
+/* ====== ACESSO-ACERVO-ARQUIP ====== */
+
+.acesso-acervo-arquip {
+    display: flex;
+    gap: 72px;
+    margin-bottom: 100px;
+}
+
+.acesso-acervo_conteudo_principal h2 {
+    font-family: Gilroy-Bold;
+    font-size: 2.02rem;
+}
+
+.conteudo-acervo_arquip {
+    margin-bottom: 96px;
+}
+
+.texto-acervo_conta {
+    font-family: Gilroy-Bold;
+}
+
+.lista-acervo_conta {
+    list-style: none;
+}
+
+.lista-acervo_conta li::before {
+    content: "-";
+    margin-right: 10px;
+}
+
+.lista-acervo_conta li {
+    margin-bottom: 12px;
+}
+
+
+/* ====== BANNER/AZUL ====== */
+
+.ajuste-banner_azul {
+    height: 100%;
+}
+
+.banner-azul {
+    background-image: url("/assets/acesso-acervo/retangulo-acervo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 270px;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.banner-azul_solicitar {
+    display: flex;
+    align-items: center;
+}
+
+.banner-azul_solicitar img {
+    background-color: black;
+    padding: 38px 45px;
+    border-radius: 10px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    width: 49%;
+}
+
+button {
+    padding: 0;
+}
+
+.titulo-quadrado {
+    margin-left: 29px;
+    max-width: 409px;
+    color: #fff;
+    font-family: Gilroy-Black;
+    font-size: 2.5rem;
+}
+
+.texto-login {
+    margin-left: 31px;
+    color: #fff;
+}
+
+.acessar {
+    font-family: Gilroy-Bold;
+    font-size: 1.50rem;
+}
+
+.orientacoes {
+    font-size: 1.4rem;
+}
+
+.orientacoes a {
+    color: #fff;
+}
+
+/* ====== DÚVIDAS/FREQUENTES ====== */
+
+.primeira-secao {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.pessoal-trabalhando {
+    width: 600px;
+}
+
+.duvidas h2 {
+    font-family: Gilroy-Bold;
+    font-size: 2.02rem;
+}
+
+.duvidas {
+    width: 100%;
+    max-width: 50%;
+}
+
+.duvidas-custos {
+    margin-bottom: 50px;
+}
+
+.duvidas-primeiros_passos h4 {
+    margin-top: 0px;
+}
+
+.duvidas-primeiros_passos  {
+    margin-bottom: 60px;
+}
+
+.duvidas-documentos_solicitados {
+    margin-bottom: 60px;
+}
+
+.duvidas-vantagens p,
+.duvidas-vantagens ul  {
+    margin-bottom: 60px;
+}
+
+.duvidas-prazo p {
+    margin-top: 0px; 
+    margin-bottom: 0px;
+}
+
+.duvidas-vantagens ul {
+    line-height: 1.5;
+}
+
