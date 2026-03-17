@@ -17,7 +17,6 @@ nav{
 
 .texto-banner{
     visibility: visible;
-    padding-top: 18%;
         
     & h1{
         color: black;
@@ -52,7 +51,6 @@ nav{
     nav{
         display: flex;
         justify-content: center;
-        z-index: 1;
 
         ul {
             display: flex;
@@ -94,7 +92,6 @@ nav{
     }
 
     .texto-banner{
-        z-index: 0;
         h1{
             color: #fff;
             max-width: 60ch;
