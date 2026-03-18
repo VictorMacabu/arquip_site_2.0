@@ -1,3 +1,12 @@
+<?php
+if (!function_exists('url')) {
+    function url($page)
+    {
+        return "/index.php?page=" . $page;
+    }
+}
+?>
+
 <!-- Carregar header -->
 <header class="cabecalho">
     <div class="cabecalho-logos">
@@ -76,7 +85,8 @@
                 </div>
             </li>
 
-            <<form action="/pesquisa/pesquisar.php" method="GET">
+            <<form action="/index.php" method="GET">
+                <input type="hidden" name="page" value="pesquisa">
                 <div class="container-wrapper">
                     <div class="container">
                         <div class="input-wrapper">
@@ -92,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                </form>
+            </form>
         </ul>
     </nav>
 </header>

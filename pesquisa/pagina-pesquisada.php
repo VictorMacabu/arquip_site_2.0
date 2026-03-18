@@ -1,4 +1,11 @@
-<?php require_once __DIR__ . "/../views/header.php"; ?>
+<?php
+if (!function_exists('url')) {
+    function url($page, $params = []) {
+        $query = http_build_query(array_merge(['page' => $page], $params));
+        return "/index.php?$query";
+    }
+}
+?>
 
 <link rel="stylesheet" href="/css/pesquisa.css">
 <link rel="stylesheet" href="/css/header.css">
@@ -11,10 +18,10 @@
 
         <h2>Resultados da busca</h2>
 
-        <?php if (empty($resultados) && $sugestao && strtolower($sugestao) !== strtolower($q)): ?>
+        <?php if (empty($resultados) && !empty($sugestao) && strtolower($sugestao) !== strtolower($q)): ?>
             <p>
                 Você quis dizer:
-                <a href="?q=<?= urlencode($sugestao) ?>">
+                <a href="<?= url('pesquisa', ['q' => $sugestao]) ?>">
                     <strong><?= htmlspecialchars($sugestao) ?></strong>
                 </a> ?
             </p>
@@ -25,8 +32,8 @@
         <?php foreach ($resultados as $r): ?>
 
             <?php
-            $trecho = $r['trecho'];
-            $queryOriginal = $q;
+            $trecho = $r['trecho'] ?? '';
+            $queryOriginal = $q ?? '';
 
             $termos = explode(" ", strtolower($queryOriginal));
 
@@ -48,11 +55,13 @@
                     );
                 }
             }
+
+            $paginaSlug = pathinfo($r['pagina'], PATHINFO_FILENAME);
             ?>
 
             <div class="card-secao resultado-busca">
 
-                <a href="../<?= htmlspecialchars($r['pagina']) ?>" class="titulo-resultado">
+                <a href="<?= url($paginaSlug) ?>" class="titulo-resultado">
                     <?= htmlspecialchars($r['pagina']) ?>
                 </a>
 
@@ -70,5 +79,3 @@
 
     </div>
 </main>
-
-<?php require_once __DIR__ . "/../views/footer.php"; ?>
