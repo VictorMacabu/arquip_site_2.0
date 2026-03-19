@@ -1,3 +1,12 @@
+<?php
+if (!function_exists('url')) {
+    function url($page)
+    {
+        return "/index.php?page=" . $page;
+    }
+}
+?>
+
 <!-- Carregar header -->
 <header class="cabecalho">
     <div class="cabecalho-logos">
@@ -76,14 +85,24 @@
                 </div>
             </li>
 
-            <div class="container-wrapper">
-                <div class="container">
-                    <div class="input-wrapper">
-                        <input type="text" placeholder="Pesquisar...">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+            <<form action="/index.php" method="GET">
+                <input type="hidden" name="page" value="pesquisa">
+                <div class="container-wrapper">
+                    <div class="container">
+                        <div class="input-wrapper">
+
+                            <input type="text" name="q" placeholder="Pesquisar..." required>
+
+                            <div id="sugestoes" class="box-sugestoes"></div>
+
+                            <button type="submit" class="btn-busca">
+                                <i class="fa fa-search" style="font-size:18px;color:#00072D"></i>
+                            </button>
+
+                        </div>
                     </div>
                 </div>
-            </div>
+            </form>
         </ul>
     </nav>
 </header>
