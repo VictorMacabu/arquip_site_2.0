@@ -2,8 +2,10 @@
 
 button {
     font-family: Gilroy-Medium;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
-
 
 .cabecalho-logos {
     background-image: url(/assets/header/cabecalho-2.png);
@@ -18,7 +20,6 @@ button {
     align-items: center;
 }
 
-
 .cabecalho-logo_arquip {
     max-width: clamp(120px, 15vw, 185px);
     margin-left: clamp(10px, 4vw, 31px);
@@ -26,7 +27,6 @@ button {
     position: relative;
     z-index: 2;
 }
-
 
 .cabecalho-logo_gestao {
     max-width: clamp(120px, 15vw, 210px);
@@ -36,24 +36,33 @@ button {
     z-index: 2;
 }
 
-
-
 .container-wrapper {
+    margin-left: auto;
+    padding: 3px 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 13px 25px;
 }
 
-
 .input-wrapper {
-    width: 100%;
-    padding: 2px 12px;
+    width: 260px;
+    padding: 0px 2px;
     display: flex;
     align-items: center;
     background-color: #fff;
-    border-radius: 3px;
+    border-radius: 6px;
     box-sizing: border-box;
+    gap: 8px;
+}
+
+.input-wrapper input {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+}
+
+.input-wrapper input:focus-visible {
+    outline: none;
 }
 
 .input-wrapper i {
@@ -63,25 +72,8 @@ button {
 }
 
 .input-wrapper i:active {
-    /*Isso serve  para aplicar um estilo no momento em que o elemento está sendo clicado!*/
     transform: scale(0.9);
 }
-
-.input-wrapper input {
-    background-color: transparent;
-    border: none;
-}
-
-.input-wrapper input:focus-visible {
-    outline: none;
-}
-
-button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-
 
 .navegacao {
     width: 88%;
@@ -91,17 +83,18 @@ button {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    display: flex;   
+    align-items: center;
+    justify-content: space-between; 
 }
-
 
 .navegacao-lista {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-evenly;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+    gap: 120px; 
+    margin: 0;
+    padding: 0 20px;
 }
 
 .navegacao-item {
@@ -109,8 +102,6 @@ button {
 }
 
 .navegacao-botao {
-    background: none;
-    border: none;
     color: white;
     display: flex;
     padding: 12px 13px;
@@ -142,7 +133,6 @@ button {
     margin: 0 auto;
 }
 
-
 .navegacao-coluna {
     display: flex;
     flex-direction: column;
@@ -160,3 +150,32 @@ button {
     background: #4cb0e2;
 }
 
+.btn-busca {
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+.btn-busca:hover {
+    background-color: #e0e0e0;
+}
+
+.box-sugestoes {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 9999;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.sugestao-item {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.sugestao-item:hover {
+    background-color: #eee;
+}
