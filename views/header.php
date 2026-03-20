@@ -19,7 +19,9 @@ if (!function_exists('url')) {
     </div>
 
     <nav class="navegacao">
+
         <ul class="navegacao-lista">
+
             <li class="navegacao-item">
                 <button class="navegacao-botao">
                     Institucional
@@ -125,5 +127,4 @@ if (!function_exists('url')) {
         </form>
 
     </nav>
-
 </header>

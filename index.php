@@ -27,6 +27,7 @@ if (!in_array($page, $allowedPages)) {
     $page = 'home';
 }
 
+
 $resultados = [];
 $sugestao = null;
 $q = $_GET['q'] ?? '';
