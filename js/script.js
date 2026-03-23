@@ -29,10 +29,10 @@ document.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const input = document.querySelector('input[name="q"]');
+    const input = document.querySelector('.input-wrapper input');
     const box = document.getElementById('sugestoes');
 
-    if (!input) return;
+    if (!input || !box) return;
 
     input.addEventListener('input', async () => {
         const q = input.value;
@@ -42,23 +42,29 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const res = await fetch(`/pesquisa/autocomplete.php?q=${q}`);
-        const dados = await res.json();
+        try {
+            const res = await fetch(`/pesquisa/autocomplete.php?q=${q}`);
+            const dados = await res.json();
 
-        box.innerHTML = '';
+            box.innerHTML = '';
 
-        dados.forEach(item => {
-            const div = document.createElement('div');
-            div.classList.add('sugestao-item');
-            div.textContent = item.termo;
+            dados.forEach(item => {
+                const div = document.createElement('div');
+                div.classList.add('sugestao-item');
+                div.textContent = item;
 
-            div.onclick = () => {
-                input.value = item.termo;
-                box.innerHTML = '';
-            };
+                div.onclick = () => {
+                    input.value = item;
+                    box.innerHTML = '';
+                    input.closest('form').submit();
+                };
 
-            box.appendChild(div);
-        });
+                box.appendChild(div);
+            });
+
+        } catch (e) {
+            console.error("Erro autocomplete:", e);
+        }
     });
 
 });

@@ -1,81 +1,134 @@
 <?php
+mb_internal_encoding('UTF-8');
+
 if (!function_exists('url')) {
-    function url($page, $params = []) {
+    function url($page, $params = [])
+    {
         $query = http_build_query(array_merge(['page' => $page], $params));
         return "/index.php?$query";
     }
 }
+
+function normalizar($texto)
+{
+    if (!$texto) return '';
+
+    $texto = mb_strtolower($texto, 'UTF-8');
+
+    $texto = strtr($texto, [
+        'á'=>'a','à'=>'a','ã'=>'a','â'=>'a','ä'=>'a',
+        'é'=>'e','è'=>'e','ê'=>'e','ë'=>'e',
+        'í'=>'i','ì'=>'i','î'=>'i','ï'=>'i',
+        'ó'=>'o','ò'=>'o','õ'=>'o','ô'=>'o','ö'=>'o',
+        'ú'=>'u','ù'=>'u','û'=>'u','ü'=>'u',
+        'ç'=>'c'
+    ]);
+
+    return $texto;
+}
 ?>
 
 <link rel="stylesheet" href="/css/pesquisa.css">
-<link rel="stylesheet" href="/css/header.css">
-<link rel="stylesheet" href="/css/footer.css">
-<link rel="stylesheet" href="/CSS/main-pc.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 <main>
-    <div class="container-pagina">
+<div class="container-pagina">
 
-        <h2>Resultados da busca</h2>
+<h2>Resultados da busca</h2>
 
-        <?php if (empty($resultados) && !empty($sugestao) && strtolower($sugestao) !== strtolower($q)): ?>
-            <p>
-                Você quis dizer:
-                <a href="<?= url('pesquisa', ['q' => $sugestao]) ?>">
-                    <strong><?= htmlspecialchars($sugestao) ?></strong>
-                </a> ?
-            </p>
-        <?php endif; ?>
+<p><?= count($resultados ?? []) ?> resultados encontrados</p>
 
-        <p><?= count($resultados) ?> resultados encontrados</p>
+<?php if (!empty($resultados)): ?>
 
-        <?php foreach ($resultados as $r): ?>
+<?php
+$paginas = [];
+?>
 
-            <?php
-            $trecho = $r['trecho'] ?? '';
-            $queryOriginal = $q ?? '';
+<?php foreach ($resultados as $r): ?>
 
-            $termos = explode(" ", strtolower($queryOriginal));
+<?php
+if (in_array($r['pagina'], $paginas)) continue;
+$paginas[] = $r['pagina'];
 
-            $pos = stripos($trecho, $queryOriginal);
+$trecho = $r['trecho'] ?? '';
+$termos = explode(" ", normalizar($q));
 
-            if ($pos !== false) {
-                $inicio = max(0, $pos - 60);
-                $snippet = substr($trecho, $inicio, 160);
-            } else {
-                $snippet = substr($trecho, 0, 160);
+$trechoNormalizado = normalizar($trecho);
+
+$pos = null;
+
+foreach ($termos as $t) {
+    if (strlen($t) < 3) continue;
+
+    $p = strpos($trechoNormalizado, $t);
+    if ($p !== false) {
+        $pos = $p;
+        break;
+    }
+}
+
+if ($pos !== null) {
+    $inicio = max(0, $pos - 80);
+    $snippet = mb_substr($trecho, $inicio, 300);
+} else {
+    $snippet = mb_substr($trecho, 0, 300);
+}
+
+foreach ($termos as $termo) {
+
+    if (strlen($termo) < 3) continue;
+
+    $snippet = preg_replace_callback(
+        '/\b\p{L}+\b/u',
+        function ($match) use ($termo) {
+            $palavra = $match[0];
+
+            if (normalizar($palavra) === $termo) {
+                return "<mark>$palavra</mark>";
             }
 
-            foreach ($termos as $termo) {
-                if (strlen($termo) > 2) {
-                    $snippet = preg_replace(
-                        "/(" . preg_quote($termo, '/') . ")/i",
-                        "<mark>$1</mark>",
-                        $snippet
-                    );
-                }
-            }
+            return $palavra;
+        },
+        $snippet
+    );
+}
 
-            $paginaSlug = pathinfo($r['pagina'], PATHINFO_FILENAME);
-            ?>
+$paginaSlug = pathinfo($r['pagina'], PATHINFO_FILENAME);
 
-            <div class="card-secao resultado-busca">
+$mapaTitulos = [
+    'quem-somos' => 'Quem Somos',
+    'historico' => 'Histórico',
+    'legislacoes' => 'Legislações',
+    'orientacao' => 'Orientação às EDOCs',
+    'gestao-documental' => 'Gestão Documental'
+];
 
-                <a href="<?= url($paginaSlug) ?>" class="titulo-resultado">
-                    <?= htmlspecialchars($r['pagina']) ?>
-                </a>
+$titulo = $mapaTitulos[$paginaSlug] 
+    ?? ucwords(str_replace('-', ' ', $paginaSlug));
+?>
 
-                <p class="info-resultado">
-                    Score: <?= $r['score'] ?> | Frequência: <?= $r['frequencia'] ?>
-                </p>
+<div class="card-secao resultado-busca">
 
-                <p class="trecho-resultado">
-                    ...<?= $snippet ?>...
-                </p>
+<a href="<?= url($paginaSlug) ?>" class="titulo-resultado">
+<?= htmlspecialchars($titulo) ?>
+</a>
 
-            </div>
+<p class="info-resultado">
+Frequência: <?= $r['frequencia'] ?? 0 ?>
+</p>
 
-        <?php endforeach; ?>
+<p class="trecho-resultado">
+...<?= $snippet ?>...
+</p>
 
-    </div>
+</div>
+
+<?php endforeach; ?>
+
+<?php else: ?>
+
+<p>Nenhum resultado encontrado.</p>
+
+<?php endif; ?>
+
+</div>
 </main>

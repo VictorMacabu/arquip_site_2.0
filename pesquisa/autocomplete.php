@@ -20,9 +20,9 @@ LIMIT 5
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute([
-    ':q' => "%$q%"
+    ':q' => "$q%"
 ]);
 
 $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-echo json_encode($resultados);  
+echo json_encode(array_column($resultados, 'termo'));

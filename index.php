@@ -27,29 +27,24 @@ if (!in_array($page, $allowedPages)) {
     $page = 'home';
 }
 
+
+$resultados = [];
+$sugestao = null;
+$q = $_GET['q'] ?? '';
+
 if ($page === 'pesquisa') {
 
-    require_once __DIR__ . '/controllers/PesquisaController.php';
+    require_once __DIR__ . "/database/ConnectDB.php";
+    require_once __DIR__ . "/controller/PesquisaController.php";
 
-    $q = $_GET['q'] ?? '';
-
-    $resultados = [];
-    $sugestao = null;
+    $controller = new PesquisaController($pdo);
 
     if (!empty($q)) {
-        
         $resultadoBusca = $controller->buscar($q);
 
-        $resultados = $resultadoBusca['resultados'];
-        $sugestao = $resultadoBusca['sugestao'];
+        $resultados = $resultadoBusca['resultados'] ?? [];
+        $sugestao = $resultadoBusca['sugestao'] ?? null;
     }
 }
 
-require_once __DIR__ . "/views/header.php";
-require_once __DIR__ . "/views/footer.php";
-
-if ($page === 'pesquisa') {
-    require_once __DIR__ . "/pesquisa/pagina-pesquisada.php";
-} else {
-    require_once __DIR__ . "/$page.php";
-}
+require_once __DIR__ . "/views/layout.php";
