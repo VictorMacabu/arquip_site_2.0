@@ -34,7 +34,6 @@ foreach ($arquivos as $arquivo) {
     if (!$conteudo) continue;
 
     $textoOriginal = strip_tags($conteudo);
-    $textoNormalizado = normalizar($textoOriginal);
 
     $frases = preg_split('/(?<=[.!?])\s+/', $textoOriginal);
 
@@ -46,7 +45,7 @@ foreach ($arquivos as $arquivo) {
 
         foreach ($palavras as $palavra) {
 
-            if (strlen($palavra) < 4) continue;
+            if (strlen($palavra) < 3) continue;
 
             $stmt = $pdo->prepare(
                 'INSERT INTO "INDICE"(termo, pagina, trecho)

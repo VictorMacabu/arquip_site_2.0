@@ -1,134 +1,144 @@
 <?php
 mb_internal_encoding('UTF-8');
 
-if (!function_exists('url')) {
-    function url($page, $params = [])
+if (!function_exists('normalizar')) {
+    function normalizar($texto)
     {
-        $query = http_build_query(array_merge(['page' => $page], $params));
-        return "/index.php?$query";
+        if (!$texto) return '';
+
+        $texto = mb_strtolower($texto, 'UTF-8');
+
+        $texto = strtr($texto, [
+            'á' => 'a',
+            'à' => 'a',
+            'ã' => 'a',
+            'â' => 'a',
+            'ä' => 'a',
+            'é' => 'e',
+            'è' => 'e',
+            'ê' => 'e',
+            'ë' => 'e',
+            'í' => 'i',
+            'ì' => 'i',
+            'î' => 'i',
+            'ï' => 'i',
+            'ó' => 'o',
+            'ò' => 'o',
+            'õ' => 'o',
+            'ô' => 'o',
+            'ö' => 'o',
+            'ú' => 'u',
+            'ù' => 'u',
+            'û' => 'u',
+            'ü' => 'u',
+            'ç' => 'c'
+        ]);
+
+        return $texto;
     }
-}
-
-function normalizar($texto)
-{
-    if (!$texto) return '';
-
-    $texto = mb_strtolower($texto, 'UTF-8');
-
-    $texto = strtr($texto, [
-        'á'=>'a','à'=>'a','ã'=>'a','â'=>'a','ä'=>'a',
-        'é'=>'e','è'=>'e','ê'=>'e','ë'=>'e',
-        'í'=>'i','ì'=>'i','î'=>'i','ï'=>'i',
-        'ó'=>'o','ò'=>'o','õ'=>'o','ô'=>'o','ö'=>'o',
-        'ú'=>'u','ù'=>'u','û'=>'u','ü'=>'u',
-        'ç'=>'c'
-    ]);
-
-    return $texto;
 }
 ?>
 
 <link rel="stylesheet" href="/css/pesquisa.css">
 
 <main>
-<div class="container-pagina">
+    <div class="container-pagina">
 
-<h2>Resultados da busca</h2>
+        <h2>Resultados da busca</h2>
 
-<p><?= count($resultados ?? []) ?> resultados encontrados</p>
+        <?php if (!empty($sugestao)): ?>    
+            <p>
+                Você quis dizer:
+                <a href="/index.php?page=pesquisa&q=<?= urlencode($sugestao) ?>">
+                    <strong><?= htmlspecialchars($sugestao) ?></strong>
+                </a>?
+            </p>
+        <?php endif; ?>
 
-<?php if (!empty($resultados)): ?>
+        <p><?= count($resultados ?? []) ?> resultados encontrados</p>
 
-<?php
-$paginas = [];
-?>
+        <?php if (!empty($resultados)): ?>
 
-<?php foreach ($resultados as $r): ?>
+            <?php foreach ($resultados as $r): ?>
 
-<?php
-if (in_array($r['pagina'], $paginas)) continue;
-$paginas[] = $r['pagina'];
+                <?php
+                $trecho = $r['trecho'] ?? '';
+                $termos = explode(" ", normalizar($q));
+                $trechoNormalizado = normalizar($trecho);
 
-$trecho = $r['trecho'] ?? '';
-$termos = explode(" ", normalizar($q));
+                $pos = null;
 
-$trechoNormalizado = normalizar($trecho);
+                foreach ($termos as $t) {
+                    if (strlen($t) < 3) continue;
 
-$pos = null;
+                    $p = strpos($trechoNormalizado, $t);
+                    if ($p !== false) {
+                        $pos = $p;
+                        break;
+                    }
+                }
 
-foreach ($termos as $t) {
-    if (strlen($t) < 3) continue;
+                if ($pos !== null) {
+                    $inicio = max(0, $pos - 80);
+                    $snippet = mb_substr($trecho, $inicio, 300);
+                } else {
+                    $snippet = mb_substr($trecho, 0, 300);
+                }
 
-    $p = strpos($trechoNormalizado, $t);
-    if ($p !== false) {
-        $pos = $p;
-        break;
-    }
-}
+                foreach ($termos as $termo) {
 
-if ($pos !== null) {
-    $inicio = max(0, $pos - 80);
-    $snippet = mb_substr($trecho, $inicio, 300);
-} else {
-    $snippet = mb_substr($trecho, 0, 300);
-}
+                    if (strlen($termo) < 3) continue;
 
-foreach ($termos as $termo) {
+                    $snippet = preg_replace_callback(
+                        '/\b\p{L}+\b/u',
+                        function ($match) use ($termo) {
+                            if (normalizar($match[0]) === $termo) {
+                                return "<mark>{$match[0]}</mark>";
+                            }
+                            return $match[0];
+                        },
+                        $snippet
+                    );
+                }
 
-    if (strlen($termo) < 3) continue;
+                $paginaSlug = pathinfo($r['pagina'], PATHINFO_FILENAME);
 
-    $snippet = preg_replace_callback(
-        '/\b\p{L}+\b/u',
-        function ($match) use ($termo) {
-            $palavra = $match[0];
+                $mapaTitulos = [
+                    'quem-somos' => 'Quem Somos',
+                    'historico' => 'Histórico',
+                    'historia' => 'História',
+                    'legislacoes' => 'Legislações',
+                    'orientacao' => 'Orientação às EDOCs',
+                    'gestao-documental' => 'Gestão Documental'
+                ];
 
-            if (normalizar($palavra) === $termo) {
-                return "<mark>$palavra</mark>";
-            }
+                $titulo = $mapaTitulos[$paginaSlug]
+                    ?? ucwords(str_replace('-', ' ', $paginaSlug));
+                ?>
 
-            return $palavra;
-        },
-        $snippet
-    );
-}
+                <div class="card-secao resultado-busca">
 
-$paginaSlug = pathinfo($r['pagina'], PATHINFO_FILENAME);
+                    <a href="/index.php?page=<?= $paginaSlug ?>" class="titulo-resultado">
+                        <?= htmlspecialchars($titulo) ?>
+                    </a>
 
-$mapaTitulos = [
-    'quem-somos' => 'Quem Somos',
-    'historico' => 'Histórico',
-    'legislacoes' => 'Legislações',
-    'orientacao' => 'Orientação às EDOCs',
-    'gestao-documental' => 'Gestão Documental'
-];
+                    <p class="info-resultado">
+                        Frequência: <?= $r['frequencia'] ?>
+                    </p>
 
-$titulo = $mapaTitulos[$paginaSlug] 
-    ?? ucwords(str_replace('-', ' ', $paginaSlug));
-?>
+                    <p class="trecho-resultado">
+                        ...<?= $snippet ?>...
+                    </p>
 
-<div class="card-secao resultado-busca">
+                </div>
 
-<a href="<?= url($paginaSlug) ?>" class="titulo-resultado">
-<?= htmlspecialchars($titulo) ?>
-</a>
+            <?php endforeach; ?>
 
-<p class="info-resultado">
-Frequência: <?= $r['frequencia'] ?? 0 ?>
-</p>
+        <?php else: ?>
 
-<p class="trecho-resultado">
-...<?= $snippet ?>...
-</p>
+            <p>Nenhum resultado encontrado.</p>
 
-</div>
+        <?php endif; ?>
 
-<?php endforeach; ?>
-
-<?php else: ?>
-
-<p>Nenhum resultado encontrado.</p>
-
-<?php endif; ?>
-
-</div>
+    </div>
 </main>

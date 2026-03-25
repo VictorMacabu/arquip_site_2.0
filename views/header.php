@@ -96,9 +96,47 @@ if (!function_exists('url')) {
                 <div class="navegacao-mega_menu">
                     <div class="navegacao-mega_container">
                         <div class="navegacao-coluna">
-                            <a href="https://diariooficial.prefeitura.sp.gov.br" target="_blank">Diário Oficial</a>
-                            <a href="https://processos.prefeitura.sp.gov.br" target="_blank">Portal de Processos</a>
-                            <a href="https://sip.prefeitura.sp.gov.br" target="_blank">SEI</a>
+
+                            <a href="https://sip.prefeitura.sp.gov.br/sip/modulos/pmsp/login/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SEI" target="_blank">
+                                Sistema Eletrônico de Informações - SEI
+                            </a>
+
+                            <a href="https://sip.prefeitura.sp.gov.br/sip/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SIP&infra_url=L3NpcC8=" target="_blank">
+                                Sistema de Permissões - SIP
+                            </a>
+
+                            <a href="https://treinamentosip4.prefeitura.sp.gov.br/sip/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SEI&infra_url=L3NlaS8=" target="_blank">
+                                SEI - Treinamento
+                            </a>
+
+                            <a href="https://treinamentosip.prefeitura.sp.gov.br/sip/login.php?sigla_orgao_sistema=PMSP&sigla_sistema=SIP" target="_blank">
+                                SIP - Treinamento
+                            </a>
+
+                            <a href="https://simprocantigo.prefeitura.sp.gov.br/SJ0934/servlet/LOGIN" target="_blank">
+                                Sistema de Processos - SIMPROC
+                            </a>
+
+                            <a href="https://admin.cacplus.prefeitura.sp.gov.br/Autenticacao?ReturnUrl=%2fHome%2fIndex" target="_blank">
+                                Controle de Acessos Corporativos - CAC
+                            </a>
+
+                            <a href="https://smgsuporte.prefeitura.sp.gov.br/index.php" target="_blank">
+                                SMG Suporte - GLPI
+                            </a>
+
+                            <a href="http://tid.prodam.sp.gov.br/" target="_blank">
+                                Tramitação Interna de Documentos - TID
+                            </a>
+
+                            <a href="https://processos.prefeitura.sp.gov.br/Forms/Principal.aspx" target="_blank">
+                                Portal Administrativo de Processos
+                            </a>
+
+                            <a href="https://diariooficial.prefeitura.sp.gov.br/md_epubli_controlador.php?acao=inicio" target="_blank">
+                                Diário Oficial
+                            </a>
+
                         </div>
                     </div>
                 </div>
