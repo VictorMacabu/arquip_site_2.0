@@ -2,24 +2,36 @@
 
 require_once __DIR__ . "/../database/ConnectDB.php";
 
+mb_internal_encoding('UTF-8');
+
 $q = trim($_GET['q'] ?? '');
 
 if ($q === '') {
-    echo "Digite algo para pesquisar.";
+    $resultados = [];
+    $sugestao = null;
+    require_once "pagina-pesquisada.php";
     exit;
 }
+
+function normalizar($texto)
+{
+    $texto = strtolower($texto);
+    $texto = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $texto);
+    return $texto;
+}
+
+$qNormalizado = normalizar($q);
 
 $fraseExata = false;
 $frase = '';
 
 if (preg_match('/"(.*?)"/', $q, $matches)) {
     $fraseExata = true;
-    $frase = $matches[1];
+    $frase = normalizar($matches[1]);
 }
 
-$termos = explode(" ", strtolower($q));
+$termos = explode(" ", $qNormalizado);
 $termos = array_filter($termos);
-
 
 $stopWords = ['de', 'da', 'do', 'das', 'dos', 'e', 'a', 'o', 'para', 'por', 'em'];
 
@@ -31,13 +43,11 @@ $conditions = [];
 $params = [];
 
 foreach ($termos as $i => $termo) {
-    $conditions[] = "unaccent(termo) ILIKE unaccent(:termo$i)";
-    $params[":termo$i"] = "%$termo%";
+    $conditions[] = "unaccent(termo) ILIKE :termo$i";
+    $params[":termo$i"] = "%" . normalizar($termo) . "%";
 }
 
-$where = implode(" OR ", $conditions);
-
-$sugestao = null;
+$where = !empty($conditions) ? implode(" OR ", $conditions) : "1=1";
 
 $sqlSug = "
 SELECT termo
@@ -48,7 +58,7 @@ LIMIT 1
 ";
 
 $stmtSug = $pdo->prepare($sqlSug);
-$stmtSug->execute([':q' => $q]);
+$stmtSug->execute([':q' => $qNormalizado]);
 $sugestao = $stmtSug->fetchColumn();
 
 if ($fraseExata) {
@@ -70,10 +80,15 @@ if ($fraseExata) {
     $stmt->execute([
         ':frase' => "%$frase%"
     ]);
-
 } else {
 
     $sql = "
+    SELECT DISTINCT ON (pagina)
+    pagina,
+    trecho,
+    frequencia,
+    score
+FROM (
     SELECT 
         pagina,
         trecho,
@@ -81,8 +96,8 @@ if ($fraseExata) {
 
         SUM(
             CASE 
-                WHEN unaccent(pagina) ILIKE unaccent(:q) THEN 10
-                WHEN unaccent(trecho) ILIKE unaccent(:q) THEN 5
+                WHEN unaccent(pagina) ILIKE :q THEN 10
+                WHEN unaccent(trecho) ILIKE :q THEN 5
                 ELSE 1
             END
         ) AS score
@@ -92,19 +107,32 @@ if ($fraseExata) {
     WHERE $where
 
     GROUP BY pagina, trecho
+) sub
 
-    ORDER BY score DESC, frequencia DESC
+ORDER BY pagina, score DESC, frequencia DESC
 
-    LIMIT 50
+LIMIT 50
     ";
 
     $stmt = $pdo->prepare($sql);
 
-    $params[':q'] = "%$q%";
+    $params[':q'] = "%" . $qNormalizado . "%";
 
     $stmt->execute($params);
 }
 
 $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+$paginasUnicas = [];
+$resultadosFiltrados = [];
+
+foreach ($resultados as $r) {
+    if (!in_array($r['pagina'], $paginasUnicas)) {
+        $paginasUnicas[] = $r['pagina'];
+        $resultadosFiltrados[] = $r;
+    }
+}
+
+$resultados = $resultadosFiltrados;
 
 require_once "pagina-pesquisada.php";

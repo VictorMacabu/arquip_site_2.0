@@ -2,15 +2,22 @@
 
 require_once __DIR__ . "/../database/ConnectDB.php";
 
-function normalizar($texto) {
+function normalizar($texto)
+{
+    if (!$texto) return '';
 
-    if(!$texto) return '';
+    $texto = mb_strtolower($texto, 'UTF-8');
 
-    $texto = strtolower($texto);
-    
-    $texto = @iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $texto);
+    $texto = strtr($texto, [
+        'á'=>'a','à'=>'a','ã'=>'a','â'=>'a','ä'=>'a',
+        'é'=>'e','è'=>'e','ê'=>'e','ë'=>'e',
+        'í'=>'i','ì'=>'i','î'=>'i','ï'=>'i',
+        'ó'=>'o','ò'=>'o','õ'=>'o','ô'=>'o','ö'=>'o',
+        'ú'=>'u','ù'=>'u','û'=>'u','ü'=>'u',
+        'ç'=>'c'
+    ]);
 
-    $texto = preg_replace('/[^a-z0-9\s]/', '', $texto);
+    $texto = preg_replace('/[^a-z0-9\s]/u', '', $texto);
 
     return $texto;
 }
@@ -20,27 +27,34 @@ $arquivos = scandir($pasta);
 
 foreach ($arquivos as $arquivo) {
 
-    if(pathinfo($arquivo, PATHINFO_EXTENSION) != "php") continue;
-    if($arquivo == "index.php") continue;
+    if (pathinfo($arquivo, PATHINFO_EXTENSION) != "php") continue;
+    if ($arquivo == "index.php") continue;
 
-    $conteudo = file_get_contents($pasta.$arquivo);
+    $conteudo = file_get_contents($pasta . $arquivo);
+    if (!$conteudo) continue;
 
-    if(!$conteudo) continue;
+    $textoOriginal = strip_tags($conteudo);
+    $textoNormalizado = normalizar($textoOriginal);
 
-    $texto = normalizar(strip_tags($conteudo));
+    $frases = preg_split('/(?<=[.!?])\s+/', $textoOriginal);
 
-    $palavras = preg_split('/\W+/', $texto);
+    foreach ($frases as $frase) {
 
-    foreach ($palavras as $palavra) {
+        $fraseNormalizada = normalizar($frase);
 
-        if(strlen($palavra) < 4) continue;
+        $palavras = preg_split('/\W+/', $fraseNormalizada);
 
-        $stmt = $pdo->prepare(
-        'INSERT INTO "INDICE"(termo,pagina,trecho)
-         VALUES (?,?,?)'
-        );
+        foreach ($palavras as $palavra) {
 
-        $stmt->execute([$palavra,$arquivo,$texto]);
+            if (strlen($palavra) < 4) continue;
+
+            $stmt = $pdo->prepare(
+                'INSERT INTO "INDICE"(termo, pagina, trecho)
+                 VALUES (?, ?, ?)'
+            );
+
+            $stmt->execute([$palavra, $arquivo, $frase]);
+        }
     }
 }
 

@@ -31,7 +31,7 @@
         <div class="texto-banner">
             <h1>LEGISLAÇÕES</h1>
             <p>
-                As legislações no Arquivo Público Municipal, vincliado à Secretaria Municipal de Gestão, são essenciais
+                As legislações no Arquivo Público Municipal, vinculado à Secretaria Municipal de Gestão, são essenciais
                 para garantir a organização, preservação e acesso aos documentos públicos. Elas asseguram o cumprimento
                 de normas legais, como a Lei de Acesso à Informação, promovendo transparência, controle social e
                 segurança jurídica.
