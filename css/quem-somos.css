@@ -1,66 +1,42 @@
-@media (max-width: 1250px) {
-    nav{
-        display: none;
-    }
-    
-    .imagem-right{
-        float: none;
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-        overflow: hidden;
+/* ======  ESTILOS GERAIS ====== */
 
-        & img{
-            max-width: 100%;
-            display: block;
-        }
-    }
-
-    .imagem-left{
-        width: 100%;
-        max-width: 800px;
-        margin: 0 auto;
-        overflow: hidden;
-
-        & img{
-            max-width: 100%;
-            display: block;
-            margin-top: -12%;
-            margin-bottom: 7%;
-        }
-
-        & h2{
-            
-        }
-    }
-
-    .imagem-right{
-        float: none;
-    }
-
-    .resumo-txt{
-    text-align: justify;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    font-size: 24px;
-    font-style: italic;
-
-    }
+P {
+    margin-bottom: 1px;
+    margin-top: 13px;
+    font-size: 1.25rem;
 
 }
-
-
 
 
 /* ======  QUEM SOMOS/ARQUIVO ====== */
 .quem-somos {
+    font-size: 1.25rem;
+    text-align: justify;
     margin-top: 5%;
-    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 156px;
+    max-width: 1500px;
+    width: 80%;
+}
+
+.quem-somos h1 {
+    font-size: 2rem;
 }
 
 .quem-somos_subtitulo {
-    margin-top: 2%;
     font-size: 17px;
+}
+
+.quem-somos_subtitulo h2 {
+    margin-bottom: 3px;
+}
+
+.quem-somos_subtitulo_p {
+    margin-top: 0px;
+}
+
+.quem-somos_arquivo_publico {
+    margin-bottom: 25px;
 }
 
 .quem-somos_resumo {
@@ -73,64 +49,70 @@
     margin-bottom: 74px;
 }
 
+/* ====== SERVIÇOS-DEVER-RESPONSABILIDADE  ====== */
 
-
-
-/* ====== QUEM SOMOS/SERVIÇOS ======*/
-
-
-.servicos-subtitulo {
-    margin-top: 2%;
-    font-size: 17px;
+.dever-responsabilidade {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.servicos-lista {
-    margin-bottom: 74px;
+.dever-responsabilidade h2 {
+    margin-top: 0px;
 }
 
-.servicos-lista li {
-    font-family: Gilroy-Medium;
+.servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.imagem-right{
-    float: right;
+.servicos_conteudo {
+    margin-bottom: 50px;
 }
 
-.imagem-left{
-    & img{
-    float: left;
-    margin-top: -7%;
-    margin-right: 2%;
+.dever-responsabilidade_ajuste {
+    margin-bottom: 25px;
+}
+
+/* ====== UMA-HOMENAGEM ====== */
+
+.uma-homenagem {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 145px;
+}
+
+.uma-homenagem_conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.uma-homenagem_titulo h2 {
+    margin-bottom: 0px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+
+
+
+
+
+/* === Celular === */
+@media (max-width: 768px) {
+
+.navegacao {
+    display: none;
+}
+
+
+    .quem-somos {
+        width: 95%;
+        margin-top: 120px;
     }
 
-    & h2{
-        margin-top: 4%;
-        font-size: clamp(16px, 3vw, 32px);
+    .dever-responsabilidade {
+        flex-direction: column;
     }
-}
-
-
-/* ====== DEVER E RESPONSABILIDADE ======*/
-
-
-.dever-responsabilidade_subtitulo {
-    margin-top: 2%;
-    font-size: 17px;
-}
-
-.dever-responsabilidade_texto {
-    margin-bottom: 74px
-}
-
-
-/* ======  UMA HOMENAGEM  ======*/
-
-.last-txt{
-    font-size: 20px; 
-    margin-top: -5%;
-
-    .card-secao {
-        margin-bottom: 74px;
-    }
-
 }

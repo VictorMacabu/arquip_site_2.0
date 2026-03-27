@@ -1,4 +1,11 @@
-/* ====== FONTES ======*/
+/* ====== Reset na página ====== */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/* ====== Fontes ======*/
 
 @font-face {
   font-family: Gilroy-Medium;
@@ -20,13 +27,20 @@
   src: url(/assets/font-site/Gilroy-Black/Gilroy-ExtraBold.otf)
 }
 
-
-
-/* ====== ESTILO GERAL ======*/
-
-body {
-  margin: 0;
+@font-face {
+  font-family: Nimbus Sans;
+  src: url(/assets/font-site/Gilroy-Black/NimbusSanL-Reg.otf);
 }
+
+@font-face {
+  font-family: Gilroy-Regular;
+  src: url(/assets/font-site/Gilroy-Black/Gilroy-Regular.ttf);
+}
+
+
+
+
+/* ====== Estilos Gerais ======*/
 
 button {
   font-family: Gilroy-Medium;
@@ -46,7 +60,13 @@ ol,
 ul,
 li,
 a {
-  font-family: Gilroy-Medium;
+  font-family: Nimbus Sans;
+}
+
+main p {
+  font-family: Nimbus Sans;
+  font-size: 1.125rem;
+  color: #475569;
 }
 
 b {
@@ -57,7 +77,10 @@ b {
 /*=== CSS/CONTEÚDO ===*/
 
 main {
-  margin: 7% 15% 10% 15%;
+  margin: 115px auto;
+  max-width: 1310px;
+  padding: 0 20px;
+  align-items: center;
 }
 
 .noticia-mobile {
@@ -66,34 +89,6 @@ main {
 
 .sistema-mobile_titulo {
   display: none;
-}
-
-/* === CSS/BANNER ===*/
-
-.banner {
-  background-image: url('/assets/banner/index/banner-arquivo-pc.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  width: 100%;
-  height: clamp(18rem, 63vh, 33rem);
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
-.banner-texto {
-  margin-left: clamp(20px, 8vw, 180px);
-}
-
-.banner-texto h1 {
-  font-size: clamp(1.8rem, 4vw, 4rem);
-  max-width: 560px;
-  margin-bottom: 15px;
-}
-
-.banner-texto h2 {
-  font-size: clamp(1rem, 2vw, 2rem);
 }
 
 
@@ -105,17 +100,22 @@ main {
 
 .quem-somos {
   display: flex;
-  justify-content: space-evenly;
-  gap: 2.18rem;
+  gap: 39px;
+  margin-bottom: 115px;
+  justify-content: space-between;
+  max-width: 1310px;
+  padding: 0 48px;
 }
 
 .quem-somos_conteudo {
-  width: 33%;
-  margin: 0 1%;
+  max-width: 465px;
   text-align: left;
-  margin-top: 0.93rem;
-  margin-bottom: 4rem;
-  min-height: 31.25rem;
+  min-height: 500px;
+}
+
+.quem-somos_conteudo h2 {
+  font-size: 1.87rem;
+  color: #002147;
 }
 
 .quem-somos_titulo {
@@ -132,149 +132,184 @@ main {
 }
 
 .quem-somos_texto_pc {
-  width: 90%;
-  margin: 0 2%;
+  margin-top: 1.4375rem;
   text-align: left;
-  min-height: 8.37rem;
   margin-bottom: 1rem;
 }
 
+/* === ATENDIMENDO/CARDS === */
+
+.cards-container {
+  display: flex;
+  gap: 32px;
+  height: 403px;
+}
+
 .atendimento-card {
-  width: 33%;
-  height: 100%;
+  width: 320px;
+  height: 382px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.atendimento-card img {
+  width: 320px;
+  height: 160px;
+  object-fit: cover;
 }
 
 .atendimento-card:hover {
   transform: translateY(-8px);
 }
 
-.atendimento-card img {
-  position: relative;
-  width: 100%;
-  z-index: -1;
-}
 
 .atendimento-card_titulo {
-  width: 11.31rem;
-  background-color: #00072D;
-  padding: 5px 10px 5px 20px;
-  border-radius: 0.18rem;
-  font-size: 0.87rem;
-  color: white;
-}
-
-.atendimento-card_conteudo {
-  margin-top: -10%;
-  background-color: white;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 1rem;
-  box-shadow: 10px 5px 35px rgb(173, 173, 173);
-  text-align: left;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  background-color: #002147;
+  min-height: 48px;
 }
 
+.atendimento-card_titulo h2 {
+  display: flex;
+  align-items: center;
+  font-family: Gilroy-Bold;
+  color: #fff;
+  font-size: 1.1rem;
+}
 
 .atendimento-card_lista {
-  padding: 0 1.25rem;
-  line-height: 30px;
+  flex-grow: 1;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 9px 12px;
+}
+
+.atendimento-card_lista ul {
+  padding: 24px;
+}
+
+.atendimento-card_lista li {
   list-style: none;
+  margin-bottom: 8px;
+  width: 283px;
 }
 
 .atendimento-card_lista a {
-  color: #00072D;
+  width: 272px;
+  text-decoration: none;
+  color: #002147;
 }
 
 .atendimento-card_lista a:hover {
-  color: blue;
+  color: #0793da;
 }
+
+
 
 /* === CSS/SERVIÇOS ===*/
 
+
 .servicos {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto 195px auto;
+  padding: 0 48px;
   display: flex;
-  justify-content: space-evenly;
-  gap: 6.18rem;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .servico-card {
-  width: 26%;
-  margin-bottom: 14.93rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  max-width: 362px;
 }
 
-.servico-card_icone img {
-  height: 3.68rem;
+.servico-card_img {
+  display: flex;
+  width: 72px;
+  height: 96px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
 }
 
-.servico-card_titulo {
-  color: #008BD2;
-  margin-bottom: 0;
+.servico-card_img img {
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  border-radius: 12px;
 }
 
-.servico-card_linha {
-  margin-left: 0;
-  margin-bottom: 1.93rem;
-  background-color: #00072D;
-  height: 1px;
-  width: 18%;
+.servico-card h2 {
+  color: #0056B3;
+  margin-bottom: 16px;
 }
 
-.servico-texto {
-  width: 100%;
-  height: 61%;
-  margin: 0 0%;
+.servico-card p {
+  max-width: 362px;
+  margin-bottom: 47px;
 }
 
-.servico-card_botao {
-  background-color: #00072D;
-  color: white;
-  border-radius: 0.62rem;
-  height: 1.93rem;
-  width: 7.56rem;
-  transition: transform 0.4s ease;
+.servico-card a {
+  font-family: Gilroy-Bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #002147;
+  padding: 8px 24px 8px 24px;
+  font-size: 0.75rem;
+  border-radius: 5px;
 }
 
-.servico-card_botao:active {
-  transform: scale(0.9);
-}
+
 
 /* === CSS/SISTEMAS ===*/
 
 
 .sistemas.sistemas_pc {
-  width: 100%;
+  width: 1310px;
 }
 
 .sistemas-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 13rem;
+  gap: 50px;
 }
 
-
-
 .sistemas-titulo {
-  font-family: Gilroy-Medium;
-  color: #00072D;
+  font-size: 24px;
+  color: #0056B3;
   line-height: 1.2;
-  font-size: 2rem;
   margin-bottom: 2rem;
   max-width: 400px;
   width: 100%;
 }
 
+
 .sistemas-titulo_destaque {
-  font-family: Gilroy-Black;
+  color: #002147;
+  font-family: Gilroy-Bold;
+  font-size: 2.25rem;
 }
 
+
 .sistemas-conteudo {
-  width: 61%;
+  width: 648px;
+}
+
+.titulo-sistemas {
+  margin-bottom: 40px;
 }
 
 
 .sistemas-imagem img {
-  width: 100%;
+  width: 588px;
 }
 
 .carrossel-container {
@@ -285,7 +320,7 @@ main {
 
 .carrossel {
   overflow: hidden;
-  width: 100%;
+  width: 89%;
   padding: 13px 10px;
   box-sizing: border-box;
 }
@@ -298,8 +333,8 @@ main {
 }
 
 .card {
-  flex: 0 0 225px;
-  height: 232px;
+  flex: 0 0 150px;
+  height: 192px;
   background-color: #fff;
   border: 1px solid rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -366,6 +401,70 @@ main {
   font-size: 1.18rem;
   padding-top: 4.37rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
