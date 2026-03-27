@@ -26,12 +26,11 @@
         <section class="quem-somos">
             <div class="quem-somos_conteudo">
                 <h2>Conheça O ARQUIP</h2>
-                <p class="quem-somos_texto_pc">...</p>
-                <p class="quem-somos_texto_pc">...</p>
-                <p class="quem-somos_texto_mobile">...</p>
+                <p class="quem-somos_texto_pc">O Arquivo Público do Município de São Paulo (ARQUIP) tem como missão fundamental garantir o pleno funcionamento de sua estrutura arquivística, assegurando a organização, a preservação e o acesso à informação pública.</p>
+                <p class="quem-somos_texto_pc">Para isso, a ARQUIP define e implementa procedimentos operacionais padronizados, que visam garantir a eficiência no tratamento e na gestão dos documentos. Além disso, propõe políticas públicas externas para a gestão documental e a preservação da memória institucional, promovendo boas práticas que asseguram o controle rigoroso dos acervos documentais.</p>
+                <p class="quem-somos_texto_mobile">O ARQUIP tem como missão garantir o funcionamento da estrutura arquivística, definindo procedimentos operacionais, propondo políticas públicas de gestão documental, assegurando o controle, a preservação e o acesso aos documentos.</p>
             </div>
 
-            <!-- Atendimento ao cidadão -->
             <div class="atendimento-card">
                 <img src="/assets/banner/index/card-trabalho.png">
                 <div class="atendimento-card_conteudo">
@@ -45,7 +44,6 @@
                 </div>
             </div>
 
-            <!-- Atendimento ao servidor -->
             <div class="atendimento-card">
                 <img src="/assets/banner/index/planilha.png">
                 <div>
@@ -61,7 +59,6 @@
             </div>
         </section>
 
-        <!-- Serviços -->
         <section class="servicos">
 
             <div class="servico-card">
@@ -84,7 +81,6 @@
 
         </section>
 
-        <!-- Notícias -->
         <section class="noticias">
             <h4>ÚLTIMAS NOTÍCIAS</h4>
 

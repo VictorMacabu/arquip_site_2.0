@@ -142,8 +142,13 @@ button {
 
 .navegacao-coluna a {
     color: #fff;
-    padding: 10px;
+    padding: 10px 14px;
     text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navegacao-coluna a:last-child {
+    border-bottom: none;
 }
 
 .navegacao-coluna a:hover {
