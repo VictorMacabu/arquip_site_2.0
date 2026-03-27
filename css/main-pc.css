@@ -47,8 +47,8 @@ li {
 
 .container-pagina {
     padding-top: 92px;
-    padding-bottom: 92px;
-    margin: 3% 12% 12% 12%;
+    padding-bottom: 0px;
+    margin: 3% 15% 12% 15%;
     background-color: white;
     font-size: 20px;
 }
