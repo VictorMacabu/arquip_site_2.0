@@ -86,3 +86,12 @@
 .portal-processos_conteudo a {
     color: blue;
 }
+
+.final-txt{
+    display: flex;
+    gap: 40px;
+}
+
+.subtitulo-final{
+    width: 50%;
+}
