@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/assets/icone.site/logo.ico" type="image/x-icon">
     <title>Arquip</title>
 
     <!-- CSS GLOBAL -->

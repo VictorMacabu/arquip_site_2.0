@@ -1,3 +1,6 @@
+/* ====== ESTILOS/GERAIS ====== */
+
+/* === Fontes === */
 @font-face {
     font-family: Gilroy-Medium;
     src: url(/assets/font-site/Gilroy-Black/Gilroy-Medium.ttf);
@@ -13,6 +16,19 @@
     src: url(/assets/font-site/Gilroy-Black/gilroy-semibold.ttf);
 }
 
+
+@font-face {
+    font-family: Gilroy-Black;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-black.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url(/assets/font-site/Gilroy-Black/Gilroy-ExtraBold.otf)
+}
+
+
+/* === Estilo da página === */
 body {
     margin: 0;
 }
@@ -31,8 +47,13 @@ p,
 ol,
 ul,
 li {
-    font-family: Gilroy-Medium;
+    font-family: Nimbus Sans;
 }
+
+.container-pagina p {
+    text-align: justify;
+}
+
 
 .banner-estrutura {
     display: flex;
@@ -43,6 +64,7 @@ li {
     background-size: cover;
     background-image: url(/assets/gestao-documental/banner-gest-doc.png);
 }
+
 
 
 .container-pagina {
