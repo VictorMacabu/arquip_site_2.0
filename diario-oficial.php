@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/header-banner.css">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
     <link rel="stylesheet" href="/CSS/main-pc.css">
     <link rel="stylesheet" href="/css/new-diario.css">

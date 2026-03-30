@@ -20,11 +20,11 @@ class PesquisaController
             ];
         }
 
-        $resultados = $this->model->buscar($q);
+        $resultadoBusca = $this->model->buscar($q);
 
         return [
-            'resultados' => $resultados ?? [],
-            'sugestao' => null
+            'resultados' => $resultadoBusca['resultados'] ?? [],
+            'sugestao' => $resultadoBusca['sugestao'] ?? null
         ];
     }
 }

@@ -18,13 +18,13 @@
 
 
 @font-face {
-  font-family: Gilroy-Black;
-  src: url(/assets/font-site/Gilroy-Black/gilroy-black.ttf);
+    font-family: Gilroy-Black;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-black.ttf);
 }
 
 @font-face {
-  font-family: Gilroy-ExtraBold;
-  src: url(/assets/font-site/Gilroy-Black/Gilroy-ExtraBold.otf)
+    font-family: Gilroy-ExtraBold;
+    src: url(/assets/font-site/Gilroy-Black/Gilroy-ExtraBold.otf)
 }
 
 
@@ -47,14 +47,14 @@ p,
 ol,
 ul,
 li {
-    font-family: Gilroy-Medium;
+    font-family: Nimbus Sans;
 }
 
 .container-pagina p {
     text-align: justify;
 }
 
-/*
+
 .banner-estrutura {
     display: flex;
     width: 100%;
@@ -64,13 +64,13 @@ li {
     background-size: cover;
     background-image: url(/assets/gestao-documental/banner-gest-doc.png);
 }
-*/
+
 
 
 .container-pagina {
     padding-top: 92px;
-    padding-bottom: 92px;
-    margin: 3% 12% 12% 12%;
+    padding-bottom: 0px;
+    margin: 3% 15% 12% 15%;
     background-color: white;
     font-size: 20px;
 }

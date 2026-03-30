@@ -162,8 +162,8 @@ button {
     padding: 10px;
     font-family: Nimbus Sans;
     text-decoration: none;
-
 }
+
 
 .navegacao-coluna a:hover {
     background: #4cb0e2;
@@ -201,40 +201,4 @@ button {
 .input-wrapper input::placeholder {
     color: #000;
     font-family: Nimbus Sans;
-}
-
-/* ====== banner ====== */
-
-.banner-estrutura {
-    background-image: url(/assets/banner/index/banner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 450px;
-    padding: 0px 305px;
-    display: flex;
-    align-items: center;
-}
-
-.banner-estrutura_conteudo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 300px;
-    font-family: Nimbus Sans;
-    margin-left: 2rem;
-}
-
-.banner-estrutura_conteudo h1 {
-    font-size:  3.75rem;
-    color: #fff;
-    max-width: 552px;
-    line-height: 0.9;
-}
-
-.banner-estrutura_conteudo p {
-    font-family: Nimbus Sans;
-    font-size: clamp(1rem, 2vw, 1.5rem);
-    color: #ffffff9e;
-    margin-top: 15px;
 }

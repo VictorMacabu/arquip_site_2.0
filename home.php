@@ -7,7 +7,7 @@
     <meta name="description" content="Página Oficial do Arquip">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/header-banner.css">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>ARQUIP</title>
@@ -91,7 +91,6 @@
             </div>
         </section>
 
-        <!-- Serviços -->
         <section class="servicos">
 
             <div class="servico-card">
@@ -191,23 +190,41 @@
 
         <!-- Notícias -->
         <section class="noticias">
-            <h4>ÚLTIMAS NOTÍCIAS</h4>
-
-            <div class="noticia-card">
-                <h3>Curiosidades Históricas</h3>
-                <a href="<?= url('home') ?>">Saiba mais →</a>
+            <div class="noticias-titulo">
+                <h4>ÚLTIMAS NOTÍCIAS</h4>
             </div>
+            <div class="noticia-container">
+                <div class="noticia-card">
+                    <img src="/assets/home/curiosidade.png" alt="Imagem das Curiosidades">
+                    <h3>Curiosidades Históricas</h3>
+                    <p>
+                        Para aprimorar publicações do Diário Oficial, visando eficiência e qualidade.
+                        Profissionais serão treinados nas melhores práticas e ferramentas.
+                    </p>
+                    <a class="noticia-card_link" href="<?= url('home') ?>">Saiba mais →</a>
+                </div>
 
-            <div class="noticia-card">
-                <h3>Capacitação AGORASEI</h3>
-                <a href="<?= url('home') ?>">Saiba mais →</a>
+                <div class="noticia-card">
+                    <img src="/assets/home/curiosidade.png" alt="Imagem das Curiosidades">
+                    <h3>Capacitação AGORASEI</h3>
+                    <p>
+                        Descubra as principais curiosidades deste mês: de eventos inusitados a fatos surpreendentes
+                        que marcaram as últimas semanas.
+
+                    </p>
+                    <a class="noticia-card_link" href="<?= url('home') ?>">Saiba mais →</a>
+                </div>
+
+                <div class="noticia-card">
+                    <img src="/assets/home/indicadores.png" alt="Imagem dos indicadores 2023">
+                    <h3>Indicadores 2023</h3>
+                    <p>
+                        Servidor, confira os principais dados dos núcleos do ARQUIP em 2023.
+                        A sua visualização é importante para atingir as metas desse ano.
+                    </p>
+                    <a class="noticia-card_link" href="<?= url('home') ?>">Saiba mais →</a>
+                </div>
             </div>
-
-            <div class="noticia-card">
-                <h3>Indicadores 2023</h3>
-                <a href="<?= url('home') ?>">Saiba mais →</a>
-            </div>
-
         </section>
 
     </main>

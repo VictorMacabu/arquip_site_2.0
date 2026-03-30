@@ -79,7 +79,7 @@
                             <div class="servicos_conteudo">
                                 <h2>Serviços e Cidadania</h2>
 
-                                <p>
+                                <p class="quem-somos_subtitulo_p">
                                     O Arquivo Público oferece aos gestores públicos e cidadãos uma ampla gama de serviços, como:
                                 </p>
 

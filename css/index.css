@@ -92,6 +92,45 @@ main {
 }
 
 
+
+/* ====== banner ====== */
+
+.banner-estrutura {
+    background-image: url(/assets/banner/index/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.banner-estrutura_conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 300px;
+    font-family: Nimbus Sans;
+    margin-left: 353px;
+}
+
+.banner-estrutura_conteudo h1 {
+    font-size:  3.75rem;
+    color: #fff;
+    max-width: 552px;
+    line-height: 0.9;
+}
+
+.banner-estrutura_conteudo p {
+    font-family: Nimbus Sans;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: #ffffff9e;
+    margin-top: 15px;
+}
+
+
+
+
 /* === CSS/QUEM-SOMOS ===*/
 
 .quem-somos_texto_mobile {
@@ -278,7 +317,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 13rem;
+  margin-bottom: 115px;
   gap: 50px;
 }
 
@@ -368,30 +407,30 @@ main {
 
 /* === CSS/NOTÍCIA ===*/
 
-.noticia-titulo {
-  text-align: center;
-  font-size: 1.40rem;
+
+.noticia-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.noticias-cards {
+
+.noticias-titulo h4 {
+  font-family: Gilroy-Medium;
+  width: 100%;
   display: flex;
-  gap: 1.25rem;
+  text-align: center;
   justify-content: center;
-  margin-top: 4.65rem;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
 .noticia-card {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 413px;
+  height: 536px;
+  gap: 25px;
 }
-
-.noticia-card_titulo {
-  margin-top: 3.93rem;
-}
-
-.noticia-card img {
-  width: 100%;
-}
-
 
 .noticia-card_link {
   color: #0047FF;
