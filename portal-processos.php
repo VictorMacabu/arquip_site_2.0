@@ -108,23 +108,28 @@
                             </li>
                         </ul>
 
-                        <h4>Quem Pode Utilizar o Portal?</h4>
+                        <div class="final-txt">
+                            <div class="subtitulo-final">
+                                <h4>Quem Pode Utilizar o Portal?</h4>
 
-                        <p>O Portal de Processos do ARQUIP é aberto a todos os cidadãos, empresas, e instituições interessadas
-                            em acessar informações públicas do acervo do município de São Paulo. O portal também é uma
-                            ferramenta importante para pesquisadores, historiadores e demais profissionais que necessitam de
-                            documentos públicos para seus estudos e atividades.
-                        </p>
+                                <p>O Portal de Processos do ARQUIP é aberto a todos os cidadãos, empresas, e instituições interessadas
+                                    em acessar informações públicas do acervo do município de São Paulo. O portal também é uma
+                                    ferramenta importante para pesquisadores, historiadores e demais profissionais que necessitam de
+                                    documentos públicos para seus estudos e atividades.
+                                </p>
+                            </div>
 
-                        <h4>Como Acessar?</h4>
-
-                        <p>Para acessar o Portal de Processos do ARQUIP, basta visitar o site oficial do ARQUIP e seguir as
-                            orientações para cadastro e consulta de processos. O portal é intuitivo e oferece suporte ao usuário
-                            para garantir que todos os cidadãos consigam utilizar suas funcionalidades com facilidade. Além
-                            disso,
-                            poderá realizar o acesso através do endereço eletrônico:
-                            <a href="https://processos.prefeitura.sp.gov.br/Forms/Principal.aspx" target="blanck">www.processos.prefeitura.sp.gov.br.</a>
-                        </p>
+                            <div class="subtitulo-final">
+                                <h4>Como Acessar?</h4>
+                                <p>Para acessar o Portal de Processos do ARQUIP, basta visitar o site oficial do ARQUIP e seguir as
+                                    orientações para cadastro e consulta de processos. O portal é intuitivo e oferece suporte ao usuário
+                                    para garantir que todos os cidadãos consigam utilizar suas funcionalidades com facilidade. Além
+                                    disso,
+                                    poderá realizar o acesso através do endereço eletrônico:
+                                    <a href="https://processos.prefeitura.sp.gov.br/Forms/Principal.aspx" target="blanck">www.processos.prefeitura.sp.gov.br.</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
