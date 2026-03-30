@@ -15,8 +15,23 @@ main {
     margin-bottom: 65px;
 }
 
+.sistema-arquivo_titulo{
+    margin-bottom: 1%;
+}
+
+.sistema-arquivo_texto{
+    margin-bottom: 1%;
+}
 
 /* ======  DEFINIÇÃO DOCUMENTAL  ======*/
+
+.definicao-documental_subtitulo{
+    margin-bottom: 1%;
+}
+
+.definicao-documental-texto{
+    margin-bottom: 1%;
+}
 
 .definicao-documental_lista li {
     padding: 5px;

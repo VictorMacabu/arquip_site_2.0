@@ -78,7 +78,7 @@
                     Definição de Gestão Documental
                 </h2>
 
-                <p>
+                <p class="definicao-documental-texto">
                     A gestão de documentos, conforme o decreto, envolve o tratamento de documentos públicos em todas as fases
                     do seu ciclo de vida, que inclui:
                 </p>
