@@ -77,6 +77,7 @@
 .portal-processos_conteudo h2 {
     font-family: Gilroy-ExtraBold;
     font-size: 2rem;
+    margin-bottom: 2%;
 }
 
 .portal-processos_conteudo ul {
@@ -98,4 +99,8 @@
 
 .subtitulo-final{
     width: 50%;
+}
+
+.subtitulo-final h4 {
+    margin-bottom: 3%;
 }
