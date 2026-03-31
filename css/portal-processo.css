@@ -60,6 +60,10 @@
     margin-bottom: 200px;
 }
 
+.card-secao p.text-card {
+  margin-top: 6%;
+}
+
 .card,
 .altura1 {
     text-align: center;
