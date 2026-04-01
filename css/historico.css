@@ -3,16 +3,9 @@
     align-items: flex-end;
 }
 
-.img-esquerda {
-    width: 386px;
-    height: 296px;
-    margin-bottom: -4px;
-}
-
+.img-esquerda,
 .img-direita {
-    width: 340px;
-    height: 298px;
-    margin-bottom: -4px;
+    width: 280px;
 }
 
 .texto-banner {
@@ -20,12 +13,14 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: #fff;
     text-align: center;
 }
 
 .texto-banner h1 {
     color: #fff;
-    margin-top: 75px;
+    margin-top: 35px;
+    padding: 15px;
     font-size: clamp(16px, 4vw, 47px);
 }
 
@@ -34,307 +29,216 @@
     font-size: clamp(12px, 2vw, 26px);
 }
 
-.container-linha-do-tempo1913-1967 {
+
+.linha-do-tempo {
+    background: #f5f7fa;
+    padding: 100px 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background: linear-gradient(to bottom, #1e88c8, #64b5f6);
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%) scaleY(0);
+    transform-origin: top;
+    height: calc(100% - 22px);
+    transition: transform 1.6s ease; 
+    z-index: 1;
+}
+
+.timeline.animate-line::after {
+    transform: translateX(-50%) scaleY(1);
+}
+
+
+.timeline-item {
+    position: relative;
+    width: 50%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 92px;
+    margin-bottom: 70px;
+
+    opacity: 0;
+    z-index: 2;
+}
+
+.timeline-item.left {
+    left: 0;
+    justify-content: flex-end;
+    transform: translateX(-80px);
+}
+
+.timeline-item.right {
+    left: 50%;
+    justify-content: flex-start;
+    transform: translateX(80px);
+}
+
+.timeline-item.show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.timeline-item:nth-child(odd).show {
+    transition-delay: 0.1s;
+}
+
+.timeline-item:nth-child(even).show {
+    transition-delay: 0.2s;
+}
+
+
+.timeline-item .content {
+    background: #ffffff;
+    border-radius: 12px;
+    width: 460px;
+
+    padding: 20px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.timeline-item .content:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.timeline-item.left .content {
+    margin-right: 80px;
+}
+
+.timeline-item.right .content {
+    margin-left: 80px;
+}
+
+
+.timeline-item h2 {
+    color: #1565c0;
     font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
 }
 
 
-.texto-principal {
-  width: 420px;                    
-  line-height: 1.4;
-  color: #000;
-  margin-top: 18px;
-  font-size: 16px;
+.timeline-item img {
+    display: block;
+    margin: 15px auto 0 auto;
+
+    width: 100%;
+    max-width: 220px;
+
+    height: auto;
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.timeline-item img.img-logo {
+    max-width: 140px;   
+    aspect-ratio: 1 / 1; 
+    object-fit: contain; 
+    background: #fff;    
+    padding: 10px;       
+    border-radius: 50%; 
 }
 
 
+.timeline-item::after {
+    content: '';
+    position: absolute;
 
-/*=== 1913 ===*/
-.linha-do-tempo1913 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
+    width: 18px;
+    height: 18px;
+    background: #1e88c8;
+    border-radius: 50%;
 
-    & .conector {
-        margin-top: 10px;
-    }
+    top: 22px;
 
-    & h2 {
-        margin-top: -46px;
-    }
+    left: 100%;
+    transform: translateX(-50%) scale(0);
+
+    transition: transform 0.3s ease;
+
+    z-index: 3;
+}
+
+.timeline-item.right::after {
+    left: 0;
+}
+
+.timeline-item.show::after {
+    transform: translateX(-50%) scale(1);
+    animation: pulse 1.5s infinite;
 }
 
 
-
-/*=== 1935 ===*/
-.linha-do-tempo1935 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin-top: -47px;
-
-    
-    & h2 {
-        position: relative;
-        bottom: -66px;
-        margin-top: -50px;
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(30,136,200, 0.5);
     }
-
-    & img {
-        margin-top: 3px;
+    70% {
+        box-shadow: 0 0 0 12px rgba(30,136,200, 0);
     }
-
-    & .texto-principal {
-        margin-top: 41px;
-    }
-
- 
-}
-
-
-
-/*=== 1947 ===*/
-
-.linha-do-tempo1947 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: -17px;
-    color: white;
-
-
-     & .conector {
-        margin-top: 10px;
-    }
-
-    & h2 {
-        margin-top: -46px;
-    }
-
-}
-
-
-
-/*=== 1967 ===*/
-.linha-do-tempo1967 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: -37px;
-    color: white;
-
-      & h2 {
-        position: relative;
-        bottom: -39px;
-        margin-top: -39px;
-    }
-
-    & img {
-        margin-top: -26px;
-    }
-
-    & .texto-principal {
-        margin-top: 38px;
+    100% {
+        box-shadow: 0 0 0 0 rgba(30,136,200, 0);
     }
 }
 
 
+@media (max-width: 768px) {
 
-.container-linha-do-tempo1977-1997 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    padding-top: 44px;
-    font-size: 20px;
-}
-
-
- /*=== 1977 ===*/
-.linha-do-tempo1977 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-
-    & .conector {
-        margin-top: 10px;
+    .timeline::after {
+        left: 20px;
     }
 
-    & h2 {
-        margin-top: -46px;
-    }
-}
-
-
-/*=== 1978 ===*/
-.linha-do-tempo1978 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin-top: 12px;
-
-    
-    & h2 {
-        position: relative;
-        bottom: -66px;
-        margin-top: -50px;
+    .timeline-item {
+        width: 100%;
+        padding-left: 60px;
     }
 
-    & img {
-        margin-top: 3px;
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+        justify-content: flex-start;
+        transform: translateX(0);
     }
 
-    & .texto-principal {
-        margin-top: 41px;
-    }
-}
-
-/*=== 1990 ===*/
-.linha-do-tempo1990 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-
-    & .conector {
-        margin-top: 10px;
+    .timeline-item .content {
+        margin-left: 30px;
+        width: auto;
     }
 
-    & h2 {
-        margin-top: -46px;
-    }
-}
-
-/*=== 1997 ===*/
-.linha-do-tempo1997 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    padding-top: 12px;
-
-    
-    & h2 {
-        position: relative;
-        bottom: -66px;
-        margin-top: -50px;
+    .timeline-item img {
+        max-width: 100%;
     }
 
-    & img {
-        margin-top: 3px;
+    .timeline-item::after {
+        left: 20px;
     }
 
-    & .texto-principal {
-        margin-top: 41px;
-    }
-}
-
-
-.container-linha-do-tempo2001-2004 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    padding-top: 44px;
-    font-size: 20px;
-}
-
-.linha-do-tempo2001 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-
-    & .conector {
-        margin-top: 10px;
+    .banner-estrutura {
+        flex-direction: column;
+        text-align: center;
     }
 
-    & h2 {
-        margin-top: -46px;
-    }
-}
-
-.linha-do-tempo2002 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin-top: 12px;
-
-    
-    & h2 {
-        position: relative;
-        bottom: -66px;
-        margin-top: -50px;
-    }
-
-    & img {
-        margin-top: 3px;
-    }
-
-    & .texto-principal {
-        margin-top: 41px;
-    }
-}
-
-
-
-.linha-do-tempo2003 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-
-    & .conector {
-        margin-top: 10px;
-    }
-
-    & h2 {
-        margin-top: -46px;
-    }
-}
-
-
-
-.linha-do-tempo2004 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin-top: 12px;
-
-    
-    & h2 {
-        position: relative;
-        bottom: -66px;
-        margin-top: -50px;
-    }
-
-    & img {
-        margin-top: 3px;
-    }
-
-    & .texto-principal {
-        margin-top: 41px;
+    .img-esquerda,
+    .img-direita {
+        display: none;
     }
 }

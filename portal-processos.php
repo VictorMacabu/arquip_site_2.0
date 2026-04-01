@@ -53,7 +53,7 @@
                         <div class="card altura1">
                             <img src="/assets/portal-processo/card-um.png" alt="Card para Consultar Processos Administrativos">
                             <h4>Consultar Processos Administrativos</h4>
-                            <p>Com ferramentas de busca, é possível acessar informações sobre processos administrativos,
+                            <p class="text-card">Com ferramentas de busca, é possível acessar informações sobre processos administrativos,
                                 pesquisando por número, ano ou assunto, incluindo detalhes e, às vezes, andamento ou documentos.
                             </p>
                         </div>
@@ -61,7 +61,7 @@
                         <div class="card">
                             <img src="/assets/portal-processo/card-dois.png" alt="Card para Solicitar Vista de Processos e seus Documentos">
                             <h4>Solicitar vista de processos e seus documentos</h4>
-                            <p>O portal permite solicitar certificações e cópias digitais de documentos arquivísticos, como
+                            <p class="text-card">O portal permite solicitar certificações e cópias digitais de documentos arquivísticos, como
                                 contratos, pareceres, plantas e outros do acervo do ARQUIP, tudo de forma digital.
                             </p>
                         </div>
@@ -69,7 +69,7 @@
                         <div class="card altura1">
                             <img src="/assets/portal-processo/card-tres.png" alt="Card para Acompanhar os Pedidos">
                             <h4>Acompanhamento de Pedidos</h4>
-                            <p>Após solicitar vistas a algum processo, o cidadão pode acompanhar o andamento do pedido pelo
+                            <p class="text-card">Após solicitar vistas a algum processo, o cidadão pode acompanhar o andamento do pedido pelo
                                 portal, obtendo informações sobre o status do atendimento e prazos previstos para conclusão.
                             </p>
                         </div>
@@ -77,7 +77,7 @@
                         <div class="card">
                             <img src="/assets/portal-processo/card-quatro.png" alt="Card Para o Atendimento ao Pesquisador">
                             <h4>Atendimento ao Pesquisador</h4>
-                            <p>No portal, o pesquisador acadêmico pode solicitar consultas a processos ou documentos do acervo
+                            <p class="text-card">No portal, o pesquisador acadêmico pode solicitar consultas a processos ou documentos do acervo
                                 ARQUIP, realizados de forma digital ou presencial.
                             </p>
                         </div>
@@ -108,23 +108,28 @@
                             </li>
                         </ul>
 
-                        <h4>Quem Pode Utilizar o Portal?</h4>
+                        <div class="final-txt">
+                            <div class="subtitulo-final">
+                                <h4>Quem Pode Utilizar o Portal?</h4>
 
-                        <p>O Portal de Processos do ARQUIP é aberto a todos os cidadãos, empresas, e instituições interessadas
-                            em acessar informações públicas do acervo do município de São Paulo. O portal também é uma
-                            ferramenta importante para pesquisadores, historiadores e demais profissionais que necessitam de
-                            documentos públicos para seus estudos e atividades.
-                        </p>
+                                <p>O Portal de Processos do ARQUIP é aberto a todos os cidadãos, empresas, e instituições interessadas
+                                    em acessar informações públicas do acervo do município de São Paulo. O portal também é uma
+                                    ferramenta importante para pesquisadores, historiadores e demais profissionais que necessitam de
+                                    documentos públicos para seus estudos e atividades.
+                                </p>
+                            </div>
 
-                        <h4>Como Acessar?</h4>
-
-                        <p>Para acessar o Portal de Processos do ARQUIP, basta visitar o site oficial do ARQUIP e seguir as
-                            orientações para cadastro e consulta de processos. O portal é intuitivo e oferece suporte ao usuário
-                            para garantir que todos os cidadãos consigam utilizar suas funcionalidades com facilidade. Além
-                            disso,
-                            poderá realizar o acesso através do endereço eletrônico:
-                            <a href="https://processos.prefeitura.sp.gov.br/Forms/Principal.aspx" target="blanck">www.processos.prefeitura.sp.gov.br.</a>
-                        </p>
+                            <div class="subtitulo-final">
+                                <h4>Como Acessar?</h4>
+                                <p>Para acessar o Portal de Processos do ARQUIP, basta visitar o site oficial do ARQUIP e seguir as
+                                    orientações para cadastro e consulta de processos. O portal é intuitivo e oferece suporte ao usuário
+                                    para garantir que todos os cidadãos consigam utilizar suas funcionalidades com facilidade. Além
+                                    disso,
+                                    poderá realizar o acesso através do endereço eletrônico:
+                                    <a href="https://processos.prefeitura.sp.gov.br/Forms/Principal.aspx" target="blanck">www.processos.prefeitura.sp.gov.br.</a>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

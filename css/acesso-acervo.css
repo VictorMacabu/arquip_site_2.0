@@ -77,14 +77,16 @@ p {
 .acesso-acervo_conteudo_principal h2 {
     font-family: Gilroy-Bold;
     font-size: 2.02rem;
+    margin-bottom: 4%;
 }
 
 .conteudo-acervo_arquip {
-    margin-bottom: 96px;
+    margin-bottom: 56px;
 }
 
 .texto-acervo_conta {
     font-family: Gilroy-Bold;
+    margin-bottom: 1%;
 }
 
 .lista-acervo_conta {
@@ -98,6 +100,7 @@ p {
 
 .lista-acervo_conta li {
     margin-bottom: 12px;
+
 }
 
 
@@ -179,6 +182,7 @@ button {
 .duvidas h2 {
     font-family: Gilroy-Bold;
     font-size: 2.02rem;
+    margin-bottom: 2%;
 }
 
 .duvidas {
@@ -190,8 +194,17 @@ button {
     margin-bottom: 50px;
 }
 
+.duvidas-custos h4 {
+    margin-bottom: 2%;
+}
+
+.duvidas-requerimento h4{
+    margin-bottom: 2%;
+}
+
 .duvidas-primeiros_passos h4 {
     margin-top: 0px;
+    margin-bottom: 2%;
 }
 
 .duvidas-primeiros_passos  {
@@ -202,9 +215,21 @@ button {
     margin-bottom: 60px;
 }
 
+.duvidas-documentos_solicitados h4 {
+    margin-bottom: 2%;
+}
+
+.duvidas-vantagens h4 {
+    margin-bottom: 2%;
+}
+
 .duvidas-vantagens p,
 .duvidas-vantagens ul  {
     margin-bottom: 60px;
+}
+
+.duvidas-prazo h4{
+    margin-bottom: 2%;
 }
 
 .duvidas-prazo p {
@@ -215,4 +240,3 @@ button {
 .duvidas-vantagens ul {
     line-height: 1.5;
 }
-

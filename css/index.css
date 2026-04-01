@@ -129,10 +129,6 @@ main {
 }
 
 
-
-
-/* === CSS/QUEM-SOMOS ===*/
-
 .quem-somos_texto_mobile {
   display: none;
 }
@@ -175,8 +171,6 @@ main {
   text-align: left;
   margin-bottom: 1rem;
 }
-
-/* === ATENDIMENDO/CARDS === */
 
 .cards-container {
   display: flex;
