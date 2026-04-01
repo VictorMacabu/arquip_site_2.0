@@ -178,24 +178,47 @@ button {
     background-color: #e0e0e0;
 }
 
-.box-sugestoes {
+.sugestoes-box {
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 15.8%;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
 
-    z-index: 9999;
-    max-height: 200px;
-    overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    z-index: 999;
+    overflow: hidden;
 }
 
 .sugestao-item {
-    padding: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
     cursor: pointer;
+    transition: background 0.2s;
 }
 
-.sugestao-item:hover {
-    background-color: #eee;
+.sugestao-item:hover,
+.sugestao-item.active {
+    background: #f5f7fa;
+}
+
+.icone {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+mark {
+    background-color: #fff59d;
+    padding: 1px 3px;
+    border-radius: 3px;
 }
 
 .input-wrapper input::placeholder {

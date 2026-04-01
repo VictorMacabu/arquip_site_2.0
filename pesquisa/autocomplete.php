@@ -1,5 +1,7 @@
 <?php
 
+header('Content-Type: application/json');
+
 require_once __DIR__ . "/../database/ConnectDB.php";
 
 $q = $_GET['q'] ?? '';
@@ -9,20 +11,26 @@ if (strlen($q) < 2) {
     exit;
 }
 
-$sql = "
-SELECT termo, COUNT(*) as total
-FROM \"INDICE\"
-WHERE unaccent(termo) ILIKE unaccent(:q)
-GROUP BY termo
-ORDER BY total DESC
-LIMIT 5
-";
+try {
 
-$stmt = $pdo->prepare($sql);
-$stmt->execute([
-    ':q' => "$q%"
-]);
+    $sql = "
+    SELECT termo, COUNT(*) as total
+    FROM \"INDICE\"
+    WHERE unaccent(termo) ILIKE unaccent(:q)
+    GROUP BY termo
+    ORDER BY total DESC
+    LIMIT 8
+    ";
 
-$resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+        ':q' => "$q%"
+    ]);
 
-echo json_encode(array_column($resultados, 'termo'));
+    $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    echo json_encode(array_column($resultados, 'termo'));
+
+} catch (Exception $e) {
+    echo json_encode([]);
+}
