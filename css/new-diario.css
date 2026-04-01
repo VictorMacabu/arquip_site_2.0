@@ -23,7 +23,6 @@
 
 
 
-
 /* ====== BANNER ====== */
 
 .banner-estrutura {
@@ -399,36 +398,6 @@
     width: 90%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ====== CENTRAL-AJUDA ====== */
 
 
@@ -497,50 +466,6 @@
     border-radius: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ====== VANTAGENS ====== */
 
 .vantagens {
@@ -580,13 +505,6 @@
 .vantagens-imagens img {
     border-radius: 15px;
 }
-
-
-
-
-
-
-
 
 /* ====== PERGUNTAS-FREQUENTES ====== */
 
@@ -674,4 +592,5 @@ summary::after {
 
 details[open] summary::after {
   transform: rotate(45deg);
-} 
+}
+

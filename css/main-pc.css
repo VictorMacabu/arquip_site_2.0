@@ -1,4 +1,4 @@
-/* ====== ESTILOS/GERAIS ====== */
+/* ====== Estilos Gerais ====== */
 
 /* === Fontes === */
 @font-face {
@@ -28,6 +28,14 @@
 }
 
 
+/* ====== Reset na página ====== */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
 /* === Estilo da página === */
 body {
     margin: 0;
@@ -48,7 +56,16 @@ ol,
 ul,
 li {
     font-family: Nimbus Sans;
+    font-size: 1.25rem;
 }
+
+main {
+    margin: 115px auto;
+    max-width: 1310px;
+    padding: 0 20px;
+    align-items: center;
+}
+
 
 .container-pagina p {
     text-align: justify;
@@ -63,16 +80,6 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(/assets/gestao-documental/banner-gest-doc.png);
-}
-
-
-
-.container-pagina {
-    padding-top: 92px;
-    padding-bottom: 0px;
-    margin: 3% 15% 12% 15%;
-    background-color: white;
-    font-size: 20px;
 }
 
 .titulo-txt {

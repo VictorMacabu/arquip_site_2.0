@@ -22,10 +22,10 @@
 
     <!-- BANNER -->
     <div class="banner-estrutura">
-        <div>
+        <div class="icone-esquerda">
             <img class="img-esquerda" src="/assets/estrutura-organizacional/pessoas-estrutura.png" alt="Pessoas">
         </div>
-        
+
         <div class="texto-banner">
             <h1>ESTRUTURA ORGANIZACIONAL</h1>
             <p>O Decreto nº 62.208, de 28 de fevereiro de 2023, define as atribuições do Arquivo Público do Município de
@@ -33,62 +33,64 @@
                 públicos municipais.
             </p>
         </div>
-        
+
         <div>
             <img class="img-direita" src="/assets/estrutura-organizacional/icone-estrutura.png" alt="Icone">
         </div>
     </div>
 
-    <!-- INCIO PÁGINA -->
-    <div class="container-pagina">
-        <div class="card-secao">
-            <p>
-                Abaixo está um resumo de suas principais atribuições conforme o decreto:
-            </p>
-        </div>
+    <!-- Estrutura Organizacional -->
+    <main>
+        <section class="resumo-decreto">
+            <div class="resumo-decreto_apresentaçõs">
+                <p>
+                    Abaixo está um resumo de suas principais atribuições conforme o decreto:
+                </p>
+            </div>
 
-        <div class="lista-txt">
-            <ol>
-                <li><b>Gestão Documental:</b> Desenvolver e implementar políticas, diretrizes e normas para a gestão de
-                    documentos e informações, garantindo sua preservação e organização ao longo de todo o ciclo de vida
-                    dos documentos.</li>
-                <li><b>Preservação do Patrimônio</b> Documental: Assegurar a guarda e a preservação de documentos de
-                    valor histórico, administrativo e cultural, promovendo ações para evitar perda e deterioração dos
-                    registros que compõem a memória pública municipal.</li>
-                <li><b>Digitalização e Acesso à Informação:</b> Coordenar programas de digitalização e gerenciar
-                    repositórios digitais para facilitar o acesso a documentos e informações, ampliando a transparência
-                    e o atendimento ao público.</li>
-                <li><b>Capacitação e Orientação Técnica:</b> Oferecer suporte técnico e capacitação a órgãos municipais
-                    para a implementação de políticas de gestão documental e boas práticas de arquivamento.</li>
-                <li><b>Eliminação de Documentos:</b> Avaliar e autorizar, conforme normas legais, a eliminação de
-                    documentos públicos que tenham cumprido seu ciclo de vida, garantindo que o descarte ocorra de forma
-                    segura e transparente.</li>
-                <li><b>Atendimento ao Cidadão:</b> Disponibilizar serviços de consulta e acesso aos documentos e
-                    informações públicas, incluindo emissão de certidões e fornecimento de cópias, promovendo o direito
-                    à informação.</li>
-                <li><b>Pesquisa e Memória Local:</b> Promover a pesquisa e a valorização da história local por meio de
-                    ações culturais e projetos de memória que envolvem o acervo documental municipal.</li>
-            </ol>
-        </div>
+            <div class="resumo-decreto_lista">
+                <ol>
+                    <li><b>Gestão Documental:</b> Desenvolver e implementar políticas, diretrizes e normas para a gestão de
+                        documentos e informações, garantindo sua preservação e organização ao longo de todo o ciclo de vida
+                        dos documentos.</li>
+                    <li><b>Preservação do Patrimônio</b> Documental: Assegurar a guarda e a preservação de documentos de
+                        valor histórico, administrativo e cultural, promovendo ações para evitar perda e deterioração dos
+                        registros que compõem a memória pública municipal.</li>
+                    <li><b>Digitalização e Acesso à Informação:</b> Coordenar programas de digitalização e gerenciar
+                        repositórios digitais para facilitar o acesso a documentos e informações, ampliando a transparência
+                        e o atendimento ao público.</li>
+                    <li><b>Capacitação e Orientação Técnica:</b> Oferecer suporte técnico e capacitação a órgãos municipais
+                        para a implementação de políticas de gestão documental e boas práticas de arquivamento.</li>
+                    <li><b>Eliminação de Documentos:</b> Avaliar e autorizar, conforme normas legais, a eliminação de
+                        documentos públicos que tenham cumprido seu ciclo de vida, garantindo que o descarte ocorra de forma
+                        segura e transparente.</li>
+                    <li><b>Atendimento ao Cidadão:</b> Disponibilizar serviços de consulta e acesso aos documentos e
+                        informações públicas, incluindo emissão de certidões e fornecimento de cópias, promovendo o direito
+                        à informação.</li>
+                    <li><b>Pesquisa e Memória Local:</b> Promover a pesquisa e a valorização da história local por meio de
+                        ações culturais e projetos de memória que envolvem o acervo documental municipal.</li>
+                </ol>
+            </div>
 
-        <div class="card-secao">
-            <p>
-                Essas atribuições confirmam o compromisso do ARQUIP em atuar como órgão central do sistema de arquivos
-                do município, consolidando-se como referência na preservação da memória e na promoção de uma gestão
-                documental responsável e acessível.
-            </p>
+            <div class="resumo-decreto_atribuicoes">
+                <p>
+                    Essas atribuições confirmam o compromisso do ARQUIP em atuar como órgão central do sistema de arquivos
+                    do município, consolidando-se como referência na preservação da memória e na promoção de uma gestão
+                    documental responsável e acessível.
+                </p>
 
-            <p>
-                Nossa estrutura organização segue com o propósito de garantir que nossas atribuições prossigam com
-                assertividade e comprometimento.
-            </p>
-        </div>
+                <p>
+                    Nossa estrutura organização segue com o propósito de garantir que nossas atribuições prossigam com
+                    assertividade e comprometimento.
+                </p>
+            </div>
+        </section>
 
-        <div class="estrutura-img">
+        <section class="estrutura-organizacional_img">
             <img src="/assets/estrutura-organizacional/estrutura.png" alt="Mapa Mental">
-        </div>
+        </section>
 
-        <div class="mapa-txt">
+        <section class="estrutura-organizacional_cargos">
             <p><b>Coordenador:</b> Dárcio Gomes</p>
 
             <p><b>Coordenação de Projetos (PROJ):</b> Fernanda Sanches Martins</p>
@@ -122,13 +124,12 @@
 
             <h4>NÚCLEO DE PUBLICAÇÃO OFICIAL E COMUNICAÇÃO (NUPUBLI)</h4>
             <p><b>Chefe do núcleo:</b> Lucas André Carvalho</p>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <script src="js/script.js"></script>
     <?php require_once __DIR__ . "/views/footer.php"
-        ?>
-
+    ?>
 
 </body>
 

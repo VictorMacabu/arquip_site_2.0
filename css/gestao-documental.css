@@ -1,98 +1,42 @@
-@media (max-width: 540px) {
-     nav{
-        display: none;
-    }
-
-    .img-esquerda{
-        display: none;
-    }
-
-    .img-direita{
-        display: none;
-    }
-   
-    .banner-estrutura{
-        visibility: hidden;
-    }
-
-    .texto-banner{
-        & h1{
-            margin-bottom: 1%;
-        }
-
-        & p{
-            margin-bottom: -60%;
-        }
-    }
-
-    .card-secao{
-        margin-top: 66%;
-    }
+/* === Banner === */
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-@media (max-width: 1250px) {
-     nav{
-        display: none;
-    }
-
-    .img-esquerda{
-        display: none;
-    }
-
-    .img-direita{
-        display: none;
-    }
-   
-    .banner-estrutura{
-        visibility: hidden;
-    }
-
-    .texto-banner{
-        visibility: visible;
-        position: relative;
-        top: 213px;
-        
-        & h1{
-            color: black;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-
-        & p{
-            color: black;
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-    }
+.img-esquerda,
+.img-direita {
+    display: block;
 }
 
-.img-esquerda {
-    width: auto;
-    opacity: 59%;
-    margin-left: -20%;
-    margin-bottom: -4px;
-    height: auto;
-
+.img-direita {
+    width: 428px;
 }
 
-.img-direita{ 
-    width: auto;
-    height: auto;
-    position: relative;
-    margin-bottom: -1%;
-
+.icone-esquerda {
+    width: 428px;
 }
 
-.texto-banner{
-    height: 100%;
+
+.texto-banner {
+    height: 90%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: #fff;
     text-align: center;
+    margin-bottom: 43px;
 }
 
-.banner-estrutura{
-    justify-content: space-between;
-    align-items: flex-end;
+.texto-banner h1 {
+    color: #fff;
+    margin-top: 35px;
+    padding: 30px;
+    font-size: clamp(16px, 4vw, 36px);
+}
+
+.texto-banner p {
+    color: #fff;
+    max-width: 880px;
+    font-size: clamp(12px, 2vw, 24px);
 }

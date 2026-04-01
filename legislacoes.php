@@ -25,7 +25,7 @@
 
     <!--- BANNER --->
     <div class="banner-estrutura">
-        <div>
+        <div class="icone-esquerda">
             <img class="img-esquerda" src="/assets/banner/legislacoes/img-legislacoes.png" alt="Imagem da legislação">
         </div>
         <div class="texto-banner">
