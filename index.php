@@ -20,11 +20,17 @@ $allowedPages = [
     'historico',
     'mapa-site',
     'sistemas-arquivos',
-    'pesquisa'
+    'pesquisa',
+    'autocomplete'
 ];
 
+if ($page === 'autocomplete') {
+    require_once __DIR__ . "/pesquisa/autocomplete.php";
+    exit;
+}
+
 if (!in_array($page, $allowedPages)) {
-    $page = 'home';
+    $page = 'home'; 
 }
 
 

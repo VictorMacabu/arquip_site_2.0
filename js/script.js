@@ -29,41 +29,97 @@ document.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const input = document.querySelector('.input-wrapper input');
+    const input = document.getElementById('input-busca');
     const box = document.getElementById('sugestoes');
 
     if (!input || !box) return;
 
+    let selectedIndex = -1;
+
+    function highlight(text, query) {
+        const regex = new RegExp(`(${query})`, 'gi');
+        return text.replace(regex, '<mark>$1</mark>');
+    }
+
     input.addEventListener('input', async () => {
-        const q = input.value;
+
+        const q = input.value.trim();
+
+        selectedIndex = -1;
 
         if (q.length < 2) {
             box.innerHTML = '';
+            box.style.display = 'none';
             return;
         }
 
         try {
-            const res = await fetch(`/pesquisa/autocomplete.php?q=${q}`);
+            const res = await fetch(`/pesquisa/autocomplete.php?q=${encodeURIComponent(q)}`);
             const dados = await res.json();
 
             box.innerHTML = '';
 
-            dados.forEach(item => {
+            if (!dados.length) {
+                box.style.display = 'none';
+                return;
+            }
+
+            dados.forEach((termo, index) => {
+
                 const div = document.createElement('div');
                 div.classList.add('sugestao-item');
-                div.textContent = item;
-
-                div.onclick = () => {
-                    input.value = item;
+            
+                div.innerHTML = `<span class="icone">🔍</span> ${termo}`;
+            
+                div.addEventListener('click', () => {
+                    input.value = termo;
                     box.innerHTML = '';
                     input.closest('form').submit();
-                };
-
+                });
+            
                 box.appendChild(div);
             });
 
+            box.style.display = 'block';
+
         } catch (e) {
             console.error("Erro autocomplete:", e);
+        }
+
+    });
+
+    input.addEventListener('keydown', (e) => {
+
+        const items = box.querySelectorAll('.sugestao-item');
+
+        if (!items.length) return;
+
+        if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            selectedIndex = (selectedIndex + 1) % items.length;
+        }
+
+        if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            selectedIndex = (selectedIndex - 1 + items.length) % items.length;
+        }
+
+        if (e.key === 'Enter') {
+            if (selectedIndex >= 0) {
+                e.preventDefault();
+                items[selectedIndex].click();
+            }
+        }
+
+        items.forEach((item, index) => {
+            item.classList.toggle('active', index === selectedIndex);
+        });
+
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.input-wrapper')) {
+            box.style.display = 'none';
         }
     });
 
