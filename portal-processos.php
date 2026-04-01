@@ -53,7 +53,7 @@
                         <div class="card altura1">
                             <img src="/assets/portal-processo/card-um.png" alt="Card para Consultar Processos Administrativos">
                             <h4>Consultar Processos Administrativos</h4>
-                            <p>Com ferramentas de busca, é possível acessar informações sobre processos administrativos,
+                            <p class="text-card">Com ferramentas de busca, é possível acessar informações sobre processos administrativos,
                                 pesquisando por número, ano ou assunto, incluindo detalhes e, às vezes, andamento ou documentos.
                             </p>
                         </div>
@@ -61,7 +61,7 @@
                         <div class="card">
                             <img src="/assets/portal-processo/card-dois.png" alt="Card para Solicitar Vista de Processos e seus Documentos">
                             <h4>Solicitar vista de processos e seus documentos</h4>
-                            <p>O portal permite solicitar certificações e cópias digitais de documentos arquivísticos, como
+                            <p class="text-card">O portal permite solicitar certificações e cópias digitais de documentos arquivísticos, como
                                 contratos, pareceres, plantas e outros do acervo do ARQUIP, tudo de forma digital.
                             </p>
                         </div>
@@ -69,7 +69,7 @@
                         <div class="card altura1">
                             <img src="/assets/portal-processo/card-tres.png" alt="Card para Acompanhar os Pedidos">
                             <h4>Acompanhamento de Pedidos</h4>
-                            <p>Após solicitar vistas a algum processo, o cidadão pode acompanhar o andamento do pedido pelo
+                            <p class="text-card">Após solicitar vistas a algum processo, o cidadão pode acompanhar o andamento do pedido pelo
                                 portal, obtendo informações sobre o status do atendimento e prazos previstos para conclusão.
                             </p>
                         </div>
@@ -77,7 +77,7 @@
                         <div class="card">
                             <img src="/assets/portal-processo/card-quatro.png" alt="Card Para o Atendimento ao Pesquisador">
                             <h4>Atendimento ao Pesquisador</h4>
-                            <p>No portal, o pesquisador acadêmico pode solicitar consultas a processos ou documentos do acervo
+                            <p class="text-card">No portal, o pesquisador acadêmico pode solicitar consultas a processos ou documentos do acervo
                                 ARQUIP, realizados de forma digital ou presencial.
                             </p>
                         </div>
