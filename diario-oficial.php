@@ -17,11 +17,9 @@
     <?php require_once __DIR__ . "/views/header.php"
     ?>
 
-
-
     <!--- BANNER --->
     <div class="banner-estrutura">
-        <div class="img-esquerda_ajuste">
+        <div class="icone-esquerda">
             <img src="/assets/diario-oficial/img-esquerda.png" alt="Imagem do Pessoal conversando no banner do site" class="img-esquerda">
         </div>
 
