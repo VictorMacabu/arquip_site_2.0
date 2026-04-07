@@ -50,7 +50,7 @@
 
                     <!--- CARDS --->
                     <div class="portal-processos_cards">
-                        <div class="card altura1">
+                        <div class="card">
                             <img src="/assets/portal-processo/card-um.png" alt="Card para Consultar Processos Administrativos">
                             <h4>Consultar Processos Administrativos</h4>
                             <p class="text-card">Com ferramentas de busca, é possível acessar informações sobre processos administrativos,
@@ -58,7 +58,7 @@
                             </p>
                         </div>
 
-                        <div class="card">
+                        <div class="card altura1">
                             <img src="/assets/portal-processo/card-dois.png" alt="Card para Solicitar Vista de Processos e seus Documentos">
                             <h4>Solicitar vista de processos e seus documentos</h4>
                             <p class="text-card">O portal permite solicitar certificações e cópias digitais de documentos arquivísticos, como
@@ -66,7 +66,7 @@
                             </p>
                         </div>
 
-                        <div class="card altura1">
+                        <div class="card">
                             <img src="/assets/portal-processo/card-tres.png" alt="Card para Acompanhar os Pedidos">
                             <h4>Acompanhamento de Pedidos</h4>
                             <p class="text-card">Após solicitar vistas a algum processo, o cidadão pode acompanhar o andamento do pedido pelo
@@ -74,7 +74,7 @@
                             </p>
                         </div>
 
-                        <div class="card">
+                        <div class="card altura1">
                             <img src="/assets/portal-processo/card-quatro.png" alt="Card Para o Atendimento ao Pesquisador">
                             <h4>Atendimento ao Pesquisador</h4>
                             <p class="text-card">No portal, o pesquisador acadêmico pode solicitar consultas a processos ou documentos do acervo
