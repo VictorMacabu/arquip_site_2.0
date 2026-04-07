@@ -1,64 +1,76 @@
-/* ====== BANNER ====== */
-
-.ajuste-img_esquerda {
-    width: 322px;
-}
-
-.img-esquerda {
-    max-width: 380px;
-    height: 450px;
-    display: block;
-}
-
-.img-direita {
-    width: 330px;
-    height: 310px;
-    display: block;
-}
-
+/* === Banner === */
 .banner-estrutura {
     justify-content: space-between;
     align-items: flex-end;
 }
 
+.img-esquerda,
+.img-direita {
+    display: block;
+}
+
+.img-direita {
+    width: 322px;
+}
+
+.img-esquerda {
+    width: 410px;
+}
+
+.icone-esquerda {
+    width: 322px;
+}
+
+
 .texto-banner {
-    width: 100%;
-    height: 100%;
+    height: 90%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.texto-banner h1 {
+    color: #fff;
+    margin-top: 35px;
+    padding: 30px;
+    font-size: clamp(16px, 4vw, 36px);
+}
+
+.texto-banner p {
+    color: #fff;
+    max-width: 993px;
+    font-size: clamp(12px, 2vw, 24px);
 }
 
 .texto-banner a {
     color: #fff;
 }
 
-.texto-banner h1 {
-    color: #fff;
-    max-width: 60ch;
-    font-size: clamp(1.2rem, 4vw, 3rem);
-    text-align: center;
+/* ====== Gestão Documental ====== */
+
+.gestao-documental_sub {
+    margin-bottom: 24px;
 }
 
-.texto-banner p {
-    color: #fff;
-    max-width: 73ch;
-    margin: 0 auto;
-    font-size: clamp(0.9rem, 2.5vw, 1.6rem);
-    text-align: center;
+.gestao-documental_conteudo h2 {
+    margin-bottom: 28px;
 }
 
-.gestao-texto{
-    p{
-        margin-bottom: 2%;
-    }
-
-    h4{
-        margin-bottom: 1%;
-    }
+.gestao-documental_conteudo p {
+    margin-bottom: 28px;
 }
 
-.lista-txt{
-    margin-bottom: 2%;
+.lista-txt {
+    margin-bottom: 24px;
+}
+
+.lista-txt ul {
+    padding: 0px 0px 0px 22px;
+}
+
+.lista-txt h2 {
+    margin-bottom: 24px;
 }

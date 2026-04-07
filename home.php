@@ -29,9 +29,7 @@
     </section>
 
     <main>
-
         <section class="quem-somos">
-
             <div class="quem-somos_conteudo">
                 <h2>Conheça O ARQUIP</h2>
                 <p class="quem-somos_texto_pc">
@@ -127,7 +125,7 @@
                     <img src="/assets/home/difusao.png" alt="Icone da difusão">
                 </div>
                 <h2>DIFUSÃO</h2>
-                <p>
+                <p class="servico-card_ajuste">
                     A Equipe de Gestão Documental (EDOC), criada pela
                     portaria 01/CGDOC/2021, reúne gestores de diferentes
                     aspectos da gestão documental, como administradores do
@@ -135,7 +133,6 @@
                 </p>
                 <a href="<?= url('home') ?>">SAIBA MAIS</a>
             </div>
-
         </section>
 
 
@@ -226,7 +223,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <script src="/js/cards.js"></script>
