@@ -32,21 +32,27 @@
 }
 
 .texto-banner {
-    height: 89%;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 15px;
+    padding: 15px;
     color: #fff;
     text-align: center;
 }
 
 .texto-banner h1 {
+    color: #fff;
+    margin-top: 15px;
+    padding: 15px;
     font-size: clamp(16px, 4vw, 47px);
-    margin-bottom: 0px;
 }
 
 .texto-banner p {
-    font-size: clamp(12px, 2vw, 26px);
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+    max-width: 80%;
+    padding-left: 10%;
 }
 
 .img-esquerda {

@@ -62,12 +62,13 @@ main {
         color: #fff;
         margin-top: 75px;
         font-size: clamp(16px, 4vw, 47px);
-
+        margin-bottom: 3%;
     }
 
     p {
         color: #fff;
-        font-size: clamp(12px, 2vw, 28px);
+        font-size: clamp(12px, 2vw, 24px);
+        font-family: Gilroy-Medium;
     }
 
     height: 100%;
