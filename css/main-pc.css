@@ -58,6 +58,10 @@ li {
     font-size: 1.25rem;
 }
 
+ul {
+padding: 0px 0px 0px 30px;
+}
+
 main {
     margin: 115px auto;
     max-width: 1310px;
