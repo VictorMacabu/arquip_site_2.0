@@ -25,7 +25,7 @@
 
     <!--- BANNER --->
     <div class="banner-estrutura">
-        <div>
+        <div class="icone-esquerda">
             <img class="img-esquerda" src="/assets/banner/legislacoes/img-legislacoes.png" alt="Imagem da legislação">
         </div>
         <div class="texto-banner">
@@ -221,7 +221,8 @@
                             </li>
 
                             <li>
-                                <a href="https://legislacao.prefeitura.sp.gov.br/leis/decreto-14516-de-29-de-abril-de-1977">Decreto
+                                <a href="https://legislacao.prefeitura.sp.gov.br/leis/decreto-14516-de-29-de-abril-de-1977"
+                                    target="_blank">Decreto
                                     nº 14.516, de 29 de abril de 1977 –</a>
                                 Cria a Divisão do Sistema Operacional de Processos, no Departamento de Expediente – EXP, da
                                 Secretaria de Serviços Internos.
@@ -317,6 +318,7 @@
                             </li>
                         </ul>
                     </details>
+                </div>
         </section>
     </main>
 

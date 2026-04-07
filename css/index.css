@@ -226,7 +226,7 @@ main {
 
 .atendimento-card_lista li {
   list-style: none;
-  margin-bottom: 8px;
+  margin-bottom: 1px;
   width: 283px;
 }
 
@@ -234,6 +234,7 @@ main {
   width: 272px;
   text-decoration: none;
   color: #002147;
+  font-size: 1rem;
 }
 
 .atendimento-card_lista a:hover {
@@ -276,6 +277,10 @@ main {
   padding: 16px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   border-radius: 12px;
+}
+
+.servico-card_ajuste {
+  height: 144px;
 }
 
 .servico-card h2 {
@@ -433,6 +438,10 @@ main {
   text-align: right;
   font-size: 1.18rem;
   padding-top: 4.37rem;
+}
+
+.noticia-card img {
+  height: 291px;
 }
 
 

@@ -9,7 +9,6 @@
     <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/main-pc.css">
 
     <!-- CSS ESPECÍFICO DE PÁGINA -->
     <?php if ($page === 'pesquisa'): ?>
