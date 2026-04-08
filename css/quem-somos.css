@@ -8,16 +8,18 @@ P {
 
 }
 
+main {
+    margin: 115px auto;
+    max-width: 1310px;
+    padding: 0 20px;
+    align-items: center;
+}
+
 
 /* ======  QUEM SOMOS/ARQUIVO ====== */
 .quem-somos {
     font-size: 1.25rem;
     text-align: justify;
-    margin-top: 5%;
-    margin: 0 auto;
-    margin-top: 156px;
-    max-width: 1500px;
-    width: 80%;
 }
 
 .quem-somos h1 {
@@ -56,6 +58,7 @@ P {
 .dever-responsabilidade {
     display: flex;
     flex-direction: row-reverse;
+    gap: 11px;
 }
 
 .dever-responsabilidade_ajuste {
@@ -81,27 +84,71 @@ P {
     margin-bottom: 50px;
 }
 
-
-
 /* ====== UMA-HOMENAGEM ====== */
 
 .uma-homenagem {
-    display: flex;
-    gap: 35px;
     margin-bottom: 145px;
 }
 
-.uma-homenagem_conteudo {
+.uma-homenagem_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+
+.uma-homenagem_titulo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }
+
 
 .uma-homenagem_titulo h2 {
     margin-bottom: 0px;
 }
 
-/* ===== RESPONSIVIDADE ===== */
+
+.uma-homenagem_titulo p {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    max-width: 311px;
+    min-height: 135px;
+    padding: 47px 43px 47px 43px;
+    color: #fff;
+    background-color: #008BD2;
+}
+
+.uma-homenagem_img {
+    width: 550px;
+    height: 457px;
+}
+
+.uma-homenagem_conteudo {
+    max-width: 415px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

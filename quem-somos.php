@@ -72,7 +72,7 @@
                 <section>
                     <div class="dever-responsabilidade">
                         <div class="imagem-right">
-                            <img src="/assets/quemsomos/tresfotosindex.png" alt="Fotos Arquivo">
+                            <img src="/assets/quemsomos/img-arquip.png" alt="Fotos Arquivo">
                         </div>
 
                         <div class="servicos">
@@ -137,31 +137,38 @@
                 <!--- UMA-HOMENAGEM --->
                 <section>
                     <div class="uma-homenagem">
-                        <div class="uma-homenagem_titulo">
-                            
-                            <h2>Uma homenagem</h2>
-                            <div>
-                                <img src="/assets/quemsomos/paulorobertodutra.png" alt="Paulo Roberto Dutra">
+                        <div class="uma-homenagem_container">
+                            <div class="uma-homenagem_titulo">
+                                <h2>Uma homenagem</h2>
+                                <div>
+                                    <p>
+                                        Paulo Roberto Dutra foi servidor público da Prefeitura de São Paulo durante 40 anos, sempre na área de gestão de documentos.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="uma-homenagem_conteudo">
-                            <p>
-                                Iniciou sua carreira profissional em 1980 como estagiário, foi efetivado e assumiu posições até
-                                chegar à Coordenador Geral de Gestão Documental. Jornalista de formação, também foi responsável pela edição
-                                do Diário Oficial da Cidade de São Paulo.
-                            </p>
+                            <div class="uma-homenagem_img">
+                                <img src="/assets/quemsomos/uma-homenagem.png" alt="Paulo Roberto Dutra">
+                            </div>
 
-                            <p>
-                                Sempre exercendo atividades de liderança, foi corresponsável pela implantação de sistemas
-                                informatizados de controle de documentos, pela transparência da Administração Municipal por meio do pioneiro
-                                serviço de informações sobre processos ao cidadão, além de ter capacitado mais de 80 mil servidores no
-                                manuseio e controle de processos.
-                            </p>
+
+                            <div class="uma-homenagem_conteudo">
+                                <p>
+                                    Iniciou sua carreira profissional em 1980 como estagiário, foi efetivado e assumiu posições até
+                                    chegar à Coordenador Geral de Gestão Documental. Jornalista de formação, também foi responsável pela edição
+                                    do Diário Oficial da Cidade de São Paulo.
+                                </p>
+
+                                <p>
+                                    Sempre exercendo atividades de liderança, foi corresponsável pela implantação de sistemas
+                                    informatizados de controle de documentos, pela transparência da Administração Municipal por meio do pioneiro
+                                    serviço de informações sobre processos ao cidadão, além de ter capacitado mais de 80 mil servidores no
+                                    manuseio e controle de processos.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </section>
-
             </div>
         </section>
     </main>

@@ -1,10 +1,38 @@
-/* ====== FONTES ======*/
+/* ====== Reset na página ====== */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* === Estilo da página === */
+
+
+h2 {
+    font-family: Gilroy-SemiBold;
+    font-size: 24px;
+}
+
+p,
+ol,
+ul,
+li {
+    font-family: Nimbus Sans;
+    font-size: 1.25rem;
+}
+
+
+/* ====== Fontes ======*/
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-bold.ttf);
+}
+
 
 @font-face {
     font-family: Plus-Jakarta;
     src: url(/assets/font-site/Gilroy-Black/PlusJakartaSans-Italic-VariableFont_wght.ttf);
 }
-
 
 @font-face {
     font-family: Space-Grotesk;
@@ -21,60 +49,75 @@
     src: url(/assets/font-site/Gilroy-Black/PlusJakartaSans-Bold.ttf);
 }
 
+@font-face {
+  font-family: Nimbus Sans;
+  src: url(/assets/font-site/Gilroy-Black/NimbusSanL-Reg.otf);
+}
 
+/* ====== Banner ====== */
 
+.banner-estrutura {
+    display: flex;
+    width: 100%;
+    height: 450px;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/assets/gestao-documental/banner-gest-doc.png);
+}
 
-/* ====== BANNER ====== */
 
 .banner-estrutura {
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.texto-banner {
-    height: 89%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
-    text-align: center;
-}
-
-.texto-banner h1 {
-    font-size: clamp(16px, 4vw, 47px);
-    margin-bottom: 0px;
-}
-
-.texto-banner p {
-    font-size: clamp(12px, 2vw, 26px);
-}
-
-.img-esquerda {
-    width: 399px;
-    height: 415px;
+.img-esquerda,
+.img-direita {
     display: block;
-}
-
-.img-esquerda_ajuste {
-    width: 361px;
 }
 
 .img-direita {
-    width: 361px;
-    height: 310px;
-    display: block;
+    width: 346px;
+}
+
+.icone-esquerda {
+    width: 346px;
 }
 
 
+.texto-banner {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+.texto-banner h1 {
+    font-family: Gilroy-Bold;
+    color: #fff;
+    margin-top: 35px;
+    padding: 30px;
+    font-size: clamp(16px, 4vw, 36px);
+}
+
+.texto-banner p {
+    color: #fff;
+    max-width: 880px;
+    font-size: clamp(12px, 2vw, 24px);
+}
 
 
-/* ====== DIARIO-OFICIAL-INICIO ====== */
+/* ====== Diário Oficial Início ====== */
 
 .diario-oficial_inicio {
     margin-top: 78px;
 }
-
-
 
 .diario-oficial_img {
     width: 90%;
@@ -133,7 +176,7 @@
 
 
 
-/* ====== DETALHE-AZUL ====== */
+/* ====== Detalhe Azul ====== */
 
 .sobre-diario_detalhe_azul {
     background-image: url(/assets/diario-oficial/diario-oficial-detalhe-azul.png);
@@ -190,9 +233,7 @@
 }
 
 
-
-
-/* ====== DENTRO-DO-DIARIO-OFICIAL ====== */
+/* ====== Dentro do Diário Oficial ====== */
 
 .dentro-do-diario_oficial {
     display: flex;
@@ -221,10 +262,13 @@
 
 .card h3 {
     font-family: Poppins-SemiBold;
+    margin: 18.72px 0px;
 }
 
 .card p {
+    font-size: 1rem;
     margin-top: 0px;
+    margin: 0px 0px 20px;
 }
 
 .card {
@@ -239,10 +283,7 @@
 }
 
 
-
-
-
-/* ====== PUBLICAÇÃO-OFICIAL ======*/
+/* ====== Publicação Oficial ======*/
 
 .publicacao-oficial {
     display: flex;
@@ -259,8 +300,6 @@
     font-family: Poppins-SemiBold;
     margin-bottom: 68px;
 }
-
-
 
 .container-cards_publicacao {
     display: flex;
@@ -285,6 +324,7 @@
 
 .card-publicacao h3 {
     font-family: Poppins-SemiBold;
+    margin: 18.72px 0px;
 }
 
 
@@ -293,8 +333,10 @@
 }
 
 .card-publicacao p {
+    font-size: 1rem;
     max-width: 218px;
     margin-bottom: 25px;
+    margin: 20px 0px 25px;
 }
 
 .card-publicacao button {
@@ -309,7 +351,7 @@
 
 
 
-/* ====== DESTAQUE-INOVAÇÕES ======*/
+/* ====== Destaque Inovações ======*/
 
 .destaques-inovacoes {
     display: flex;
@@ -351,6 +393,7 @@
 
 .card-destaques h3 {
     font-family: Poppins-SemiBold;
+    margin: 18.72px 0px;
 }
 
 .card-destaques_conteudo p {
@@ -358,6 +401,7 @@
     max-width: 415px;
     color: rgb(126, 129, 129);
     font-size: 1.3rem;
+    margin: 20.8px 0px;
 }
 
 .moeda {
@@ -370,9 +414,7 @@
 }
 
 
-
-
-/* ====== CONSULTA-OFICIAL ====== */
+/* ====== Consulta Oficial ====== */
 
 .consulta-oficial {
     display: flex;
@@ -399,37 +441,7 @@
     width: 90%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ====== CENTRAL-AJUDA ====== */
+/* ====== Central Ajuda ====== */
 
 
 .centro-ajuda {
@@ -459,11 +471,13 @@
 
 .centro-ajuda_card h3 {
     font-family: Poppins-SemiBold;
+    margin: 18.72px 0px;
 }
 
 .centro-ajuda_card p {
     max-width: 218px;
     margin-bottom: 25px;
+    margin: 20px 0px 25px;
 }
 
 .centro-ajuda_card button {
@@ -497,51 +511,7 @@
     border-radius: 15px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ====== VANTAGENS ====== */
+/* ====== Vantagens ====== */
 
 .vantagens {
     display: flex;
@@ -581,14 +551,7 @@
     border-radius: 15px;
 }
 
-
-
-
-
-
-
-
-/* ====== PERGUNTAS-FREQUENTES ====== */
+/* ====== Perguntas Frequentes ====== */
 
 .perguntas-frequentes {
     display: flex;
@@ -597,6 +560,7 @@
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 170px;
 }
 
 .duvidas-pergunta {
@@ -651,27 +615,34 @@
 }
 
 
-summary { list-style: none;}
-summary::-webkit-details-marker { display: none; }  /* Para Chrome, Edge e Safari (Motores Webkit) */
+summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Para Chrome, Edge e Safari (Motores Webkit) */
 
 summary {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
 }
 
 summary::after {
-  content: '';
-  width: 20px;
-  height: 20px;
-  background: 
-    linear-gradient(#008BD2, #008BD2) center/2px 100% no-repeat,
-    linear-gradient(#008BD2, #008BD2) center/100% 2px no-repeat;
-  transition: transform 0.3s;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background:
+        linear-gradient(#008BD2, #008BD2) center/2px 100% no-repeat,
+        linear-gradient(#008BD2, #008BD2) center/100% 2px no-repeat;
+    transition: transform 0.3s;
 }
 
 details[open] summary::after {
-  transform: rotate(45deg);
-} 
+    transform: rotate(45deg);
+}

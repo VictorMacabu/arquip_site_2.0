@@ -19,7 +19,7 @@
             <p><a href="mapa-site.php" target="_blank" style="color: #CBD5E1;">Mapa do Site</a></p>
             <p style="color: #64748B">Desenvolvido por Arquip ©</p>
             <p style="color: #64748B">Atualizado em 08/01/2025</p>
-            <p style="color: #CBD5E1>Contato:<a href="arquip@prefeitura.sp.gov.br" target="_blank" style="color: #fff;"> arquip@prefeitura.sp.gov.br</a></p>
+            <p style="color: #CBD5E1">Contato:<a href="arquip@prefeitura.sp.gov.br" target="_blank" style="color: #fff;"> arquip@prefeitura.sp.gov.br</a></p>
             <p><a href="atendimento.php" target="_blank" style="color: #0056B3">Atendimento Virtual</a></p>
         </div>
     </address>

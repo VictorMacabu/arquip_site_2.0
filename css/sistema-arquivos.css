@@ -1,79 +1,80 @@
-main {
-    padding-top: 92px;
-    margin-left: 12%;
-    margin-right: 12%;
-    margin-bottom: 9%;
-    background-color: white;
-    font-size: 20px;
-}
-
-
-/* ======  SISTEMAS-ARQUIVOS  ====== */
-
-
-.sistema-arquivo_conteudo {
-    margin-bottom: 65px;
-}
-
-.sistema-arquivo_titulo{
-    margin-bottom: 1%;
-}
-
-.sistema-arquivo_texto{
-    margin-bottom: 1%;
-}
-
-/* ======  DEFINIÇÃO DOCUMENTAL  ======*/
-
-.definicao-documental_subtitulo{
-    margin-bottom: 1%;
-}
-
-.definicao-documental-texto{
-    margin-bottom: 1%;
-}
-
-.definicao-documental_lista li {
-    padding: 5px;
-}
-
-
+/* === Banner === */
 .banner-estrutura {
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.centralizar {
-    width: 372px;
-}
-
-.img-esquerda {
+.img-esquerda,
+.img-direita {
     display: block;
 }
 
 .img-direita {
-    display: block;
-    height: auto;
-    width: auto;
+    width: 372px;
 }
 
+.img-esquerda {
+    width: 550px;
+}
+
+.icone-esquerda {
+    width: 372px;
+}
+
+
 .texto-banner {
-    h1 {
-        color: #fff;
-        margin-top: 75px;
-        font-size: clamp(16px, 4vw, 47px);
-
-    }
-
-    p {
-        color: #fff;
-        font-size: clamp(12px, 2vw, 28px);
-    }
-
-    height: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    color: #fff;
     text-align: center;
+    margin-bottom: 43px;
 }
 
+.texto-banner h1 {
+    color: #fff;
+    margin-top: 35px;
+    padding: 30px;
+    font-size: clamp(16px, 4vw, 36px);
+}
+
+.texto-banner p {
+    color: #fff;
+    max-width: 927px;
+    font-size: clamp(12px, 2vw, 24px);
+}
+
+
+
+/* ======  SISTEMAS-ARQUIVOS  ====== */
+
+.sistema-arquivos {
+    margin-bottom: 24px;
+}
+
+.sistema-arquivo_titulo {
+    margin-bottom: 24px;
+}
+
+.sistema-arquivos_conteudo {
+    height: 306px;
+}
+
+/* ======  DEFINIÇÃO DOCUMENTAL  ======*/
+
+.definicao-documental_subtitulo {
+    margin-bottom: 24px;
+}
+
+.definicao-documental p {
+    margin-bottom: 15px;
+}
+
+.definicao-documental_lista {
+    padding: 0px 0px 0px 22px;
+}
+
+.definicao-documental_lista li {
+    line-height: 1.5;
+}

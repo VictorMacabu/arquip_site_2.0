@@ -1,4 +1,5 @@
-/* ====== ESTILOS/GERAIS ====== */
+
+/* ====== Estilos Gerais ====== */
 
 @font-face {
     font-family: Gilroy-Bold;
@@ -34,20 +35,135 @@ p {
 }
 
 
+/* ====== Banner ====== */
 
-
-/* ====== BANNER ====== */
 
 .banner-estrutura {
     justify-content: space-between;
     align-items: flex-end;
 }
 
+.img-esquerda,
+.img-direita {
+    display: block;
+}
+
+.img-esquerda {
+    width: 346px;
+}
+
+.img-direita {
+    width: 346px;
+}
+
+.icone-esquerda {
+    width: 346px;
+}
+
+
 .texto-banner {
-    height: 89%;
+    height: 90%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: #fff;
     text-align: center;
+    margin-bottom: 43px;
+}
+
+.texto-banner h1 {
+    font-family: Gilroy-Bold;
+    color: #fff;
+    margin-top: 35px;
+    padding: 30px;
+    font-size: clamp(16px, 4vw, 36px);
+}
+
+.texto-banner p {
+    color: #fff;
+    max-width: 963px;
+    font-size: clamp(12px, 2vw, 24px);
+}
+
+
+/* ====== Processos Administrativos ====== */
+
+.card-portal {
+    background-image: url(/assets/consulta-processos/processos-administrativos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1305px;
+    height: 455px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 88px;
+}
+
+.card-portal_conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 15px;
+    height: 455px;
+}
+.card-portal_conteudo p {
+    line-height: 1.6;
+}
+
+.card-portal_conteudo h1 {
+    font-size: 2rem;
+    color: #00072D;
+}
+
+.consulta-processos {
+    display: flex;
+    justify-content: flex-start;
+    height: 447px;
+    gap: 40px;
+}
+
+.consulta-processos_conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 854px;
+}
+
+.consulta-processos_conteudo h2 {
+    color: #00072D;
+    font-size: 2rem;
+    font-family: Gilroy-Bold;
+}
+
+.consulta-processos_titulosub {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.consulta-processos_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 508px;
+    gap: 21px;
+    height: 44px;
+    border: 3px solid #00072D;
+    border-radius: 20px;
+}
+
+.consulta-processos_link a {
+    color: #00072D;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: Gilroy-Medium;
+}
+
+.consulta-processos_conteudo h3 {
+    font-family: Gilroy-ExtraBold;
+    font-size: 1.5rem;
+    color: #00072D;
 }

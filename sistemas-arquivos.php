@@ -20,7 +20,7 @@
 
     <!-- BANNER -->
     <div class="banner-estrutura">
-        <div class="centralizar">
+        <div class="icone-esquerda">
             <img class="img-esquerda" src="/assets/banner/sistema-de-arquivos/jovem-trabalhando.png" alt="Jovem trabalhando">
         </div>
 
@@ -29,7 +29,7 @@
                 SISTEMA DE ARQUIVOS DO MUNICÍPIO
             </h1>
             <p>
-                O Decreto nº 57.783, de 13 de julho de 2017, regulamenta a gestão e preservação de <br> documentos na administração pública municipal de São Paulo, garantindo o tratamento <br> adequado  dos documentos públicos ao longo de seu ciclo de vida.
+                O Decreto nº 57.783, de 13 de julho de 2017, regulamenta a gestão e preservação de <br> documentos na administração pública municipal de São Paulo, garantindo o tratamento <br> adequado dos documentos públicos ao longo de seu ciclo de vida.
             </p>
         </div>
 
@@ -41,12 +41,10 @@
     <!-- SISTEMA DE ARQUIVOS -->
     <main>
         <section class="sistema-arquivos">
-            <div class="sistema-arquivo_conteudo">
-
-                <h2 class="sistema-arquivo_titulo">
-                    Sistema de Arquivos do Município de São Paulo - SAMSP
-                </h2>
-
+            <h2 class="sistema-arquivo_titulo">
+                Sistema de Arquivos do Município de São Paulo - SAMSP
+            </h2>
+            <div class="sistema-arquivos_conteudo">
                 <p class="sistema-arquivo_texto">
                     O decreto define a criação do SAMSP, uma rede que integra todos os arquivos e documentos da administração
                     pública municipal. Esse sistema visa garantir a coordenação e padronização das ações de gestão
@@ -67,31 +65,26 @@
                     promovendo a integração entre os diversos órgãos da administração municipal para a gestão eficiente dos
                     arquivos.
                 </p>
-
             </div>
         </section>
 
         <section class="definicao-documental">
-            <div class="definicao-documental_conteudo">
+            <h2 class="definicao-documental_subtitulo">
+                Definição de Gestão Documental
+            </h2>
 
-                <h2 class="definicao-documental_subtitulo">
-                    Definição de Gestão Documental
-                </h2>
+            <p>
+                A gestão de documentos, conforme o decreto, envolve o tratamento de documentos públicos em todas as fases
+                do seu ciclo de vida, que inclui:
+            </p>
 
-                <p class="definicao-documental-texto">
-                    A gestão de documentos, conforme o decreto, envolve o tratamento de documentos públicos em todas as fases
-                    do seu ciclo de vida, que inclui:
-                </p>
-
-                <ul class="definicao-documental_lista">
-                    <li><b>Produção:</b> Criação ou recebimento dos documentos.</li>
-                    <li><b>Trâmite:</b> Circulação ou movimentação dentro da administração.</li>
-                    <li><b>Arquivamento:</b> Armazenamento e organização dos documentos.</li>
-                    <li><b>Preservação:</b> Manutenção dos documentos por meio de ações que garantam sua integridade ao longo do tempo.</li>
-                    <li><b>Eliminação ou transferência:</b> Destinação final, que pode ser a eliminação ou a transferência para arquivos permanentes.</li>
-                </ul>
-            </div>
-
+            <ul class="definicao-documental_lista">
+                <li><b>Produção:</b> Criação ou recebimento dos documentos.</li>
+                <li><b>Trâmite:</b> Circulação ou movimentação dentro da administração.</li>
+                <li><b>Arquivamento:</b> Armazenamento e organização dos documentos.</li>
+                <li><b>Preservação:</b> Manutenção dos documentos por meio de ações que garantam sua integridade ao longo do tempo.</li>
+                <li><b>Eliminação ou transferência:</b> Destinação final, que pode ser a eliminação ou a transferência para arquivos permanentes.</li>
+            </ul>
         </section>
     </main>
 
