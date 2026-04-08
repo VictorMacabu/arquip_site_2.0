@@ -51,10 +51,10 @@ if (!function_exists('url')) {
                     <div class="navegacao-mega_menu">
                         <div class="navegacao-mega_container">
                             <div class="navegacao-coluna">
-                                <a href="<?= url('portal-processos') ?>">Portal de processos</a>
-                                <a href="<?= url('consulta-processo') ?>">Consulta de processos</a>
-                                <a href="<?= url('pesquisador-academico') ?>">Pesquisa acadêmica</a>
-                                <a href="<?= url('acesso-acervo') ?>">Acesso ao acervo</a>
+                                <a href="<?= url('portal-processos') ?>">Portal de Processos</a>
+                                <a href="<?= url('consulta-processo') ?>">Consulta de Processos</a>
+                                <a href="<?= url('pesquisador-academico') ?>">Pesquisador Acadêmico</a> 
+                                <a href="<?= url('acesso-acervo') ?>">Acesso ao Acervo</a>
                             </div>
                         </div>
                     </div>

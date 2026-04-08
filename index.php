@@ -9,6 +9,7 @@ $allowedPages = [
     'estrutura-organizacional',
     'legislacoes',
     'pesquisa-processo',
+    'pesquisador-academico',
     'portal-processos',
     'consulta-processo',
     'acesso-acervo',
@@ -30,13 +31,13 @@ if ($page === 'autocomplete') {
 }
 
 if (!in_array($page, $allowedPages)) {
-    $page = 'home'; 
+    $page = 'home';
 }
 
-
+$q = $_GET['q'] ?? '';
 $resultados = [];
 $sugestao = null;
-$q = $_GET['q'] ?? '';
+
 
 if ($page === 'pesquisa') {
 
@@ -46,10 +47,16 @@ if ($page === 'pesquisa') {
     $controller = new PesquisaController($pdo);
 
     if (!empty($q)) {
+
         $resultadoBusca = $controller->buscar($q);
 
-        $resultados = $resultadoBusca['resultados'] ?? [];
-        $sugestao = $resultadoBusca['sugestao'] ?? null;
+        if (is_array($resultadoBusca)) {
+            $resultados = $resultadoBusca['resultados'] ?? [];
+            $sugestao = $resultadoBusca['sugestao'] ?? null;
+        } else {
+            $resultados = [];
+            $sugestao = null;
+        }
     }
 }
 

@@ -15,11 +15,9 @@
 
 <body>
 
-    <!-- CABEÇALHO -->
     <?php require_once __DIR__ . "/views/header.php"
     ?>
 
-    <!-- BANNER -->
     <div class="banner-estrutura">
         <div>
             <img class="img-esquerda" src="/assets/pesquisador-academico/mulher-academico.png" alt="Mulher">

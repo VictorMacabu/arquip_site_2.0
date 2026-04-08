@@ -190,7 +190,7 @@ button {
     box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 
     z-index: 999;
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 .sugestao-item {
@@ -203,6 +203,15 @@ button {
 
     cursor: pointer;
     transition: background 0.2s;
+}
+
+.sugestao-item strong {
+    color: #000;
+    font-weight: 600;
+}
+
+.sugestao-item span {
+    color: #777;
 }
 
 .sugestao-item:hover,
