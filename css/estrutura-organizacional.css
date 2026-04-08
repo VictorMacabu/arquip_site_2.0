@@ -44,7 +44,7 @@
 /* ====== Resumo decreto ======*/
 
 .resumo-decreto {
-    margin-bottom: 250px;
+    margin-bottom: 13%;
 }
 
 .resumo-decreto_apresentaçõs {
@@ -55,8 +55,8 @@
     margin-bottom: 15px;
 }
 
-.resumo-decreto_lista ol {
-    padding: 0px 0px 0px 22px;
+.resumo-decreto_lista ol{
+    padding-left: 2.2%;
 }
 
 .estrutura-organizacional_img {
