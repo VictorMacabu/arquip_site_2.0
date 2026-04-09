@@ -36,15 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let selectedIndex = -1;
 
-    function highlight(text, query) {
-        const regex = new RegExp(`(${query})`, 'gi');
-        return text.replace(regex, '<mark>$1</mark>');
-    }
-
     input.addEventListener('input', async () => {
 
         const q = input.value.trim();
-
         selectedIndex = -1;
 
         if (q.length < 2) {
@@ -64,19 +58,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            dados.forEach((termo, index) => {
+            dados.forEach((item, index) => {
 
                 const div = document.createElement('div');
                 div.classList.add('sugestao-item');
-            
-                div.innerHTML = `<span class="icone">🔍</span> ${termo}`;
-            
+
+                div.innerHTML = `🔍 ${item}`;
+
                 div.addEventListener('click', () => {
-                    input.value = termo;
+                    input.value = item;
                     box.innerHTML = '';
                     input.closest('form').submit();
                 });
-            
+
                 box.appendChild(div);
             });
 
@@ -91,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     input.addEventListener('keydown', (e) => {
 
         const items = box.querySelectorAll('.sugestao-item');
-
         if (!items.length) return;
 
         if (e.key === 'ArrowDown') {
