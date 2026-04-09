@@ -39,22 +39,29 @@ foreach ($arquivos as $arquivo) {
 
     foreach ($frases as $frase) {
 
-        $fraseNormalizada = normalizar($frase);
+        $palavrasOriginais = preg_split('/\W+/u', $frase);
 
-        $palavras = preg_split('/\W+/', $fraseNormalizada);
+        foreach ($palavrasOriginais as $palavraOriginal) {
 
-        foreach ($palavras as $palavra) {
+            if (mb_strlen($palavraOriginal) < 3) continue;
 
-            if (strlen($palavra) < 3) continue;
+            $palavraNormalizada = normalizar($palavraOriginal);
+
+            if (!$palavraNormalizada) continue;
 
             $stmt = $pdo->prepare(
-                'INSERT INTO "INDICE"(termo, pagina, trecho)
-                 VALUES (?, ?, ?)'
+                'INSERT INTO "INDICE"(termo, termo_original, pagina, trecho)
+                 VALUES (?, ?, ?, ?)'
             );
 
-            $stmt->execute([$palavra, $arquivo, $frase]);
+            $stmt->execute([
+                $palavraNormalizada,
+                mb_strtolower($palavraOriginal, 'UTF-8'),
+                $arquivo,
+                $frase
+            ]);
         }
     }
 }
 
-echo "Indexação concluída.";
+echo "Indexação concluída com termos originais.";
