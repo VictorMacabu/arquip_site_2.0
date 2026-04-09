@@ -74,3 +74,19 @@
 .lista-txt h2 {
     margin-bottom: 24px;
 }
+
+/* Tablet e Mobile */
+@media (max-width: 1024px) {
+    main{
+        margin: 35px auto;
+    }
+
+    .navegacao{
+        display: none;
+    }
+
+    .banner-estrutura{
+        display: none;
+    }
+
+}
