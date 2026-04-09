@@ -126,14 +126,14 @@ function normalizar($texto)
                     ?? ucwords(str_replace('-', ' ', $paginaSlug));
                 ?>
 
-                <div class="card-secao resultado-busca">
+                <div class="resultado-busca">
 
                     <a href="/index.php?page=<?= htmlspecialchars($paginaSlug) ?>" class="titulo-resultado">
                         <?= htmlspecialchars($titulo) ?>
                     </a>
 
                     <p class="info-resultado">
-                        Frequência: <?= (int)$frequencia ?>
+                        <strong>Frequência:</strong> <?= (int)$frequencia ?>
                     </p>
 
                     <p class="trecho-resultado">
