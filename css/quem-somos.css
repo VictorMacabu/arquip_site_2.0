@@ -158,6 +158,10 @@ main {
         max-width: 100%;
     }
 
+    .uma-homenagem_titulo h2{
+        text-align: center;
+    }
+
     .uma-homenagem_img img{
         max-width: 100%;
     }
