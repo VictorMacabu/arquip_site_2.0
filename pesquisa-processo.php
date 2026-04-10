@@ -14,12 +14,6 @@
 </head>
 
 <body>
-
-    <!-- CABEÇALHO -->
-    <?php require_once __DIR__ . "/views/header.php"
-    ?>
-
-    <!--BANNER -->
     <div class="banner-estrutura">
         <div>
             <img class="img-esquerda" src="/assets/pesquisa-processo/casal-pesquisa-proc.png" alt="Mulher">
@@ -38,7 +32,6 @@
         </div>
     </div>
 
-    <!-- INCIO PÁGINA -->
     <div class="container-pagina">
         <main>
             <p>
@@ -248,11 +241,6 @@
         </main>
 
     </div>
-
-    <!--RODAPÉ -->
-    <?php require_once __DIR__ . "/views/footer.php"
-    ?>
-
 </body>
 
 </html>

@@ -38,6 +38,49 @@
     }
 }
 
+.banner-estrutura {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.img-esquerda,
+.img-direita {
+    display: block;
+}
+
+.img-direita {
+    width: 428px;
+}
+
+.icone-esquerda {
+    width: 428px;
+}
+
+
+.texto-banner {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+.texto-banner h1 {
+    color: #fff;
+    margin-top: 35px;
+    padding: 30px;
+    font-size: clamp(16px, 4vw, 36px);
+}
+
+.texto-banner p {
+    color: #fff;
+    max-width: 880px;
+    font-size: clamp(12px, 2vw, 24px);
+}
+
+
 .card-secao h4{
     margin-bottom: -1%;
 }
@@ -54,21 +97,6 @@
     height: auto;
     margin-bottom: -4px;
 }
-
-.texto-banner {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
-    text-align: center;
-}
-
-.banner-estrutura{
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
 
 h2 {
     color: #00072D;
