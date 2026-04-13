@@ -6,11 +6,9 @@
     <link rel="shortcut icon" href="/assets/icone.site/logo.ico" type="image/x-icon">
     <title>Arquip</title>
 
-    <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
 
-    <!-- CSS ESPECÍFICO DE PÁGINA -->
     <?php if ($page === 'pesquisa'): ?>
         <link rel="stylesheet" href="/css/pesquisa.css">
     <?php endif; ?>

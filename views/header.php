@@ -35,7 +35,7 @@ if (!function_exists('url')) {
                                 <a href="<?= url('quem-somos') ?>">Quem somos?</a>
                                 <a href="<?= url('estrutura-organizacional') ?>">Estrutura Organizacional</a>
                                 <a href="<?= url('sistemas-arquivos') ?>">Sistema de Arquivos</a>
-                                <a href="<?= url('gestao-documental') ?>">Política de Gestão</a>
+                                <a href="<?= url('gestao-documental') ?>">Política de Gestão Documental</a>
                                 <a href="<?= url('legislacoes') ?>">Legislações</a>
                                 <a href="<?= url('historico') ?>">Histórico</a>
                             </div>
@@ -53,6 +53,7 @@ if (!function_exists('url')) {
                             <div class="navegacao-coluna">
                                 <a href="<?= url('portal-processos') ?>">Portal de Processos</a>
                                 <a href="<?= url('consulta-processo') ?>">Consulta de Processos</a>
+                                <a href="<?= url('pesquisa-processo') ?>">Pesquisa de Processos/Plantas</a>
                                 <a href="<?= url('pesquisador-academico') ?>">Pesquisador Acadêmico</a> 
                                 <a href="<?= url('acesso-acervo') ?>">Acesso ao Acervo</a>
                             </div>
@@ -68,7 +69,6 @@ if (!function_exists('url')) {
                     <div class="navegacao-mega_menu">
                         <div class="navegacao-mega_container">
                             <div class="navegacao-coluna">
-                                <a href="<?= url('gestao-documental') ?>">Gestão Documental</a>
                                 <a href="<?= url('orientacao') ?>">Orientação às Edocs</a>
                                 <a href="<?= url('agorasei') ?>">AgoraSEI!</a>
                                 <a href="<?= url('digitasampa') ?>">DigitaSampa</a>
