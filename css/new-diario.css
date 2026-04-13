@@ -646,3 +646,133 @@ summary::after {
 details[open] summary::after {
     transform: rotate(45deg);
 }
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .navegacao-lista{
+        display: none;
+    }
+
+    .banner-estrutura{
+        display: none;
+    }
+
+    .sobre-diario{
+        flex-direction: column;
+    }
+
+    .diario-oficial_img img {
+        max-width: 100%;
+    }
+
+    .dentro-do-diario_titulo h2{
+        text-align: center;
+    }
+
+    .sobre-diario_detalhe_azul h2{
+        font-size: 3rem;
+    }
+
+    .publicacao-oficial_titulo h2{
+        text-align: center;
+    }
+
+    .container-cards_destaques{
+        grid-template-columns: 1fr;
+    }
+
+    .vantagens-imagens img{
+        max-width: 100%;
+    }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+    .sobre-diario_conteudo{
+        width: 100%;
+    }
+
+    .sobre-diario_conteudo h2{
+        text-align: center;
+    }
+
+    .sobre-diario p{
+        text-align: center;
+    }
+
+    .sobre-diario_documento img{
+        max-width: 100%;
+    }
+
+    .sobre-diario_detalhe_azul{
+        width: unset;
+        max-width: 100%;
+        height: 324px;
+    }
+
+    .acesso-ajuste span{
+        font-size: 2rem;
+    }
+
+    .acesso-ajuste{
+        width: 9px;
+        padding: 6px 85px 0px 85px;
+    }
+
+    .acesso-ajuste p {
+        font-size: 1.1rem;
+    }
+
+    .sobre-diario_detalhe_azul h2 {
+        font-size: 1.8rem;
+    }
+
+    .cards-container{
+        gap: 17px;
+        justify-content: center;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .card-publicacao p {
+        font-size: 0.9rem;
+    }
+
+    .destaques-inovacoes_titulo h2{
+        text-align: center;
+    }
+
+    .card-destaques {
+        flex-direction: column;
+    }
+
+    .moeda{
+        display: none;
+    }
+
+    .consulta-oficial_titulo h2 {
+        font-size: 1.2rem;
+    }
+
+    .consulta-oficial_img img{
+        max-width: 100%;
+    }
+
+    .centro-ajuda_titulo h2 {
+        font-size: 1.2rem;
+        margin-bottom: 65px;
+    }
+
+    .centro-ajuda_container_cards {
+        width: 100%;
+        gap: 22px; 
+    }
+
+    .vantagens-publicador_cidadao button {
+        font-size: 1rem;
+    }
+
+    summary::after{
+       width: 28px; 
+    }
+}
