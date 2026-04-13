@@ -1,4 +1,26 @@
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-bold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Semibold;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-semibold.ttf);
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .banner-estrutura {
+    display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
@@ -30,7 +52,6 @@
     font-size: clamp(12px, 2vw, 26px);
 }
 
-
 .linha-do-tempo {
     background: #f5f7fa;
     padding: 100px 0;
@@ -52,7 +73,7 @@
     transform: translateX(-50%) scaleY(0);
     transform-origin: top;
     height: calc(100% - 22px);
-    transition: transform 1.6s ease; 
+    transition: transform 1.6s ease;
     z-index: 1;
 }
 
@@ -60,13 +81,11 @@
     transform: translateX(-50%) scaleY(1);
 }
 
-
 .timeline-item {
     position: relative;
     width: 50%;
     display: flex;
     margin-bottom: 70px;
-
     opacity: 0;
     z-index: 2;
 }
@@ -89,19 +108,12 @@
     transition: all 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.timeline-item:nth-child(odd).show {
-    transition-delay: 0.1s;
-}
-
-.timeline-item:nth-child(even).show {
-    transition-delay: 0.2s;
-}
-
-
 .timeline-item .content {
     background: #ffffff;
     border-radius: 12px;
-    width: 460px;
+
+    width: 100%;
+    max-width: 460px;
 
     padding: 20px;
 
@@ -122,7 +134,6 @@
     margin-left: 80px;
 }
 
-
 .timeline-item h2 {
     color: #1565c0;
     font-size: 20px;
@@ -130,11 +141,11 @@
 }
 
 .timeline-item p {
+    font-family: Gilroy-Semibold, sans-serif;
     font-size: 14px;
     line-height: 1.6;
     color: #333;
 }
-
 
 .timeline-item img {
     display: block;
@@ -151,14 +162,13 @@
 }
 
 .timeline-item img.img-logo {
-    max-width: 140px;   
-    aspect-ratio: 1 / 1; 
-    object-fit: contain; 
-    background: #fff;    
-    padding: 10px;       
-    border-radius: 50%; 
+    max-width: 140px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
 }
-
 
 .timeline-item::after {
     content: '';
@@ -175,7 +185,6 @@
     transform: translateX(-50%) scale(0);
 
     transition: transform 0.3s ease;
-
     z-index: 3;
 }
 
@@ -187,7 +196,6 @@
     transform: translateX(-50%) scale(1);
     animation: pulse 1.5s infinite;
 }
-
 
 @keyframes pulse {
     0% {
@@ -201,8 +209,15 @@
     }
 }
 
-
 @media (max-width: 768px) {
+
+    .navegacao{
+        display: none;
+    }
+
+    .timeline {
+        padding: 0 15px;
+    }
 
     .timeline::after {
         left: 20px;
@@ -210,36 +225,84 @@
 
     .timeline-item {
         width: 100%;
-        padding-left: 60px;
+        padding-left: 50px;
+        margin-bottom: 40px;
     }
 
     .timeline-item.left,
     .timeline-item.right {
         left: 0;
         justify-content: flex-start;
-        transform: translateX(0);
+        transform: none;
     }
 
     .timeline-item .content {
-        margin-left: 30px;
-        width: auto;
-    }
-
-    .timeline-item img {
+        width: 100%;
         max-width: 100%;
+        margin: 0;
+        padding: 16px;
     }
 
     .timeline-item::after {
         left: 20px;
     }
 
+    .timeline-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
     .banner-estrutura {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     .img-esquerda,
     .img-direita {
         display: none;
+    }
+
+    @media (max-width: 480px) {
+
+        .timeline {
+            padding: 0 10px;
+        }
+    
+        .timeline-item {
+            width: 100%;
+            padding-left: 50px;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item.left::after {
+            left: 1px;
+            transform: none;
+        }
+        
+        .timeline-item.right::after {
+            left: 1px;
+            transform: none;
+        }
+    
+        .timeline-item .content {
+            width: 100%;
+            margin: 0;
+            padding: 16px;
+        }
+    
+        .timeline-item h2 {
+            font-size: 16px;
+        }
+    
+        .timeline-item p {
+            font-size: 13px;
+            line-height: 1.5;
+        }
+    
+        .timeline-item img {
+            margin-top: 12px;
+            border-radius: 6px;
+        }
     }
 }
