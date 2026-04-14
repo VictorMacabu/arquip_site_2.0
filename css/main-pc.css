@@ -34,11 +34,28 @@
     padding: 0px;
 }
 
+/* ====== Desativados ====== */
+.btn-hamburguer {
+    display: none;
+}
+
+.cabecalho-btn {
+    display: none;
+}
+
+.resumo-decreto_titulo_mobile {
+    display: none;
+}
+
+.gestao-documental_titulo_mobile {
+    display: none;
+}
+
+.legislacao-container_titulo_mobile {
+    display: none;
+}
 
 /* === Estilo da página === */
-body {
-    margin: 0;
-}
 
 h1,
 h4 {
@@ -58,8 +75,9 @@ li {
     font-size: 1.25rem;
 }
 
+ol,
 ul {
-padding: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 30px;
 }
 
 main {
@@ -110,4 +128,36 @@ main {
     padding-top: 97px;
     padding-bottom: 97px;
     text-align: center;
+}
+
+/* ======= Mobile ======= */
+@media (max-width: 699px) {
+
+    .btn-hamburguer {
+        display: block;
+    }
+
+    .cabecalho-btn {
+        display: block;
+    }
+
+    .resumo-decreto_titulo_mobile {
+        display: block;
+    }
+
+    .gestao-documental_titulo_mobile {
+        display: block;
+    }
+
+    .legislacao-container_titulo_mobile {
+        display: block;
+    }
+
+    footer {
+        height: 490px;
+    }
+
+    main {
+        margin: 70px auto;
+    }
 }

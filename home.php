@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Página Oficial do Arquip">
-    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
@@ -48,7 +48,9 @@
                     institucional, promovendo boas práticas que asseguram o
                     controle rigoroso dos acervos documentais.
                 </p>
-                <p class="quem-somos_texto_mobile">...</p>
+                <p class="quem-somos_texto_mobile">
+                    O ARQUIP têm como missão garantir o funcionamento da estrutura arquivística, definindo procedimentos operacionais, propondo políticas públicas de gestão documental, assegurando o controle, a preservação e o acesso aos documentos.
+                </p>
             </div>
 
             <!-- Atendimento ao cidadão -->

@@ -9,7 +9,17 @@ if (!function_exists('url')) {
 
 <header class="cabecalho">
 
+    <div id="overlay"></div>
     <div class="cabecalho-logos">
+
+        <div class="cabecalho-btn">
+            <button class="btn-hamburguer" id="btnHamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
         <a href="/">
             <img class="cabecalho-logo_arquip" src="assets/header/icone_arquip.png" alt="Arquip">
         </a>
@@ -26,7 +36,7 @@ if (!function_exists('url')) {
 
                 <li class="navegacao-item">
                     <button class="navegacao-botao">
-                        INSTITUCIONAL
+                        INSTITUCIONAL <span class="chevron" aria-hidden="true"></span>
                     </button>
 
                     <div class="navegacao-mega_menu">
@@ -45,7 +55,7 @@ if (!function_exists('url')) {
 
                 <li class="navegacao-item">
                     <button class="navegacao-botao">
-                        ATENDIMENTO AO CIDADÃO
+                        ATENDIMENTO AO CIDADÃO <span class="chevron" aria-hidden="true"></span>
                     </button>
 
                     <div class="navegacao-mega_menu">
@@ -62,7 +72,7 @@ if (!function_exists('url')) {
 
                 <li class="navegacao-item">
                     <button class="navegacao-botao">
-                        ADMINISTRAÇÃO AO SERVIDOR
+                        ADMINISTRAÇÃO AO SERVIDOR <span class="chevron" aria-hidden="true"></span>
                     </button>
 
                     <div class="navegacao-mega_menu">
@@ -80,7 +90,7 @@ if (!function_exists('url')) {
 
                 <li class="navegacao-item">
                     <button class="navegacao-botao">
-                        SISTEMAS
+                        SISTEMAS <span class="chevron" aria-hidden="true"></span>
                     </button>
 
                     <div class="navegacao-mega_menu">
@@ -146,9 +156,7 @@ if (!function_exists('url')) {
                             <button type="submit" class="btn-busca">
                                 <img src="/assets/header/lupa.png" alt="Pesquisar">
                             </button>
-
                             <div id="sugestoes" class="sugestoes-box"></div>
-
                         </div>
                     </div>
                 </div>
@@ -156,3 +164,4 @@ if (!function_exists('url')) {
         </nav>
     </div>
 </header>
+<script src="/js/hamburgue.js"></script>

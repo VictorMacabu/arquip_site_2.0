@@ -1,13 +1,11 @@
-/* ====== Fonte do header ====== */
-
+/* ====== Fonte do Header ====== */
 @font-face {
     font-family: Nimbus Sans;
     src: url(/assets/font-site/Gilroy-Black/NimbusSanL-Reg.otf);
 }
 
 
-/* ====== header ====== */
-
+/* ====== Header ====== */
 .cabecalho-logos {
     background-color: #008BD2;
     width: 100%;
@@ -112,7 +110,6 @@ button {
     color: white;
     display: flex;
     cursor: pointer;
-    display: flex;
     align-items: center;
     height: 52px;
     font-size: clamp(0.9rem, 1.2vw, 0.87rem);
@@ -176,12 +173,11 @@ button {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 15.8%;
     background: #fff;
     border-radius: 12px;
     border: 1px solid #e0e0e0;
 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 
     z-index: 999;
     overflow: hidden;
@@ -218,4 +214,223 @@ mark {
 .input-wrapper input::placeholder {
     color: #000;
     font-family: Nimbus Sans;
+}
+
+
+
+
+/* ====== Tablet / Mobile / ====== */
+@media (max-width: 1046px) {
+
+    .cabecalho-btn {
+        display: block;
+    }
+
+    .container-wrapper {
+        padding: 3px 5px;
+    }
+
+    .cabecalho-logos {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .cabecalho-logo_arquip {
+        margin-left: 0px;
+    }
+
+    .cabecalho-logo_gestao {
+        margin-right: 0px;
+    }
+
+    .btn-hamburguer {
+        display: flex;
+    }
+
+    .btn-hamburguer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        width: 30px;
+        height: 25px;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    .btn-hamburguer span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    /* ===== Animação (vira X) ===== */
+    .btn-hamburguer.ativo span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .btn-hamburguer.ativo span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .btn-hamburguer.ativo span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* ====== Menu Lateral ====== */
+    .navegacao {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 50%;
+        min-width: 220px;
+        max-width: 320px;
+        height: 100vh;
+
+        background-color: #008BD2;
+
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        padding-top: 70px;
+
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+
+        z-index: 1000;
+    }
+
+    .navegacao-coluna a {
+        border-bottom: 1px solid #0a7cb59c;
+    }
+
+    .navegacao-lista li {
+        display: block;
+    }
+
+    .navegacao-coluna {
+        width: 100%;
+    }
+
+    .navegacao-botao {
+        font-size: 0.8125rem;
+    }
+
+    .navegacao-coluna a {
+        font-size: 0.8125rem;
+    }
+
+    .navegacao.ativo {
+        transform: translateX(0);
+        width: 278px;
+    }
+
+    .navegacao form {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: auto;
+        z-index: 1100;
+    }
+
+    /* ====== Menu em Coluna ====== */
+    .navegacao-lista {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        gap: 0;
+    }
+
+    .navegacao-item {
+        width: 100%;
+    }
+
+    .navegacao-botao {
+        width: 100%;
+        padding: 15px;
+        justify-content: space-between;
+    }
+
+    /* ====== REMOVE HOVER ====== */
+    .navegacao-item:hover .navegacao-mega_menu {
+        display: none;
+    }
+
+    /* ====== SUBMENU MOBILE ====== */
+    .navegacao-mega_menu {
+        position: static;
+        display: none;
+        width: 100%;
+        min-width: 0px;
+    }
+
+    .navegacao-item.ativo .navegacao-mega_menu {
+        display: block;
+    }
+
+    /* ====== OVERLAY ====== */
+    #overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0);
+        pointer-events: none;
+        transition: 0.3s;
+        z-index: 999;
+    }
+
+    #overlay.ativo {
+        background: rgba(0, 0, 0, 0.4);
+        pointer-events: all;
+    }
+
+    .container_navegacao {
+        height: 0px;
+    }
+
+    .navegacao-botao .chevron {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        flex-shrink: 0;
+        position: relative;
+        transition: transform 0.25s ease;
+    }
+
+    .navegacao-botao .chevron::before,
+    .navegacao-botao .chevron::after {
+        content: '';
+        position: absolute;
+        width: 7px;
+        height: 2px;
+        background: #fff;
+        border-radius: 1px;
+        top: 50%;
+    }
+
+    .navegacao-botao .chevron::before {
+        left: 1px;
+        transform: translateY(-50%) rotate(40deg);
+    }
+
+    .navegacao-botao .chevron::after {
+        right: 1px;
+        transform: translateY(-50%) rotate(-40deg);
+    }
+
+    .navegacao-item.ativo>.navegacao-botao .chevron {
+        transform: rotate(180deg);
+    }
+
+    .navegacao-coluna a::before {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
 }
