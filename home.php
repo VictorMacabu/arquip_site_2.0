@@ -63,8 +63,10 @@
                     <div class="atendimento-card_lista">
                         <ul>
                             <li><a href="<?= url('consulta-processo') ?>">Consulta de processos administrativos</a></li>
-                            <li><a href="<?= url('acesso-acervo') ?>">Acesso ao acervo - Requerimento eletrônico</a></li>
-                            <li><a href="<?= url('pesquisa-processo') ?>">Pesquisa de existência de processos/plantas</a></li>
+                            <li><a href="<?= url('acesso-acervo') ?>">Acesso ao acervo - Requerimento eletrônico</a>
+                            </li>
+                            <li><a href="<?= url('pesquisa-processo') ?>">Pesquisa de existência de
+                                    processos/plantas</a></li>
                             <li><a href="<?= url('pesquisador-academico') ?>">Pesquisador Acadêmico</a></li>
                         </ul>
                     </div>
@@ -92,48 +94,51 @@
         </section>
 
         <section class="servicos">
+            <div class="servico-container">
 
-            <div class="servico-card">
-                <div class="servico-card_img">
-                    <img src="/assets/home/gestao-documental.png" alt="Icone da Gestão Documental">
+                <div class="servico-card">
+                    <div class="servico-card_img">
+                        <img src="/assets/home/gestao-documental.png" alt="Icone da Gestão Documental">
+                    </div>
+                    <h2>GESTÃO DOCUMENTAL</h2>
+                    <p>
+                        A PGDOC é um conjunto de diretrizes que tem por
+                        objetivo organizar a produção, uso e destinação dos
+                        documentos da Administração de São Paulo, de forma a
+                        tornar a informação acessível a sua guarda sustentável.
+                    </p>
+                    <a href="<?= url('gestao-documental') ?>">SAIBA MAIS</a>
                 </div>
-                <h2>GESTÃO DOCUMENTAL</h2>
-                <p>
-                    A PGDOC é um conjunto de diretrizes que tem por
-                    objetivo organizar a produção, uso e destinação dos
-                    documentos da Administração de São Paulo, de forma a
-                    tornar a informação acessível a sua guarda sustentável.
-                </p>
-                <a href="<?= url('gestao-documental') ?>">SAIBA MAIS</a>
-            </div>
 
-            <div class="servico-card">
-                <div class="servico-card_img">
-                    <img src="/assets/home/edocs.png" alt="Icone da E-DOCS">
+                <div class="servico-card">
+                    <div class="servico-card_img">
+                        <img src="/assets/home/edocs.png" alt="Icone da E-DOCS">
+                    </div>
+                    <h2>E-DOCS</h2>
+                    <p>
+                        A Equipe de Gestão Documental (EDOC), criada pela
+                        portaria 01/CGDOC/2021, reúne parceiros e
+                        colaboradores que antes atuavam isoladamente em áreas
+                        como administração local do SEI e gestão da Tabela de
+                        Temporalidade.
+                    </p>
+                    <a href="<?= url('orientacao') ?>">SAIBA MAIS</a>
                 </div>
-                <h2>E-DOCS</h2>
-                <p>
-                    A Equipe de Gestão Documental (EDOC), criada pela
-                    portaria 01/CGDOC/2021, reúne parceiros e
-                    colaboradores que antes atuavam isoladamente em áreas
-                    como administração local do SEI e gestão da Tabela de
-                    Temporalidade.
-                </p>
-                <a href="<?= url('orientacao') ?>">SAIBA MAIS</a>
-            </div>
 
-            <div class="servico-card">
-                <div class="servico-card_img">
-                    <img src="/assets/home/difusao.png" alt="Icone da difusão">
+                <div class="servico-card">
+                    <div class="servico-card_img">
+                        <img src="/assets/home/difusao.png" alt="Icone da difusão">
+                    </div>
+                    <h2>DIFUSÃO</h2>
+                    <p class="servico-card_ajuste">
+                        A Equipe de Gestão Documental (EDOC), criada pela
+                        portaria 01/CGDOC/2021, reúne gestores de diferentes
+                        aspectos da gestão documental, como administradores do
+                        SEI e pontos focais da Tabela de Temporalidade.
+                    </p>
+                    <a href="<?= url('home') ?>">SAIBA MAIS</a>
                 </div>
-                <h2>DIFUSÃO</h2>
-                <p class="servico-card_ajuste">
-                    A Equipe de Gestão Documental (EDOC), criada pela
-                    portaria 01/CGDOC/2021, reúne gestores de diferentes
-                    aspectos da gestão documental, como administradores do
-                    SEI e pontos focais da Tabela de Temporalidade.
-                </p>
-                <a href="<?= url('home') ?>">SAIBA MAIS</a>
+
             </div>
         </section>
 
@@ -152,7 +157,8 @@
                     </div>
 
                     <div class="carrossel-container">
-                        <button class="seta esquerda"><img src="/assets/home/icone-sete_esquerda.png" alt="Seta para ativar o carrossel"></button>
+                        <button class="seta esquerda"><img src="/assets/home/icone-sete_esquerda.png"
+                                alt="Seta para ativar o carrossel"></button>
 
                         <div class="carrossel">
                             <div class="track">
@@ -177,7 +183,8 @@
                             </div>
                         </div>
 
-                        <button class="seta direita"><img src="/assets/home/icone-seta.png" alt="Seta para ativar o carrossel"></button>
+                        <button class="seta direita"><img src="/assets/home/icone-seta.png"
+                                alt="Seta para ativar o carrossel"></button>
                     </div>
                 </div>
                 <div class="sistemas-imagem">

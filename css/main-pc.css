@@ -73,6 +73,7 @@ ul,
 li {
     font-family: Nimbus Sans;
     font-size: 1.25rem;
+    margin: 25px;
 }
 
 ol,
@@ -90,6 +91,8 @@ main {
 
 .container-pagina p {
     text-align: justify;
+    margin: auto;
+    padding: auto;
 }
 
 

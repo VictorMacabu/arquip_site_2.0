@@ -1,41 +1,44 @@
 <?php
 mb_internal_encoding('UTF-8');
 
-if (!function_exists('normalizar')) {
-    function normalizar($texto)
-    {
-        if (!$texto) return '';
+$q = $q ?? '';
+$resultados = $resultados ?? [];
 
-        $texto = mb_strtolower($texto, 'UTF-8');
+if (!is_array($resultados)) {
+    $resultados = [];
+}
 
-        $texto = strtr($texto, [
-            'á' => 'a',
-            'à' => 'a',
-            'ã' => 'a',
-            'â' => 'a',
-            'ä' => 'a',
-            'é' => 'e',
-            'è' => 'e',
-            'ê' => 'e',
-            'ë' => 'e',
-            'í' => 'i',
-            'ì' => 'i',
-            'î' => 'i',
-            'ï' => 'i',
-            'ó' => 'o',
-            'ò' => 'o',
-            'õ' => 'o',
-            'ô' => 'o',
-            'ö' => 'o',
-            'ú' => 'u',
-            'ù' => 'u',
-            'û' => 'u',
-            'ü' => 'u',
-            'ç' => 'c'
-        ]);
+function normalizar($texto)
+{
+    if (!$texto) return '';
 
-        return $texto;
-    }
+    $texto = mb_strtolower($texto, 'UTF-8');
+
+    return strtr($texto, [
+        'á' => 'a',
+        'à' => 'a',
+        'ã' => 'a',
+        'â' => 'a',
+        'ä' => 'a',
+        'é' => 'e',
+        'è' => 'e',
+        'ê' => 'e',
+        'ë' => 'e',
+        'í' => 'i',
+        'ì' => 'i',
+        'î' => 'i',
+        'ï' => 'i',
+        'ó' => 'o',
+        'ò' => 'o',
+        'õ' => 'o',
+        'ô' => 'o',
+        'ö' => 'o',
+        'ú' => 'u',
+        'ù' => 'u',
+        'û' => 'u',
+        'ü' => 'u',
+        'ç' => 'c'
+    ]);
 }
 ?>
 
@@ -46,7 +49,7 @@ if (!function_exists('normalizar')) {
 
         <h2>Resultados da busca</h2>
 
-        <?php if (!empty($sugestao)): ?>    
+        <?php if (!empty($sugestao) && normalizar($sugestao) !== normalizar($q)): ?>
             <p>
                 Você quis dizer:
                 <a href="/index.php?page=pesquisa&q=<?= urlencode($sugestao) ?>">
@@ -55,14 +58,21 @@ if (!function_exists('normalizar')) {
             </p>
         <?php endif; ?>
 
-        <p><?= count($resultados ?? []) ?> resultados encontrados</p>
+        <p><?= count($resultados) ?> resultados encontrados</p>
 
         <?php if (!empty($resultados)): ?>
 
             <?php foreach ($resultados as $r): ?>
 
                 <?php
+                if (!is_array($r)) continue;
+
+                $pagina = $r['pagina'] ?? '';
                 $trecho = $r['trecho'] ?? '';
+                $frequencia = $r['frequencia'] ?? 0;
+
+                if (!$pagina || !$trecho) continue;
+
                 $termos = explode(" ", normalizar($q));
                 $trechoNormalizado = normalizar($trecho);
 
@@ -101,7 +111,7 @@ if (!function_exists('normalizar')) {
                     );
                 }
 
-                $paginaSlug = pathinfo($r['pagina'], PATHINFO_FILENAME);
+                $paginaSlug = pathinfo($pagina, PATHINFO_FILENAME);
 
                 $mapaTitulos = [
                     'quem-somos' => 'Quem Somos',
@@ -116,14 +126,14 @@ if (!function_exists('normalizar')) {
                     ?? ucwords(str_replace('-', ' ', $paginaSlug));
                 ?>
 
-                <div class="card-secao resultado-busca">
+                <div class="resultado-busca">
 
-                    <a href="/index.php?page=<?= $paginaSlug ?>" class="titulo-resultado">
+                    <a href="/index.php?page=<?= htmlspecialchars($paginaSlug) ?>" class="titulo-resultado">
                         <?= htmlspecialchars($titulo) ?>
                     </a>
 
                     <p class="info-resultado">
-                        Frequência: <?= $r['frequencia'] ?>
+                        <strong>Frequência:</strong> <?= (int)$frequencia ?>
                     </p>
 
                     <p class="trecho-resultado">

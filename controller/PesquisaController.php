@@ -13,18 +13,15 @@ class PesquisaController
 
     public function buscar($q)
     {
-        if (empty($q)) {
+        if (!$q) {
             return [
                 'resultados' => [],
                 'sugestao' => null
             ];
         }
 
-        $resultadoBusca = $this->model->buscar($q);
+        $resultado = $this->model->buscar($q);
 
-        return [
-            'resultados' => $resultadoBusca['resultados'] ?? [],
-            'sugestao' => $resultadoBusca['sugestao'] ?? null
-        ];
+        return $resultado;
     }
 }

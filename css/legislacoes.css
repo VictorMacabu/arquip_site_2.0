@@ -137,9 +137,18 @@ details {
     display: inline-block;
 }
 
-
-
 .seta-leis {
     margin-left: 5px;
 }
 
+/* Tablet e Mobile */
+@media (max-width: 1024px) {
+    .banner-estrutura{
+        display: none;
+    }
+
+    .navegacao-lista{
+        display: none;
+    }
+
+}
