@@ -18,20 +18,42 @@
     <section class="container_banner">
         <header>
             <div class="banner-estrutura">
-                <div class="banner-estrutura_conteudo">
-                    <h1>ARQUIVO PÚBLICO MUNICIPAL</h1>
-                    <P>
-                        Jornalista Paulo Roberto Dutra
-                    </P>
+                    <form action="/index.php" method="GET" autocomplete="off">
+                        <input type="hidden" name="page" value="pesquisa">
+                        <div class="container-wrapper">
+                            <div class="container">
+                                <div class="input-wrapper">
+                                    <input
+                                        type="text"
+                                        name="q"
+                                        id="input-busca"
+                                        placeholder="Pesquisar no portal..."
+                                        required>
+                                    <button type="submit" class="btn-lupa">
+                                        <img src="/assets/header/lupa.png" alt="Pesquisar">
+                                    </button>
+                                    <button type="submit" class="btn-buscar"></button>
+                                    <div id="sugestoes" class="sugestoes-box"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </div>
-        </header>
-    </section>
+                    <div class="banner-estrutura_conteudo">
+                        <h1>ARQUIVO PÚBLICO MUNICIPAL</h1>
+                        <P>
+                            Jornalista Paulo Roberto Dutra
+                        </P>
+                        </div>
+                    </div>
+                </div>
+            </header>
+     </section>
 
     <main>
         <section class="quem-somos">
             <div class="quem-somos_conteudo">
-                <h2>Conheça O ARQUIP</h2>
+                <h2>Conheça o <strong>ARQUIP</strong></h2>
                 <p class="quem-somos_texto_pc">
                     O Arquivo Público do Município de São Paulo (ARQUIP)
                     tem como missão fundamental garantir o pleno
@@ -56,7 +78,8 @@
                 <div class="atendimento-card">
                     <img src="/assets/home/card-trabalho.png">
                     <div class="atendimento-card_titulo">
-                        <h2>Atendimento ao Cidadão</h2>
+                        <h2><strong>Atendimento ao Cidadão</strong></h2>
+                        <p>Serviços para a população, consulta de processos físicos e digitais e acesso a acervos históricos.</p>
                     </div>
                     <div class="atendimento-card_lista">
                         <ul>
@@ -75,7 +98,8 @@
                     <img src="/assets/home/planilha.png">
                     <div class="atendimento-card_conteudo">
                         <div class="atendimento-card_titulo">
-                            <h2>Atendimento ao Servidor</h2>
+                            <h2><strong>Atendimento ao Servidor</strong></h2>
+                            <p>Plataformas integradas para gestão de documentos, Diário Oficial e suporte técnico institucional.</p>
                         </div>
                         <div class="atendimento-card_lista">
                             <ul>

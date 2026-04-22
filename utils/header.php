@@ -131,28 +131,6 @@ if (!function_exists('url')) {
                     </div>
                 </li>
             </ul>
-
-            <form action="/index.php" method="GET" autocomplete="off">
-                <input type="hidden" name="page" value="pesquisa">
-                <div class="container-wrapper">
-                    <div class="container">
-                        <div class="input-wrapper">
-                            <input
-                                type="text"
-                                name="q"
-                                id="input-busca"
-                                placeholder="Pesquisar no portal..."
-                                required>
-                            <button type="submit" class="btn-busca">
-                                <img src="/assets/header/lupa.png" alt="Pesquisar">
-                            </button>
-
-                            <div id="sugestoes" class="sugestoes-box"></div>
-
-                        </div>
-                    </div>
-                </div>
-            </form>
         </nav>
     </div>
 </header>

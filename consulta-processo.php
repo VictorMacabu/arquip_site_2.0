@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <!--- Banner --->
     <div class="banner-estrutura">
         <div>

@@ -11,12 +11,6 @@
     <title>Mapa do Site</title>
 </head>
 <body>
-
-    <!-- CABEÇALHO -->
-    <?php require_once __DIR__ . "/views/header.php"
-    ?>
-
-    <!-- INICIO PÁGINA -->
     <div class="sitemap">
 
         <h1>Mapa do Site</h1>
@@ -26,7 +20,7 @@
 
         <h3>O Arquivo</h3>
         <ul>
-            <li><a href="quem-somos.php">Quem Somos?</a></li>
+            <li><a href="<?= url('quem-somos') ?>">Quem Somos?</a></li>
             <li><a href="estrutura-organizacional.php">Estrutura Organizacional</a></li>
             <li><a href="historico.php">Histórico</a></li>
             <li><a href="portal-processos.php">Portal de Processos</a></li>
@@ -42,11 +36,5 @@
 
     </div>
     
-    <?php
-    require_once __DIR__ . '/views/footer.php';
-    ?>
-
-
-
 </body>
 </html>
