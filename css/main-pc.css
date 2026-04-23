@@ -27,6 +27,11 @@
     src: url(/assets/font-site/Gilroy-Black/Gilroy-ExtraBold.otf)
 }
 
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url(/assets/font-site/Gilroy-Black/Gilroy-Regular.ttf);
+}
+
 
 /* ====== Reset na página ====== */
 * {
