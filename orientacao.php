@@ -13,8 +13,6 @@
 </head>
 
 <body>
-
-     <!-- BANNER -->
     <div class="banner-estrutura">
 
         <div class="centralizar">
@@ -34,7 +32,6 @@
 
     </div>
 
-    <!-- INICIO PÁGINA -->
     <main>
         <div class="pagina">
             <div class="conteudo">

@@ -14,11 +14,6 @@
 </head>
 
 <body>
-    <!-- CABEÇALHO -->
-    <?php require_once __DIR__ . "/views/header.php"
-        ?>
-
-    <!-- BANNER -->
     <div class="banner-estrutura">
 
         <div class="icone-esquerda">
@@ -103,13 +98,6 @@
             </div>
         </section>
     </main>
-
-    <!-- RODAPÉ -->
-    <?php require_once __DIR__ . "/views/footer.php"
-        ?>
-
-
-
 </body>
 
 </html>

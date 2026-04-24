@@ -14,10 +14,6 @@
 </head>
 
 <body>
-
-    <?php require_once __DIR__ . "/views/header.php"
-    ?>
-
     <div class="banner-estrutura">
         <div>
             <img class="img-esquerda" src="/assets/pesquisador-academico/mulher-academico.png" alt="Mulher">
@@ -230,12 +226,6 @@
             </main>
         </div>
     </div>
-
-    <!-- RODAPÉ -->
-    <?php require_once __DIR__ . "/views/footer.php"
-    ?>
-
-
 </body>
 
 </html>

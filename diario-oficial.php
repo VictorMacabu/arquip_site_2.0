@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/new-diario.css">
     <link rel="shortcut icon" href="/assets/icone.site/Logo.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,6 @@
 </head>
 
 <body>
-
-    <?php require_once __DIR__ . "/views/header.php"
-    ?>
-
     <!--- BANNER --->
     <div class="banner-estrutura">
         <div class="icone-esquerda">
@@ -410,7 +406,6 @@
             </div>
         </section>
     </main>
-
 
     <script src="/js/botao.js"></script>
 </body>
