@@ -13,12 +13,6 @@
 </head>
 
 <body>
-
-    <?php require_once __DIR__ . "/views/header.php"
-    ?>
-
-
-
     <section class="banner">
         <div class="banner-estrutura">
             <div>

@@ -13,10 +13,6 @@
 </head>
 
 <body>
-    <?php
-    require_once __DIR__ . '/views/header.php';
-    ?>
-
     <div class="banner-estrutura">
         <div>
             <img class="img-esquerda" src="/assets/agorasei/computador-sei.png" alt="Computador">
