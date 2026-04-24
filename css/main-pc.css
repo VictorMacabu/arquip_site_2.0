@@ -27,6 +27,11 @@
     src: url(/assets/font-site/Gilroy-Black/Gilroy-ExtraBold.otf)
 }
 
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url(/assets/font-site/Gilroy-Black/Gilroy-Regular.ttf);
+}
+
 
 /* ====== Reset na página ====== */
 * {
@@ -64,7 +69,7 @@ padding: 0px 0px 0px 30px;
 }
 
 main {
-    margin: 115px auto;
+    margin: auto;
     max-width: 1310px;
     padding: 0 20px;
     align-items: center;
