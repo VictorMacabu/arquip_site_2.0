@@ -8,12 +8,13 @@ P {
 
 }
 
-body {
+body, html {
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
 }
 
 main {
-    margin: 0px 290px;
     max-width: 1310px;
     padding: 0 20px;
     align-items: center;
