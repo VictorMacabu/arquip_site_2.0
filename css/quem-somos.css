@@ -1,6 +1,6 @@
 /* ======  ESTILOS GERAIS ====== */
 
-P {
+p {
     font-family: Nimbus Sans;
     margin-bottom: 1px;
     margin-top: 13px;
@@ -239,6 +239,39 @@ main {
         flex-direction: row;
         justify-content: center;
     }
+
+    .uma-homenagem_container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .uma-homenagem_img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .uma-homenagem_conteudo {
+        max-width: 646px;
+    }
+
+    .uma-homenagem h2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .uma-homenagem img {
+        max-width: 345px;
+    }
+
+    .dever-responsabilidade {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 /* Celular */

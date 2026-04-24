@@ -15,7 +15,7 @@
 
 <body>
     <div class="banner-estrutura">
-        <div>
+        <div class="icone-esquerda">
             <img class="img-esquerda" src="/assets/pesquisador-academico/mulher-academico.png" alt="Mulher">
         </div>
 
@@ -32,10 +32,10 @@
         </div>
     </div>
 
-    <!-- INICIO PÁGINA -->
-    <div class="container-pagina">
-        <div class="card-secao">
-            <main>
+    <!-- Pesquisador Acadêmico -->
+    <main>
+        <div class="container-pagina">
+            <div class="card-secao">
                 <p>Mediante solicitação por meio do Portal de Processos, é realizada a busca nos registros disponíveis, e,
                     caso identificado, será enviado o último projeto aprovado em formato digital.
                 </p>
@@ -129,7 +129,7 @@
                     administrativos e documentos sob a guarda do Sistema de Arquivos do Município de São Paulo. Por meio
                     dele, é possível consultar informações, solicitar documentos e acompanhar o andamento de pedidos.
                 </p>
-                
+
 
                 <h2>2. Como faço para consultar um processo administrativo?</h2>
                 <p>Você pode consultar um processo administrativo acessando o Portal de Processos em <a
@@ -223,7 +223,7 @@
                     <li>Preservação: Minimiza o manuseio de documentos físicos, garantindo sua preservação.</li>
                     <li>Segurança: Proteção de dados pessoais e sigilo garantido.</li>
                 </ul>
-            </main>
+            </div>
         </div>
     </div>
 </body>

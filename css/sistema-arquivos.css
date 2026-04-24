@@ -1,4 +1,4 @@
-/* === Banner === */
+/* ====== Banner ====== */
 .banner-estrutura {
     justify-content: space-between;
     align-items: flex-end;
@@ -47,8 +47,7 @@
 
 
 
-/* ======  SISTEMAS-ARQUIVOS  ====== */
-
+/* ====== Sistemas-Arquivos ====== */
 .sistema-arquivos {
     margin-bottom: 24px;
 }
@@ -57,12 +56,7 @@
     margin-bottom: 24px;
 }
 
-.sistema-arquivos_conteudo {
-    height: 306px;
-}
-
-/* ======  DEFINIÇÃO DOCUMENTAL  ======*/
-
+/* ======  Definição Documental  ======*/
 .definicao-documental_subtitulo {
     margin-bottom: 24px;
 }
