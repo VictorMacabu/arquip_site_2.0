@@ -17,7 +17,6 @@ $allowedPages = [
     'agorasei',
     'digitasampa',
     'diario-oficial',
-    'historia',
     'historico',
     'mapa-site',
     'sistemas-arquivos',
@@ -60,4 +59,4 @@ if ($page === 'pesquisa') {
     }
 }
 
-require_once __DIR__ . "/views/layout.php";
+require_once __DIR__ . "/utils/layout.php";

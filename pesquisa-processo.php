@@ -14,8 +14,6 @@
 </head>
 
 <body>
-
-    <!--BANNER -->
     <div class="banner-estrutura">
         <div>
             <img class="img-esquerda" src="/assets/pesquisa-processo/casal-pesquisa-proc.png" alt="Mulher">

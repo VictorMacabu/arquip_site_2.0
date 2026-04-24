@@ -117,33 +117,26 @@ main {
 }
 
 .banner-estrutura_conteudo {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 300px;
-  font-family: Nimbus Sans;
-  width: 100%;
-  max-width: 1320px;
-  padding: 0 clamp(16px, 4vw, 48px);
-  box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 300px;
+    margin-left: 353px;
 }
 
 .banner-estrutura_conteudo h1 {
-  font-size: 3.75rem;
-  color: #fff;
-  max-width: 552px;
-  line-height: 0.9;
+    font-size:  3.75rem;
+    font-family: Gilroy-Black;
+    color: #fff;
+    max-width: 552px;
+    line-height: 0.9;
 }
 
 .banner-estrutura_conteudo p {
-  font-family: Nimbus Sans;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: #ffffff9e;
-  margin-top: 15px;
-}
-
-.btn-hamburguer {
-  display: none;
+    font-family: Gilroy-Bold;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: #ffffff9e;
+    margin-top: 15px;
 }
 
 
@@ -164,6 +157,10 @@ main {
   max-width: 465px;
   text-align: left;
   min-height: 500px;
+}
+
+.quem-somos_conteudo strong {
+    color: #008BD2;
 }
 
 .quem-somos_conteudo h2 {
@@ -318,6 +315,7 @@ main {
 .servico-card h2 {
   color: #0056B3;
   margin-bottom: 16px;
+  font-family: Gilroy-Black;
 }
 
 .servico-card p {

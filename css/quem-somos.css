@@ -8,8 +8,13 @@ p {
 
 }
 
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 main {
-    margin: 115px auto;
     max-width: 1310px;
     padding: 0 20px;
     align-items: center;
@@ -17,52 +22,94 @@ main {
 
 
 /* ======  QUEM SOMOS/ARQUIVO ====== */
+
+.quem-somos-inicio{
+    background-color: #F3F6F9;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 93px 0;
+}
+
+.img-titulo img{
+    margin-top: 8%;
+}
+
 .quem-somos {
     font-size: 1.25rem;
     text-align: justify;
 }
 
 .quem-somos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 11px;
+    margin-left: 3%;
+    font-family: Gilroy-SemiBold;
+}
+
+.quem-somos-subtitulo p {
+    font-size: 1.25rem;
+    font-family: Gilroy-Regular;
+    margin-bottom: 1%;
+}
+
+.quem-somos-subtitulo h2 {
+    margin-bottom: 19px;
+    margin-left: 3%;
     font-size: 2rem;
-    margin-bottom: 19px;
+    font-family: Gilroy-SemiBold;
 }
 
-.quem-somos_subtitulo {
-    font-size: 17px;
+.quem-somos-conteudo p{
+    font-size: 1.25rem;
+    font-family: Gilroy-Regular;
 }
 
-.quem-somos_subtitulo h2 {
-    margin-bottom: 19px;
-}
-
-.quem-somos_subtitulo_p {
-    margin-bottom: 19px;
-}
-
-.quem-somos_arquivo_publico {
+.quem-somos-arquivo-publico {
     margin-bottom: 80px;
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.quem-somos_resumo {
-    margin-top: -18px;
-    margin-bottom: 2%;
-    font-size: 20px;
-}
-
-.quem-somos_texto {
-    margin-bottom: 80px;
+.quem-somos-textos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
 }
 
 /* ====== SERVIÇOS-DEVER-RESPONSABILIDADE  ====== */
 
-.dever-responsabilidade {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 11px;
+.servico-cidadania{
+    background-color: #00072D;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 93px 0;
 }
 
-.dever-responsabilidade_ajuste {
-    margin-bottom: 80px;
+.dever-responsabilidade {
+    gap: 11px;
+    max-width: 1310px;
+    margin: 0 auto;     
+}
+
+.dever-responsabilidade-ajuste {
+    
+}
+
+.dever-responsabilidade-conteudo h2{
+    margin-left: 2%;
+}
+
+.imagem-right{
+    width: 445px;
+    height: 736px;
+    margin-right: 1%;
+    float: right;
 }
 
 .servicos-lista {
@@ -70,45 +117,83 @@ main {
 }
 
 .servicos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: #fff;
+}
+
+.servicos p{
+    font-family: Gilroy-Regular;
+    font-size: 1.25rem;
 }
 
 .servicos ul {
     margin: 20px 0px;
-    padding: 0px 0px 0px 40px;
 }
 
-.servicos_conteudo {
+.servicos li {
+    font-family: Gilroy-Regular;
+    font-size: 1.25rem;
+}
+
+.servicos ul li{
+    line-height: 1.4;
+    margin: 0;
+    margin-left: 2%;
+}
+
+.servicos-conteudo {
     margin-bottom: 50px;
 }
 
+.servicos-conteudo h2{
+    font-family: Gilroy-SemiBold;
+    font-size: 1.5rem;
+    margin-bottom: 4%;
+    margin-left: 2%;
+}
+
+
 /* ====== UMA-HOMENAGEM ====== */
+
+.sec-homenagem {
+    background-color: #F3F6F9;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 93px 0;
+}
 
 .uma-homenagem {
     margin-bottom: 145px;
+    max-width: 1310px;
+    margin: 0 auto;   
 }
 
-.uma-homenagem_container {
+.uma-homenagem-container {
     display: flex;
     justify-content: space-between;
     gap: 2px;
 }
 
-.uma-homenagem_titulo {
+
+.uma-homenagem-titulo {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
 
-.uma-homenagem_titulo h2 {
-    margin-bottom: 0px;
+.uma-homenagem-titulo h2 {
+    font-family: Gilroy-SemiBold;
+    font-size: 2.5rem;
 }
 
+.paulo-roberto p {
+    font-family: Gilroy-Regular;
+    font-size: 1.25rem;
+}
 
-.uma-homenagem_titulo p {
+.uma-homenagem-titulo p {
     display: flex;
     align-items: center;
     margin: 0px;
@@ -117,49 +202,42 @@ main {
     padding: 47px 43px 47px 43px;
     color: #fff;
     background-color: #008BD2;
+    border-radius: 20px;
 }
 
-.uma-homenagem_img {
-    width: 550px;
+.uma-homenagem-img {
     height: 457px;
 }
 
-.uma-homenagem_conteudo {
+.uma-homenagem-conteudo {
     max-width: 415px;
 }
 
+.uma-homenagem-conteudo p{
+    font-family: Gilroy-Regular;
+    font-size: 1.25rem;
+}
 
 
-/* ====== Mobile ====== */
-@media (max-width: 699px) {
-
-    p {
-        font-size: 1.125rem;
-        margin-top: 25px;
+/* Tablet */
+@media (max-width: 1025px) {
+    .navegacao{
+        display: none;
     }
 
-    main {
-        margin: 70px auto;
+    .quem-somos-arquivo-publico {
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
-    .quem-somos h1 {
-        margin-bottom: 35px; 
+    .uma-homenagem-conteudo{
+        max-width: 100%;
     }
 
-    .imagem-right {
-        width: 100%;
-        display: flex;
+    .uma-homenagem-container{
+        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
-        margin-bottom: 92px;
-    }
-
-    .imagem-right img {
-        max-width: 345px;
-    }
-
-    .dever-responsabilidade {
-        display: flex;
-        flex-direction: column;
     }
 
     .uma-homenagem_container {
@@ -195,3 +273,36 @@ main {
     }
 
 }
+
+/* Celular */
+@media (max-width: 768px) {
+
+    main{
+        margin: 0;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    .quem-somos-inicio {
+        padding: 0;
+    }
+
+    .quem-somos-subtitulo h2 {
+        text-align: left;
+    }
+
+    .servicos ul {
+        margin: 25px;
+    }
+
+    .dever-responsabilidade-conteudo h2{
+        text-align: left;
+    }
+
+    .imagem-right{
+        display: none;
+    }
+
+}   
