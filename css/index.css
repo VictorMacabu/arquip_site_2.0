@@ -95,7 +95,7 @@ main {
 /* ====== banner ====== */
 
 .banner-estrutura {
-    background-image: url(/assets/banner/index/banner.png);
+    background-image: url(/assets/banner/index/banner-home.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -127,6 +127,55 @@ main {
     margin-top: 15px;
 }
 
+.container_banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('/assets/home/banner-home.png') center/cover no-repeat;
+}
+
+.banner-estrutura {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 80px;
+}
+
+.banner-estrutura_conteudo {
+  color: #fff;
+  max-width: 500px;
+}
+
+.banner-estrutura_conteudo h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.banner-estrutura_conteudo p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.banner-busca {
+  display: flex;
+  align-items: center;
+}
+
+.banner-busca .input-wrapper {
+  width: 350px;
+  height: 45px;
+  border-radius: 25px;
+  padding: 0 10px;
+}
+
+.btn-buscar {
+  background-color: #008BD2;
+  color: #fff;
+  border-radius: 20px;
+  padding: 6px 18px;
+  font-family: Nimbus Sans;
+}
 
 .quem-somos_texto_mobile {
   display: none;
@@ -139,6 +188,16 @@ main {
   justify-content: space-between;
   max-width: 1310px;
   padding: 0 48px;
+}
+
+.quem-somos-img {
+
+  display: flex;
+  width: 689px;
+  height: 636px;
+  object-fit: cover;
+  border-radius: 12px;
+
 }
 
 .quem-somos_conteudo {
@@ -173,83 +232,147 @@ main {
   margin-top: 1.4375rem;
   text-align: left;
   margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
-.cards-container {
-  display: flex;
-  gap: 32px;
-  height: 403px;
-}
-
-.atendimento-card {
-  width: 320px;
-  height: 382px;
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  border-radius: 12px;
-  transition: transform 0.5s ease, box-shadow 0.3s ease;
-}
-
-.atendimento-card img {
-  width: 320px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 12px;
-}
-
-.atendimento-card:hover {
-  transform: translateY(-8px);
-}
-
-
-.atendimento-card_titulo {
+.portal-cards {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #002147;
-  min-height: 48px;
+  gap: 32px;
+  padding: 80px clamp(40px, 6vw, 120px);
+  background: transparent;
 }
 
-.atendimento-card_titulo h2 {
+.portal-card {
+  flex: 1;
+  max-width: 620px;
+
+  background: #ffffff;
+  border-radius: 12px;
+
+  padding: 40px 32px;
+
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-header {
   display: flex;
   align-items: center;
-  font-family: Gilroy-Bold;
-  color: #fff;
-  font-size: 1.1rem;
+  justify-content: space-between;
 }
 
-.atendimento-card_lista {
-  flex-grow: 1;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 9px 12px;
-  border-radius: 12px;
+.icon-box {
+  width: 56px;
+  height: 56px;
+  background: #eaf2fb;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #0b5ed7;
+  font-size: 22px;
 }
 
-.atendimento-card_lista ul {
+.card-label {
+  font-size: 13px;
+  color: #9aa4b2;
+  letter-spacing: 1px;
+}
+
+.portal-card h2 {
+  font-size: 26px;
+  color: #0f2a44;
+  font-weight: 600;
+  font-family: Gilroy-black;
+}
+
+.card-desc {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  font-family: Gilroy-bold;
+}
+
+.grid-servicos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.servico-item {
+  background: #f5f7fa;
   padding: 24px;
-}
-
-.atendimento-card_lista li {
-  list-style: none;
-  margin-bottom: 1px;
-  width: 283px;
-}
-
-.atendimento-card_lista a {
-  width: 272px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
   text-decoration: none;
-  color: #002147;
-  font-size: 1rem;
+  color: #1f2937;
+  font-size: 17px;
+  transition: 0.2s;
 }
 
-.atendimento-card_lista a:hover {
-  color: #0793da;
+.servico-item:hover {
+  background: #e3f2fd;
 }
 
+.lista-servicos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
+.linha-servico {
+  background: #f5f7fa;
+  padding: 16px 18px;
+  border-radius: 12px;
 
-/* === CSS/SERVIÇOS ===*/
+  display: flex;
+  align-items: center;
+  gap: 12px;
 
+  text-decoration: none;
+  color: #1f2937;
+
+  justify-content: space-between;
+}
+
+.linha-servico span {
+  flex: 1;
+}
+
+.seta {
+  opacity: 0.6;
+}
+
+.botoes-servicos {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.botoes-servicos a {
+  background: #f5f7fa;
+  padding: 12px 18px;
+  border-radius: 12px;
+
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.botoes-servicos a:hover {
+  background: #e3f2fd;
+}
 
 .servicos {
   position: relative;
@@ -260,7 +383,6 @@ main {
   margin-right: -50vw;
 
   width: 100vw;
-  background-color: #F1F5F9;
   padding: 60px 0;
 }
 
@@ -276,8 +398,11 @@ main {
 
 .servico-card {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+  border-radius: 12px;
   flex: 1;
   max-width: 300px;
 }
