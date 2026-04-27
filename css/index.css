@@ -261,17 +261,43 @@ main {
 }
 
 .quem-somos_texto_pc {
-  margin-top: 16px;
-  margin-bottom: 16px;
-
-  font-size: 1rem;
-  font-family: Gilroy-Regular;
-
-  line-height: 1.8325;
-  color: #64748B;
+  margin-top: 1.4375rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 
-.portal-cards {
+.cards-container {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.atendimento-card {
+  width: 100%;
+  max-width: 320px;
+  height: 403px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.atendimento-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.atendimento-card:hover {
+  transform: translateY(-8px);
+}
+
+
+.atendimento-card_titulo {
+  
   display: flex;
   justify-content: center;
   gap: 32px;
