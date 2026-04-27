@@ -18,37 +18,39 @@
     <section class="container_banner">
         <header>
             <div class="banner-estrutura">
-                    <form action="/index.php" method="GET" autocomplete="off">
-                        <input type="hidden" name="page" value="pesquisa">
-                        <div class="container-wrapper">
-                            <div class="container">
-                                <div class="input-wrapper">
-                                    <input
-                                        type="text"
-                                        name="q"
-                                        id="input-busca"
-                                        placeholder="Pesquisar no portal..."
-                                        required>
-                                    <button type="submit" class="btn-lupa">
-                                        <img src="/assets/header/lupa.png" alt="Pesquisar">
-                                    </button>
-                                    <button type="submit" class="btn-buscar"></button>
-                                    <div id="sugestoes" class="sugestoes-box"></div>
-                                </div>
+                <div class="banner-estrutura_conteudo">
+                    <h1>ARQUIVO PÚBLICO MUNICIPAL</h1>
+                    <p>Jornalista Paulo Roberto Dutra</p>
+                </div>
+
+                <form action="/index.php" method="GET" autocomplete="off" class="banner-busca">
+                    <input type="hidden" name="page" value="pesquisa">
+
+                    <div class="container-wrapper">
+                        <div class="container">
+                            <div class="input-wrapper">
+                                <input
+                                    type="text"
+                                    name="q"
+                                    id="input-busca"
+                                    placeholder="Pesquisar no portal..."
+                                    required>
+
+                                <button type="submit" class="btn-lupa">
+                                    <img src="/assets/header/lupa.png" alt="Pesquisar">
+                                </button>
+
+                                <button type="submit" class="btn-buscar">Buscar</button>
+
+                                <div id="sugestoes" class="sugestoes-box"></div>
                             </div>
                         </div>
-                    </form>
-                </div>
-                    <div class="banner-estrutura_conteudo">
-                        <h1>ARQUIVO PÚBLICO MUNICIPAL</h1>
-                        <P>
-                            Jornalista Paulo Roberto Dutra
-                        </P>
-                        </div>
                     </div>
-                </div>
-            </header>
-     </section>
+                </form>
+
+            </div>
+        </header>
+    </section>
 
     <main>
         <section class="quem-somos">
@@ -75,46 +77,94 @@
                 </p>
             </div>
 
-            <!-- Atendimento ao cidadão -->
-            <div class="cards-container">
-                <div class="atendimento-card">
-                    <img src="/assets/home/card-trabalho.png">
-                    <div class="atendimento-card_titulo">
-                        <h2><strong>Atendimento ao Cidadão</strong></h2>
-                        <p>Serviços para a população, consulta de processos físicos e digitais e acesso a acervos históricos.</p>
+            <div class="quem-somos-img">
+                <img src="/assets/home/quem-somos.png" alt="Mulher explicando em quadro">
+
+            </div>
+        </section>
+
+        <section class="portal-cards">
+
+            <div class="portal-card">
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-user"></i>
                     </div>
-                    <div class="atendimento-card_lista">
-                        <ul>
-                            <li><a href="<?= url('consulta-processo') ?>">Consulta de processos administrativos</a></li>
-                            <li><a href="<?= url('acesso-acervo') ?>">Acesso ao acervo - Requerimento eletrônico</a>
-                            </li>
-                            <li><a href="<?= url('pesquisa-processo') ?>">Pesquisa de existência de
-                                    processos/plantas</a></li>
-                            <li><a href="<?= url('pesquisador-academico') ?>">Pesquisador Acadêmico</a></li>
-                        </ul>
-                    </div>
+                    <span class="card-label">PORTAL PÚBLICO</span>
                 </div>
 
-                <!-- Atendimento ao servidor -->
-                <div class="atendimento-card">
-                    <img src="/assets/home/planilha.png">
-                    <div class="atendimento-card_conteudo">
-                        <div class="atendimento-card_titulo">
-                            <h2><strong>Atendimento ao Servidor</strong></h2>
-                            <p>Plataformas integradas para gestão de documentos, Diário Oficial e suporte técnico institucional.</p>
-                        </div>
-                        <div class="atendimento-card_lista">
-                            <ul>
-                                <li><a href="<?= url('gestao-documental') ?>">Gestão Documental</a></li>
-                                <li><a href="<?= url('orientacao') ?>">Orientação às EDOCS</a></li>
-                                <li><a href="<?= url('agorasei') ?>">AgoraSEI!</a></li>
-                                <li><a href="<?= url('digitasampa') ?>">DigitaSampa</a></li>
-                                <li><a href="<?= url('diario-oficial') ?>">Diário Oficial Cidade de São Paulo</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                <h2>Atendimento ao Cidadão</h2>
+
+                <p class="card-desc">
+                    Serviços para a população, consulta de processos físicos e digitais e acesso a acervos históricos.
+                </p>
+
+                <div class="grid-servicos">
+
+                    <a href="<?= url('consulta-processo') ?>" class="servico-item">
+                        <i class="fa-regular fa-file-lines"></i>
+                        <span>Consulta de processos administrativos</span>
+                    </a>
+
+                    <a href="<?= url('acesso-acervo') ?>" class="servico-item">
+                        <i class="fa-regular fa-folder-open"></i>
+                        <span>Acesso ao acervo / requerimento eletrônico</span>
+                    </a>
+
+                    <a href="<?= url('pesquisa-processo') ?>" class="servico-item">
+                        <i class="fa-solid fa-map"></i>
+                        <span>Pesquisa de processos/plantas</span>
+                    </a>
+
+                    <a href="<?= url('pesquisador-academico') ?>" class="servico-item">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Pesquisador Acadêmico</span>
+                    </a>
+
                 </div>
             </div>
+
+
+            <!-- CARD INTERNO -->
+            <div class="portal-card">
+
+                <div class="card-header">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <span class="card-label">PORTAL INTERNO</span>
+                </div>
+
+                <h2>Atendimento ao Servidor</h2>
+
+                <p class="card-desc">
+                    Plataformas integradas para gestão de documentos, Diário Oficial e suporte técnico institucional.
+                </p>
+
+                <div class="lista-servicos">
+
+                    <a href="<?= url('gestao-documental') ?>" class="linha-servico">
+                        <i class="fa-regular fa-folder"></i>
+                        <span>Gestão documental</span>
+                        <i class="fa-solid fa-arrow-right seta"></i>
+                    </a>
+
+                    <a href="<?= url('orientacao') ?>" class="linha-servico">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Orientações aos EDOCS</span>
+                        <i class="fa-solid fa-arrow-right seta"></i>
+                    </a>
+
+                    <div class="botoes-servicos">
+                        <a href="<?= url('agorasei') ?>">AgoraSEI</a>
+                        <a href="<?= url('digitasampa') ?>">Digital Sampa</a>
+                        <a href="<?= url('diario-oficial') ?>">Diário Oficial</a>
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
         <section class="servicos">
