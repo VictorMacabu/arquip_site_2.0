@@ -23,17 +23,13 @@ main {
 
 /* ======  QUEM SOMOS/ARQUIVO ====== */
 
-.quem-somos-inicio{
+.quem-somos-inicio {
     background-color: #F3F6F9;
     position: relative;
     width: 100vw;
     left: 50%;
     transform: translateX(-50%);
-    padding: 93px 0;
-}
-
-.img-titulo img{
-    margin-top: 8%;
+    padding: 115px 0px 80px;
 }
 
 .quem-somos {
@@ -44,7 +40,6 @@ main {
 .quem-somos h1 {
     font-size: 2.5rem;
     margin-bottom: 11px;
-    margin-left: 3%;
     font-family: Gilroy-SemiBold;
 }
 
@@ -56,28 +51,36 @@ main {
 
 .quem-somos-subtitulo h2 {
     margin-bottom: 19px;
-    margin-left: 3%;
     font-size: 2rem;
     font-family: Gilroy-SemiBold;
 }
 
-.quem-somos-conteudo p{
+.quem-somos-conteudo p {
     font-size: 1.25rem;
     font-family: Gilroy-Regular;
+    color: #00072D;
 }
 
 .quem-somos-arquivo-publico {
     margin-bottom: 80px;
     display: flex;
-    align-items: flex-start;
-    max-width: 1200px;
+    align-items: center;
+    max-width: 1342px;
     margin: 0 auto;
+    gap: 65px;
+    height: 785px;
+}
+
+.img-titulo {
+    display: flex;
+    width: 100%;
+    height: 785px;
+    align-items: center;
 }
 
 .quem-somos-textos{
     display: flex;
     flex-direction: column;
-    margin-left: 2%;
 }
 
 /* ====== SERVIÇOS-DEVER-RESPONSABILIDADE  ====== */
@@ -95,14 +98,6 @@ main {
     gap: 11px;
     max-width: 1310px;
     margin: 0 auto;     
-}
-
-.dever-responsabilidade-ajuste {
-    
-}
-
-.dever-responsabilidade-conteudo h2{
-    margin-left: 2%;
 }
 
 .imagem-right{
@@ -148,7 +143,6 @@ main {
     font-family: Gilroy-SemiBold;
     font-size: 1.5rem;
     margin-bottom: 4%;
-    margin-left: 2%;
 }
 
 
@@ -172,14 +166,15 @@ main {
 .uma-homenagem-container {
     display: flex;
     justify-content: space-between;
-    gap: 2px;
+    gap: 35px;
 }
 
 
 .uma-homenagem-titulo {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 65px;
 }
 
 
@@ -211,12 +206,78 @@ main {
 
 .uma-homenagem-conteudo {
     max-width: 415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .uma-homenagem-conteudo p{
     font-family: Gilroy-Regular;
     font-size: 1.25rem;
 }
+
+/* Definição da animação */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.img-titulo, 
+.quem-somos-titulo,
+.dever-responsabilidade-conteudo,
+.dever-responsabilidade-ajuste,
+.uma-homenagem-container, 
+.quem-somos-subtitulo, 
+.quem-somos-conteudo p,
+.imagem-right,
+.servicos-conteudo h2,
+.servicos-conteudo p,
+.servicos-conteudo ul li {
+    opacity: 0; /* Começam invisíveis */
+    animation: fadeInUp 0.8s ease-out forwards; /* 'forwards' mantém o item visível no final */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Tablet */
