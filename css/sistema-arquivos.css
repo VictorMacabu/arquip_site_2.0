@@ -131,4 +131,81 @@ main {
 
 footer{
     margin-top: 3%;
+}
+
+/* Tablet */
+@media (max-width: 1300px) {
+
+
+    .img-sistema{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
     }
+
+    .sistema-txt h1{
+        text-align: center;
+        margin-top: 4%;
+    }
+
+    .txt-img{
+        right: 0;
+        width: 100%;
+        margin-top: 4%;
+    }
+
+    .txt-samsp h3{
+        text-align: center;
+    }
+
+    .card-sistema {
+        max-width: 100%;
+    }
+
+    .imagens-samsp {
+        gap: 0px;
+        max-width: 100%;
+    }
+
+    .divisao-samsp img{
+        max-width: 100%;
+    }
+
+}
+
+/* Celular */
+@media (max-width: 767px) {
+
+    .imagens-samsp{
+        flex-direction: column;
+    }
+
+     .divisao-samsp img {
+        display: none;
+    }
+
+    .numero{
+        display: none;
+    }
+
+    .icone-um img{
+        display: none;
+    }
+
+    .icone-dois img{
+        display: none;
+    }
+
+    .icone-tres img{    
+        display: none;
+    }
+
+    .icone-quatro img{
+        display: none;
+    }
+
+    .icone-cinco img{
+        display: none;
+    }
+}
