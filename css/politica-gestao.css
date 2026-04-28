@@ -1,65 +1,119 @@
-/* === Banner === */
-.banner-estrutura {
-    justify-content: space-between;
-    align-items: flex-end;
+/* ====== Estilo Geral ====== */
+
+main {
+    padding: 85px 290px;
+    width: 100%;
+    max-width: 1340px;
+    align-items: center;
 }
 
-.img-esquerda,
-.img-direita {
-    display: block;
+p {
+    color: #00072D;
 }
 
-.img-direita {
-    width: 322px;
-}
-
-.img-esquerda {
-    width: 410px;
-}
-
-.icone-esquerda {
-    width: 322px;
-}
-
-
-.texto-banner {
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-.texto-banner h1 {
-    color: #fff;
-    margin-top: 35px;
-    padding: 30px;
-    font-size: clamp(16px, 4vw, 36px);
-}
-
-.texto-banner p {
-    color: #fff;
-    max-width: 993px;
-    font-size: clamp(12px, 2vw, 24px);
-}
-
-.texto-banner a {
-    color: #fff;
-}
 
 /* ====== Gestão Documental ====== */
+
+.container-gestao_documental {
+    display: flex;
+    gap: 90px;
+}
+
+.politica-gestao {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    width: 622px;
+}
+
+.gestao-documental_conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.titulo-conteudo {
+    font-size: 1.11rem;
+}
+
+.politica-gestao p {
+    font-size: 1.5rem;
+}
+
+.objetivo-principios summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.objetivo-principios summary::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+.objetivo-principios details[open] summary::after {
+    transform: rotate(45deg);
+}
+
+.objetivo-principios details {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 26px 23px;
+    border-radius: 20px;
+}
+
+.objetivo-principios details[open] {
+    border-bottom: 5px solid #008BD2;
+}
+
+.objetivo-principios details {
+    transition: transform 0.8s ease;
+}
+
+.objetivo-principios details:hover {
+    transform: translateY(-6px);
+}
+
+.objetivo-principios p {
+    font-size: 1.375rem;
+    padding: 21px 21px 0px;
+}
+
+.objetivo-principios details h2 {
+    margin: 0px;
+}
+
+.objetivo-principios summary {
+    color: #0056B3;
+    cursor: pointer;
+    list-style: none;
+}
+
+.objetivo-principios li {
+    list-style: none;
+}
+
+.objetivo-principios ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 21px;
+}
+
+.container-objetivos_principios {
+    width: 628px;
+}
+
 
 .gestao-documental_sub {
     margin-bottom: 24px;
 }
 
 .gestao-documental_conteudo h2 {
-    margin-bottom: 28px;
-}
-
-.gestao-documental_conteudo p {
     margin-bottom: 28px;
 }
 
@@ -75,17 +129,52 @@
     margin-bottom: 24px;
 }
 
+
+/* Definição da animação */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-gestao_documental {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Tablet e Mobile */
 @media (max-width: 1024px) {
-    main{
+    main {
         margin: 35px auto;
     }
 
-    .navegacao{
+    .navegacao {
         display: none;
     }
 
-    .banner-estrutura{
+    .banner-estrutura {
         display: none;
     }
 
