@@ -1,10 +1,16 @@
 /* ====== Estilo Geral ====== */
 
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-semibold.ttf);
+}
+
+
 main {
-    padding: 85px 290px;
-    width: 100%;
     max-width: 1340px;
-    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 85px 20px;
 }
 
 p {
@@ -12,7 +18,7 @@ p {
 }
 
 
-/* ====== Gestão Documental ====== */
+/* ====== Politica Gestão ====== */
 
 .container-gestao_documental {
     display: flex;
@@ -26,27 +32,42 @@ p {
     width: 622px;
 }
 
+.politica-gestao_titulo {
+    font-size: 1.11rem;
+}
+
+.politica-gestao_texto p {
+    font-size: 1.5rem;
+}
+
+.politica-gestao_texto a {
+    color: #00072D;
+}
+
+.politica-gestao_sub p {
+    font-size: 1.5rem;
+}
+
+
+/* ====== Gestão Documental - Objetivos e principios (Details) ====== */
+
+
+.container-objetivos_principios {
+    width: 100%;
+    max-width: 628px;
+}
+
 .gestao-documental_conteudo {
     display: flex;
     flex-direction: column;
     gap: 21px;
 }
 
-.titulo-conteudo {
-    font-size: 1.11rem;
+.objetivo-principios details {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding: 26px 23px;
+    border-radius: 20px;
 }
-
-.politica-gestao p {
-    font-size: 1.5rem;
-}
-
-.objetivo-principios summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
 
 .objetivo-principios summary::after {
     content: "+";
@@ -56,26 +77,17 @@ p {
     transition: transform 0.4s ease;
 }
 
+.objetivo-principios details[open] {
+    border-bottom: 5px solid #008BD2;
+}
+
+
 .objetivo-principios details[open] summary::after {
     transform: rotate(45deg);
 }
 
 .objetivo-principios details {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
-    padding: 26px 23px;
-    border-radius: 20px;
-}
-
-.objetivo-principios details[open] {
-    border-bottom: 5px solid #008BD2;
-}
-
-.objetivo-principios details {
     transition: transform 0.8s ease;
-}
-
-.objetivo-principios details:hover {
-    transform: translateY(-6px);
 }
 
 .objetivo-principios p {
@@ -87,10 +99,20 @@ p {
     margin: 0px;
 }
 
+.objetivo-principios details:hover {
+    transform: translateY(-6px);
+}
+
 .objetivo-principios summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
     color: #0056B3;
     cursor: pointer;
     list-style: none;
+    font-size: 1.625rem;
+    font-family: Gilroy-SemiBold;
 }
 
 .objetivo-principios li {
@@ -103,32 +125,6 @@ p {
     gap: 15px;
     padding: 21px;
 }
-
-.container-objetivos_principios {
-    width: 628px;
-}
-
-
-.gestao-documental_sub {
-    margin-bottom: 24px;
-}
-
-.gestao-documental_conteudo h2 {
-    margin-bottom: 28px;
-}
-
-.lista-txt {
-    margin-bottom: 24px;
-}
-
-.lista-txt ul {
-    padding: 0px 0px 0px 22px;
-}
-
-.lista-txt h2 {
-    margin-bottom: 24px;
-}
-
 
 /* Definição da animação */
 @keyframes fadeInUp {
@@ -147,21 +143,6 @@ p {
     opacity: 0;
     animation: fadeInUp 0.8s ease-out forwards;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Tablet e Mobile */

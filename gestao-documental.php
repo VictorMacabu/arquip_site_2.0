@@ -15,37 +15,37 @@
 
 <body>
     <main>
-
-        <div class="container-gestao_documental">
+        <section class="container-gestao_documental">
             <div class="politica-gestao">
-                <div class="titulo-conteudo">
-                    <h1>POLÍTICA DE GESTÃO DOCUMENTAL</h1>
+                <div class="politica-gestao_titulo">
+                    <h1>Política de Gestão Documental</h1>
                 </div>
-                <div class="texto-banner">
-                    <p>A Política de Gestão Documental (PGDOC), instituída pela <a href="https://legislacao.prefeitura.sp.gov.br/leis/portaria-1-de-24-de-maio-de-2021" target="_blank">Portaria SGM/SEGES/CGDOC Nº 1 de 24 de maio de
+                <div class="politica-gestao_texto">
+                    <p>A Política de Gestão Documental (PGDOC), instituída pela <a href="https://legislacao.prefeitura.sp.gov.br/leis/portaria-1-de-24-de-maio-de-2021" target="_blank" rel="noopener noreferrer">Portaria SGM/SEGES/CGDOC Nº 1 de 24 de maio de
                             2021</a>, define diretrizes para a gestão documental no município de São Paulo, alterando a preservação, o
                         acesso, a eliminação adequada de documentos e o fortalecimento da governança e da transparência
                         administrativa.
                     </p>
                 </div>
 
-                <div class="gestao-documental_sub">
+                <div class="politica-gestao_sub">
                     <p>
                         Aqui estão alguns dos principais pontos abordados pela portaria:
                     </p>
                 </div>
 
                 <div>
-                    <img class="img-direita" src="/assets/gestao-documental/img.png" alt="Icone">
+                    <img class="img-direita" src="/assets/gestao-documental/img.png" alt="Ilustração sobre gestão Documental">
                 </div>
             </div>
+
 
             <div class="container-objetivos_principios">
                 <div class="gestao-documental_conteudo">
                     <div class="objetivo-principios">
                         <details>
                             <summary>
-                                <h2> Objetivos e Princípios</h2>
+                                Objetivos e Princípios
                             </summary>
                             <p>
                                 A portaria estabelece a política de gestão documental com base em princípios como a autenticidade,
@@ -59,13 +59,13 @@
                     <div class="objetivo-principios">
                         <details>
                             <summary>
-                                <h2>Responsabilidades</h2>
+                                Responsabilidades
                             </summary>
                             <p>
                                 A portaria define responsabilidades claras para os órgãos e entidades municipais, incluindo a
                                 implementação de programas de gestão de documentos, treinamentos para servidores públicos, e a
                                 designação de profissionais responsáveis pela gestão documental. Isso inclui a criação das Equipes de
-                                Gestão Documentação- Edoc, como parceiras e representantes das Secretarias nas aplicações de normas,
+                                Gestão Documental - Edoc, como parceiras e representantes das Secretarias nas aplicações de normas,
                                 diretrizes e boas práticas em relação a gestão de documentos e arquivos correntes.
                             </p>
                         </details>
@@ -74,7 +74,7 @@
                     <div class="objetivo-principios">
                         <details>
                             <summary>
-                                <h2>Planejamento e Acompanhamento</h2>
+                                Planejamento e Acompanhamento
                             </summary>
                             <p>
                                 A implementação da gestão documental deve ser acompanhada por planos específicos para cada órgão. Isso
@@ -89,7 +89,7 @@
                     <div class="objetivo-principios">
                         <details>
                             <summary>
-                                <h2>Ciclo de Vida dos Documentos</h2>
+                                Ciclo de Vida dos Documentos
                             </summary>
                             <p>
                                 A portaria estabelece um procedimento para a gestão do ciclo de vida dos documentos. Isso implica:
@@ -109,7 +109,7 @@
                     <div class="objetivo-principios">
                         <details>
                             <summary>
-                                <h2>Capacitação</h2>
+                                Capacitação
                             </summary>
                             <p>
                                 A capacitação de servidores e gestores para a gestão documental é fundamental, e a portaria prevê a
@@ -127,14 +127,18 @@
                     <div class="objetivo-principios">
                         <details>
                             <summary>
-                                <h2>Avaliação e Revisão</h2>
+                                Avaliação e Revisão
                             </summary>
+                            <p>
+                                Teste...
+                            </p>
                         </details>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
+    <script src="/js/botao.js"></script>
 </body>
 
 </html>
