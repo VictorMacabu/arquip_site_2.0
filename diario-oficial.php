@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <!--- BANNER --->
     <div class="banner-estrutura">
         <div class="icone-esquerda">
             <img src="/assets/diario-oficial/img-esquerda.png" alt="Imagem do Pessoal conversando no banner do site" class="img-esquerda">
@@ -37,8 +36,6 @@
     <main>
         <section class="diario-oficial">
             <div class="diario_oficial_container">
-
-                <!--- DIARIO-OFICIAL-INICIO--->
 
                 <section class="diario-oficial_inicio">
                     <div class="diario-oficial_img">
@@ -67,8 +64,6 @@
                 </section>
 
 
-                <!--- DETALHE-AZUL --->
-
                 <div class="sobre-diario_detalhe_azul">
                     <div class="conteudo-detalhe_azul">
                         <h2>O Diário Oficial Cidade de São Paulo em números </h2>
@@ -85,8 +80,6 @@
                     </div>
                 </div>
 
-
-                <!--- DENTRO-DO-DIARIO-OFICIAL --->
 
                 <section class="dentro-do-diario_oficial">
                     <div class="dentro-do-diario_titulo">
