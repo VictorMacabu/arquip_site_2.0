@@ -1,23 +1,22 @@
 /* ======  ESTILOS GERAIS ====== */
 
 p {
-    font-family: Nimbus Sans;
     margin-bottom: 1px;
     margin-top: 13px;
     font-size: 1.25rem;
 
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 main {
     max-width: 1310px;
     padding: 0 20px;
-    align-items: center;
+    margin: 0 auto;
 }
 
 
@@ -68,7 +67,6 @@ main {
     max-width: 1342px;
     margin: 0 auto;
     gap: 65px;
-    height: 785px;
 }
 
 .img-titulo {
@@ -78,14 +76,14 @@ main {
     align-items: center;
 }
 
-.quem-somos-textos{
+.quem-somos-textos {
     display: flex;
     flex-direction: column;
 }
 
 /* ====== SERVIÇOS-DEVER-RESPONSABILIDADE  ====== */
 
-.servico-cidadania{
+.servico-cidadania {
     background-color: #00072D;
     position: relative;
     width: 100vw;
@@ -97,10 +95,10 @@ main {
 .dever-responsabilidade {
     gap: 11px;
     max-width: 1310px;
-    margin: 0 auto;     
+    margin: 0 auto;
 }
 
-.imagem-right{
+.imagem-right {
     width: 445px;
     height: 736px;
     margin-right: 1%;
@@ -115,7 +113,7 @@ main {
     color: #fff;
 }
 
-.servicos p{
+.servicos p {
     font-family: Gilroy-Regular;
     font-size: 1.25rem;
 }
@@ -129,7 +127,7 @@ main {
     font-size: 1.25rem;
 }
 
-.servicos ul li{
+.servicos ul li {
     line-height: 1.4;
     margin: 0;
     margin-left: 2%;
@@ -139,7 +137,7 @@ main {
     margin-bottom: 50px;
 }
 
-.servicos-conteudo h2{
+.servicos-conteudo h2 {
     font-family: Gilroy-SemiBold;
     font-size: 1.5rem;
     margin-bottom: 4%;
@@ -160,13 +158,18 @@ main {
 .uma-homenagem {
     margin-bottom: 145px;
     max-width: 1310px;
-    margin: 0 auto;   
+    margin: 0 auto;
+    display: flex;
 }
 
 .uma-homenagem-container {
     display: flex;
-    justify-content: space-between;
     gap: 35px;
+    flex-direction: column;
+}
+
+.uma-homenagem-img {
+    margin-left: 2%;
 }
 
 
@@ -174,47 +177,50 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 65px;
 }
 
-
-.uma-homenagem-titulo h2 {
-    font-family: Gilroy-SemiBold;
-    font-size: 2.5rem;
-}
-
-.paulo-roberto p {
+.txt-homenagem {
     font-family: Gilroy-Regular;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
-.uma-homenagem-titulo p {
+.txt-paulo {
+    font-family: Gilroy-Regular;
+    font-size: 4.75rem;
+}
+
+.txt-servidor {
+    font-family: Gilroy-Medium;
+    font-size: 2rem;
+}
+
+.uma-homenagem-texto {
     display: flex;
-    align-items: center;
-    margin: 0px;
-    max-width: 311px;
-    min-height: 135px;
-    padding: 47px 43px 47px 43px;
-    color: #fff;
-    background-color: #008BD2;
-    border-radius: 20px;
+    flex-direction: row;
 }
 
-.uma-homenagem-img {
-    height: 457px;
-}
-
-.uma-homenagem-conteudo {
-    max-width: 415px;
+.uma-homenagem-paulo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-left: 5%;
+    max-width: 50%;
+    text-align: left;
 }
 
-.uma-homenagem-conteudo p{
+.uma-homenagem-paulo p {
     font-family: Gilroy-Regular;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
+
+.box-azul {
+    color: white;
+    background-color: #018BD2;
+    padding: 29px;
+    margin-top: 3%;
+    border-radius: 8px;
+}
+
+
 
 /* Definição da animação */
 @keyframes fadeInUp {
@@ -222,68 +228,45 @@ main {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.img-titulo, 
+.img-titulo,
 .quem-somos-titulo,
 .dever-responsabilidade-conteudo,
 .dever-responsabilidade-ajuste,
-.uma-homenagem-container, 
-.quem-somos-subtitulo, 
+.uma-homenagem-container,
+.quem-somos-subtitulo,
 .quem-somos-conteudo p,
 .imagem-right,
 .servicos-conteudo h2,
 .servicos-conteudo p,
 .servicos-conteudo ul li {
-    opacity: 0; /* Começam invisíveis */
-    animation: fadeInUp 0.8s ease-out forwards; /* 'forwards' mantém o item visível no final */
+    opacity: 0;
+    /* Começam invisíveis */
+    animation: fadeInUp 0.8s ease-out forwards;
+    /* 'forwards' mantém o item visível no final */
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Tablet */
-@media (max-width: 1025px) {
-    .navegacao{
+@media (max-width: 1300px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .navegacao {
         display: none;
+    }
+
+    .quem-somos-inicio{
+        padding: 93px 5%;
     }
 
     .quem-somos-arquivo-publico {
@@ -291,11 +274,38 @@ main {
         align-items: center;
     }
 
-    .uma-homenagem-conteudo{
+    .img-titulo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .servico-cidadania{
+        padding: 93px 5%;
+    }
+
+    .imagem-right {
+        display: none;
+    }
+
+    .sec-homenagem{
+        padding: 93px 5%;
+    }
+
+    .txt-servidor{
+        font-size: 1.9rem; 
+    }
+
+    .uma-homenagem-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .uma-homenagem-conteudo {
         max-width: 100%;
     }
 
-    .uma-homenagem-container{
+    .uma-homenagem-container {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
@@ -333,21 +343,41 @@ main {
         flex-direction: column;
     }
 
+
+
 }
 
 /* Celular */
 @media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
 
-    main{
+    body {
         margin: 0;
     }
 
-    img{
+    img {
         max-width: 100%;
     }
 
+    .servico-cidadania{
+        padding: 93px 5%;
+    }
+
+    .img-titulo{
+        display: none;
+    }
+
+    .quem-somos {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+
     .quem-somos-inicio {
-        padding: 0;
+        padding: 93px 5%;
     }
 
     .quem-somos-subtitulo h2 {
@@ -358,12 +388,48 @@ main {
         margin: 25px;
     }
 
-    .dever-responsabilidade-conteudo h2{
+    .dever-responsabilidade-conteudo h2 {
         text-align: left;
     }
 
-    .imagem-right{
+    .imagem-right {
         display: none;
     }
 
-}   
+    .txt-homenagem{
+        font-size: 1rem;
+    }
+
+    .uma-homenagem-titulo{
+        text-align: center;
+    }
+
+    .txt-paulo{
+        font-size: 1.5rem;
+    }
+
+    .txt-servidor{
+        font-size: 1.8rem;
+    }
+
+    .sec-homenagem{
+        padding: 93px 5%;
+    }
+
+    .uma-homenagem-texto {
+        flex-direction: column;
+    }
+
+    .uma-homenagem-paulo {
+        max-width: 100%;
+    }
+
+    .uma-homenagem-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-azul{
+    }
+
+}

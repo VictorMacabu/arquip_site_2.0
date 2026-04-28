@@ -179,44 +179,46 @@
                     <div class="uma-homenagem">
                         <div class="uma-homenagem-container">
                             <div class="uma-homenagem-titulo">
-                                <h2>Uma homenagem</h2>
-                                <div class="paulo-roberto">
-                                    <p>
-                                        Paulo Roberto Dutra foi servidor público da Prefeitura de São Paulo durante 40
-                                        anos, sempre na área de gestão de documentos.
-                                    </p>
+                                <p class="txt-homenagem">HOMENAGEM INSTITUCIONAL</p>
+                                <p class="txt-paulo">Paulo Roberto Dutra</p>
+                                <p class="txt-servidor">Servidor público e referência em gestão documental</p>
+                            </div>
+
+                            <div class="uma-homenagem-texto">
+                                <div class="uma-homenagem-img">
+                                    <img src="/assets/quemsomos/paulo-roberto.png" alt="Paulo Roberto Dutra">
                                 </div>
-                            </div>
+                                <div class="uma-homenagem-paulo">
+                                    <p>Iniciou sua carreira profissional em 1980 como estagiário, foi efetivado e
+                                        assumiu
+                                        posições até chegar à Coordenador Geral de Gestão Documental. Jornalista de
+                                        formação, também foi responsável pela edição do Diário Oficial da Cidade de São
+                                        Paulo.
+                                    </p>
 
-                            <div class="uma-homenagem-img">
-                                <img src="/assets/quemsomos/uma-homenagem.png" alt="Paulo Roberto Dutra">
-                            </div>
+                                    <p>Sempre exercendo atividades de liderança, foi corresponsável pela implantação de
+                                        sistemas informatizados de controle de documentos, pela transparência da
+                                        Administração Municipal por meio do pioneiro serviço de informações sobre
+                                        processos
+                                        ao cidadão, além de ter capacitado mais de 80 mil servidores no manuseio e
+                                        controle
+                                        de processos.
+                                    </p>
+                                    <div class="box-azul">
+                                        <img src="/assets/quemsomos/icone-box.png" alt="Icone">
+                                        <p>Paulo Roberto Dutra foi servidor público da Prefeitura de São
+                                            Paulo durante 40 anos, sempre na área de gestão de documentos.
+                                        </p>
+                                    </div>
+                                </div>
 
 
-                            <div class="uma-homenagem-conteudo">
-                                <p>
-                                    Iniciou sua carreira profissional em 1980 como estagiário, foi efetivado e assumiu
-                                    posições até
-                                    chegar à Coordenador Geral de Gestão Documental. Jornalista de formação, também foi
-                                    responsável pela edição
-                                    do Diário Oficial da Cidade de São Paulo.
-                                </p>
-
-                                <p>
-                                    Sempre exercendo atividades de liderança, foi corresponsável pela implantação de
-                                    sistemas
-                                    informatizados de controle de documentos, pela transparência da Administração
-                                    Municipal por meio do pioneiro
-                                    serviço de informações sobre processos ao cidadão, além de ter capacitado mais de 80
-                                    mil servidores no
-                                    manuseio e controle de processos.
-                                </p>
                             </div>
                         </div>
-                    </div>
                 </section>
             </div>
         </section>
     </main>
 </body>
+
 </html>
