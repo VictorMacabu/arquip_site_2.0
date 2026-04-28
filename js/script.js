@@ -1,31 +1,25 @@
-/*
-const menuItems = document.querySelectorAll('.navegacao-item');
 
-menuItems.forEach(item => {
-    const button = item.querySelector('.navegacao-botao');
+// Script dos cards (Estrutura Organizacional)
 
-    button.addEventListener('click', (e) => {
-        e.stopPropagation();
+const cards = document.querySelectorAll('.card-intermediario');
+const principal = document.querySelector('.card-principal');
 
-        // Fecha todos os outros
-        menuItems.forEach(i => {
-            if (i !== item) {
-                i.classList.remove('active');
-            }
-        });
+cards.forEach(card => {
+  card.addEventListener('click', () => {
 
-        // Alterna o atual
-        item.classList.toggle('active');
-    });
+    const tituloPrincipal = principal.querySelector('h2');
+    const textoPrincipal = principal.querySelector('p');
+
+    const tituloClicado = card.querySelector('h3').innerText;
+    const textoClicado = card.querySelector('p').innerText;
+
+    tituloPrincipal.innerText = tituloClicado;
+    textoPrincipal.innerText = textoClicado;
+
+  });
 });
 
-// Fecha ao clicar fora
-document.addEventListener('click', () => {
-    menuItems.forEach(item => {
-        item.classList.remove('active');
-    });
-});
-*/
+// Script do autocomplete da barra de busca (Home)
 
 document.addEventListener('DOMContentLoaded', () => {
 
