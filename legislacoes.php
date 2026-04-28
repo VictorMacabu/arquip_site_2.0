@@ -15,48 +15,53 @@
 </head>
 
 <body>
-    <div class="banner-estrutura">
-        <div class="icone-esquerda">
-            <img class="img-esquerda" src="/assets/banner/legislacoes/img-legislacoes.png" alt="Imagem da legislação">
-        </div>
-        <div class="texto-banner">
-            <h1>LEGISLAÇÕES</h1>
-            <p>
-                As legislações no Arquivo Público Municipal, vinculado à Secretaria Municipal de Gestão, são essenciais
-                para garantir a organização, preservação e acesso aos documentos públicos. Elas asseguram o cumprimento
-                de normas legais, como a Lei de Acesso à Informação, promovendo transparência, controle social e
-                segurança jurídica.
-            </p>
-        </div>
-        <div>
-            <img class="img-direita" src="/assets/banner/legislacoes/icone-legislacoes.png" alt="Icone da legislação">
-        </div>
-    </div>
-
-
     <main>
-        <section class="legislacao">
-            <div class="legislacao-container">
-                <div class="legislacao-text_inicial">
-                    <p>
-                        Uma gestão eficiente de documentos é essencial para preservar a memória institucional do município,
-                        fortalecer a relação entre a administração pública e os cidadãos, garantir direitos e otimização de
-                        recursos. Por meio de instrumentos como tabelas de temporalidade, essa prática organiza e orienta o
-                        tratamento adequado dos documentos públicos ao longo do seu ciclo de vida.
-                    </p>
+        <section class="container-politica_gestao">
+            <div class="politica-gestao_conteudo">
+                <div class="img-legislacao">
+                    <img class="img-esquerda" src="/assets/banner/legislacoes/img-legislacao.png" alt="Imagem da legislação">
                 </div>
+                <div class="legislacao-conteudo">
+                    <div class="legislacao_titulo">
+                        <h1>Política de Gestão Documental</h1>
+                    </div>
+                    <div class="legislacao-texto">
+                        <p>
+                            As legislações no Arquivo Público Municipal, vinculado à Secretaria Municipal de Gestão, são essenciais
+                            para garantir a organização, preservação e acesso aos documentos públicos. Elas asseguram o cumprimento
+                            de normas legais, como a Lei de Acesso à Informação, promovendo transparência, controle social e
+                            segurança jurídica.
+                        </p>
+
+                        <p>
+                            Uma gestão eficiente de documentos é essencial para preservar a memória institucional do município,
+                            fortalecer a relação entre a administração pública e os cidadãos, garantir direitos e otimização de
+                            recursos. Por meio de instrumentos como tabelas de temporalidade, essa prática organiza e orienta o
+                            tratamento adequado dos documentos públicos ao longo do seu ciclo de vida.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="legislacao">
+                <div class="container-botao">
+                    <div class="botao">
+                        <button class="tab active" data-tab="leis">Leis</button>
+                        <button class="tab" data-tab="portarias">Portarias</button>
+                        <button class="tab" data-tab="decreto">Decreto</button>
+                        <button class="tab" data-tab="federais">Leis Federais</button>
+                    </div>
+                </div>
+
                 <div class="legislacao-lista">
-                    <details>
-                        <summary>
-                            LEIS
-                            <img class="seta-leis" src="/assets/legislacao/seta-legislacao.png" alt="Seta para acessar as Leis">
-                        </summary>
+
+                    <div class="content active" id="leis">
                         <ul class="lista-legislacao">
                             <li>
                                 <a href="https://legislacao.prefeitura.sp.gov.br/leis/lei-14141-de-27-de-marco-de-2006" target="_blank">Lei nº 14.141 de 27 de março de 2006 - </a>
                                 Dispõe sobre o processo
                                 administrativo na Administração Pública Municipal.
-                                </a>
                             </li>
 
                             <li>
@@ -70,14 +75,9 @@
                                 providências.
                             </li>
                         </ul>
-                    </details>
+                    </div>
 
-
-                    <details>
-                        <summary>
-                            DECRETO
-                            <img class="seta-leis" src="/assets/legislacao/seta-legislacao.png" alt="Seta para acessar os Decretos">
-                        </summary>
+                    <div class="content" id="decreto">
                         <ul class="lista-legislacao">
                             <li>
                                 <a href="https://legislacao.prefeitura.sp.gov.br/leis/decreto-62208-de-28-de-fevereiro-de-2023/detalhe#:~:text=Detalhes%20da%20Norma%20(DECRETO%20N%C2%BA,28%20de%20Fevereiro%20de%202023)&text=Disp%C3%B5e%20sobre%20a%20reorganiza%C3%A7%C3%A3o%20da,provimento%20em%20comiss%C3%A3o%20que%20especifica.&text=Decreto%20n%C2%BA%2062.224%2F2023%20%2D%20Altera%20o%20artigo%20107."
@@ -219,14 +219,9 @@
                                 Secretaria de Serviços Internos.
                             </li>
                         </ul>
-                    </details>
+                    </div>
 
-                    <details>
-                        <summary>
-                            PORTARIAS
-                            <img class="seta-leis" src="/assets/legislacao/seta-legislacao.png" alt="Seta para acessar as Portarias">
-                        </summary>
-
+                    <div class="content" id="portarias">
                         <ul class="lista-legislacao">
                             <li>
                                 <a href="https://legislacao.prefeitura.sp.gov.br/leis/portaria-secretaria-de-governo-municipal-sgm-seges-23-de-1-de-abril-de-2022"
@@ -288,13 +283,10 @@
                                 de Informações – SEI.
                             </li>
                         </ul>
-                    </details>
+                    </div>
 
-                    <details>
-                        <summary>
-                            LEIS FEDERAIS
-                            <img class="seta-leis" src="/assets/legislacao/seta-legislacao.png" alt="Seta para acessar as Portarias">
-                        </summary>
+
+                    <div class="content" id="federais">
                         <ul class="lista-legislacao">
                             <li>
                                 <a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm"
@@ -308,8 +300,10 @@
                                 nacional de arquivos públicos e privados e dá outras providências.
                             </li>
                         </ul>
-                    </details>
+                    </div>
                 </div>
+            </div>
         </section>
     </main>
+    <script src="/js/botao.js"></script>
 </body>
