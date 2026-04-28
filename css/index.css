@@ -95,8 +95,8 @@ b {
 }
 
 body {
-
   background-color: #f3f6f9;
+  
 }
 
 
@@ -267,6 +267,19 @@ main {
   font-size: 1.3rem;
 }
 
+.portal-cards {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+
+  padding: 80px clamp(40px, 6vw, 120px);
+
+  max-width: 1310px;
+  margin: 0 auto;
+
+  background: transparent;
+}
+
 .cards-container {
   display: flex;
   gap: 32px;
@@ -297,7 +310,7 @@ main {
 
 
 .atendimento-card_titulo {
-  
+
   display: flex;
   justify-content: center;
   gap: 32px;
@@ -717,16 +730,22 @@ main {
 
 .noticia-container {
   display: flex;
-  justify-content: space-between;
-  gap: 35px;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
 }
 
+.noticia-container h3 {
+  font-family: Gilroy-ExtraBold;
+  font-size: 1.4rem;
+  margin-top: 4px;
+  color: #00072D;
+}
 
 .noticias-titulo h4 {
   font-family: Gilroy-Medium;
   width: 100%;
   display: flex;
-  text-align: center;
   justify-content: center;
   font-size: 1.5rem;
   margin-bottom: 30px;
@@ -735,18 +754,94 @@ main {
 .noticia-card {
   display: flex;
   flex-direction: column;
+  gap: 16px;
   width: 100%;
   max-width: 416px;
-  height: 536px;
-  gap: 25px;
+  padding-bottom: 20px;
+
+  background: #fff;
+  border-radius: 12px;
+
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+
+  overflow: hidden;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.noticia-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.noticia-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.noticia-card > *:not(img) {
+  padding: 0 20px;
+}
+
+.noticia-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.noticia-categoria {
+  font-size: 0.7rem;
+  font-family: Gilroy-Bold;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.categoria-cidadao {
+  background: #E0F2FE;
+  color: #0059BB;
+}
+
+.categoria-avisos {
+  background: #FFF4ED;
+  color: #D8885C;
+}
+
+.categoria-servidor {
+  background: #E6F0FF;
+  color: #003366;
+}
+
+.noticia-data {
+  font-size: 0.75rem;
+  color: #737780;
+}
+
+.noticia-card h3 {
+  margin-top: 5px;
+}
+
+.noticia-card p {
+  font-family: Gilroy-Regular;
+  font-size: 1rem;
+  margin-top: 4px;
+  line-height: 1.5;
+  color: #00072D;
 }
 
 .noticia-card_link {
-  color: #0047FF;
+  color: #001E40;
+  font-family: Plus-Jakarta;
   text-decoration: none;
-  display: block;
-  font-size: 1.25rem;
-  padding-top: 4.37rem;
+
+  font-size: 0.75rem; 
+
+  margin-top: auto;
+
 }
 
 .noticia-card img {

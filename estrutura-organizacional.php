@@ -14,112 +14,126 @@
 </head>
 
 <body>
-    <div class="banner-estrutura">
-        <div class="icone-esquerda">
-            <img class="img-esquerda" src="/assets/estrutura-organizacional/pessoas-estrutura.png" alt="Pessoas">
-        </div>
-
-        <div class="texto-banner">
-            <h1>ESTRUTURA ORGANIZACIONAL</h1>
+    <main>
+        <section class="resumo-decreto">
+            <h1><strong>ESTRUTURA ORGANIZACIONAL</strong></h1>
             <p>O Decreto nº 62.208, de 28 de fevereiro de 2023, define as atribuições do Arquivo Público do Município de
                 São Paulo (ARQUIP), reforçando seu papel estratégico na gestão, preservação e acesso aos documentos
                 públicos municipais.
             </p>
+
+            <span>Abaixo está um resumo de suas principais atribuições conforme o decreto:</span>
+        </section>
+
+        <section class="decreto-cards">
+            <div class="cards-pacote">
+
+                <div class="card-decreto card-principal" data-id="1">
+                    <div class="card-topo">
+                        <div class="card-icone"></div>
+                        <h2>Gestão Documental</h2>
+                    </div>
+                    <p>
+                        Implementação de políticas avançadas para o ciclo vital dos documentos.
+                        Nossa metodologia foca na agilidade institucional através da classificação precisa,
+                        avaliação criteriosa e fluxo de trabalho otimizado, transformando o arquivo em um ativo estratégico
+                        para a governança corporativa.
+                    </p>
+                </div>
+
+                <div class="cards-lateral">
+
+                    <div class="card-decreto card-intermediario" data-id="2">
+                        <div class="card-topo">
+                            <div class="card-icone"></div>
+                            <h3>Preservação do Patrimônio Documental</h3>
+                        </div>
+                        <p>
+                            Assegurar a guarda e a preservação de documentos de valor histórico, administrativo e cultural,
+                            promovendo ações para evitar perda e deterioração dos registros que compõem a memória pública municipal.
+                        </p>
+                    </div>
+
+                    <div class="card-decreto card-intermediario" data-id="3">
+                        <div class="card-topo">
+                            <div class="card-icone"></div>
+                            <h3>Digitalização e Acesso à Informação</h3>
+                        </div>
+                        <p>
+                            Coordenar programas de digitalização e gerenciar repositórios digitais para facilitar o acesso a documentos
+                            e informações, ampliando a transparência e o atendimento ao público.
+                        </p>
+                    </div>
+
+                    <div class="card-decreto card-intermediario" data-id="4">
+                        <div class="card-topo">
+                            <div class="card-icone"></div>
+                            <h3>Capacitação e Orientação Técnica</h3>
+                        </div>
+                        <p>
+                            Oferecer suporte técnico e capacitação a órgãos municipais para a implementação de políticas de gestão documental
+                            e boas práticas de arquivamento.
+                        </p>
+                    </div>
+
+                    <div class="card-decreto card-intermediario" data-id="5">
+                        <div class="card-topo">
+                            <div class="card-icone"></div>
+                            <h3>Eliminação de Documentos</h3>
+                        </div>
+                        <p>
+                            Avaliar e autorizar, conforme normas legais, a eliminação de documentos públicos que tenham cumprido seu ciclo de vida,
+                            garantindo que o descarte ocorra de forma segura e transparente.
+                        </p>
+                    </div>
+
+                    <div class="card-decreto card-intermediario" data-id="6">
+                        <div class="card-topo">
+                            <div class="card-icone"></div>
+                            <h3>Atendimento ao Cidadão</h3>
+                        </div>
+                        <p>
+                            Disponibilizar serviços de consulta e acesso aos documentos e informações públicas, incluindo emissão de certidões
+                            e fornecimento de cópias, promovendo o direito à informação.
+                        </p>
+                    </div>
+
+                    <div class="card-decreto card-intermediario" data-id="7">
+                        <div class="card-topo">
+                            <div class="card-icone"></div>
+                            <h3>Pesquisa e Memória Local</h3>
+                        </div>
+                        <p>
+                            Promover a pesquisa e a valorização da história local por meio de ações culturais e projetos de memória
+                            que envolvem o acervo documental municipal.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="resumo-decreto-atribuicoes">
+            <p>
+                Essas atribuições confirmam o compromisso do ARQUIP em atuar como órgão central do sistema de arquivos
+                do município, consolidando-se como referência na preservação da memória e na promoção de uma gestão
+                documental responsável e acessível.
+            </p>
+
+            <p>
+                Nossa estrutura organização segue com o propósito de garantir que nossas atribuições prossigam com
+                assertividade e comprometimento.
+            </p>
         </div>
-
-        <div>
-            <img class="img-direita" src="/assets/estrutura-organizacional/icone-estrutura.png" alt="Icone">
-        </div>
-    </div>
-
-    <!-- Estrutura Organizacional -->
-    <main>
-        <section class="resumo-decreto">
-            <div class="resumo-decreto_apresentaçõs">
-                <p>
-                    Abaixo está um resumo de suas principais atribuições conforme o decreto:
-                </p>
-            </div>
-
-            <div class="resumo-decreto_lista">
-                <ol>
-                    <li><b>Gestão Documental:</b> Desenvolver e implementar políticas, diretrizes e normas para a gestão de
-                        documentos e informações, garantindo sua preservação e organização ao longo de todo o ciclo de vida
-                        dos documentos.</li>
-                    <li><b>Preservação do Patrimônio</b> Documental: Assegurar a guarda e a preservação de documentos de
-                        valor histórico, administrativo e cultural, promovendo ações para evitar perda e deterioração dos
-                        registros que compõem a memória pública municipal.</li>
-                    <li><b>Digitalização e Acesso à Informação:</b> Coordenar programas de digitalização e gerenciar
-                        repositórios digitais para facilitar o acesso a documentos e informações, ampliando a transparência
-                        e o atendimento ao público.</li>
-                    <li><b>Capacitação e Orientação Técnica:</b> Oferecer suporte técnico e capacitação a órgãos municipais
-                        para a implementação de políticas de gestão documental e boas práticas de arquivamento.</li>
-                    <li><b>Eliminação de Documentos:</b> Avaliar e autorizar, conforme normas legais, a eliminação de
-                        documentos públicos que tenham cumprido seu ciclo de vida, garantindo que o descarte ocorra de forma
-                        segura e transparente.</li>
-                    <li><b>Atendimento ao Cidadão:</b> Disponibilizar serviços de consulta e acesso aos documentos e
-                        informações públicas, incluindo emissão de certidões e fornecimento de cópias, promovendo o direito
-                        à informação.</li>
-                    <li><b>Pesquisa e Memória Local:</b> Promover a pesquisa e a valorização da história local por meio de
-                        ações culturais e projetos de memória que envolvem o acervo documental municipal.</li>
-                </ol>
-            </div>
-
-            <div class="resumo-decreto_atribuicoes">
-                <p>
-                    Essas atribuições confirmam o compromisso do ARQUIP em atuar como órgão central do sistema de arquivos
-                    do município, consolidando-se como referência na preservação da memória e na promoção de uma gestão
-                    documental responsável e acessível.
-                </p>
-
-                <p>
-                    Nossa estrutura organização segue com o propósito de garantir que nossas atribuições prossigam com
-                    assertividade e comprometimento.
-                </p>
-            </div>
         </section>
 
-        <section class="estrutura-organizacional_img">
-            <img src="/assets/estrutura-organizacional/estrutura.png" alt="Mapa Mental">
+        <section class="acordeao-fluxo">
+
+
         </section>
 
-        <section class="estrutura-organizacional_cargos">
-            <p><b>Coordenador:</b> Dárcio Gomes</p>
-
-            <p><b>Coordenação de Projetos (PROJ):</b> Fernanda Sanches Martins</p>
-
-            <h4>DIVISÃO DE GESTÃO DO SISTEMA DE ARQUIVOS DO MUNICÍPIO (DISAMSP)</h4>
-            <p><b>Diretoria:</b> Marcos Antonio Alves Ferreira</p>
-
-            <h4>NÚCLEO DE GESTÃO DE PROCESSOS ENCERRADOS (NUPEN)</h4>
-            <p><b>Chefes do núcleo:</b> Vinícius do Espírito Santos Soares</p>
-
-            <h4>NÚCLEO DE ATENDIMENTO E DIFUSÃO (NUADI)</h4>
-            <p><b>Chefe do núcleo:</b> Glauco Justino da Silva</p>
-
-            <h4>NÚCLEO DE PRESERVAÇÃO DIGITAL (NUPRES)</h4>
-            <p><b>Chefe do núcleo:</b> Claudete dos Santos</p>
-
-            <h4>NÚCLEO DE AVALIAÇÃO DOCUMENTAL (NUAVA)</h4>
-            <p><b>Chefe do núcleo:</b> Walter Biondi</p>
-
-            <h4>DIVISÃO DE GESTÃO DOCUMENTAL (DIDOC)</h4>
-            <p><b>Diretoria:</b> Karina Cristiane Albuquerque</p>
-
-            <h4>NÚCLEO DE NORMAS TÉCNICAS (NUNORM)</h4>
-            <p><b>Chefe do núcleo:</b> Danilo Alves Garcia</p>
-
-            <h4>NÚCLEO DE GESTÃO DOS SISTEMAS DE DOCUMENTOS (NUSIST)</h4>
-            <p><b>Chefe do núcleo:</b> Robson Celio Dantas dos Santos</p>
-
-            <h4>NÚCLEO DE ORIENTAÇÃO (NUORI) ÀS EQUIPES DE GESTÃO DOCUMENTAL</h4>
-            <p><b>Chefe do núcleo:</b> Genival Alves Machado</p>
-
-            <h4>NÚCLEO DE PUBLICAÇÃO OFICIAL E COMUNICAÇÃO (NUPUBLI)</h4>
-            <p><b>Chefe do núcleo:</b> Lucas André Carvalho</p>
-        </section>
     </main>
-    
+
     <script src="js/script.js"></script>
 </body>
 

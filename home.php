@@ -36,10 +36,6 @@
                                     placeholder="Pesquisar no portal..."
                                     required>
 
-                                <button type="submit" class="btn-lupa">
-                                    <img src="/assets/header/lupa.png" alt="Pesquisar">
-                                </button>
-
                                 <button type="submit" class="btn-buscar">Buscar</button>
 
                                 <div id="sugestoes" class="sugestoes-box"></div>
@@ -236,20 +232,20 @@
         </section>
 
         <div class="faixa-azul">
-                    <div class="conteudo-faixa-azul">
-                        <h2>O Diário Oficial Cidade de São Paulo em números </h2>
-                    </div>
-                    <div class="acesso-detalhe-azul">
-                        <div class="acesso-ajuste">
-                            <span>200 +</span>
-                            <p>ACESSOS</p>
-                        </div>
-                        <div class="acesso-ajuste">
-                            <span>200 +</span>
-                            <p>ECONOMIA GERADA</p>
-                        </div>
-                    </div>
+            <div class="conteudo-faixa-azul">
+                <h2>O Diário Oficial Cidade de São Paulo em números </h2>
+            </div>
+            <div class="acesso-detalhe-azul">
+                <div class="acesso-ajuste">
+                    <span>200 +</span>
+                    <p>ACESSOS</p>
                 </div>
+                <div class="acesso-ajuste">
+                    <span>200 +</span>
+                    <p>ECONOMIA GERADA</p>
+                </div>
+            </div>
+        </div>
 
 
         <section class="sistemas sistemas_pc">
@@ -308,33 +304,45 @@
             <div class="noticia-container">
                 <div class="noticia-card">
                     <img src="/assets/home/curiosidade.png" alt="Imagem das Curiosidades">
-                    <h3>Curiosidades Históricas</h3>
+                    <div class="noticia-meta">
+                        <span class="noticia-categoria categoria-cidadao">Cidadão</span>
+                        <span class="noticia-data"><?= date('d/m/Y') ?></span>
+                    </div>
+                    <h3>Capacitação AGORASEI</h3>
                     <p>
                         Para aprimorar publicações do Diário Oficial, visando eficiência e qualidade.
                         Profissionais serão treinados nas melhores práticas e ferramentas.
                     </p>
-                    <a class="noticia-card_link" href="<?= url('home') ?>">Saiba mais →</a>
+                    <a class="noticia-card_link" href="<?= url('home') ?>"><strong>CONTINUAR LENDO ></strong></a>
                 </div>
 
                 <div class="noticia-card">
                     <img src="/assets/home/curiosidade.png" alt="Imagem das Curiosidades">
-                    <h3>Capacitação AGORASEI</h3>
+                    <div class="noticia-meta">
+                        <span class="noticia-categoria categoria-avisos">Avisos</span>
+                        <span class="noticia-data"><?= date('d/m/Y') ?></span>
+                    </div>
+                    <h3>Curiosidades Históricas</h3>
                     <p>
                         Descubra as principais curiosidades deste mês: de eventos inusitados a fatos surpreendentes
                         que marcaram as últimas semanas.
 
                     </p>
-                    <a class="noticia-card_link" href="<?= url('home') ?>">Saiba mais →</a>
+                    <a class="noticia-card_link" href="<?= url('home') ?>"><strong>CONTINUAR LENDO ></strong></a>
                 </div>
 
                 <div class="noticia-card">
                     <img src="/assets/home/indicadores.png" alt="Imagem dos indicadores 2023">
+                    <div class="noticia-meta">
+                        <span class="noticia-categoria categoria-servidor">Servidor</span>
+                        <span class="noticia-data"><?= date('d/m/Y') ?></span>
+                    </div>
                     <h3>Indicadores 2023</h3>
                     <p>
                         Servidor, confira os principais dados dos núcleos do ARQUIP em 2023.
                         A sua visualização é importante para atingir as metas desse ano.
                     </p>
-                    <a class="noticia-card_link" href="<?= url('home') ?>">Saiba mais →</a>
+                    <a class="noticia-card_link" href="<?= url('home') ?>"><strong>CONTINUAR LENDO ></strong></a>
                 </div>
             </div>
         </section>
