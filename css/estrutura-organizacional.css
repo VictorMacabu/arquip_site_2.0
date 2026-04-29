@@ -54,6 +54,7 @@
     color: #00072D;
 
     margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 /* ====== Cards do Decreto ======*/
@@ -71,38 +72,47 @@
   
   .cards-lateral {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    width: 55%;
+    width: 60%;
   }
   
   .card-decreto {
     background: #020c2c;
-    color: #ffffff;
+    color: #fff;
     border-radius: 20px;
     padding: 20px;
     cursor: pointer;
   
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
   
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
+    position: relative;
   }
   
   .card-decreto:hover {
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.01);
     background: #04113a;
+  }
+  
+  .card-decreto:active {
+    transform: scale(0.98);
+  }
+  
+  .card-decreto.ativo {
+    outline: 2px solid #008BD2;
+    box-shadow: 0 0 0 4px rgba(0, 139, 210, 0.15);
   }
   
   .card-topo {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
   
-  .card-decreto-icone {
+  .card-icone {
     width: 40px;
     height: 40px;
     background: rgba(255,255,255,0.08);
@@ -111,10 +121,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  
+    transition: all 0.25s ease;
+  }
+  
+  .card-decreto:hover .card-icone {
+    background: rgba(255,255,255,0.15);
   }
   
   .card-principal {
-    width: 38%;
+    width: 20%;
     max-width: 420px;
     padding: 28px;
     border-radius: 24px;
@@ -122,50 +138,400 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+  }
+
+  .card-decreto {
+    transition: transform 0.35s ease, box-shadow 0.25s ease;
   }
   
-  .card-principal h2 {
+  .card-principal {
+    animation: crescer 0.3s ease;
+  }
+  
+  @keyframes crescer {
+    from {
+      transform: scale(0.95);
+      opacity: 0.7;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .card-principal h2,
+  .card-principal h3 {
     font-family: Gilroy-Bold;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 16px;
   }
   
   .card-principal p {
     font-family: Gilroy-Regular;
     font-size: 0.95rem;
+    line-height: 2;
     color: #cbd5e1;
-    line-height: 1.7;
-    margin-top: 0;
-    max-width: 320px;
+  
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.3s ease;
   }
   
+  .card-principal.trocando p {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
   .card-intermediario {
+    aspect-ratio: 1 / 1;
     justify-content: center;
-    min-height: 120px;
   }
   
   .card-intermediario p {
     display: none;
   }
   
+  .card-intermediario h2,
   .card-intermediario h3 {
     font-family: Gilroy-Bold;
-    font-size: 0.95rem;
-    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 1.3;
+    max-width: 120px;
+  }
+
+/* ====== Organograma/Mapa mental - Arquip ======*/
+
+.organograma-arquip {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    gap: 70px;
+  
+    margin-bottom: 180px;
+    padding-bottom: 140px;
   }
   
+  .org-linhas {
+    position: absolute;
+    inset: 0;
+  
+    width: 100%;
+    height: 100%;
+  
+    pointer-events: none;
+    overflow: visible;
+  
+    z-index: 0;
+  }
+  
+  .linha {
+    fill: none;
+  
+    stroke: #94a3b8;
+    stroke-width: 2;
+    stroke-linecap: round;
+  
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+  
+    transition: stroke-dashoffset 0.9s ease;
+  }
+  
+  .linha.ativa {
+    stroke-dashoffset: 0;
+  }
+  
+  .nivel {
+    position: relative;
+    z-index: 2;
+  
+    display: flex;
+    justify-content: center;
+  
+    width: 100%;
+  }
+  
+  .nivel-duplo {
+    position: relative;
+    z-index: 2;
+  
+    display: flex;
+    justify-content: space-between;
+  
+    width: 75%;
+    gap: 80px;
+  }
+  
+  .coluna {
+    position: relative;
+    z-index: 2;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    gap: 35px;
+  }
+  
+  .org-card {
+    position: relative;
+    z-index: 2;
+  
+    width: 300px;
+    min-height: 80px;
+  
+    background: #fff;
+  
+    padding: 22px 26px;
+    border-radius: 14px;
+  
+    box-shadow: 0 0 0 1px #e5e7eb;
+  
+    cursor: pointer;
+  
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+  }
+  
+  .org-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  }
+  
+  .org-card::before {
+    content: "";
+    position: absolute;
+  
+    left: 0;
+    top: 15%;
+  
+    width: 4px;
+    height: 70%;
+  
+    border-radius: 4px;
+    background: transparent;
+  }
+  
+  .org-card.azul::before {
+    background: #1d4ed8;
+  }
+  
+  .org-card.laranja::before {
+    background: #ea580c;
+  }
+  
+  .org-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .org-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .org-icone {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  
+    border-radius: 12px;
+    background: #e2e8f0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .org-icone img {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
+  }
+  
+  .organograma-arquip h2 {
+    font-family: Gilroy-Semibold;
+    font-size: 2rem;
+    line-height: 1;
+  
+    color: #00288E;
+  }
+  
+  .organograma-arquip h3 {
+    font-family: Gilroy-Bold;
+    font-size: 1.35rem;
+    line-height: 1.15;
+  
+    color: #00072D;
+  }
+  
+  .organograma-arquip span {
+    font-family: Nimbus Sans;
+    font-size: 0.85rem;
+    line-height: 1.2;
+  
+    color: #6b7280;
+  }
+  
+  .nivel-topo span {
+    font-family: Gilroy-Semibold;
+    font-size: 0.875rem;
+  
+    color: #444653;
+  }
+  
+  .org-conteudo {
+    max-height: 0;
+    opacity: 0;
+  
+    overflow: hidden;
+  
+    transition:
+      max-height 0.45s ease,
+      opacity 0.25s ease,
+      margin-top 0.3s ease;
+  }
+  
+  .org-card.ativo .org-conteudo {
+    max-height: 280px;
+    opacity: 1;
+  
+    margin-top: 16px;
+  }
+  
+  .org-conteudo img {
+    width: 100%;
+    max-height: 120px;
+  
+    object-fit: cover;
+  
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .org-conteudo p {
+    font-family: Gilroy-Regular;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  
+    color: #475569;
+  }
+  
+  .nivel-sub {
+    position: relative;
+    z-index: 2;
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+    gap: 14px;
+  }
+  
+  .org-minicard {
+    position: relative;
+    z-index: 2;
+  
+    min-width: 110px;
+  
+    background: #fff;
+  
+    padding: 14px;
+    border-radius: 10px;
+  
+    text-align: center;
+  
+    font-family: Gilroy-Bold;
+    font-size: 0.85rem;
+  
+    box-shadow: 0 0 0 1px #e5e7eb;
+  
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+  
+  .org-minicard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  }
+  
+  
+  .coluna:first-child .org-minicard,
+  .coluna-azul .org-minicard {
+    color: #1d4ed8;
+  }
+  
+  .coluna:last-child .org-minicard,
+  .coluna-laranja .org-minicard {
+    color: #ea580c;
+  }
+  
+  .org-card,
+  .org-minicard {
+    opacity: 0;
+    transform: translateY(12px);
+  
+    animation: aparecerNoFluxo 0.5s ease forwards;
+  }
+  
+  .nivel-topo .org-card {
+    animation-delay: 0.15s;
+  }
+  
+  .nivel:nth-of-type(2) .org-card {
+    animation-delay: 0.3s;
+  }
+  
+  .nivel-duplo .coluna:nth-child(1) .org-card:nth-child(1),
+  .nivel-duplo .coluna:nth-child(2) .org-card:nth-child(1) {
+    animation-delay: 0.45s;
+  }
+  
+  .nivel-duplo .coluna:nth-child(1) .org-card:nth-child(2),
+  .nivel-duplo .coluna:nth-child(2) .org-card:nth-child(2) {
+    animation-delay: 0.6s;
+  }
+  
+  .org-minicard {
+    animation-delay: 0.75s;
+  }
+  
+  @keyframes aparecerNoFluxo {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ====== Responsividade - Cards do Decreto ======*/
+
   @media (max-width: 1024px) {
     .cards-pacote {
       flex-direction: column;
     }
   
     .cards-lateral {
-      width: 100%;
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
   
     .card-principal {
       width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .cards-lateral {
+      grid-template-columns: 1fr;
     }
   }
