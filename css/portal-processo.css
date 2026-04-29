@@ -5,60 +5,37 @@
   src: url(/assets/font-site/Gilroy-Black/Gilroy-ExtraBold.otf)
 }
 
+/* ==== INTRODUÇÃO === */
 
-
-/* ====== BANNER ====== */
-
-.banner-estrutura {
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.img-esquerda {
-    width: 345px;
-    height: 386px;
-    margin-bottom: -4px;
-}
-
-.img-direita {
-    width: 345px;
-    height: 331px;
-    margin-bottom: -4px;
-}
-
-.texto-banner {
-    height: 100%;
+.intro-portal{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 15px;
-    padding: 15px;
-    color: #fff;
-    text-align: center;
+    margin-bottom: 90px;
+    margin-top: 130px;
+    flex-direction: row;
+    align-items: center;
+    gap: 11%;
 }
 
-.texto-banner h1 {
-    color: #fff;
-    margin-top: 15px;
-    padding: 15px;
-    font-size: clamp(16px, 4vw, 47px);
+
+.intro-portal p{
+    font-family: Gilroy-Regular;
+    font-size: 1.5rem;
+    text-align: end;
+    max-width: 100%;
 }
 
-.texto-banner p {
-    color: #fff;
-    font-size: clamp(12px, 2vw, 26px);
-}
+
 
 /* ====== PORTAL / IMAGEM ====== */
 
-.portal-processos_img {
+.portal-processos-img {
     width: 100%;
     margin-bottom: 13%;
 }
 
 /* ====== CARDS ====== */
 
-.portal-processos_cards {
+.portal-processos-cards {
     display: flex;
     gap: 70px;
     margin-bottom: 200px;
@@ -66,16 +43,18 @@
     & h4{
         margin-top: 3%;
         font-size: 20px;
+        font-family: Gilroy-Bold;
     }
 }
 
-.container-pagina .portal-processos_cards p{
+.container-pagina .portal-processos-cards p{
     text-align: center;
     font-size: 16px;
 }
 
 .card-secao p.text-card {
   margin-top: 6%;
+  font-family: Gilroy-Regular;
 }
 
 .card,
@@ -83,18 +62,13 @@
     text-align: center;
 }
 
-.altura1 {
-    position: relative;
-    bottom: 69px;
-}
-
-.portal-processos_conteudo h2 {
+.portal-processos-conteudo h2 {
     font-family: Gilroy-ExtraBold;
     font-size: 2rem;
     margin-bottom: 2%;
 }
 
-.portal-processos_conteudo ul {
+.portal-processos-conteudo ul {
     padding: 20px;
     padding-left: 3%;
     margin-bottom: 2%;
@@ -102,11 +76,15 @@
     font-size: 20px;
 }
 
-.portal-processos_conteudo li {
+.portal-processos-conteudo p{
+    font-family: Gilroy-Regular;
+}
+
+.portal-processos-conteudo li {
     margin-bottom: 12px;
 }
 
-.portal-processos_conteudo a {
+.portal-processos-conteudo a {
     color: blue;
 }
 
@@ -122,4 +100,133 @@
 .subtitulo-final h4 {
     margin-bottom: 3%;
     font-size: 20px;
+}
+
+
+/* ====== CARDS ====== */
+
+.cards-plataforma{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5%;
+}
+
+.card-plataforma{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1
+}
+
+.card-plataforma:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 100%;
+    width: 1px;
+    background-color: #00072D;
+    opacity: 50%;
+}
+
+.conteudo-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-pagina .conteudo-card h4{
+    font-family: Gilroy-Black;
+    font-size: 1.3rem;
+    color: #0056B3;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.container-pagina .conteudo-card p{
+    max-width: 78%;
+    text-align: center;
+    font-family: Gilroy-SemiBold;
+    color: #475569;
+    font-size: 1.06rem;
+}
+
+.final-txt{
+    margin-bottom: 130px;
+}
+
+.subtitulo-final h4{
+    font-family: Gilroy-SemiBold;
+    font-size: 1.75rem;
+}
+
+.subtitulo-final p{
+    font-family: Gilroy-Regular;
+    font-size: 1.25rem;
+}
+
+/* Tablet */
+@media (max-width: 1300px) {
+
+    .intro-portal img{
+    max-width: 50%;
+    }
+
+    .img-portal img{
+        max-width: 100%;
+    }
+
+    .portal-processos-cards {
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    .card-secao p.text-card {
+        margin-top: 2%;
+        max-width: 33%;
+    }
+}
+
+/* Celular */
+@media (max-width: 768px) {
+    .intro-portal{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro-portal p{
+        text-align: center;
+    }
+
+    .img-portal{
+        display: none;
+    }
+
+    .card-secao p.text-card{
+        max-width: 66%;
+    }
+
+    .cards-plataforma{
+        margin-top: 5%;
+        flex-direction: column;
+    }
+
+    .card-plataforma:not(:last-child)::after{
+        display: none;
+    }
+
+    .final-txt{
+        flex-direction: column;
+    }
+
+    .subtitulo-final {
+        width: 100%;
+    }
+
 }
