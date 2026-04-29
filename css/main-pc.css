@@ -132,7 +132,7 @@ main {
 }
 
 /* ======= Mobile ======= */
-@media (max-width: 699px) {
+@media (max-width: 949px) {
 
     .btn-hamburguer {
         display: block;
@@ -155,7 +155,26 @@ main {
     }
 
     footer {
-        height: 490px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+       .prefeitura{
+            display: none;
+       }
+
+       .arquip{
+            display: none;
+       }
+    }
+
+    footer p{
+        text-align: center;
+    }
+
+    .footer-direita p{
+        text-align: center;
     }
 
     main {
