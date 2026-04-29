@@ -1,5 +1,4 @@
-
-/* ====== Estilos Gerais ====== */
+/* ====== Estilo / Geral ====== */
 
 @font-face {
     font-family: Gilroy-Bold;
@@ -7,163 +6,450 @@
 }
 
 @font-face {
-    font-family: Gilroy-ExtraBold;
-    src: url(/assets/font-site/Gilroy-Black/Gilroy-ExtraBold.otf)
+    font-family: Nimbus Sans;
+    src: url(/assets/font-site/Gilroy-Black/NimbusSanL-Reg.otf);
 }
 
 @font-face {
-    font-family: Gilroy-Medium;
-    src: url(/assets/font-site/Gilroy-Black/Gilroy-Medium.ttf);
+    font-family: Gilroy-Semibold;
+    src: url(/assets/font-site/Gilroy-Black/gilroy-semibold.ttf);
 }
 
-h1 {
-    font-family: Gilroy-Bold;
-    font-size: clamp(16px, 4vw, 47px);
-    color: #fff;
-}
-
-.texto-banner p {
-    font-size: clamp(12px, 2vw, 24px);
-    color: #fff;
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url(/assets/font-site/Gilroy-Black/Gilroy-Regular.ttf);
 }
 
 
-p {
-    font-family: Gilroy-Medium;
-    font-size: 1.25rem;
-    color: #00072D;
+main {
+    max-width: 1340px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 85px 20px;
 }
 
+/* ====== Consulta Processo ====== */
 
-/* ====== Banner ====== */
-
-
-.banner-estrutura {
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.img-esquerda,
-.img-direita {
-    display: block;
-}
-
-.img-esquerda {
-    width: 346px;
-}
-
-.img-direita {
-    width: 346px;
-}
-
-.icone-esquerda {
-    width: 346px;
-}
-
-
-.texto-banner {
-    height: 90%;
+.container-consulta_processos {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 43px;
-}
-
-.texto-banner h1 {
-    font-family: Gilroy-Bold;
-    color: #fff;
-    margin-top: 35px;
-    padding: 30px;
-    font-size: clamp(16px, 4vw, 36px);
-}
-
-.texto-banner p {
-    color: #fff;
-    max-width: 963px;
-    font-size: clamp(12px, 2vw, 24px);
-}
-
-
-/* ====== Processos Administrativos ====== */
-
-.card-portal {
-    background-image: url(/assets/consulta-processos/processos-administrativos.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 1305px;
-    height: 455px;
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
-    margin-bottom: 88px;
 }
 
-.card-portal_conteudo {
+.consulta-processo {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    width: 50%;
-    gap: 15px;
-    height: 455px;
-}
-.card-portal_conteudo p {
-    line-height: 1.6;
-}
-
-.card-portal_conteudo h1 {
-    font-size: 2rem;
-    color: #00072D;
-}
-
-.consulta-processos {
-    display: flex;
-    justify-content: flex-start;
-    height: 447px;
     gap: 40px;
+    margin-bottom: 100px;
 }
 
-.consulta-processos_conteudo {
+.consulta-processo_conteudo {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    width: 854px;
+    gap: 30px;
 }
 
-.consulta-processos_conteudo h2 {
-    color: #00072D;
-    font-size: 2rem;
+.consulta-processo_titulo h1 {
+    font-family: Gilroy-Bold;
+    font-size: 3.25rem;
+}
+
+.consulta-processo_texto p {
+    font-family: Nimbus Sans;
+    font-size: 1.5rem;
+}
+
+.consulta-processo_botao {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    max-width: 535px;
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    font-family: Gilroy-Bold;
+    font-size: 1rem;
+    padding: 17px 32px;
+    border-radius: 12px;
+    border: 2px solid #00346F;
+    background-color: transparent;
+    color: #00346F;
+    cursor: pointer;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #00346F;
+    transition: width 0.5s ease;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.selecao-metodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 150px;
+}
+
+.selecao-metodo_titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selecao-metodo h2 {
+    font-size: 2.25rem;
+    font-family: Gilroy-Semibold;
+    margin-bottom: 15px;
+}
+
+.selecao-metodo_cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 24px;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    gap: 27px;
+    border-radius: 8px;
+}
+
+.card img {
+    background-color: #84d6ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.125rem;
     font-family: Gilroy-Bold;
 }
 
-.consulta-processos_titulosub {
+.btn-card {
+    cursor: pointer;
+    max-width: 400px;
+    padding: 12px 0px;
+    border-radius: 8px;
+    border: none;
+    background-color: #018BD2;
+    font-family: Nimbus Sans;
+    font-size: 1rem;
+}
+
+.btn-card {
+    width: 100%;
+}
+
+.btn-card a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.portal-processo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 150px;
+}
+
+.portal-processo_conteudo {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    max-width: 555px;
+    text-align: justify;
 }
 
-.consulta-processos_link {
+.portal-processo_titulo h2 {
+    font-size: 2rem;
+    font-family: Gilroy-Semibold;
+}
+
+.portal-processo_texto p {
+    font-size: 1.25rem;
+}
+
+
+.tutoriais {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.tutoriais-header {
+    max-width: 1190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;
+}
+
+.consulta-processo_titulo_sub h2 {
+    font-family: Gilroy-Semibold;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.tutoriais-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 150px;
+}
+
+.busca-numero,
+.busca-cpf-cnpj {
+    max-width: 556px;
+    flex: 1;
+}
+
+.tutoriais-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 59px;
+}
+
+.tutoriais-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: #000b33;
+    transition: width 0.7s ease;
+}
+
+.tutoriais-link:hover::after {
+    width: 100%;
+}
+
+.tutoriais-link a {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 508px;
-    gap: 21px;
-    height: 44px;
-    border: 3px solid #00072D;
-    border-radius: 20px;
-}
-
-.consulta-processos_link a {
+    font-family: Gilroy-Semibold;
+    font-size: 1rem;
     color: #00072D;
     text-decoration: none;
-    font-size: 1.3rem;
-    font-family: Gilroy-Medium;
 }
 
-.consulta-processos_conteudo h3 {
-    font-family: Gilroy-ExtraBold;
-    font-size: 1.5rem;
-    color: #00072D;
+.tutoriais-link:hover .seta {
+    transform: rotate(45deg) scale(1.1);
+}
+
+.seta {
+    display: inline-block;
+    margin-left: 10px;
+    width: 6px;
+    height: 6px;
+    border-top: 3px solid #000b33;
+    border-right: 3px solid #000b33;
+    transform: rotate(45deg);
+    border-radius: 1px;
+}
+
+.busca-numero h3,
+.busca-cpf-cnpj h3 {
+    font-family: Gilroy-Semibold;
+    padding: 24px 0px;
+}
+
+.banner-portal {
+    position: relative;
+    width: 100%;
+    max-width: 1008px;
+    background-color: #0056B3;
+    border-radius: 17px;
+    padding: 63px 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner-portal_conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    gap: 60px;
+}
+
+.banner-portal_titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-portal_titulo h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-family: Gilroy-Bold;
+}
+
+.banner-portal_texto {
+    max-width: 672px;
+}
+
+.banner-portal_texto p {
+    font-family: Gilroy-Regular;
+    font-size: 1.4rem;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.banner-portal_botao {
+    background-color: #00072D;
+    padding: 20px 40px;
+    border-radius: 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.banner-portal_botao:hover {
+    transform: translateY(-2px);
+}
+
+.banner-portal_botao a {
+    color: #fff;
+    font-family: Gilroy-Bold;
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+.shape {
+    position: absolute;
+    background-color: #0095da;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.shape-top {
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    right: -80px;
+}
+
+.shape-bottom {
+    width: 180px;
+    height: 180px;
+    bottom: -90px;
+    left: -70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container-consulta_processos {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.card {
+    transition: transform 0.6s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
 }
