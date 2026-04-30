@@ -1,270 +1,261 @@
-/* ====== Estilos Gerais ====== */
-main {
-    margin: 115px auto;
-    max-width: 1552px;
-    padding: 0 20px;
+/* ==== INTRODUÇÃO === */
+header{
+    margin-bottom: 130px;
+}
+
+.intro-acesso{
+    display: flex;
+    margin-bottom: 110px;
     align-items: center;
 }
 
-p {
-    line-height: 1.5;
-}
-
-
-
-/* ====== Fontes ====== */
-@font-face {
+.intro-acesso h1{
     font-family: Gilroy-Bold;
-    src: url(/assets/font-site/Gilroy-Black/gilroy-bold.ttf);
+    font-size: 3.63rem;
+    width: 62%;
 }
 
-
-@font-face {
-    font-family: Gilroy-Black;
-    src: url(/assets/font-site/Gilroy-Black/gilroy-black.ttf);
-}
-
-
-@font-face {
+.intro-acesso p{
     font-family: Gilroy-Medium;
-    src: url(/assets/font-site/Gilroy-Black/Gilroy-Medium.ttf);
-}
-
-
-
-/* ====== Banner ====== */
-
-/* === Banner === */
-.banner-estrutura {
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.img-esquerda,
-.img-direita {
-    display: block;
-}
-
-.img-direita {
-    width: 342px;
-}
-
-.img-esquerda {
-    width: 315px;
-}
-
-.icone-esquerda {
-    width: 342px;
-}
-
-.texto-banner {
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 43px;
-}
-
-.texto-banner h1 {
-    color: #fff;
-    margin-top: 35px;
-    padding: 30px;
-    font-size: clamp(16px, 4vw, 36px);
-}
-
-.texto-banner p {
-    color: #fff;
-    max-width: 927px;
-    font-size: clamp(12px, 2vw, 24px);
+    font-size: 1.5rem;
+    width: 37%;
+    text-align: justify;
 }
 
 /* ====== Acesso ao Acervo ====== */
-.acesso-acervo-arquip {
+.acesso-acervo-conteudo-principal{
     display: flex;
-    gap: 72px;
-    margin-bottom: 100px;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 5%;
 }
 
-.acesso-acervo_conteudo_principal h2 {
+.txt-acervo{
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-acervo h2{
+    margin-bottom: 3%;
     font-family: Gilroy-Bold;
-    font-size: 2.02rem;
-    margin-bottom: 20px;
+    font-size: 2.25rem;
+    text-align: left;
 }
 
-.conteudo-acervo_arquip {
-    margin-bottom: 56px;
-}
-
-.acesso-acervo-arquip p {
+.txt-acervo p{
+    font-family: Gilroy-Regular;
+    font-size: 1.25rem;
     text-align: justify;
 }
 
-.texto-acervo_conta {
-    font-family: Gilroy-Bold;
-    margin-bottom: 1%;
+.conteudo-acervo{
+    margin-bottom: 6%;
 }
 
-.lista-acervo_conta {
+.conteudo-voce-sabia p{
+    margin-bottom: 2%;
+}
+
+.conteudo-voce-sabia li{
+    font-family: Gilroy-Regular;
+    font-size: 1.25rem;
+}
+
+.conteudo-voce-sabia ul{
     list-style: none;
+    padding-left: 0;
 }
 
-.lista-acervo_conta li::before {
-    content: "-";
-    margin-right: 10px;
+.conteudo-voce-sabia ul li::before{
+    content: "- ";
+    margin-right: 5px;
 }
-
-.lista-acervo_conta li {
-    margin-bottom: 12px;
-
-}
-
 
 /* ====== Banner Azul ====== */
 
-.ajuste-banner_azul {
-    height: 100%;
-}
-
 .banner-azul {
-    background-image: url("/assets/acesso-acervo/retangulo-acervo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    height: 270px;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
+    height: 179px; 
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-bottom: 6%;
 }
 
-.banner-azul_solicitar {
-    display: flex;
-    align-items: center;
-}
-
-.banner-azul_solicitar img {
-    background-color: black;
-    padding: 38px 45px;
-    border-radius: 10px;
-}
-
-.login {
-    display: flex;
-    align-items: center;
-    width: 49%;
-}
-
-button {
-    padding: 0;
-}
-
-.titulo-quadrado {
-    margin-left: 29px;
-    max-width: 409px;
-    color: #fff;
-    font-family: Gilroy-Black;
-    font-size: 2.5rem;
-}
-
-.texto-login {
-    margin-left: 31px;
-    color: #fff;
-}
-
-.acessar {
-    font-family: Gilroy-Bold;
-    font-size: 1.50rem;
-    margin-bottom: 15px;
-}
-
-.orientacoes {
-    font-size: 1.4rem;
-}
-
-.orientacoes a {
-    color: #fff;
-}
 
 /* ====== DÚVIDAS/FREQUENTES ====== */
 
-.duvidas-frequentes {
-    font-size: 1.3rem;
-    font-family: Gilroy-Bold;
-    margin-bottom: 35px;
+.duvidas-frequentes h4{
+    font-family: Gilroy-SemiBold;
+    font-size: 1.5rem;
+    margin-bottom: 3%;
 }
 
-.duvidas-frequentes h4 {
-    margin-bottom: 24px;
+.duvidas-frequentes P{
+    font-family: Gilroy-Regular;
+    font-size: 1.25rem;
 }
 
-.duvidas-frequentes p {
+.primeira-secao{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.duvidas p{
+    max-width: 80%;
     text-align: justify;
 }
 
-.primeira-secao {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-.pessoal-trabalhando {
-    width: 600px;
-}
-
-.duvidas h2 {
+.duvidas h2{
     font-family: Gilroy-Bold;
-    font-size: 2.02rem;
-    margin-bottom: 56px;
+    font-size: 2.25rem;
+    margin-bottom: 4%;
 }
 
-.duvidas {
-    width: 100%;
-    max-width: 744px;
+.duvidas-custos{
+    margin-bottom: 5%;
 }
 
-.duvidas-custos {
-    margin-bottom: 75px;
+.duvidas-primeiros-passos{
+    margin-bottom: 5%;
 }
 
-.duvidas-requerimento h4 {
+.duvidas-documentos-solicitados{
+    margin-bottom: 5%;
+}
+
+.duvidas-documentos-solicitados h4{
     margin-bottom: 2%;
 }
 
-.duvidas-primeiros_passos h4 {
-    margin-top: 0px;
+.duvidas-vantagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.duvidas-vantagens h2{
+    font-family: Gilroy-SemiBold;
+    font-size: 2rem;
+}
+
+.cards-vantagens{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 1%;
+}
+
+.card-vantagens{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1
+}
+
+.card-vantagens:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 10%;
+    height: 100%;
+    width: 1px;
+    background-color: #00072D;
+    opacity: 50%;
+}
+
+.conteudo-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.conteudo-card h4{
+    font-family: Gilroy-Black;
+    font-size: 1.3rem;
+    color: #0056B3;
+    margin-top: 1%;
     margin-bottom: 2%;
 }
 
-.duvidas-primeiros_passos {
-    margin-bottom: 60px;
+.conteudo-card p{
+    max-width: 78%;
+    text-align: center;
+    font-family: Gilroy-SemiBold;
+    color: #475569;
+    font-size: 1.06rem;
 }
 
-.duvidas-documentos_solicitados {
-    margin-bottom: 60px;
+footer{
+    margin-top: 130px;
 }
 
-.duvidas-documentos_solicitados h4 {
-    margin-bottom: 2%;
+@media (max-width: 1300px) {
+    .intro-acesso{
+        flex-direction: column;
+    }
+
+    .intro-acesso h1{
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+
+    .intro-acesso p{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .acesso-acervo-conteudo-principal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt-acervo h2{
+        text-align: center;
+    }
+
+    .banner-azul{
+        display: none;
+    }
+
+    .primeira-secao {
+        flex-direction: column;
+    }
 }
 
-.duvidas-vantagens h4 {
-    margin-bottom: 2%;
-}
+/* Celular */
+@media (max-width: 768px) {
+    .intro-acesso h1{
+        font-size: 2.63rem;
+        width: 100%;
+    }
 
-.duvidas-vantagens p,
-.duvidas-vantagens ul {
-    margin-bottom: 60px;
-}
+    .intro-acesso p{
+        font-size: 1.3rem;
+        width: 100%;
+    }
 
-.duvidas-prazo h4 {
-    margin-bottom: 2%;
-}
+    .img-acervo img{
+        max-width: 100%;
+    }
 
-.duvidas-prazo p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+    .cards-vantagens {
+        flex-direction: column;
+    }
 
-.duvidas-vantagens ul {
-    line-height: 1.5;
+    .duvidas-vantagens h2 {
+        text-align: center;
+    }
+
+    .card-vantagens:not(:last-child)::after {
+        display: none;
+    }
 }
